@@ -10,3 +10,9 @@
 .active-nav{
     display:block !important;
 }
+
+#hero{
+    min-height: 100vh;
+    background-image: url(../../images/top/hero/hero-bkg.jpg);
+    background-size: cover;
+}
