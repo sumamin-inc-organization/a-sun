@@ -5,12 +5,14 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "deploy":"gh-pges -d dist"
   },
   "author": "Sumamin Inc",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.9.1",
+    "gh-pages": "^6.1.1",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.7.7",
