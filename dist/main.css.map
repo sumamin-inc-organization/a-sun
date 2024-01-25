@@ -1,1 +1,0 @@
-{"version":3,"file":"main.css","mappings":";;;AAAA;IACI,YAAY;AAChB,C","sources":["webpack://a-sun/./src/css/style.css"],"sourcesContent":["body{\n    color: black;\n}"],"names":[],"sourceRoot":""}
