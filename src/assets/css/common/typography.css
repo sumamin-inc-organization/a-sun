@@ -1,0 +1,138 @@
+/* ------------------- */
+/* TYPOGRAPHY          */
+/* ------------------- */
+
+/*-----------------------------
+    Font Style /フォントのスタイル 
+  -----------------------------*/
+.font-emily {
+  font-family: "emily-austin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-zen-kaku {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+.font-zen-old {
+  font-family: "Zen Old Mincho", serif;
+}
+
+/*----------------------------
+    Font weight /フォントの太さ 
+----------------------------*/
+.regular {
+  /* ミディアム */
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+
+/*----------------------------
+    Font Sizes / フォントサイズ
+----------------------------*/
+
+@media (min-width: 768px) {
+  .fs-pc-12 {
+    font-size: 12px;
+  }
+  .fs-pc-14 {
+    font-size: 14px;
+  }
+  .fs-pc-16 {
+    font-size: 16px;
+  }
+  .fs-pc-18 {
+    font-size: 18px;
+  }
+  .fs-pc-20 {
+    font-size: 20px;
+  }
+  .fs-pc-30 {
+    font-size: 30px;
+  }
+  .fs-pc-32 {
+    font-size: 32px;
+  }
+  .fs-pc-40 {
+    font-size: 40px;
+  }
+  .fs-pc-50 {
+    font-size: 50px;
+  }
+
+  .fs-pc-74 {
+    font-size: 74px;
+  }
+
+  .fs-pc-100 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-sp-12 {
+    font-size: 12px;
+  }
+  .fs-sp-14 {
+    font-size: 14px;
+  }
+  .fs-sp-16 {
+    font-size: 16px;
+  }
+  .fs-sp-18 {
+    font-size: 18px;
+  }
+  .fs-sp-20{
+    font-size: 20px;
+  }
+  .fs-sp-25{
+    font-size: 25px;
+  }
+  .fs-sp-30 {
+    font-size: 30px;
+  }
+  .fs-sp-32{
+    font-size: 32px;
+  }
+  .fs-sp-36{
+    font-size: 36px;
+  }
+  .fs-sp-100{
+    font-size: 100px;
+  }
+
+}
+/*----------------------------
+        Font Colors / フォントの色"
+      ----------------------------*/
+
+.white {
+  color: #ffffff;
+}
+.gray {
+  color: #45484b;
+}
+.light-gray {
+  color: #b8b7b6;
+}
+.brown {
+  color: #c38c80;
+}
+.black {
+  color: #45484b;
+}
+
+/*---------------------------------
+      letter spacing
+    ----------------------------------*/
+.letter-spacing-30 {
+  letter-spacing: 0.06em;
+}
+.letter-spacing-01 {
+  letter-spacing: 0.1rem;
+}
+.letter-spacing-02 {
+  letter-spacing: 0.2rem;
+}
