@@ -143,8 +143,19 @@
 .dropdown__btn {
   border: none;
   background-color: transparent;
+  position: relative;
+  /* border: 1px solid red; */
 }
 
+.dropdown__btn::after{
+    content: url(../../images/common/langBtnChevron.svg);
+    width: 7.66px;
+    height: 3.83px;
+    position: absolute;
+    top: -2px;
+    right: -7px;
+    /* border: 1px solid black; */
+}
 /*---------------------------------------
    Header Letter Spacing
    ヘッダーの文字間隔
