@@ -184,10 +184,20 @@ letter-spacing: 0.114em;
   }
 
 }
-
-
+.reservation-btn{
+  display: block;
+}
+.reservation-btn--sp{
+  display: none;
+}
 @media (max-width:750px){
   .header__center {
+    display: none;
+  }
+  .reservation-btn--sp{
+    display: block;
+  }
+  .reservation-btn{
     display: none;
   }
 }

@@ -47,22 +47,23 @@
   .fs-pc-18 {
     /* 1.25vw */
     font-size: 18px;
-    /* font-size: max(min(0.5vw, 0.5em), 1rem); */
     font-size: clamp(10px, 1.25vw, 18px);
-
   }
 
   .fs-pc-20 {
     font-size: 20px;
+    font-size: clamp(12.5px, 1.39vw, 20px);
   }
   .fs-pc-30 {
     font-size: 30px;
   }
   .fs-pc-32 {
     font-size: 32px;
+    font-size: clamp(20px, 2.22vw, 32px);
   }
   .fs-pc-40 {
     font-size: 40px;
+    font-size: clamp(25px, 27.78vw, 40px);
   }
   .fs-pc-50 {
     font-size: 50px;
@@ -74,6 +75,7 @@
 
   .fs-pc-100 {
     font-size: 100px;
+    font-size: clamp(65.2px, 69.44vw, 100px);
   }
 }
 @media (max-width: 500px) {
