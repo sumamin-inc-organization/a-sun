@@ -4,11 +4,14 @@
     }
     
 
-.hero-background--sp{
-    background-image: url(../../images/top/hero/herobkg_sp.jpg);
-    background-size: cover;
-  
-  }
+
+@media (max-width:500px){
+    .hero-background--sp{
+        background-image: url(../../images/top/hero/herobkg_sp.jpg);
+        background-size: cover;
+      
+      }
+}
 
 @media (min-width:500px){
     #hero{
