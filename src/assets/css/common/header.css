@@ -2,64 +2,138 @@
 /*       Header        */
 /* ------------------- */
 
-.header{
-    border: 1px solid red;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    height: 120px;
+/*----------------------------
+    Element Alignment
+    エレメントの配置
+----------------------------*/
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 120px;
 }
 
-.header__left{
-    border: 1px solid black;
-    position: absolute;
-    top: 22px;
-    left: 40px;
+.header__left {
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  width: clamp(182px, 50%, 245px);
 }
-.header__center{
-    display: flex;
-    border: 1px solid blue;
-    margin-right: 30.5px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+.logo__image {
+  object-fit: cover;
 }
-.header__right{
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 32px;
-    margin-right:100px;
-    gap: 24px;
-    height: 100%;
+.header__center {
+  display: flex;
+  /* border: 1px solid blue; */
+  margin-right: 30.5px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
-.primary-nav__ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:40px;
-    padding-right: 26px;
-}
-.reservation-btn{
-    position: absolute;
-    right: 0;
+.header__right {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 32px;
+  margin-right: 100px;
+  gap: 24px;
+  height: 100%;
 }
 
-.dropdown{
-    border: 1px solid black;
-    height: 100%;
-    /* margin-left: 26px; */
-
+.primary-nav__ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-right: 26px;
 }
-.dropdown__content{
-    display: flex;
-    flex-direction: column;
+.reservation-btn {
+  position: absolute;
+  right: 0;
+}
+
+/*----------------------------
+    Dropdown Styles
+    ドロップダウンのスタイル
+----------------------------*/
+.dropdown {
+  height: 100%;
+}
+.dropdown__content {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.dropdown {
+  padding-top: 22px;
+}
+
+/*----------------------------
+    Header Responsive Styles
+    ヘッダーのレスポンシブスタイル
+----------------------------*/
+
+@media (max-width: 1309px) {
+  .header__info {
     display: none;
+  }
+  .header__center {
+    margin-right: 90px;
+  }
+  .header__left {
+    top: 13.6px;
+    left: 25px;
+  }
 }
 
-.dropdown{
-    padding-top: 22px;
+@media (max-width: 920px) {
+  .header__center {
+    display: none;
+  }
+  .header__left {
+    top: 13.6px;
+    left: 18px;
+  }
+}
+/*----------------------------
+    Element Size
+    エレメントのサイズ
+----------------------------*/
+.header__left {
+  width: clamp(182px, 50%, 245px);
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the width for smaller screens */
+  .header__left {
+    width: clamp(150px, 70%, 200px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Adjust the width for larger screens */
+  .header__left {
+    width: clamp(220px, 40%, 280px);
+  }
+}
+
+
+/*---------------------------------------
+   Primary Nav Indicator Styles
+   プライマリナビゲーションインジケータのスタイル
+-----------------------------------------*/
+
+.primary-nav__item--indicator {
+    opacity: 0;
+}
+.active-nav{
+    opacity: 1;
+}
+.primary-nav__item--indicator__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

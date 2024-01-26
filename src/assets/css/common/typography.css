@@ -45,7 +45,9 @@
     font-size: 16px;
   }
   .fs-pc-18 {
+    /* 1.25vw */
     font-size: 18px;
+    /* font-size: max(min(0.5vw, 0.5em), 1rem); */
   }
   .fs-pc-20 {
     font-size: 20px;
