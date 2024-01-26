@@ -25,14 +25,12 @@
 }
 .header__center {
   display: flex;
-  /* border: 1px solid blue; */
   margin-right: 30.5px;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 .header__right {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,4 +134,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*---------------------------------------
+   Language Button Styles
+   言語ボタンのスタイル
+-----------------------------------------*/
+
+.dropdown__btn{
+    border: none;
+    background-color: transparent;
 }
