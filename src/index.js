@@ -14,8 +14,9 @@ import "./assets/css/home/voice.css";
 import "./assets/css/home/news.css";
 import "./assets/css/home/insta.css";
 import "./assets/css/home/access.css";
+import addNavIconEventListener from "./assets/js/eventlisters/naviconEventlistener";
 
 
 
-
+addNavIconEventListener();
 

@@ -12,6 +12,7 @@
   align-items: center;
   position: relative;
   height: 120px;
+  /* border: 1px solid red; */
 }
 
 .header__left {
@@ -171,3 +172,12 @@ letter-spacing: 0.114em;
 .primary-nav__link{
     letter-spacing:  0.074em;
 }
+
+@media (max-width:500px) {
+  .reservation-btn--sp{
+    position: fixed;
+    bottom: 50%;
+    right: 0;
+  }
+}
+
