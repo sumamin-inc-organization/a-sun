@@ -10,20 +10,6 @@
 .active-nav{
     display:block !important;
 }
-#hero{
-min-height: 100vh;
-}
-.hero-background--sp{
-  background-image: url(../../images/top/hero/herobkg_sp.jpg);
-  background-size: cover;
-
-}
-@media (min-width:500px){
-  #hero{
-    background-image: url(../../images/top/hero/hero-bkg.jpg);
-    background-size: cover;
-}
-}
 
 .sp-only{
   display: none;

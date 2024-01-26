@@ -176,7 +176,7 @@ letter-spacing: 0.114em;
 @media (max-width:500px) {
   .reservation-btn--sp{
     position: fixed;
-    bottom: 50%;
+    bottom: 40vh;
     right: 0;
   }
 }
