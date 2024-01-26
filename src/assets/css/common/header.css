@@ -144,3 +144,19 @@
   border: none;
   background-color: transparent;
 }
+
+/*---------------------------------------
+   Header Letter Spacing
+   ヘッダーの文字間隔
+-----------------------------------------*/
+.header__info{
+letter-spacing: 0.114em;
+}
+
+.dropdown__btn{
+    letter-spacing:  0.074em;
+}
+
+.primary-nav__link{
+    letter-spacing:  0.074em;
+}
