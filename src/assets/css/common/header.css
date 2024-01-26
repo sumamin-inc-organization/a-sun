@@ -89,9 +89,7 @@
 }
 
 @media (max-width: 920px) {
-  .header__center {
-    display: none;
-  }
+
   .header__left {
     top: 13.6px;
     left: 18px;
@@ -184,5 +182,12 @@ letter-spacing: 0.114em;
     bottom: 40vh;
     right: 0;
   }
+
 }
 
+
+@media (max-width:750px){
+  .header__center {
+    display: none;
+  }
+}
