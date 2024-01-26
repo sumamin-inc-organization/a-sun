@@ -118,22 +118,21 @@
   }
 }
 
-
 /*---------------------------------------
    Primary Nav Indicator Styles
    プライマリナビゲーションインジケータのスタイル
 -----------------------------------------*/
 
 .primary-nav__item--indicator {
-    opacity: 0;
+  opacity: 0;
 }
-.active-nav{
-    opacity: 1;
+.active-nav {
+  opacity: 1;
 }
-.primary-nav__item--indicator__wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.primary-nav__item--indicator__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*---------------------------------------
@@ -141,7 +140,7 @@
    言語ボタンのスタイル
 -----------------------------------------*/
 
-.dropdown__btn{
-    border: none;
-    background-color: transparent;
+.dropdown__btn {
+  border: none;
+  background-color: transparent;
 }
