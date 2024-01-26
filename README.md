@@ -60,4 +60,28 @@ npm run dev
 ```
 
 
+## Gitコミット
+
+各コミットで行った作業を記述してください。変更または作業を行うたびにコミットを行ってください。
+
+ex:
+
+```css
+    .test{
+        /* 前  */
+        background-color:red;   before
+    }
+
+    /* 後  */
+
+    .test{
+        background-color:blue; 
+    }
+
+```
+変更を加えた後、変更内容を記述してコミットしてください。
+
+```bash
+    git commit -m "".test の背景色を青に変更しました。"
+```
 
