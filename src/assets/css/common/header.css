@@ -75,7 +75,7 @@
     ヘッダーのレスポンシブスタイル
 ----------------------------*/
 
-@media (max-width: 1309px) {
+@media (max-width: 1370px) {
   .header__info {
     display: none;
   }
@@ -95,6 +95,11 @@
   .header__left {
     top: 13.6px;
     left: 18px;
+  }
+  .reservation-btn--sp{
+    position: fixed;
+    bottom: 40vh;
+    right: 0;
   }
 }
 /*----------------------------
