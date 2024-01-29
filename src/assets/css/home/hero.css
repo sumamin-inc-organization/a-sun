@@ -117,14 +117,12 @@
     justify-content: flex-end;
     margin-right: clamp(89.5px,9.93vw,143px);
     margin-top: clamp(2.5px,0.4386vw,5px);
-    /* border: 1px solid red; */
 }
 .gault-millau_link{
     --width:0;
     position: relative;
     display: flex;
     padding: 0;
-    /* border: 1px solid red; */
     letter-spacing: 0.154em;
     line-height: 33.5px;
     
