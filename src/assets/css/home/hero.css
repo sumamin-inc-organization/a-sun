@@ -183,6 +183,12 @@
     Keyvisual Main Hero/ キービジュアル メイン ヒーロー
 -----------------------------------------------------*/
 
+
+
+/*--------------------------------------------------------------
+    Keyvisual Main Hero widths/ キービジュアル メイン ヒーローの幅
+---------------------------------------------------------------*/
+
 .kv-hero__img img{
   object-fit: cover;
 }
@@ -205,4 +211,46 @@
 }
 .kv-hero__img--top-left{
   width: clamp(172.5px,19.17vw,275.99px);
+}
+
+/*--------------------------------------------------------------
+    Keyvisual Main Hero positioning/ キービジュアル メイン ヒーローの配置
+---------------------------------------------------------------*/
+
+.keyvisual-main_hero{
+  margin-top: clamp(33.3px,3.74vw,53.8px);
+  position: relative;
+  display: grid;
+  place-content: center;
+  padding-bottom: 57.4px;
+}
+.kv-hero__img--secondary{
+  position: absolute;
+}
+
+.kv-hero__img--primary{
+  position: relative;
+}
+
+ .kv-hero__img--top-right{
+  top: 0;
+  right: calc((clamp(186.63px,20.76vw,298.61px)) - 60%);
+}
+
+.kv-hero__img--right{
+  top: 50%;
+  right: calc(clamp(182.65px,20.31vw,292.23px) - 70%);
+}
+.kv-hero__img--bottom{
+  bottom: -60;
+  left: 37%;
+} 
+.kv-hero__img--left{
+  left: -50% ;
+  bottom: 50px;
+}
+
+.kv-hero__img--top-left{
+  top: 20px;
+  left: -25%;
 }
