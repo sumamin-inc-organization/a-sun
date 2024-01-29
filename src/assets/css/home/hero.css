@@ -63,7 +63,6 @@
 --------------------------------------------------*/
 
 .kevvisual-eyecatcher{
-    border: 1px solid blue;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -73,16 +72,16 @@
 
 .eyecatcher-slideshow{
     width: clamp(750px,83.33vw,1200px);
-    border: 1px solid red;
     overflow:hidden;
     position:relative;
 }
 
 .eyecatcher-slideshow_slide{
-/* height: 100%;
-width: 100%; */
-object-fit: cover;
+object-fit: contain;
 position: absolute;
+top:0;
+left:0;
+opacity:0
 }
 .eyecatcher-slideshow_slide:first-child{
     position:relative
