@@ -175,6 +175,9 @@ letter-spacing: 0.114em;
 .primary-nav__link{
     letter-spacing:  0.074em;
 }
+.reservation-btn--sp{
+  z-index: 1000;
+}
 
 @media (max-width:500px) {
   .reservation-btn--sp{
