@@ -24,7 +24,7 @@
 }
 
 /*-------------------------------------
-    Keyvisual Top / キービジュアル トップ
+    Keyvisual Top / キービジュアル トップ 
 --------------------------------------*/
 
 .keyvisual-top {
@@ -42,4 +42,18 @@
 .keyvisual_text {
   width: 44.41vw;
   width: clamp(400px, 44.41vw, 638.15px);
+}
+
+/*-------------------------------------------------
+    Keyvisual Top Text / キービジュアル トップ テキスト
+--------------------------------------------------*/
+
+.keyvisual__text--jp{
+    letter-spacing:0.114em ;
+    line-height: 59.08px;
+}
+.keyvisual__text--eng{
+    margin-top: clamp(10px,1.25vw,18px);
+    letter-spacing:0.02em ;
+    line-height: 39.24px;
 }
