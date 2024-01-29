@@ -39,7 +39,7 @@
   width: clamp(300px, 33.33vw, 480px);
 }
 
-.keyvisual_text {
+.keyvisual__text {
   width: 44.41vw;
   width: clamp(400px, 44.41vw, 638.15px);
 }
@@ -98,7 +98,7 @@
     Keyvisual Scroll image / キービジュアルのスクロール画像
 --------------------------------------------------*/
 
-.eyecatcher_scrollimg{
+.eyecatcher__scrollimg{
     /* border: 1px solid red; */
     width: clamp(15px,1.67vw,24px);
 
@@ -143,4 +143,38 @@
     --width:100%;
     position: relative;
     
+}
+
+/*-------------------------------------
+    Keyvisual Main / キービジュアル メイン
+--------------------------------------*/
+
+.keyvisual-main_text{
+  display: flex;
+  justify-content: center;
+  gap: clamp(24px,2.78vw,40px);
+  margin-top: clamp(56px,6.18vw,89px);
+}
+
+.keyvisual-main__text__title{
+  width: clamp(228px,25.35vw,400px);
+}
+
+.keyvisual-main__text__description{
+  width: clamp(375px,41.67vw,600px);
+  line-height: clamp(49.5px,3.44vw,40px);
+  letter-spacing: 0.154em;
+}
+
+.kv-main__text__title--eng {
+  line-height: clamp(13.81px,1.53vw,22px);
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: clamp(7.7px,0.92vw,13.3px);
+}
+
+.kv-main__text__title--jp{
+  line-height: clamp(33.75px,3.75vw,54px);
+  letter-spacing: 0.154em;
+  text-align: center;
 }

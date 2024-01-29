@@ -49,6 +49,9 @@
     font-size: 18px;
     font-size: clamp(10px, 1.25vw, 18px);
   }
+  .fs-pc-18--11p25{
+    font-size: clamp(11.25px, 1.25vw, 18px);
+  }
 
   .fs-pc-20 {
     font-size: 20px;
