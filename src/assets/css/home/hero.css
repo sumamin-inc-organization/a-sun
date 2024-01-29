@@ -261,7 +261,9 @@
       MOBILE
    =============== */
 
-
+/*--------------------------------------------------------------
+    Keyvisual Top Mobile/ キービジュアル トップ モバイル
+---------------------------------------------------------------*/
    @media(max-width:500px){
     .keyvisual-top {
       display: flex;
@@ -288,4 +290,23 @@
       width: min(317px,81.28vw);
       line-height: 0.96em;
     }
+
+   }
+
+/*-------------------------------------------------------------------
+    Keyvisual Eyecatcher Mobile / キービジュアル アイキャッチャー モバイル
+------------------------------------------------------------------*/
+   @media(max-width:500px){
+    .kevvisual-eyecatcher {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1px;
+      margin-top: min(20px,5.13vw);
+    }
+    
+.eyecatcher-slideshow {
+  width: min(350px,89.74vw);
+  height: min(567.57px,145.26vw);
+}
    }

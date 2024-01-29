@@ -18,7 +18,13 @@ import addNavIconEventListener from "./assets/js/eventlisters/naviconEventlisten
 import activateCrossFadeAnimations from "./assets/js/animations/crossfadeAnimation";
 
 import { gsap } from "gsap";
+import screenResizeListener from "./assets/js/eventlisters/screensizeChange";
+import isItSp from "./assets/js/otherlogic/isitSP";
+import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
 
 addNavIconEventListener();
 
 activateCrossFadeAnimations();
+
+changeKvSrc()
+screenResizeListener();
