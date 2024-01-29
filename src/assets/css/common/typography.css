@@ -63,7 +63,7 @@
   }
   .fs-pc-40 {
     font-size: 40px;
-    font-size: clamp(25px, 27.78vw, 40px);
+    font-size: clamp(25px, 2.78vw, 40px);
   }
   .fs-pc-50 {
     font-size: 50px;
