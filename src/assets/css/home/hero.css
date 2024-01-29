@@ -178,3 +178,31 @@
   letter-spacing: 0.154em;
   text-align: center;
 }
+
+/*----------------------------------------------------
+    Keyvisual Main Hero/ キービジュアル メイン ヒーロー
+-----------------------------------------------------*/
+
+.kv-hero__img img{
+  object-fit: cover;
+}
+
+.kv-hero__img--center{
+  width: clamp(447.25px,49.67vw,715.61px);
+}
+.kv-hero__img--top-right{
+  width: clamp(186.63px,20.76vw,298.61px);
+}
+.kv-hero__img--right{
+  width: clamp(182.65px,20.31vw,292.23px);
+}
+.kv-hero__img--bottom{
+  width: clamp(186.63px,20.76vw,298.61px);
+
+}
+.kv-hero__img--left{
+  width: clamp(176.44px,19.59vw,282.3px);
+}
+.kv-hero__img--top-left{
+  width: clamp(172.5px,19.17vw,275.99px);
+}
