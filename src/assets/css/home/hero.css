@@ -19,3 +19,22 @@
       background-size: cover;
   }
   }
+
+
+  .keyvisual-top{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+  }
+
+  .keyvisual-top__logo{
+    border: 1px solid black;
+    width: 33.33vw;
+    width: clamp(300px, 33.33vw, 480px);
+  }
+
+  .keyvisual_text{
+    border: 1px solid blue;
+    width: 44.41vw;
+    width: clamp(400px, 44.41vw, 638.15px);
+  }
