@@ -105,6 +105,8 @@
   }
   .fs-sp-32{
     font-size: 32px;
+  font-size: min(32px,8.21vw);
+  font-size: clamp(20,8.21vw,32);
   }
   .fs-sp-36{
     font-size: 36px;

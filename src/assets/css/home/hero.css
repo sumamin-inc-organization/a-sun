@@ -255,3 +255,37 @@
   top: 20px;
   left: -25%;
 }
+
+
+/* ===============
+      MOBILE
+   =============== */
+
+
+   @media(max-width:500px){
+    .keyvisual-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: min(23.5px,6.03vw);
+      gap: 12px;
+    }
+    
+    .keyvisual-top__logo {
+      display: none;
+    }
+    
+    .keyvisual__text {
+      width: 44.41vw;
+      width: min(361px,92.56vw);
+    }
+    .keyvisual__text--jp{
+      width: min(317px,81.28vw);
+      line-height: 1.784em;
+    }
+    .keyvisual__text--eng{
+      width: min(317px,81.28vw);
+      line-height: 0.96em;
+    }
+   }
