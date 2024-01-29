@@ -113,29 +113,15 @@
   margin-top: clamp(2.5px, 0.4386vw, 5px);
 }
 .gault-millau_link {
-  --width: 0;
+  --width: 100%;
   position: relative;
   display: flex;
   padding: 0;
   letter-spacing: 0.154em;
   line-height: 33.5px;
+  border-bottom: 1px solid black;
 }
-.gault-millau_link::after {
-  content: "";
-  /* width: 100%; */
-  width: var(--width);
-  height: 1px;
-  background-color: #505050;
-  bottom: -5px;
-  left: 0;
-  position: absolute; /* Ensure it's positioned absolutely */
-  z-index: 1; /* Set a higher z-index to bring it to the front */
-  transition: width 200ms linear;
-}
-.gault-millau_link:hover {
-  --width: 100%;
-  position: relative;
-}
+
 
 /*-------------------------------------
     Keyvisual Main / キービジュアル メイン
@@ -169,6 +155,8 @@
   line-height: clamp(33.75px, 3.75vw, 54px);
   letter-spacing: 0.154em;
   text-align: center;
+  text-wrap: nowrap;
+  
 }
 
 /*----------------------------------------------------
@@ -316,5 +304,12 @@
   .gault-millau_link{
     line-height: 40.17px;
     letter-spacing: 0.154em;
+  }
+  .keyvisual__text--jp{
+    text-wrap: nowrap;
+   /* Standard syntax */
+white-space: nowrap;
+/* Vendor prefixes for older versions of iOS/Webkit */
+-webkit-white-space: nowrap;
   }
 }
