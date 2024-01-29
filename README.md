@@ -2,7 +2,7 @@
 
 #　流れ
  1. [レスポンシブ](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%96)
-    - [clamp](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#clamp)
+    - [Clamp](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#clamp)
  2. [デザイン](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%96)
  3. [Class](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#class)
  4. [Git コミット](https://github.com/sumamin-inc-organization/a-sun?tab=readme-ov-file#git%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88)
@@ -107,9 +107,10 @@ npm run dev
 ex:
 
 ```css
+
+    /* 前 */
     .test{
-        /* 前  */
-        background-color:red;   before
+        background-color:red;  
     }
 
     /* 後  */
