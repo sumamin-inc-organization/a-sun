@@ -57,3 +57,33 @@
     letter-spacing:0.02em ;
     line-height: 39.24px;
 }
+
+/*-------------------------------------------------
+    Keyvisual Eyecatcher / キービジュアル アイキャッチャー
+--------------------------------------------------*/
+
+.kevvisual-eyecatcher{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(18.7px,2.08vw,30px);
+    margin-top: clamp(32.4px,3.69vw,53.3px);
+}
+
+.eyecatcher-slideshow{
+    width: clamp(750px,83.33vw,1200px);
+    border: 1px solid red;
+    overflow:hidden;
+    position:relative;
+}
+
+.eyecatcher-slideshow_slide{
+/* height: 100%;
+width: 100%; */
+object-fit: cover;
+position: absolute;
+}
+.eyecatcher-slideshow_slide:first-child{
+    position:relative
+  }
