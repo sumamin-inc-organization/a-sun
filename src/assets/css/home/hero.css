@@ -122,6 +122,11 @@
 .gault-millau_link{
     --width:0;
     position: relative;
+    display: flex;
+    padding: 0;
+    /* border: 1px solid red; */
+    letter-spacing: 0.154em;
+    line-height: 33.5px;
     
 }
 .gault-millau_link::after {
