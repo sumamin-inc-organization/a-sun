@@ -120,16 +120,24 @@
     /* border: 1px solid red; */
 }
 .gault-millau_link{
+    --width:0;
     position: relative;
     
 }
 .gault-millau_link::after {
     content: "";
-    width: 100%;
+    /* width: 100%; */
+    width: var(--width);
     height: 1px;
     background-color: #505050;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     position: absolute; /* Ensure it's positioned absolutely */
     z-index: 1; /* Set a higher z-index to bring it to the front */
+    transition: width 200ms linear;
+}
+.gault-millau_link:hover{
+    --width:100%;
+    position: relative;
+    
 }
