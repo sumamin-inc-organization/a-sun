@@ -74,12 +74,7 @@
   width: clamp(750px, 83.33vw, 1200px);
   overflow: hidden;
   position: relative;
-  -webkit-mask: linear-gradient(
-    to top,
-    transparent,
-    white 10%,
-    white 100%
-  );
+  -webkit-mask: linear-gradient(to top, transparent, white 10%, white 100%);
   mask: linear-gradient(to top, transparent, white 3%, white 100%);
 }
 
@@ -98,83 +93,80 @@
     Keyvisual Scroll image / キービジュアルのスクロール画像
 --------------------------------------------------*/
 
-.eyecatcher__scrollimg{
-    /* border: 1px solid red; */
-    width: clamp(15px,1.67vw,24px);
-
+.eyecatcher__scrollimg {
+  /* border: 1px solid red; */
+  width: clamp(15px, 1.67vw, 24px);
 }
 
-.eyecatcher_scrollimg--image{
-    width: 100%;
-    height: 100%;
+.eyecatcher_scrollimg--image {
+  width: 100%;
+  height: 100%;
 }
 /*-----------------------------------------------------
     Eyecatcher subtitle / アイキャッチャーのサブタイトル
 --------------------------------------------------*/
 
-.gault-millau{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: clamp(89.5px,9.93vw,143px);
-    margin-top: clamp(2.5px,0.4386vw,5px);
+.gault-millau {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: clamp(89.5px, 9.93vw, 143px);
+  margin-top: clamp(2.5px, 0.4386vw, 5px);
 }
-.gault-millau_link{
-    --width:0;
-    position: relative;
-    display: flex;
-    padding: 0;
-    letter-spacing: 0.154em;
-    line-height: 33.5px;
-    
+.gault-millau_link {
+  --width: 0;
+  position: relative;
+  display: flex;
+  padding: 0;
+  letter-spacing: 0.154em;
+  line-height: 33.5px;
 }
 .gault-millau_link::after {
-    content: "";
-    /* width: 100%; */
-    width: var(--width);
-    height: 1px;
-    background-color: #505050;
-    bottom: -5px;
-    left: 0;
-    position: absolute; /* Ensure it's positioned absolutely */
-    z-index: 1; /* Set a higher z-index to bring it to the front */
-    transition: width 200ms linear;
+  content: "";
+  /* width: 100%; */
+  width: var(--width);
+  height: 1px;
+  background-color: #505050;
+  bottom: -5px;
+  left: 0;
+  position: absolute; /* Ensure it's positioned absolutely */
+  z-index: 1; /* Set a higher z-index to bring it to the front */
+  transition: width 200ms linear;
 }
-.gault-millau_link:hover{
-    --width:100%;
-    position: relative;
-    
+.gault-millau_link:hover {
+  --width: 100%;
+  position: relative;
 }
 
 /*-------------------------------------
     Keyvisual Main / キービジュアル メイン
 --------------------------------------*/
 
-.keyvisual-main_text{
+.keyvisual-main_text {
   display: flex;
   justify-content: center;
-  gap: clamp(24px,2.78vw,40px);
-  margin-top: clamp(56px,6.18vw,89px);
+  gap: clamp(24px, 2.78vw, 40px);
+  margin-top: clamp(56px, 6.18vw, 89px);
 }
 
-.keyvisual-main__text__title{
-  width: clamp(228px,25.35vw,400px);
+.keyvisual-main__text__title {
+  width: clamp(228px, 25.35vw, 400px);
 }
 
-.keyvisual-main__text__description{
-  width: clamp(375px,41.67vw,600px);
-  line-height: clamp(49.5px,3.44vw,40px);
+.keyvisual-main__text__description {
+  width: clamp(375px, 41.67vw, 600px);
+  line-height: clamp(49.5px, 3.44vw, 40px);
   letter-spacing: 0.154em;
 }
 
 .kv-main__text__title--eng {
-  line-height: clamp(13.81px,1.53vw,22px);
+  line-height: clamp(13.81px, 1.53vw, 22px);
   letter-spacing: 0.02em;
   text-align: center;
-  margin-top: clamp(7.7px,0.92vw,13.3px);
+  margin-top: clamp(7.7px, 0.92vw, 13.3px);
 }
 
-.kv-main__text__title--jp{
-  line-height: clamp(33.75px,3.75vw,54px);
+.kv-main__text__title--jp {
+  line-height: clamp(33.75px, 3.75vw, 54px);
   letter-spacing: 0.154em;
   text-align: center;
 }
@@ -183,79 +175,75 @@
     Keyvisual Main Hero/ キービジュアル メイン ヒーロー
 -----------------------------------------------------*/
 
-
-
 /*--------------------------------------------------------------
     Keyvisual Main Hero widths/ キービジュアル メイン ヒーローの幅
 ---------------------------------------------------------------*/
 
-.kv-hero__img img{
+.kv-hero__img img {
   object-fit: cover;
 }
 
-.kv-hero__img--center{
-  width: clamp(447.25px,49.67vw,715.61px);
+.kv-hero__img--center {
+  width: clamp(447.25px, 49.67vw, 715.61px);
 }
-.kv-hero__img--top-right{
-  width: clamp(186.63px,20.76vw,298.61px);
+.kv-hero__img--top-right {
+  width: clamp(186.63px, 20.76vw, 298.61px);
 }
-.kv-hero__img--right{
-  width: clamp(182.65px,20.31vw,292.23px);
+.kv-hero__img--right {
+  width: clamp(182.65px, 20.31vw, 292.23px);
 }
-.kv-hero__img--bottom{
-  width: clamp(186.63px,20.76vw,298.61px);
-
+.kv-hero__img--bottom {
+  width: clamp(186.63px, 20.76vw, 298.61px);
 }
-.kv-hero__img--left{
-  width: clamp(176.44px,19.59vw,282.3px);
+.kv-hero__img--left {
+  width: clamp(176.44px, 19.59vw, 282.3px);
 }
-.kv-hero__img--top-left{
-  width: clamp(172.5px,19.17vw,275.99px);
+.kv-hero__img--top-left {
+  width: clamp(172.5px, 19.17vw, 275.99px);
 }
 
 /*--------------------------------------------------------------
     Keyvisual Main Hero positioning/ キービジュアル メイン ヒーローの配置
 ---------------------------------------------------------------*/
 
-.keyvisual-main_hero{
-  margin-top: clamp(33.3px,3.74vw,53.8px);
+.keyvisual-main_hero {
+  margin-top: clamp(33.3px, 3.74vw, 53.8px);
   position: relative;
   display: grid;
   place-content: center;
   padding-bottom: 110px;
-  padding-bottom: min(110px,7.64vw);
+  padding-bottom: min(110px, 7.64vw);
 }
-.kv-hero__img--secondary{
+.kv-hero__img--secondary {
   position: absolute;
 }
 
-.kv-hero__img--primary{
+.kv-hero__img--primary {
   position: relative;
 }
 
- .kv-hero__img--top-right{
+.kv-hero__img--top-right {
   top: 0;
-  right: calc((clamp(186.63px,20.76vw,298.61px)) - 60%);
+  right: calc((clamp(186.63px, 20.76vw, 298.61px)) - 60%);
 }
 
-.kv-hero__img--right{
+.kv-hero__img--right {
   top: 50%;
-  right: calc(clamp(182.65px,20.31vw,292.23px) - 70%);
+  right: calc(clamp(182.65px, 20.31vw, 292.23px) - 70%);
 }
-.kv-hero__img--bottom{
+.kv-hero__img--bottom {
   bottom: -60;
   left: 37%;
-} 
-.kv-hero__img--left{
-  left: -50% ;
+}
+.kv-hero__img--left {
+  left: -50%;
   bottom: 50px;
 }
 
-.kv-hero__img--top-left{
+.kv-hero__img--top-left {
   top: 20px;
   left: -25%;
 }
-
 
 /* ===============
       MOBILE
@@ -264,49 +252,60 @@
 /*--------------------------------------------------------------
     Keyvisual Top Mobile/ キービジュアル トップ モバイル
 ---------------------------------------------------------------*/
-   @media(max-width:500px){
-    .keyvisual-top {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-top: min(23.5px,6.03vw);
-      gap: 12px;
-    }
-    
-    .keyvisual-top__logo {
-      display: none;
-    }
-    
-    .keyvisual__text {
-      width: 44.41vw;
-      width: min(361px,92.56vw);
-    }
-    .keyvisual__text--jp{
-      width: min(317px,81.28vw);
-      line-height: 1.784em;
-    }
-    .keyvisual__text--eng{
-      width: min(317px,81.28vw);
-      line-height: 0.96em;
-    }
+@media (max-width: 500px) {
+  .keyvisual-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: min(23.5px, 6.03vw);
+    gap: 12px;
+  }
 
-   }
+  .keyvisual-top__logo {
+    display: none;
+  }
+
+  .keyvisual__text {
+    width: 44.41vw;
+    width: min(361px, 92.56vw);
+  }
+  .keyvisual__text--jp {
+    width: min(317px, 81.28vw);
+    line-height: 1.784em;
+  }
+  .keyvisual__text--eng {
+    width: min(317px, 81.28vw);
+    line-height: 0.96em;
+  }
+}
 
 /*-------------------------------------------------------------------
     Keyvisual Eyecatcher Mobile / キービジュアル アイキャッチャー モバイル
 ------------------------------------------------------------------*/
-   @media(max-width:500px){
-    .kevvisual-eyecatcher {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 1px;
-      margin-top: min(20px,5.13vw);
-    }
-    
-.eyecatcher-slideshow {
-  width: min(350px,89.74vw);
-  height: min(567.57px,145.26vw);
+@media (max-width: 500px) {
+  .kevvisual-eyecatcher {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1px;
+    margin-top: min(20px, 5.13vw);
+  }
+
+  .eyecatcher-slideshow {
+    width: min(350px, 89.74vw);
+    height: min(567.57px, 145.26vw);
+  }
+  .eyecatcher__scrollimg {
+    width: min(24px, 6.15vw);
+  }
 }
-   }
+
+
+
+/*---------------------------------------------------------------
+    Eyecatcher Subtitle Mobile / アイキャッチャーのサブタイトル モバイル
+----------------------------------------------------------------*/
+@media (max-width: 500px) {
+  
+}
