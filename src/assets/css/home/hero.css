@@ -307,5 +307,14 @@
     Eyecatcher Subtitle Mobile / アイキャッチャーのサブタイトル モバイル
 ----------------------------------------------------------------*/
 @media (max-width: 500px) {
-  
+  .gault-millau {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    margin-right: min(19.6px,5.03vw);
+  }
+  .gault-millau_link{
+    line-height: 40.17px;
+    letter-spacing: 0.154em;
+  }
 }
