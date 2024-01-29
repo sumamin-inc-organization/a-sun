@@ -222,7 +222,8 @@
   position: relative;
   display: grid;
   place-content: center;
-  padding-bottom: 57.4px;
+  padding-bottom: 110px;
+  padding-bottom: min(110px,7.64vw);
 }
 .kv-hero__img--secondary{
   position: absolute;
