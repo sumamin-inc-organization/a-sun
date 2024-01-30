@@ -148,7 +148,6 @@
   border: none;
   background-color: transparent;
   position: relative;
-  /* border: 1px solid red; */
 }
 
 .dropdown__btn::after{
@@ -158,7 +157,6 @@
     position: absolute;
     top: -2px;
     right: -7px;
-    /* border: 1px solid black; */
 }
 /*---------------------------------------
    Header Letter Spacing
