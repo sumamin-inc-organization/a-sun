@@ -1,9 +1,9 @@
 .meatball {
   border: 1px solid black;
   width: 70px;
-  width: min(70px,17.95vw);
+  width: min(70px, 17.95vw);
   height: 70px;
-  height:  min(70px,17.95vw);
+  height: min(70px, 17.95vw);
   background: none;
   cursor: pointer;
   transition: 0.5s ease;
@@ -71,30 +71,30 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-  .meatball.active:hover .dot {
-    animation: none;
+.meatball.active:hover .dot {
+  animation: none;
+}
+.meatball.active {
+  border: none;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
   }
-  .meatball.active {
-    border: none;
+  50% {
+    opacity: 0.2;
   }
-  @keyframes flicker {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  .meatball{
-    display: none;
-  }
+}
 
-  @media (max-width:750px){
-    .meatball{
-      display: block;
-    }
+.meatball {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .meatball {
+    display: block;
   }
+}
