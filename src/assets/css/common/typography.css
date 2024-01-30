@@ -97,6 +97,7 @@
   }
   .fs-sp-20{
     font-size: 20px;
+    font-size: min(20px,5.13vw);
   }
   .fs-sp-25{
     font-size: 25px;

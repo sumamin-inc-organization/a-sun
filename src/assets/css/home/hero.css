@@ -342,3 +342,43 @@
     -webkit-white-space: nowrap;
   }
 }
+/*---------------------------------------------------------------
+    Keyvisual Main Text Mobile / キービジュアル メインテキスト モバイル
+----------------------------------------------------------------*/
+
+@media (max-width: 500px) {
+  .keyvisual-main_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: min(7.77vw,30.3px);
+    margin-top: clamp(56px, 6.18vw, 89px);
+ 
+  }
+  .keyvisual-main__text__title {
+    width: min(93.33vw,364px);
+  }
+  
+  .keyvisual-main__text__description {
+    width: min(330px, 84.62vw);
+    line-height: min(46px,11.79vw);
+    letter-spacing: 0.154em;
+  }
+  
+  .kv-main__text__title--eng {
+    line-height: min(22px,5.64vw);
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: min(13.3px, 3.41vw);
+  }
+  
+  .kv-main__text__title--jp {
+    line-height:min(54px,13.85vw);
+    letter-spacing: 0.154em;
+    text-align: center;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-white-space: nowrap;
+  }
+}
