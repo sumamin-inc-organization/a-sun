@@ -204,3 +204,15 @@ letter-spacing: 0.114em;
     display: none;
   }
 }
+
+.tel__number{
+  margin-bottom: 9px;
+  margin-top: -5px;
+}
+
+
+
+.header__right-column--one{
+  text-align: center;
+  transform: translateY(-9px);
+}
