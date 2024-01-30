@@ -421,4 +421,29 @@
     padding-bottom: min(110px, 7.64vw);
     border: 1px solid red;
   }
+
+  .kv-hero__img--center {
+    width: min(350px,89.74vw);
+ 
+  }
+  .kv-hero__img--top-right {
+    width: min(126.89px,32.54vw)
+  }
+  .kv-hero__img--right {
+    width: min(124.18px, 31.86vw);
+  }
+  .kv-hero__img--bottom {
+    width: min(126.89px, 32.54vw);
+  }
+  .kv-hero__img--left {
+    width: min(119.96px, 30.75vw);
+  }
+  .kv-hero__img--top-left {
+    width: min(117.28px, 30.07vw);
+  }
+  .kv-hero__img--left {
+    left: -35%;
+    bottom: 50px;
+  }
+
 }
