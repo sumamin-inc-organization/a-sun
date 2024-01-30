@@ -100,6 +100,7 @@
   }
   .fs-sp-25{
     font-size: 25px;
+    font-size: min(25px,6.41vw);
   }
   .fs-sp-30 {
     font-size: 30px;
