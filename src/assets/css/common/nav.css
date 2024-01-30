@@ -1,7 +1,9 @@
 .meatball {
   border: 1px solid black;
   width: 70px;
+  width: min(70px,17.95vw);
   height: 70px;
+  height:  min(70px,17.95vw);
   background: none;
   cursor: pointer;
   transition: 0.5s ease;
