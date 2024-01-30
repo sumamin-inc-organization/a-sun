@@ -216,3 +216,9 @@ letter-spacing: 0.114em;
   text-align: center;
   transform: translateY(-9px);
 }
+
+@media (max-width:500px) {
+  .header__left {
+    width: 65.18vw;
+  }
+}
