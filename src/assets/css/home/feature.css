@@ -11,15 +11,54 @@
   ---------------------------------*/
 
 .feature-title{
-border: 1px solid red;
 position: relative;
 }
 
 .feature-title__text{
-    border: 1px solid blue;
+    /* border: 1px solid red; */
+    padding-top: max(51.2px,3.56vw);
+    margin-left: clamp(50px,5.56vw,80px);
+    width: clamp(171px,19.03vw,274px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
 }
 
 .feature-title__img{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: clamp(602.5px,66.94vw,964px);
+    position: absolute;
+    bottom: -20%;
+    left: 220px;
+    
+}
+
+.feature-one{
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.feature-title__text--jp{
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    /* height: fit-content; */
+    text-align: end;
+    padding-bottom: 30px;
+
+}
+.feature-title__text--eng{
+    /* border: 1px solid green; */
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 50px;
+    right:65px;
+    
+   
 }
