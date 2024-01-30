@@ -12,6 +12,7 @@
 
 .feature-title{
 position: relative;
+z-index: 5;
 }
 
 .feature-title__text{
@@ -41,23 +42,25 @@ position: relative;
 }
 
 .feature-title__text--jp{
-    /* border: 1px solid blue; */
     width: 100%;
     padding: 0;
     margin: 0;
     display: inline;
-    /* height: fit-content; */
     text-align: end;
     padding-bottom: 30px;
 
 }
 .feature-title__text--eng{
-    /* border: 1px solid green; */
     padding: 0;
     margin: 0;
     position: absolute;
     bottom: 50px;
     right:65px;
-    
-   
+}
+
+
+
+.feature-eyecatcher{
+    -webkit-mask: linear-gradient(to top, transparent, white 10%, white 100%);
+    mask: linear-gradient(to top, transparent, white 25%, white 100%);
 }
