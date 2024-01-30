@@ -382,3 +382,43 @@
     -webkit-white-space: nowrap;
   }
 }
+
+/*----------------------------------------------------------------------------
+    Keyvisual Main Hero Widths Mobile/ キービジュアル メイン ヒーローの幅 モバイル
+------------------------------------------------------------------------------*/
+@media (max-width:899px){
+  .kv-hero__img--center {
+    /* width: max(350px,89.74vw) */
+    width: clamp(350px,57.09vw,513.84px);
+ 
+  }
+  .kv-hero__img--top-right {
+    width: clamp(126.89px, 20.74vw,186.63px);
+  }
+  .kv-hero__img--right {
+    width: clamp(124.18px, 20.31vw, 182.65px);
+  }
+  .kv-hero__img--bottom {
+    width: clamp(126.89px, 20.74vw, 186.63px);
+  }
+  .kv-hero__img--left {
+    width: clamp(119.96px, 19.60vw, 176.44px);
+  }
+  .kv-hero__img--top-left {
+    width: clamp(117.28px, 19.17vw, 172.5px);
+  }
+  .kv-hero__img--left {
+    left: -35%;
+    bottom: 50px;
+  }
+}
+
+
+@media (max-width:500px){
+  .keyvisual-main_hero {
+    margin-top: min(71px,18.21vw);
+    padding-bottom: 110px;
+    padding-bottom: min(110px, 7.64vw);
+    border: 1px solid red;
+  }
+}
