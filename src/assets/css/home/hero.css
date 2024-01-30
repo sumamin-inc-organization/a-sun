@@ -439,9 +439,7 @@
   }
 
 }
-.reservation-btn--sp{
-  display: none;
-}
+
 
 /*---------------------------------------------------------------------------------
     Keyvisual Main Hero Positioning Mobile/ キービジュアル メイン ヒーローの配置 モバイル
@@ -475,5 +473,11 @@
   .kv-hero__img--top-left {
     top: 10px;
     left: -20px;
+  }
+  .keyvisual-main_hero {
+    margin-top: min(35px,18.21vw);
+    padding-bottom: 110px;
+    padding-bottom: min(110px, 7.64vw);
+    /* border: 1px solid red; */
   }
 }
