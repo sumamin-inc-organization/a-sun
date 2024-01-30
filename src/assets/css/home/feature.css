@@ -1,3 +1,25 @@
+/* ------------------- */
+/*      FEATURE    */
+/* ------------------- */
+
 #feature{
     min-height: 100vh;
+}
+
+/*----------------------------------
+    FEATURE TITLE /フィーチャータイトル
+  ---------------------------------*/
+
+.feature-title{
+border: 1px solid red;
+position: relative;
+}
+
+.feature-title__text{
+    border: 1px solid blue;
+}
+
+.feature-title__img{
+    border: 1px solid green;
+    width: clamp(602.5px,66.94vw,964px);
 }
