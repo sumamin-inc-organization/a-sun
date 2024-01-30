@@ -1,85 +1,74 @@
 .meatball {
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    background: none;
-    cursor: pointer;
-    transition: 0.5s ease;
-    transform: scale(0.5);
-    /* margin-right: 120px; */
-    border-radius: 50%;
-    /* padding-top: 19px;
-    padding-bottom: 19px;
-    padding-right: 11px;
-    padding-bottom: 11px; */
-    position: absolute;
-    top: 20px;
-    right: 40px;
-  }
-  
-  .meatball .dot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background: black;
-    transition: width 0.3s ease 0s, height 0.3s ease 0s, transform 0.3s ease 0.3s;
-  }
-  
-  .meatball .dot:nth-of-type(1) {
-    transform: translate(calc(-50% - 10px), -50%) rotate(45deg);
-  }
-  
-  .meatball .dot:nth-of-type(2) {
-    transform: translate(-50%, -50%);
-    transition: 0.4s ease 0.1s;
-  }
-  
-  .meatball .dot:nth-of-type(3) {
-    transform: translate(calc(-50% + 10px), -50%) rotate(-45deg);
-  }
-  
-  .meatball:hover .dot:nth-of-type(1) {
-    animation: flicker 0.4s linear;
-  }
-  
-  .meatball:hover .dot:nth-of-type(2) {
-    animation: flicker 0.4s linear 0.05s;
-  }
-  
-  .meatball:hover .dot:nth-of-type(3) {
-    animation: flicker 0.4s linear 0.1s;
-  }
-  
-  .meatball.active {
-    transform: rotate(180deg) scale(0.5);
-  }
-  
-  .meatball.active .dot {
-    transition: width 0.4s ease 0.3s, height 0.4s ease 0.3s, transform 0.2s ease;
-  }
-  
-  .meatball.active .dot:nth-of-type(1) {
-    width: 40px;
-    height: 1px;
-    border-radius: 3px;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  
-  .meatball.active .dot:nth-of-type(2) {
-    width: 0;
-    height: 0;
-  }
-  
-  .meatball.active .dot:nth-of-type(3) {
-    width: 40px;
-    height: 1px;
-    border-radius: 3px;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+  transform: scale(0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.meatball .dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px; /* Increase the size of the dots */
+  height: 4px; /* Increase the size of the dots */
+  border-radius: 50%;
+  background: black;
+  transition: width 0.3s ease 0s, height 0.3s ease 0s, transform 0.3s ease 0.3s;
+}
+
+.meatball .dot:nth-of-type(1) {
+  transform: translate(calc(-50% - 20px), -50%) rotate(45deg); /* Adjust the gap */
+}
+
+.meatball .dot:nth-of-type(2) {
+  transform: translate(-50%, -50%);
+  transition: 0.4s ease 0.1s;
+}
+
+.meatball .dot:nth-of-type(3) {
+  transform: translate(calc(-50% + 20px), -50%) rotate(-45deg); /* Adjust the gap */
+}
+
+.meatball:hover .dot:nth-of-type(1),
+.meatball:hover .dot:nth-of-type(2),
+.meatball:hover .dot:nth-of-type(3) {
+  animation: flicker 0.4s linear;
+}
+
+.meatball.active {
+  transform: rotate(180deg) scale(0.5);
+}
+
+.meatball.active .dot {
+  transition: width 0.4s ease 0.3s, height 0.4s ease 0.3s, transform 0.2s ease;
+}
+
+.meatball.active .dot:nth-of-type(1) {
+  width: 50px;
+  height: 1px;
+  border-radius: 3px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.meatball.active .dot:nth-of-type(2) {
+  width: 0;
+  height: 0;
+}
+
+.meatball.active .dot:nth-of-type(3) {
+  width: 50px;
+  height: 1px;
+  border-radius: 3px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
   .meatball.active:hover .dot {
     animation: none;
   }
