@@ -77,6 +77,12 @@
   -webkit-mask: linear-gradient(to top, transparent, white 10%, white 100%);
   mask: linear-gradient(to top, transparent, white 3%, white 100%);
 }
+@media (min-width:1450px) {
+  .eyecatcher-slideshow {
+    width:  90vw;
+  
+  }
+}
 
 .eyecatcher-slideshow_slide {
   object-fit: contain;
