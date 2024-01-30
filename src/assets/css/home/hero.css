@@ -251,7 +251,6 @@
   right: calc(clamp(182.65px, 20.31vw, 292.23px) - 70%);
 }
 .kv-hero__img--bottom {
-  bottom: -60;
   left: 37%;
 }
 .kv-hero__img--left {
@@ -407,10 +406,7 @@
   .kv-hero__img--top-left {
     width: clamp(117.28px, 19.17vw, 172.5px);
   }
-  .kv-hero__img--left {
-    left: -35%;
-    bottom: 50px;
-  }
+
 }
 
 
@@ -419,7 +415,7 @@
     margin-top: min(71px,18.21vw);
     padding-bottom: 110px;
     padding-bottom: min(110px, 7.64vw);
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .kv-hero__img--center {
@@ -441,9 +437,43 @@
   .kv-hero__img--top-left {
     width: min(117.28px, 30.07vw);
   }
+
+}
+.reservation-btn--sp{
+  display: none;
+}
+
+/*---------------------------------------------------------------------------------
+    Keyvisual Main Hero Positioning Mobile/ キービジュアル メイン ヒーローの配置 モバイル
+----------------------------------------------------------------------------------*/
+@media (max-width:899px){
   .kv-hero__img--left {
     left: -35%;
     bottom: 50px;
   }
-
+  .keyvisual-main_hero {
+    /* border: 1px solid red; */
+  }
+  .kv-hero__img--top-right {
+    top: 0;
+    right: 12px;
+    right: min(12px,3.08vw);
+  }
+  .kv-hero__img--right {
+    top: 80%;
+    right: -40px;
+    right: min(-40px,-10.26vw);
+  }
+  .kv-hero__img--bottom {
+    transform: translateX(-35%);
+  }
+  .kv-hero__img--left {
+    left: -18%;
+    bottom: -13px;
+  }
+  
+  .kv-hero__img--top-left {
+    top: 10px;
+    left: -20px;
+  }
 }
