@@ -24,7 +24,7 @@
 }
 
 .meatball .dot:nth-of-type(1) {
-  transform: translate(calc(-50% - 20px), -50%) rotate(45deg); /* Adjust the gap */
+  transform: translate(calc(-50% - 15px), -50%) rotate(45deg); /* Adjust the gap */
 }
 
 .meatball .dot:nth-of-type(2) {
@@ -33,7 +33,7 @@
 }
 
 .meatball .dot:nth-of-type(3) {
-  transform: translate(calc(-50% + 20px), -50%) rotate(-45deg); /* Adjust the gap */
+  transform: translate(calc(-50% + 15px), -50%) rotate(-45deg); /* Adjust the gap */
 }
 
 .meatball:hover .dot:nth-of-type(1),
