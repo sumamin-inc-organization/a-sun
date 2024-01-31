@@ -269,6 +269,8 @@ z-index: 10;
   place-content: center;
   padding-bottom: 110px;
   padding-bottom: min(110px, 7.64vw);
+  /* border: 1px solid red; */
+  transform: translateX(60px);
 }
 .kv-hero__img--secondary {
   position: absolute;
@@ -424,8 +426,9 @@ z-index: 10;
 ------------------------------------------------------------------------------*/
 @media (max-width:899px){
   .kv-hero__img--center {
-    /* width: max(350px,89.74vw) */
     width: clamp(350px,57.09vw,513.84px);
+    /* border: 1px solid red; */
+    /* transform: translateX(0); */
  
   }
   .kv-hero__img--top-right {
@@ -443,6 +446,9 @@ z-index: 10;
   .kv-hero__img--top-left {
     width: clamp(117.28px, 19.17vw, 172.5px);
   }
+  .keyvisual-main_hero {
+    transform: translateX(0px);
+  } 
 
 }
 
@@ -490,31 +496,77 @@ z-index: 10;
     /* border: 1px solid red; */
   }
   .kv-hero__img--top-right {
-    top: 0;
-    right: 12px;
-    right: min(12px,3.08vw);
+    top: -10px;
+    right: -60px;
+    /* right: min(12px,3.08vw); */
+    /* border: 1px solid red; */
   }
   .kv-hero__img--right {
-    top: 80%;
-    right: -40px;
-    right: min(-40px,-10.26vw);
+    top: 50%;
+    right: -150px;
+    /* right: min(-40px,-10.26vw); */
   }
   .kv-hero__img--bottom {
-    transform: translateX(-35%);
+    transform: translateX(3%);
   }
   .kv-hero__img--left {
-    left: -18%;
-    bottom: -13px;
+    left: -35%;
+    bottom: 45px;
   }
   
   .kv-hero__img--top-left {
     top: 10px;
-    left: -20px;
+    left: -100px;
   }
   .keyvisual-main_hero {
     margin-top: min(35px,18.21vw);
     padding-bottom: 110px;
     padding-bottom: min(110px, 7.64vw);
     /* border: 1px solid red; */
+  }
+}
+
+
+@media (max-width:500px){
+  .kv-hero__img--left {
+    left: -35%;
+    bottom: 50px;
+  }
+  .keyvisual-main_hero {
+    /* border: 1px solid red; */
+  }
+  .kv-hero__img--top-right {
+    top: -25px;
+    right: 20px;
+    /* right: min(12px,3.08vw); */
+    /* border: 1px solid red; */
+  }
+  .kv-hero__img--right {
+    top: 78%;
+    right: -30px;
+    /* right: min(-40px,-10.26vw); */
+  }
+  .kv-hero__img--bottom {
+    transform: translateX(-40%);
+  }
+  .kv-hero__img--left {
+    left: -26%;
+    bottom: 5px;
+  }
+  
+  .kv-hero__img--top-left {
+    top: 10px;
+    left: -40px;
+  }
+  .keyvisual-main_hero {
+    margin-top: min(35px,18.21vw);
+    padding-bottom: 110px;
+    padding-bottom: min(110px, 7.64vw);
+    transform: translateX(15px);
+
+    /* border: 1px solid red; */
+  }
+  .kv-hero__img--center{
+    transform: translateX(15px);
   }
 }
