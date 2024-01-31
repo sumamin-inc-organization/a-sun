@@ -1,0 +1,16 @@
+
+@media (max-width:650px) {
+    #course{
+        min-height: 100vh;
+        background-color: black;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:650px) {
+    #course{
+        min-height: 100vh;
+        background-color: black;
+        margin-top: -20px;
+    }
+}
