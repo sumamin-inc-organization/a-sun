@@ -107,5 +107,5 @@ letter-spacing: 0.154em;
 
 .feature-info--paragraph{
     line-height: clamp(32.19px,3.57vw,51.5px);
-    letter-spacing: 0.094;
+    letter-spacing: 0.094em;
 }
