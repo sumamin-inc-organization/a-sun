@@ -220,3 +220,15 @@ letter-spacing: 0.114em;
     width: 65.18vw;
   }
 }
+
+.reservation-btn{
+  width: 70px;
+}
+.reservation-btn--sp{
+  width: 70px;
+  opacity: 0.8;
+}
+
+.reservation-btn--sp:hover{
+  opacity: 1;
+}
