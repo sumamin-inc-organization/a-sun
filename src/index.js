@@ -31,7 +31,7 @@ activateCrossFadeAnimations();
 changeKvSrc()
 screenResizeListener();
 
-let images = gsap.utils.toArray(".parallax");
+// let images = gsap.utils.toArray(".parallax");
 
 // images.forEach((image) => {
 //   gsap.to(image, {
