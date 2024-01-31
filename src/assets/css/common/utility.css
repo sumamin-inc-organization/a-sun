@@ -11,6 +11,10 @@
     display:block !important;
 }
 
+/*------------------------------------------------------------
+  Sets the display of elements depending on the screen size
+  画面サイズに応じて要素の表示を設定します
+-------------------------------------------------------------*/
 .display-max--500{
   display: none;
 }
@@ -41,4 +45,19 @@
   .display-max--500{
     display: block;
   }
+}
+
+/*------------------------------------------------------------
+  Utility Classes to keep elements in the same margins
+  要素を同じマージンに保つためのユーティリティクラス
+-------------------------------------------------------------*/
+
+.margin_left-and-right{
+  margin-inline: clamp(150px,16.67vw,240px);
+}
+.margin_left{
+  margin-left: clamp(150px,16.67vw,240px);
+}
+.margin_right{
+  margin-left: clamp(150px,16.67vw,240px);
 }
