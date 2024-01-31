@@ -92,7 +92,7 @@ z-index: 5;
 }
 
 .feature-info{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .feature-info--subtitle-eng{
@@ -108,4 +108,26 @@ letter-spacing: 0.154em;
 .feature-info--paragraph{
     line-height: clamp(32.19px,3.57vw,51.5px);
     letter-spacing: 0.094em;
+}
+
+.feature-info--see-more{
+    line-height: clamp(40.94px,4.55vw,65.5px);
+    letter-spacing: 0.154em;
+    position: relative;
+    margin-right: 30px;
+    /* border: 1px solid red; */
+   
+}
+.feature-info--see-more::after{
+    content:url(../../images/top/feature/see-more-icon-feat.svg) ;
+    position: absolute;
+    right: -18px;
+}
+.feature-info--see-more::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: -10px;
 }
