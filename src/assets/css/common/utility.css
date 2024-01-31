@@ -61,3 +61,8 @@
 .margin_right{
   margin-left: clamp(150px,16.67vw,240px);
 }
+
+
+.text-align-end{
+  text-align: end;
+}

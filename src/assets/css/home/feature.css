@@ -76,3 +76,36 @@ z-index: 5;
     -webkit-mask: linear-gradient(to top, transparent, white 10%, white 100%);
     mask: linear-gradient(to top, transparent, white 25%, white 100%);
 }
+/*----------------------------------
+    FEATURE 01 /フィーチャー 01
+  ---------------------------------*/
+
+.feature-one_main-wrapper{
+    /* border: 1px solid red; */
+}
+
+.feature-one_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: end; */
+}
+
+.feature-info{
+    border: 1px solid black;
+}
+
+.feature-info--subtitle-eng{
+    letter-spacing: 0.154em;
+}
+
+.feature-info--title-jp{
+line-height: clamp(40.94px,4.55vw,65.5px);
+margin-right: 10px;
+letter-spacing: 0.154em;
+}
+
+.feature-info--paragraph{
+    line-height: clamp(32.19px,3.57vw,51.5px);
+    letter-spacing: 0.094;
+}
