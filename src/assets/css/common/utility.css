@@ -53,7 +53,10 @@
 -------------------------------------------------------------*/
 
 .margin_left-and-right{
-  margin-inline: clamp(150px,16.67vw,240px);
+  /* margin-inline: clamp(150px,16.67vw,240px); */
+  display: grid;
+  place-content: center;
+
 
 }
 .coulmn-2{

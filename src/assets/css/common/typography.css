@@ -81,6 +81,8 @@
     font-size: clamp(65.2px, 69.44vw, 100px);
   }
 }
+
+
 @media (max-width: 500px) {
   .fs-sp-12 {
     font-size: 12px;
@@ -90,14 +92,15 @@
   }
   .fs-sp-16 {
     font-size: 16px;
+    font-size: min(16px,4.10vw);
   }
   .fs-sp-18 {
     font-size: 18px;
-    font-size: min(18px,4.62vw);
+    font-size: min(4.62vw,18px);
   }
   .fs-sp-20{
     font-size: 20px;
-    font-size: min(20px,5.13vw);
+    font-size: min(5.13vw,20px);
   }
   .fs-sp-25{
     font-size: 25px;
