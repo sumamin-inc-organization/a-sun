@@ -1,5 +1,5 @@
 /* ------------------- */
-/*      FEATURE    */
+/*      FEATURE        */
 /* ------------------- */
 
 #feature{
@@ -77,7 +77,7 @@ z-index: 5;
     mask: linear-gradient(to top, transparent, white 25%, white 100%);
 }
 /*----------------------------------
-    FEATURE 01 /フィーチャー 01
+    FEATURES 01,02,03 /フィーチャー 01,02,03
   ---------------------------------*/
 
 .feature-one_main-wrapper{
@@ -87,21 +87,30 @@ z-index: 5;
     transform: translateY(100px);
 }
 .feature-two_main{
-    transform: translateY(210px);
+    transform: translateY(150px);
+    gap: clamp(106.4px,11.88vw,171px);
 }
 .feature-three_main{
-
+    transform: translateY(350px);
+    gap: clamp(106.4px,11.88vw,171px);
 }
 .feature-one_main,
 .feature-two_main,
-.feature-one_main{
+.feature-three_main{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* text-align: end; */
-    /* border: 1px solid red; */
-}
 
+    
+}
+.feature-one_main{
+    /* gap: clamp(176.5px,19.58vw,282.4px); */
+    /* gap: min(19.58vw,282.4px); */
+    /* gap: 19.58vw; */
+    /* gap: clamp(110.5px,12.32vw,177.4px); */
+    gap: 50px;
+    justify-content: space-between;
+}
 .feature-info{
 }
 
@@ -111,8 +120,10 @@ z-index: 5;
 
 .feature-info--title-jp{
 line-height: clamp(40.94px,4.55vw,65.5px);
-margin-right: 10px;
 letter-spacing: 0.154em;
+}
+.feature-info--title-jp.left-oriented{
+    margin-left: 3px;
 }
 
 .feature-info--paragraph{
@@ -142,4 +153,16 @@ letter-spacing: 0.154em;
 }
 #course{
     min-height: 100vh;
+    background-color: black;
+}
+
+.feature-img-wrapper{
+width: clamp(237.5px,26.39vw,380px);
+
+}
+.feature-img{
+    object-fit: fill;
+    width: auto !important; /*override the width below*/
+    width: 100%;
+    max-width:clamp(237.5px,26.39vw,380px);;
 }

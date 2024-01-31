@@ -54,6 +54,10 @@
 
 .margin_left-and-right{
   margin-inline: clamp(150px,16.67vw,240px);
+
+}
+.coulmn-2{
+  /* grid-column: 2; */
 }
 .margin_left{
   margin-left: clamp(150px,16.67vw,240px);
@@ -66,3 +70,17 @@
 .text-align-end{
   text-align: end;
 }
+
+.no-wrap {
+
+  text-wrap: nowrap;
+  
+  /* Standard syntax */
+  
+  white-space: nowrap;
+  
+  /* Vendor prefixes for older versions of iOS/Webkit */
+  
+  -webkit-white-space: nowrap;
+  
+  }
