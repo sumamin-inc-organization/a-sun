@@ -31,14 +31,14 @@ activateCrossFadeAnimations();
 changeKvSrc()
 screenResizeListener();
 
-// let images = gsap.utils.toArray(".parallax");
+let images = gsap.utils.toArray(".parallax");
 
-// images.forEach((image) => {
-//   gsap.to(image, {
-//     yPercent: -100 * image.dataset.speed,
-//     ease: "none",
-//     scrollTrigger: {
-//       scrub: image.dataset.speed,
-//     },
-//   });
-// });
+images.forEach((image) => {
+  gsap.to(image, {
+    yPercent: -100 * image.dataset.speed,
+    ease: "none",
+    scrollTrigger: {
+      scrub: image.dataset.speed,
+    },
+  });
+});

@@ -1,8 +1,14 @@
-
+#course{
+    min-height: 100vh;
+    background: url(../../images/top/course/bg-course.jpg);
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
 @media (max-width:650px) {
     #course{
         min-height: 100vh;
-        background-color: black;
+        /* background-color: black; */
         margin-top: 100px;
     }
 }
@@ -10,7 +16,69 @@
 @media (max-width:650px) {
     #course{
         min-height: 100vh;
-        background-color: black;
+        /* background-color: black; */
         margin-top: -20px;
     }
+}
+
+.course-title{
+margin-bottom:10px ;
+}
+.course-title--eng{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: -20px; */
+    line-height: clamp(43.06px,4.77vw,68.9px);
+    letter-spacing: 0.074em;
+     font-size: clamp(65.2px, 69.44vw, 100px);
+}
+
+.course-title--jp{
+    display: flex;
+    justify-content: center;
+    line-height: clamp(30.94px,3.44vw,49.5px);
+    letter-spacing: 0.154em;
+}
+
+.course-subtitle{
+    text-align: center;
+    margin-bottom:50px;
+    line-height: clamp(25px,4.55vw,65.5px);
+    letter-spacing: 0.094em;
+}
+.course-paragraph{
+    line-height: clamp(32.19px,3.57vw,51.5px);
+    letter-spacing: 0.154em;
+}
+
+
+@media (max-width:500px){
+    .course-title{
+        margin-bottom:10px ;
+        margin-left: min(5.64vw,22px);
+        }
+        .course-title--eng{
+            display: flex;
+            justify-content: flex-start;
+            line-height: min(17.67vw,68.9px);
+            letter-spacing: 0.074em;
+        }
+        
+        .course-title--jp{
+            display: flex;
+            justify-content: flex-start;
+            line-height: min(12.69vw,55px);
+            letter-spacing: 0.154em;
+        }
+       
+        .course-subtitle{
+            text-align: center;
+            line-height: min( 14.10vw,49.5px);
+            margin-bottom:40px;
+        }
+        .course-paragraph{
+            line-height:min(10.77vw,42px);
+            text-align: center;
+        }
+        
 }

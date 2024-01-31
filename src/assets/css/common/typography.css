@@ -77,7 +77,7 @@
   }
 
   .fs-pc-100 {
-    font-size: 100px;
+    /* font-size: 100px; */
     font-size: clamp(65.2px, 69.44vw, 100px);
   }
 }

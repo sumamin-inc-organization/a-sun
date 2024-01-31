@@ -362,8 +362,3 @@ width: clamp(237.5px,26.39vw,380px);
     }
 }
 
-#course{
-    min-height: 100vh;
-    background-color: black;
-    margin-top: 100px;
-}
