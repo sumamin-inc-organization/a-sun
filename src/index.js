@@ -21,10 +21,24 @@ import { gsap } from "gsap";
 import screenResizeListener from "./assets/js/eventlisters/screensizeChange";
 import isItSp from "./assets/js/otherlogic/isitSP";
 import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
-
+import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
 activateCrossFadeAnimations();
 
 changeKvSrc()
 screenResizeListener();
+
+let images = gsap.utils.toArray(".parallax");
+
+images.forEach((image) => {
+  gsap.to(image, {
+    yPercent: -100 * image.dataset.speed,
+    ease: "none",
+    scrollTrigger: {
+      scrub: image.dataset.speed,
+    },
+  });
+});

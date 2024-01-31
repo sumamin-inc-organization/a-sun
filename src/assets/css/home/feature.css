@@ -89,10 +89,11 @@ z-index: 5;
     display: flex;
     justify-content: space-between;
     /* text-align: end; */
+    transform: translateY(100px);
+    /* border: 1px solid red; */
 }
 
 .feature-info{
-    /* border: 1px solid black; */
 }
 
 .feature-info--subtitle-eng{
@@ -115,7 +116,6 @@ letter-spacing: 0.154em;
     letter-spacing: 0.154em;
     position: relative;
     margin-right: 30px;
-    /* border: 1px solid red; */
    
 }
 .feature-info--see-more::after{
@@ -130,4 +130,7 @@ letter-spacing: 0.154em;
     height: 1px;
     background-color: black;
     bottom: -10px;
+}
+#course{
+    min-height: 100vh;
 }
