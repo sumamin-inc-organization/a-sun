@@ -83,13 +83,22 @@ z-index: 5;
 .feature-one_main-wrapper{
     /* border: 1px solid red; */
 }
+.feature-one_main{
+    transform: translateY(100px);
+}
+.feature-two_main{
+    transform: translateY(210px);
+}
+.feature-three_main{
 
+}
+.feature-one_main,
+.feature-two_main,
 .feature-one_main{
     width: 100%;
     display: flex;
     justify-content: space-between;
     /* text-align: end; */
-    transform: translateY(100px);
     /* border: 1px solid red; */
 }
 
