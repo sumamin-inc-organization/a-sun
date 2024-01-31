@@ -23,15 +23,17 @@ import isItSp from "./assets/js/otherlogic/isitSP";
 import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
 import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
 activateCrossFadeAnimations();
 
 changeKvSrc()
+determineTypeOfAnimation();
 screenResizeListener();
 
-// let images = gsap.utils.toArray(".parallax");
+// let images = gsap.utils.toArray(".parallax--sp");
 
 // images.forEach((image) => {
 //   gsap.to(image, {
@@ -43,4 +45,9 @@ screenResizeListener();
 //   });
 // });
 
-activateCardParallax();
+// activateCardParallax();
+
+// determineTypeOfAnimation();
+
+// let images = gsap.utils.toArray(".parallax--sp");
+
