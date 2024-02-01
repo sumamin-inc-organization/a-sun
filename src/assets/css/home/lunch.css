@@ -115,3 +115,22 @@
     background-color: #505050;
     bottom: 5px;
 }
+
+  /* ===============
+      MOBILE
+   =============== */
+
+   @media (max-width:500px){
+    #lunch{
+        padding-bottom: min(18.08vw,70.5px);
+      }
+    .lunch-dinner-common{
+        padding-inline: min(30px,7.69vw);
+    }
+    
+    .lunch-dinner-common-seemore{
+        padding-top: 48.5px;
+        padding-top: min(12.44vw,48.5px);
+    }
+
+   }
