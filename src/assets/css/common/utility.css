@@ -163,6 +163,9 @@
   .letter-spacing-sp-100{
     letter-spacing: 0.1em;
   }
+  .sp-opacity-0{
+    opacity: 0;
+  }
 }
 .bg-black{
   background-color:#505050;

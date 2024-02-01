@@ -61,6 +61,7 @@
 .msg-img {
   /* object-fit: fill; */
   width: 100%;
+
 }
 
 .msg-img--top {
@@ -121,4 +122,28 @@
         margin-left: 0;
         margin-top: clamp(36.2px, 3.96vw, 57px);
       }
+      .message-bottom-wrapper {
+        /* border: 1px solid red; */
+        margin-inline: 0;
+        padding-inline: min(20px,5.13vw);
+      }
+      .msg-img{
+        width: min(150px,38.46vw);
+      }
+      .msg-img--top {
+        width: clamp(187.5px, 20.83vw, 300px);
+        width: 100%;
+        position: relative;
+        /* border: 1px solid red; */
+      }
+      .flower{
+        /* border: 1px solid red; */
+        margin-bottom: min(55px,14.10vw);
+       }
+      .flower-img{
+        height: 100%;
+        width: 100%;
+       }
    }
+
+  
