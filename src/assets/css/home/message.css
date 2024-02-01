@@ -1,0 +1,10 @@
+#message{
+    min-height: 100vh;
+    position: relative;
+    padding-top: calc(400px + 72px);
+}
+
+.message-title-wrapper{
+    border: 1px solid red;
+
+}
