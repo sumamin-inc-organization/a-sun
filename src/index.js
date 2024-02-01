@@ -51,3 +51,29 @@ screenResizeListener();
 
 // let images = gsap.utils.toArray(".parallax--sp");
 
+function companyTop() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#dinner",
+        start: "-=500px top",
+        end: "+=200",
+        scrub: true,
+        // pin: true,
+        //  markers: true
+      },
+    });
+  
+    tl.from(".dinner-main",{backgroundColor:"white"})
+    .to(".company-dot", { scale: 1 },"<")
+    // .from(".dinner-main",{backgroundColor:"white"})
+    //   .to(".company-title", { x: "-50vw", xPercent: -50 }, 0)
+    //   .from(".company-title", { opacity: 0 });
+
+  
+    return tl;
+  }
+  
+  const masterCompany = gsap.timeline();
+  masterCompany.add(companyTop());
+
+ 

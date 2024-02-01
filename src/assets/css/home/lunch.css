@@ -27,13 +27,12 @@
     Lunch gallary /ランチ ギャラリー
 -------------------------------*/
 
-/* 775px   50.77%    47.61*/
-/* 1240px */
+
 
 .image-grid{
     display: flex;
     gap: 1.39vw;
-    /* gap: 20px; */
+
 }
 
 .common-img--left{
