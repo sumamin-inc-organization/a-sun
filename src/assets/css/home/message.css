@@ -1,89 +1,120 @@
-#message{
-    min-height: 100vh;
-    position: relative;
-    padding-top: calc(27.78vw + 5vw);
-    /* padding-top: calc((400px + 72px) / 1440 * 100vw); */
-
+#message {
+  min-height: 100vh;
+  position: relative;
+  padding-top: calc(27.78vw + 5vw);
+  /* padding-top: calc((400px + 72px) / 1440 * 100vw); */
 }
 
-.message-title-wrapper{
-    /* border: 1px solid red; */
-    margin-left: clamp(117px,10.63vw,153px);
-    margin-right: clamp(133.8px,17.22vw,248px);
-    margin-top: clamp(71px,7.82vw,112.7px);
-    position: relative;
-
+.message-title-wrapper {
+  /* border: 1px solid red; */
+  margin-left: clamp(117px, 10.63vw, 153px);
+  margin-right: clamp(133.8px, 17.22vw, 248px);
+  margin-top: clamp(71px, 7.82vw, 112.7px);
+  position: relative;
 }
 
-.message-title--eng{
-    /* border: 1px solid green; */
-    display: flex;
-    justify-content: center;
+.message-title--eng {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
 }
-.message-subtitle{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    margin-top: -20px;
+.message-subtitle {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
 }
 
-.message-title--intro{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: clamp(27px,3.02vw,43.5px);
+.message-title--intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: clamp(27px, 3.02vw, 43.5px);
 }
-.message-title--img{
-    position: absolute;
-    top: 0;
-    transform: translateY(-40%);
-    z-index: -1;
+.message-title--img {
+  position: absolute;
+  top: 0;
+  transform: translateY(-40%);
+  z-index: -1;
 }
 .message-main-text {
-    /* border: 1px solid red; */
-    /* margin-left: clamp(30px,13.19vw,190px); */
-    margin-left: min(190px,13.10vw);
-    margin-top: clamp(36.2px,3.96vw,57px);
-
+  /* border: 1px solid red; */
+  /* margin-left: clamp(30px,13.19vw,190px); */
+  margin-left: min(190px, 13.1vw);
+  margin-top: clamp(36.2px, 3.96vw, 57px);
 }
 
-.message-bottom-wrapper{
-    /* border: 1px solid red; */
-    margin-inline: min(240px,16.67vw);
-    
+.message-bottom-wrapper {
+  /* border: 1px solid red; */
+  margin-inline: min(240px, 16.67vw);
 }
-.message-imgs{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+.message-imgs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-.msg-img-wrapper{
-    width: clamp(187.5px,20.83vw,300px);
-    /* width: 300px; */
-    /* border: 1px solid blue; */
+.msg-img-wrapper {
+  width: clamp(187.5px, 20.83vw, 300px);
+  /* width: 300px; */
+  /* border: 1px solid blue; */
 }
-.msg-img{
-    /* object-fit: fill; */
-    width: 100%;
-
+.msg-img {
+  /* object-fit: fill; */
+  width: 100%;
 }
 
-.msg-img--top{
-    width: clamp(187.5px,20.83vw,300px);
-position: absolute;
-top: 50%;
+.msg-img--top {
+  width: clamp(187.5px, 20.83vw, 300px);
+  position: absolute;
+  top: 50%;
 }
 /* 256.3 */
-.message-bottom-text{
-    /* border: 1px solid black; */
-    margin-left: min(411px,28.54vw);
-    /* margin-left: clamp(256.3,28.54vw,411px); */
-   
+.message-bottom-text {
+  /* border: 1px solid black; */
+  margin-left: min(411px, 28.54vw);
+  /* margin-left: clamp(256.3,28.54vw,411px); */
 }
-.message-job-title{
-    margin-bottom: -10px;
+.message-job-title {
+  margin-bottom: -10px;
 }
 
-.message-bottom-name--eng{
-    margin-top: -5px;
+.message-bottom-name--eng {
+  margin-top: -5px;
 }
+
+/* ===============
+      MOBILE
+   =============== */
+
+   @media (max-width:500px){
+    .message-title-wrapper {
+        border: 1px solid red;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: clamp(71px, 7.82vw, 112.7px);
+        padding-left: min(30.9px,7.92vw) ;
+        padding-right: min(7.1px,1.82vw);
+        position: relative;
+      }
+      .message-title--eng {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .message-subtitle {
+        /* margin-left: min(30.9px,7.92vw) ; */
+        display: flex;
+        justify-content: flex-start;
+        margin-top: -20px;
+
+      }
+      .message-title--intro {
+     /* nochanges */
+      }
+      .message-title--img {
+        position: absolute;
+        top: 0;
+        left: -5%;
+        transform: translateY(-5%);
+        z-index: -1;
+      }
+   }
