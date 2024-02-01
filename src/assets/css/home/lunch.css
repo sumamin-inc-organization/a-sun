@@ -22,5 +22,47 @@
     padding-top:clamp(63px,7vw,100.8px);
     padding-bottom:clamp(29px,3.14vw,45.2px);
 }
+/*-----------------------------
+    Lunch gallary /ランチ ギャラリー
+-------------------------------*/
 
-/* 775px */
+/* 775px   50.77%    47.61*/
+/* 1240px */
+
+.image-grid{
+    display: flex;
+    gap: 1.39vw;
+    /* gap: 20px; */
+}
+
+.common-img--left{
+    width: 43.75vw;
+    /* border: 1px solid red; */
+    background-image: url(../../images/top/lunch/lunch-image-left.jpg);
+    background-size: cover;
+}
+.common-img--right{
+    max-width: 40.97vw;
+    width: 100%;
+
+}
+.img-gallary-left{
+   max-width:  40.97vw;
+    width: 590px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 1.39vw;
+}
+
+.image-grid-img{
+    /* object-fit: cover; */
+    /* border: 1px solid red; */
+    
+}
+
+.lunch-left{
+    opacity: 0;
+}
