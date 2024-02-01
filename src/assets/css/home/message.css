@@ -39,3 +39,10 @@
     transform: translateY(-40%);
     z-index: -1;
 }
+.message-main-text {
+    /* border: 1px solid red; */
+    /* margin-left: clamp(30px,13.19vw,190px); */
+    margin-left: min(190px,13.10vw);
+    margin-top: clamp(36.2px,3.96vw,57px);
+
+}

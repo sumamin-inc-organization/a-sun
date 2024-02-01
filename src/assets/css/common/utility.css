@@ -107,6 +107,9 @@
   .line-height-pc-49p5{
     line-height: min(3.44vw,49.5px);
   }
+  .line-height-pc-51p5{
+    line-height: min(3.57vw,51.5px);
+  }
 }
 @media (max-width:500px){
   .line-height-sp-42{
@@ -138,7 +141,9 @@
 .letter-spacing-74{
   letter-spacing: 0.074em;
 }
-
+.letter-spacing-94{
+  letter-spacing: 0.094em;
+}
 
 
 @media(max-width:500px){
