@@ -4,6 +4,7 @@
 
 #lunch{
   padding-bottom: min(4.51vw,65px);
+  position: relative;
 }
 
 /*-----------------------------
@@ -106,6 +107,18 @@
     height: 1px;
     background-color: #505050;
     bottom: 5px;
+}
+
+.lunch-texture{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: repeat;
+    background-image: url("../../images/top/lunch/paper_texture.png");
+    mix-blend-mode: multiply;
+    pointer-events: none;
 }
 
   /* ===============
