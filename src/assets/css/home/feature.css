@@ -382,5 +382,11 @@ width: clamp(237.5px,26.39vw,380px);
     .feature-three{
         transform: translateY(-800px);
     }
+    .feature-info--paragraph {
+        margin-top: 28px;
+    }
+    .feature-info--subtitle{
+        margin-bottom: 18.5px;
+    }
 }
 
