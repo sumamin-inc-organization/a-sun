@@ -144,9 +144,13 @@
          flex-direction: column;
          gap: 1.44vw;
      }
-     .common-img--left{
+     .lunch-img--left{
         width:45.62vw;
         background-image: url(../../images/top/lunch/lunch-image-left.jpg);
+        background-size: cover;
+    }
+    .common-img--left{
+        width:45.62vw;
         background-size: cover;
     }
      

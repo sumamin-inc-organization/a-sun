@@ -51,9 +51,10 @@
     transform: translateY(100px);
 }
 
-#dinner-left{
+.dinner-img--left{
     background-image: url(../../images/top/dinner/dinner-left-img_pc.jpg);
-    opacity: 1;
+    /* opacity: 1; */
+    
 }
 
 #dinner-seemore::after{
