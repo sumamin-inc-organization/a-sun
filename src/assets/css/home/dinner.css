@@ -17,16 +17,25 @@
   }
 .company-dot{
     z-index: -2;
-    z-index: 5;
-    width:120vmax;
+    /* z-index: 5; */
+    width:142vmax;
     height:120vmax;
 }
 .company-main{
-    /* background-color:#505050; */
+    background-color:#505050;
 
 }
 @media (min-width:764px){
     .company-dot{
+        z-index: -2;
+        z-index: -2;
+        width:142vmax;
+        height:70vmax;
+    }
+}
+@media (min-width:500px){
+    .company-dot{
+        z-index: -2;
         z-index: -2;
         width:142vmax;
         height:70vmax;
@@ -41,3 +50,47 @@
 .company-main{
     transform: translateY(100px);
 }
+
+#dinner-left{
+    background-image: url(../../images/top/dinner/dinner-left-img_pc.jpg);
+    opacity: 1;
+}
+
+#dinner-seemore::after{
+    content:url(../../images/top/dinner/see-more-black.svg) ;
+    position: absolute;
+    right: -18px;
+}
+#dinner-seemore::before{
+    content:"";
+    position: absolute;
+    width: 120%;
+    height: 1px;
+    background-color: #FFFFFF;
+    bottom: 5px;
+}
+
+@media(max-width:500px){
+    .dinner-main{
+        /* min-height: 80vh; */
+    }
+}
+
+.dinner-bottom{
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.bottom-left{
+    width: clamp(187.5px,20.83vw,300px);
+    margin-left: clamp(100px,11.11vw,160px);
+}
+
+.bottom-right{
+    width: clamp(406.25px,45.14vw,650px);
+    position: absolute;
+    bottom: -20%;
+    right: 0;
+}
+
+/* to do > fix the left image still having the lunch img  >fix the huge ass bottom padding (might get fixxed when i add other stulff? ) */

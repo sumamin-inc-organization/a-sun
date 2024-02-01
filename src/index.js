@@ -51,7 +51,19 @@ screenResizeListener();
 
 // let images = gsap.utils.toArray(".parallax--sp");
 
-function companyTop() {
+const screenType = isItSp(); //checks for  screen size
+
+const masterCompany = gsap.timeline();
+
+if(screenType){
+    masterCompany.add(dinnerTopsp()); //if the size is less than 500px then the scale will be 1
+}else{
+    masterCompany.add(dinnerTop()); //else its 1.7
+
+}
+
+
+function dinnerTop() {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#dinner",
@@ -63,17 +75,33 @@ function companyTop() {
       },
     });
   
-    tl.from(".dinner-main",{backgroundColor:"white"})
-    .to(".company-dot", { scale: 1 },"<")
-    // .from(".dinner-main",{backgroundColor:"white"})
-    //   .to(".company-title", { x: "-50vw", xPercent: -50 }, 0)
-    //   .from(".company-title", { opacity: 0 });
+    tl
+    .to(".company-dot", { scale: 1.7})
+    // .to(".company-dot", { scale: 1})
+  
+    return tl;
+  }
 
+  function dinnerTopsp() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#dinner",
+        start: "-=500px top",
+        end: "+=200",
+        scrub: true,
+        // pin: true,
+        //  markers: true
+      },
+    });
+  
+    tl
+    // .to(".company-dot", { scale: 1.7})
+    .to(".company-dot", { scale: 1})
   
     return tl;
   }
   
-  const masterCompany = gsap.timeline();
-  masterCompany.add(companyTop());
+//   const masterCompany = gsap.timeline();
+//   masterCompany.add(companyTop());
 
  
