@@ -43,11 +43,13 @@
   }
   .fs-pc-16 {
     font-size: 16px;
+    font-size: clamp(10px,1.11vw, 16px);
   }
   .fs-pc-18 {
     /* 1.25vw */
     font-size: 18px;
     font-size: clamp(10px, 1.25vw, 18px);
+    font-size: clamp(11.25px, 1.25vw, 18px);
   }
   .fs-pc-18--11p25{
     font-size: clamp(11.25px, 1.25vw, 18px);
