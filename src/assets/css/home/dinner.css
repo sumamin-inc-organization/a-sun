@@ -70,11 +70,6 @@
     bottom: 5px;
 }
 
-@media(max-width:500px){
-    .dinner-main{
-        /* min-height: 80vh; */
-    }
-}
 
 .dinner-bottom{
     /* border: 1px solid red; */
@@ -92,5 +87,30 @@
     bottom: -20%;
     right: 0;
 }
+@media(max-width:780px){
+    .bottom-left{
+        margin-left:0;
+        margin-top: min(61.2px,15.69vw);
+    }
+    .bottom-right{
 
-/* to do > fix the left image still having the lunch img  >fix the huge ass bottom padding (might get fixxed when i add other stulff? ) */
+        position: absolute;
+        bottom: -10%;
+        right: 0;
+    }
+}
+@media(max-width:500px){
+    .bottom-left{
+        width: min(150px,38.46vw);
+        margin-left:0;
+        margin-top: min(61.2px,15.69vw);
+    }
+    .bottom-right{
+        width: min(200px,51.28vw);
+        position: absolute;
+        bottom: -10%;
+        right: 0;
+    }
+    
+}
+
