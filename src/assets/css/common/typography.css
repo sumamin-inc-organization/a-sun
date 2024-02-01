@@ -35,11 +35,15 @@
 ----------------------------*/
 
 @media (min-width: 500px) {
+  .fs-pc-8p75{
+   
+  }
   .fs-pc-12 {
     font-size: 12px;
   }
   .fs-pc-14 {
     font-size: 14px;
+    font-size: clamp(8.75px,0.97vw, 14px);
   }
   .fs-pc-16 {
     font-size: 16px;
@@ -61,6 +65,7 @@
   }
   .fs-pc-30 {
     font-size: 30px;
+    font-size: clamp(18.75px, 2.08vw, 30px);
   }
   .fs-pc-32 {
     font-size: 32px;
@@ -91,6 +96,7 @@
   }
   .fs-sp-14 {
     font-size: 14px;
+    font-size: min(14px,3.59vw);
   }
   .fs-sp-16 {
     font-size: 16px;
@@ -111,6 +117,7 @@
   .fs-sp-30 {
     /* 7.69vw */
     font-size: 30px;
+    font-size: min(30px,7.69vw);
   }
   .fs-sp-32{
     font-size: 32px;
