@@ -1,0 +1,26 @@
+/* ------------------- */
+/*       LUNCH       */
+/* ------------------- */
+
+#lunch{
+    min-height: 100vh;
+}
+
+/*-----------------------------
+    Lunch Title /ランチのタイトル
+-------------------------------*/
+
+.lunch-dinner-common{
+    padding-inline: clamp(50px,5.56vw,80px);
+}
+
+.lunch-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:clamp(63px,7vw,100.8px);
+    padding-bottom:clamp(29px,3.14vw,45.2px);
+}
+
+/* 775px */

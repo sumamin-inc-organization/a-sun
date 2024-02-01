@@ -1,3 +1,7 @@
+/* ------------------- */
+/*         HERO        */
+/* ------------------- */
+
 #course{
     min-height: 100vh;
     background: url(../../images/top/course/bg-course.jpg);
@@ -8,7 +12,6 @@
 @media (max-width:650px) {
     #course{
         min-height: 100vh;
-        /* background-color: black; */
         margin-top: 100px;
     }
 }
@@ -16,7 +19,6 @@
 @media (max-width:650px) {
     #course{
         min-height: 100vh;
-        /* background-color: black; */
         margin-top: -20px;
     }
 }
@@ -27,7 +29,6 @@ margin-bottom:10px ;
 .course-title--eng{
     display: flex;
     justify-content: center;
-    /* margin-bottom: -20px; */
     line-height: clamp(43.06px,4.77vw,68.9px);
     letter-spacing: 0.074em;
      font-size: clamp(65.2px, 69.44vw, 100px);
