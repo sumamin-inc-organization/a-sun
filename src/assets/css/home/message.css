@@ -7,9 +7,11 @@
 }
 
 .message-title-wrapper{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: clamp(117px,10.63vw,153px);
     margin-right: clamp(133.8px,17.22vw,248px);
+    margin-top: clamp(71px,7.82vw,112.7px);
+    position: relative;
 
 }
 
@@ -30,4 +32,10 @@
     justify-content: center;
     text-align: center;
     margin-top: clamp(27px,3.02vw,43.5px);
+}
+.message-title--img{
+    position: absolute;
+    top: 0;
+    transform: translateY(-40%);
+    z-index: -1;
 }
