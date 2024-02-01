@@ -168,7 +168,13 @@ width: clamp(237.5px,26.39vw,380px);
     width: 100%;
     max-width:clamp(237.5px,26.39vw,380px);;
 }
-
+.feature-sp{
+    display: none;
+    min-height: 380px;
+}
+.feature-pc-tab{
+    display: block;
+}
 /* ===============
       TAB
    =============== */
@@ -360,6 +366,21 @@ width: clamp(237.5px,26.39vw,380px);
     .feature-info--see-more{
         font-size: min(5.13vw,20px);
     }
-
+    .feature-sp-padding{
+        padding-inline: 20px;
+        transform: translateY(-400px);
+    }
+    .feature-sp{
+        display: block;
+    }
+    .feature-pc-tab{
+        display: none;
+    }
+    .feature-two{
+        transform: translateY(-400px);
+    }
+    .feature-three{
+        transform: translateY(-800px);
+    }
 }
 

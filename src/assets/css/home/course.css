@@ -80,5 +80,7 @@ margin-bottom:10px ;
             line-height:min(10.77vw,42px);
             text-align: center;
         }
-        
+        #course{
+            margin-top: -1200px;
+        }
 }
