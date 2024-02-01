@@ -337,6 +337,18 @@ width: clamp(237.5px,26.39vw,380px);
 }
 }
 
+@media(min-width:800px){
+.feature-one{
+    padding-bottom:300px ;
+}
+.feature-three{
+    transform: translateY(-200px);
+}
+.feature-two{
+    transform: translateY(-200px);
+    padding-bottom: 100px;
+}
+}
 @media (max-width:500px){
 
     .feature-title__text--jp{/*eng*/
@@ -389,4 +401,3 @@ width: clamp(237.5px,26.39vw,380px);
         margin-bottom: 18.5px;
     }
 }
-
