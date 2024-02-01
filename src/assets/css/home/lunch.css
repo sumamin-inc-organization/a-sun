@@ -3,7 +3,7 @@
 /* ------------------- */
 
 #lunch{
-    min-height: 100vh;
+  padding-bottom: min(4.51vw,65px);
 }
 
 /*-----------------------------
@@ -83,4 +83,35 @@
 ------------------------------------*/
 .lunch-dinner-common_paragraph{
     text-align: center;
+}
+
+/*----------------------------------
+   SEE MORE btn
+------------------------------------*/
+
+.lunch-dinner-see-more-btn-wrapper_common{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.lunch-dinner-common-seemore{
+    line-height: clamp(40.94px,4.55vw,65.5px);
+    letter-spacing: 0.154em;
+    position: relative;
+    margin-right: 30px;
+   
+}
+.lunch-dinner-common-seemore::after{
+    content:url(../../images/top/feature/see-more-icon-feat.svg) ;
+    position: absolute;
+    right: -18px;
+}
+.lunch-dinner-common-seemore::before{
+    content:"";
+    position: absolute;
+    width: 120%;
+    height: 1px;
+    background-color: #505050;
+    bottom: 5px;
 }
