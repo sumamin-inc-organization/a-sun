@@ -37,32 +37,24 @@
 
 .common-img--left{
     width: 43.75vw;
-    /* border: 1px solid red; */
-    background-image: url(../../images/top/lunch/lunch-image-left.jpg);
     background-size: cover;
+}
+.lunch-img--left{
+    background-image: url(../../images/top/lunch/lunch-image-left.jpg);
 }
 .common-img--right{
     max-width: 40.97vw;
     width: 100%;
 
 }
-.img-gallary-left{
+.img-gallary-right{
    max-width:  40.97vw;
     width: 590px;
     width: 100%;
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 1.39vw;
 }
-
-.image-grid-img{
-    /* object-fit: cover; */
-    /* border: 1px solid red; */
-    
-}
-
 .lunch-left{
     opacity: 0;
 }
@@ -132,5 +124,18 @@
         padding-top: 48.5px;
         padding-top: min(12.44vw,48.5px);
     }
-
+    .img-gallary-right{
+        max-width: 42.69vw;
+         width: 166.53px;
+         width: max(166.53px,42.69vw);
+         display: flex;
+         flex-direction: column;
+         gap: 1.44vw;
+     }
+     .common-img--left{
+        width:45.62vw;
+        background-image: url(../../images/top/lunch/lunch-image-left.jpg);
+        background-size: cover;
+    }
+     
    }
