@@ -1,10 +1,33 @@
 #message{
     min-height: 100vh;
     position: relative;
-    padding-top: calc(400px + 72px);
+    padding-top: calc(27.78vw + 5vw);
+    /* padding-top: calc((400px + 72px) / 1440 * 100vw); */
+
 }
 
 .message-title-wrapper{
     border: 1px solid red;
+    margin-left: clamp(117px,10.63vw,153px);
+    margin-right: clamp(133.8px,17.22vw,248px);
 
+}
+
+.message-title--eng{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+.message-subtitle{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.message-title--intro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: clamp(27px,3.02vw,43.5px);
 }
