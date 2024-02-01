@@ -66,3 +66,21 @@
 .lunch-left{
     opacity: 0;
 }
+
+/*----------------------------------
+    Lunch Paragraph /ランチ パラグラフ
+------------------------------------*/
+
+.lunch-dinner-paragraph-wrapper{
+    /* border: 1px solid red; */
+    padding-top:clamp(29.4px,3.28vw,47.2px);
+    display: flex;
+    justify-content: center;
+}
+
+/*----------------------------------
+    Text Adjustments /テキストの調整
+------------------------------------*/
+.lunch-dinner-common_paragraph{
+    text-align: center;
+}
