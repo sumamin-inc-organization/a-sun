@@ -34,7 +34,8 @@
 .message-title--img {
   position: absolute;
   top: 0;
-  transform: translateY(-40%);
+  left: 50%;
+  transform: translate(-50%,-40%);
   z-index: -1;
 }
 .message-main-text {
