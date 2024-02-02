@@ -132,6 +132,10 @@
         top: 50%;
         transform: translateY(-50%);
     }
+    .voice-bottom{
+        /* border: 1px solid red; */
+        margin-top: 0;
+    }
    }
 
    
