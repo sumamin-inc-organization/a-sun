@@ -128,6 +128,15 @@
   .line-height-pc-56{
     line-height: min(3.89vw,56px);
   }
+  .line-height-pc-27{
+    line-height: min(1.88vw,27px);
+  }
+  .line-height-pc-28p5{
+    line-height: min(1.98vw,28.5px);
+  }
+  .line-height-pc-43p5{
+line-height: min(3.02vw,43.5px);
+  }
 }
 @media (max-width:500px){
   .line-height-sp-42{
@@ -159,6 +168,15 @@
   .line-height-sp-140{
     line-height: min(35.90vw,140px);
   }
+  .line-height-sp-27{
+    line-height: min(6.92vw,27px);
+  }
+  .line-height-sp-28p5{
+    line-height: min(7.31vw,28.5px);
+  }
+  .line-height-sp-43p5{
+    line-height: min(11.15vw,43.5px);
+      }
 }
 
 
