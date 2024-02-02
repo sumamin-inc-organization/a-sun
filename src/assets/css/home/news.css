@@ -5,3 +5,36 @@
 #news{
     position: relative;
 }
+.news-wrapper{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+
+}
+.news-left{
+    position: relative;
+}
+.news-right{
+    /* border: 1px solid red; */
+    position: absolute;
+    right: -130px;
+    top: 0;
+    
+}
+
+.news-title-img{
+    width: clamp(62px,6.81vw,98px);
+
+}
+
+.news-blog{
+    width: clamp(600.79px,66.75vw,961.26px);
+    /* border: 1px solid black; */
+    
+    
+}
+
+.news-container{
+    border-bottom: 1px solid black;
+    padding-bottom:clamp( 14px,1.60vw,23px);
+}
