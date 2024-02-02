@@ -5,6 +5,7 @@
 #insta{
     position: relative;
     padding-top: clamp(61.5px,6.85vw,98.7px);
+    padding-bottom: clamp(74.4px,8.25vw,118.8px);;
 }
 
 .insta-wrapper{
