@@ -14,7 +14,7 @@ import "./assets/css/home/voice.css";
 import "./assets/css/home/news.css";
 import "./assets/css/home/insta.css";
 import "./assets/css/home/access.css";
-import "./assets/css/common/footer.css";
+// import "./assets/css/common/footer.css";
 import addNavIconEventListener from "./assets/js/eventlisters/naviconEventlistener";
 import activateCrossFadeAnimations from "./assets/js/animations/crossfadeAnimation";
 

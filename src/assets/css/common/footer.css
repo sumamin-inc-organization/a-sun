@@ -1,5 +1,6 @@
 footer{
     background-color: #000000;
+
    
 }
 
@@ -24,7 +25,7 @@ footer{
     
     display: grid;
     row-gap: 15px;
-    column-gap: 54px;
+    column-gap: 86px !important;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-areas:
     'home news'
