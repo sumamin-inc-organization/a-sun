@@ -46,8 +46,14 @@
 }
 
 .message-bottom-wrapper {
-  /* border: 1px solid red; */
-  margin-inline: min(240px, 16.67vw);
+  /* margin-inline: min(240px, 16.67vw); */
+}
+
+@media (min-width:501px){
+  .message-grid-wrap{
+    display: grid;
+    place-content: center; 
+  }
 }
 .message-imgs {
   display: flex;
