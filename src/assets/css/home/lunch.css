@@ -12,7 +12,10 @@
 -------------------------------*/
 
 .lunch-dinner-common{
-    padding-inline: clamp(50px,5.56vw,80px);
+    /* padding-inline: clamp(50px,5.56vw,80px); */
+    /* border: 1px solid red; */
+    display: grid;
+    place-content: center;
 }
 
 .lunch-title-wrapper{
@@ -129,15 +132,23 @@
         padding-bottom: min(18.08vw,70.5px);
       }
     .lunch-dinner-common{
-        padding-inline: min(30px,7.69vw);
+        /* padding-inline: min(30px,7.69vw); */
+      
+        display: grid;
+        place-content: center;
     }
-    
+    .lunch-image-grid {
+        /* border: 1px solid red; */
+    }
+    .lunch-img-grid-clip{
+        overflow-x: clip;
+    }
     .lunch-dinner-common-seemore{
         padding-top: 48.5px;
         padding-top: min(12.44vw,48.5px);
     }
     .img-gallary-right{
-        max-width: 42.69vw;
+        /* max-width: 42.69vw; */
          width: 166.53px;
          width: max(166.53px,42.69vw);
          display: flex;
@@ -153,5 +164,19 @@
         width:45.62vw;
         background-size: cover;
     }
-     
+    .lunch-img--r{
+        /* display: none; */
+        opacity: 0;
+    }
+    .lunch-img--right-d{
+        min-width:45.62vw;
+        background-image: url(../../images/top/lunch/lunch-image-right_bottom.jpg);
+        background-size: cover;
+
+    }
+    .lunch-img--right-top{
+        min-width:45.62vw;
+        background-image: url(../../images/top/lunch/lunch-image-right_top.jpg);
+        background-size: cover;
+    }
    }
