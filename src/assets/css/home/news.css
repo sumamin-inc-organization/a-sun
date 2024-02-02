@@ -4,6 +4,7 @@
 
 #news{
     position: relative;
+    padding-top: clamp(54.4px,6.04vw,87px);
 }
 .news-wrapper{
     /* border: 1px solid red; */
