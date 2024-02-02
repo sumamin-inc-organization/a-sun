@@ -8,7 +8,7 @@ export default function activateCardParallax(){
 
     images.forEach((image) => {
       gsap.to(image, {
-        yPercent: -100 * image.dataset.speed,
+        yPercent: -150 * image.dataset.speed,
         ease: "none",
         scrollTrigger: {
           scrub: image.dataset.speed,

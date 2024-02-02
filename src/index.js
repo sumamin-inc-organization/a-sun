@@ -33,7 +33,7 @@ changeKvSrc()
 determineTypeOfAnimation();
 screenResizeListener();
 
-// let images = gsap.utils.toArray(".parallax--sp");
+// let images = gsap.utils.toArray(".t");
 
 // images.forEach((image) => {
 //   gsap.to(image, {
