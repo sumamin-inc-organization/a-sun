@@ -1,5 +1,6 @@
 footer{
     background-color: #000000;
+   
 }
 
 .footer-wrapper{
@@ -58,4 +59,30 @@ grid-area: policy;
 }
 .footer-left_text{
     padding-bottom:  clamp(26.1px,2.5vw,36px);
+}
+
+
+@media (max-width:600px){
+    .footer-wrapper{
+        display: grid;
+       place-content: center;
+      gap: 31px;
+        padding-left:0;
+    }
+    footer{
+        padding-bottom: 39.7px;
+    }
+    .footer-nav-list{
+        margin-top: 27.7px;
+        
+        display: grid;
+        row-gap: 15px;
+        column-gap: 54px;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-areas:
+        'home news'
+        'feature info '
+        'lunch policy '
+        'dinner  .';
+    }
 }
