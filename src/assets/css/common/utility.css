@@ -122,6 +122,9 @@
   .line-height-pc-59{
     line-height: min(4.10vw,59px);
   }
+  .line-height-pc-36p5{
+    line-height: min(2.53vw,36.5px);
+  }
 }
 @media (max-width:500px){
   .line-height-sp-42{
@@ -144,6 +147,9 @@
     line-height: min(16.79vw,65.5px);
 
   }
+  .line-height-sp-36p5{
+    line-height: min(9.36vw,36.5px);
+  }
 }
 
 
@@ -160,8 +166,8 @@
 .letter-spacing-74{
   letter-spacing: 0.074em;
 }
-.letter-spacing-94{
-  letter-spacing: 0.094em;
+.letter-spacing-40{
+  letter-spacing: 0.04em;
 }
 
 
@@ -175,4 +181,8 @@
 }
 .bg-black{
   background-color:#505050;
+}
+
+.overlfow-ellipsis{
+text-overflow: ellipsis;
 }
