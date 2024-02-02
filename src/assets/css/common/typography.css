@@ -119,6 +119,11 @@
     font-size: 30px;
     font-size: min(30px,7.69vw);
   }
+  .fs-sp-40 {
+
+    font-size:40px;
+    font-size: min(40px,10.26vw);
+  }
   .fs-sp-32{
     font-size: 32px;
   font-size: min(32px,8.21vw);
