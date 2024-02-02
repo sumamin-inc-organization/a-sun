@@ -111,6 +111,7 @@
     display: flex;
   gap: clamp(144px,15.97vw,230px);
     padding-left: clamp(50px,5.56vw,80px);
+    padding-bottom: 54px;
 }
 
 .footer-left{
@@ -128,7 +129,7 @@
     
     display: grid;
     row-gap: 15px;
-    column-gap: 54px;
+    column-gap: clamp(54px,5.83vw,85px);
     /* grid-template-columns: 1fr 1fr; */
     grid-template-areas:
     'home news'
