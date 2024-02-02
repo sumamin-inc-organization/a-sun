@@ -11,7 +11,7 @@
     height:142vmax;
     left:50%;
     top:50%;
-    transform:translate(-50%, -50%) scale(0);
+    transform:translate(-50%, -50%) scale(1);
     border-radius: 50%;
     background-color:#505050;
   }

@@ -76,11 +76,13 @@ function dinnerTop() {
     });
   
     tl
-    .to(".company-dot", { scale: 1.7})
+    .fromTo(".company-dot", { scale:0},{scale: 1.7})
     // .to(".company-dot", { scale: 1})
   
     return tl;
   }
+
+
 
   function dinnerTopsp() {
     let tl = gsap.timeline({
@@ -95,8 +97,8 @@ function dinnerTop() {
     });
   
     tl
-    // .to(".company-dot", { scale: 1.7})
-    .to(".company-dot", { scale: 1})
+    .from(".company-dot", { scale: 0})
+  
   
     return tl;
   }
