@@ -278,6 +278,7 @@ z-index: 10;
 
 .kv-hero__img--primary {
   position: relative;
+  /* border: 1px solid red; */
 }
 
 .kv-hero__img--top-right {
@@ -288,7 +289,10 @@ z-index: 10;
 .kv-hero__img--right {
   top: 50%;
   right: calc(clamp(182.65px, 20.31vw, 292.23px) - 70%);
+  right: -16.67vw; 
+  /* border: 1px solid red; */
 }
+
 .kv-hero__img--bottom {
   left: 37%;
 }
