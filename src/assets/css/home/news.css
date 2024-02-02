@@ -90,10 +90,9 @@
     .news-title{
         overflow: hidden;
         white-space: nowrap;
-        /* width: 350px; */
         text-overflow: ellipsis;
         /* text-overflow: " [...]"; */
-        /* border: 1px solid red; */
+
     }
    }
    @media(max-width:365px){
