@@ -197,4 +197,18 @@
     .dot{
         margin-top: 250px;
     }
+    .dinner-filler{
+        height: 600px;
+        width: 100%;
+        background-color: #505050;
+            z-index: -1;
+            position: absolute;
+            bottom: -25%;
+        }
+
+        .bottom-right{
+            position: absolute;
+            bottom: -33%;
+            right: 0;
+        }
 }
