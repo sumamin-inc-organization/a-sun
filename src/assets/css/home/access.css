@@ -54,6 +54,24 @@
     display: flex;
     justify-content: center;
 }
+#access_google-maps::after,
+#access_route::after,
+#access_shop-info::after{
+    content:url(../../images/top/dinner/see-more-black.svg) ;
+    position: absolute;
+    right: -18px;
+}
+
+#access_google-maps::before,
+#access_route::before,
+#access_shop-info::before{
+    content:"";
+    position: absolute;
+    width: 120%;
+    height: 1px;
+    background-color: #FFFFFF;
+    bottom: -5px;
+}
 
 /* ===============
       MOBILE
