@@ -138,4 +138,35 @@
     }
    }
 
-   
+   @media (max-width:500px){
+    .review-img{
+        /* border: 1px solid red; */
+        /* width: min(300px,76.92vw); */
+    }
+    .review-wrapper{
+       
+        display: flex;
+        justify-content: space-between;
+        gap: min(30px,7.69vw);
+    }
+    .google-review-placeholder_wrapper{
+        width: min(300px,76.92vw);
+    }
+    .review-wrapper::before{
+        content: url(../../images/top/voice/voice-chevron-right.svg);
+        width: clamp(7.18px,0.80vw,11.49px);
+        position: absolute;
+        right: 32.5%;
+        top: 50%;
+        transform: translateY(-50%);
+     
+    }
+    .review-wrapper::after{
+        content: url(../../images/top/voice/voice-chevron.svg);
+        width: clamp(7.18px,0.80vw,11.49px);
+        position: absolute;
+        left: 32%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+   }
