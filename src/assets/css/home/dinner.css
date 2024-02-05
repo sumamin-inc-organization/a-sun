@@ -117,12 +117,11 @@
             margin-top: 0;
             
         }
-        /* .bottom-right{
-            border: 1px solid red;
+        .bottom-right{
             position: absolute;
-            bottom: -40%;
+            bottom: -25%;
             right: 0;
-        } */
+        }
     
 }
   @media (max-width:1400px) {
