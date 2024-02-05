@@ -290,9 +290,7 @@ width: clamp(237.5px,26.39vw,380px);
     flex-direction: column-reverse;
 }
 .feature-one_main{
-    /* gap: clamp(176.5px,19.58vw,282.4px); */
-    /* gap: min(19.58vw,282.4px); */
-    /* gap: 19.58vw; */
+
     gap: clamp(50px,12.32vw,177.4px);
     gap: 45px;
     justify-content: center;
