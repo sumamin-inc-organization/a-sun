@@ -49,6 +49,10 @@
     flex-direction: column;
     align-items: center;
 }
+.google{
+    display: flex;
+    justify-content: center;
+}
 
 /* ===============
       MOBILE
