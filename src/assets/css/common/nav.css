@@ -1,104 +1,12 @@
-.meatball {
-  border: 1px solid black;
-  width: 70px;
-  width: min(70px, 17.95vw);
-  height: 70px;
-  height: min(70px, 17.95vw);
-  background: none;
-  cursor: pointer;
-  transition: 0.5s ease;
-  transform: scale(0.5);
-  border-radius: 50%;
+.meatball{
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/common/hamburger-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 20px;
   right: 20px;
-}
-
-.meatball .dot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4px; /* Increase the size of the dots */
-  height: 4px; /* Increase the size of the dots */
-  border-radius: 50%;
-  background: black;
-  transition: width 0.3s ease 0s, height 0.3s ease 0s, transform 0.3s ease 0.3s;
-}
-
-.meatball .dot:nth-of-type(1) {
-  transform: translate(calc(-50% - 15px), -50%) rotate(45deg); /* Adjust the gap */
-}
-
-.meatball .dot:nth-of-type(2) {
-  transform: translate(-50%, -50%);
-  transition: 0.4s ease 0.1s;
-}
-
-.meatball .dot:nth-of-type(3) {
-  transform: translate(calc(-50% + 15px), -50%) rotate(-45deg); /* Adjust the gap */
-}
-
-.meatball:hover .dot:nth-of-type(1),
-.meatball:hover .dot:nth-of-type(2),
-.meatball:hover .dot:nth-of-type(3) {
-  animation: flicker 0.4s linear;
-}
-
-.meatball.active {
-  transform: rotate(180deg) scale(0.5);
-}
-
-.meatball.active .dot {
-  transition: width 0.4s ease 0.3s, height 0.4s ease 0.3s, transform 0.2s ease;
-}
-
-.meatball.active .dot:nth-of-type(1) {
-  width: 50px;
-  height: 1px;
-  border-radius: 3px;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.meatball.active .dot:nth-of-type(2) {
-  width: 0;
-  height: 0;
-}
-
-.meatball.active .dot:nth-of-type(3) {
-  width: 50px;
-  height: 1px;
-  border-radius: 3px;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.meatball.active:hover .dot {
-  animation: none;
-}
-.meatball.active {
-  border: none;
-}
-@keyframes flicker {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.meatball {
-  display: none;
-}
-
-@media (max-width: 750px) {
-  .meatball {
-    display: block;
-  }
-}
-
-.header__right{
-  border-left: 0.2px solid #505050;
 }
