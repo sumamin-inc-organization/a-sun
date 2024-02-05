@@ -181,6 +181,7 @@ z-index: 10;
   display: none;
 }
 .gault-millau_link--sp p {
+  padding-bottom: 4px;
   border-bottom: 1px solid #505050;
 }
 
