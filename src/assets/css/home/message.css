@@ -93,13 +93,19 @@
 /* ===============
       MOBILE
    =============== */
+   @media (max-width:825px){
+    .message-title-wrapper {
+      margin-top: 250px;
+    }
+   }
 
    @media (max-width:500px){
     .message-title-wrapper {
         /* border: 1px solid red; */
         margin-left: 0;
         margin-right: 0;
-        margin-top: clamp(71px, 7.82vw, 112.7px);
+        /* margin-top: clamp(71px, 7.82vw, 112.7px); */
+        margin-top: 160px;
         padding-left: min(30.9px,7.92vw) ;
         padding-right: min(7.1px,1.82vw);
         position: relative;

@@ -178,3 +178,23 @@
         position: absolute;
         bottom: -25%;
     } */
+#lunch{
+    /* border: 1px solid red; */
+    padding-bottom: 0;
+}
+#dinner{
+    padding-top: 0px;
+}
+/* .dinner-top-filler{
+    width: 100%;
+    height: 100px;
+  
+} */
+.dot{
+    margin-top: 60px;
+}
+@media (min-width:1700px){
+    .dot{
+        margin-top: 250px;
+    }
+}
