@@ -435,4 +435,12 @@ width: clamp(237.5px,26.39vw,380px);
     .feature-sp-ani03{
         transform: translateY(700px);
     }
+    
+    .feature-title__text{
+    /* border: 1px solid red; */
+    padding-top: max(51.2px,3.56vw);
+    padding-top: min(80px,28.57vw);
+    margin-left: min(20px,5.38vw);
+    /* width: clamp(171px,19.03vw,274px); */
+    }
 }
