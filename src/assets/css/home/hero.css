@@ -542,7 +542,7 @@ z-index: 10;
     bottom: 50px;
   }
   .keyvisual-main_hero {
-    /* border: 1px solid red; */
+
   }
   .kv-hero__img--top-right {
     top: -2px;
@@ -587,6 +587,9 @@ z-index: 10;
  .center--img{
   /* border: 1px solid red; */
   transform: translateY(20px);
+ }
+ .keyvisual-main_text{
+  margin-bottom: 50px;
  }
 }
 
