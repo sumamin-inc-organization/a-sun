@@ -1,7 +1,8 @@
 #access{
     background-color: #505050;
-    padding-top: clamp(13.9px,1.48vw,21.3px);
-    padding-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    /* padding-top: 30px; */
     padding-bottom: clamp(45.5px,5.06vw,72.8px);
 }
 
@@ -61,8 +62,7 @@
    @media (max-width:600px){
     #access{
         background-color: #505050;
-        padding-top: 50px;
-        padding-bottom: clamp(45.5px,5.06vw,72.8px);
+        padding-bottom: 40px;
     }
     .access-wrapper{
         display: flex;
@@ -79,7 +79,8 @@
     .address{
         text-align: center;
         margin-top: 33px;
-        margin-bottom: min(37.2px,9.54vw);
+        /* margin-bottom: min(37.2px,9.54vw); */
+        margin-bottom: 0;
     }
     .access-links_top{
         display: flex;
@@ -91,6 +92,7 @@
     .access-links_bottom{
         display: flex;
         margin-bottom: min(60px,15.38vw);
+        /* margin-bottom: 60px; */
     }
     .access-right-main{
         text-align: center;
@@ -102,8 +104,32 @@
         align-items: center;
     }
     .access-right--bottom_tel{
-        margin-top: -50px;
+        margin-top: -10px;
     }
+    #access_google-maps::after,
+    #access_route::after,
+    #access_shop-info::after{
+        content:url(../../images/top/dinner/see-more-black.svg) ;
+        position: absolute;
+        right: -18px;
+    }
+
+    #access_google-maps::before,
+    #access_route::before,
+    #access_shop-info::before{
+        content:"";
+        position: absolute;
+        width: 120%;
+        height: 1px;
+        background-color: #FFFFFF;
+        bottom: -10px;
+    }
+    #access_google-maps,
+    #access_route,
+    #access_shop-info{
+        padding-top:29.9px ;
+    }
+
    }
 
    footer{
@@ -125,8 +151,7 @@
 }
 
 .footer-nav{
-    /* border: 1px solid red; */
-    /* display: inline-block; */
+
 }
 .footer-nav-list{
     margin-top: 27.7px;
