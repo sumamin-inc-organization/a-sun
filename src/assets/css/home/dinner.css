@@ -193,6 +193,12 @@
 .dot{
     margin-top: 60px;
 }
+@media(min-width:1401px){
+    .bottom-left{
+        
+        margin-left: 11.11vw;
+    }
+}
 @media (min-width:1700px){
     .dot{
         margin-top: 250px;
