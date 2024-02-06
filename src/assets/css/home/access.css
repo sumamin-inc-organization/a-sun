@@ -215,11 +215,20 @@ grid-area: policy;
 
 
 @media (max-width:600px){
+    .footer-left{
+        padding-top: min(49px,12.5641vw);
+        /* display: inline-block; */
+    
+    }
+    .footer-left_text{
+        padding-bottom: 0;
+    }
     .footer-wrapper{
         display: grid;
        place-content: center;
-      gap: 31px;
+      gap: min(31.9px,8.179vw);
         padding-left:0;
+        padding-bottom: 0;
     }
     footer{
         padding-bottom: 39.7px;
