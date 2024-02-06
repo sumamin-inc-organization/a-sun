@@ -190,6 +190,11 @@ width: clamp(237.5px,26.39vw,380px);
       MOBILE
    =============== */
 
+@media(min-width:1500px){
+    .feature-sp-ani02{
+        transform: translateY(270px);
+    }
+}
 .feature-one_main{
     /* transform: translateY(-100px); */
     /* border: 1px solid red; */
