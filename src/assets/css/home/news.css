@@ -64,6 +64,7 @@
     .news-right--sp{
        display: flex;
        justify-content: center;
+       margin-bottom: min(14.2px,3.641vw);
     }
     .news-blog{
         width: clamp(350px,66.75vw,600.79px);
