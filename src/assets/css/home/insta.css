@@ -30,6 +30,7 @@ justify-content: center;
 .insta-bottom{
     display: flex;
     justify-content: center;
+    margin-top: clamp(26.1px,2.9722vw,42.8px);
 }
 @media (max-width:602px){
     .gallary{
