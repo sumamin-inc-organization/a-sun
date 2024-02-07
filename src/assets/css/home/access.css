@@ -1,249 +1,242 @@
-#access{
-    background-color: #505050;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    /* padding-top: 30px; */
-    padding-bottom: clamp(45.5px,5.06vw,72.8px);
+#access {
+  background-color: #505050;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  /* padding-top: 30px; */
+  padding-bottom: clamp(45.5px, 5.06vw, 72.8px);
 }
 
-.access-wrapper{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.access-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.map{
-    width: clamp(312.5px,34.72vw,500px);
-    height: clamp(143.75px,15.97vw,230px);
-    margin-bottom: clamp(14.7px,1.62vw,22.3px);
+.map {
+  width: clamp(312.5px, 34.72vw, 500px);
+  height: clamp(143.75px, 15.97vw, 230px);
+  margin-bottom: clamp(14.7px, 1.62vw, 22.3px);
 }
 
-.access-title-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: clamp(22.3px,2.48vw,35.7px);
+.access-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(22.3px, 2.48vw, 35.7px);
 }
 
-.address{
-    text-align: center;
-    margin-bottom: clamp(25px,2.90vw,41.8px);
+.address {
+  text-align: center;
+  margin-bottom: clamp(25px, 2.9vw, 41.8px);
 }
 
-.access-links_top{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: clamp(25.6px,2.91vw,41.9px);
+.access-links_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: clamp(25.6px, 2.91vw, 41.9px);
 }
 
-.access-links_bottom{
-    display: flex;
-    justify-content: center;
+.access-links_bottom {
+  display: flex;
+  justify-content: center;
 }
-.access-right-main{
-    text-align: center;
-    margin-bottom: clamp(55px,6.04vw,87px);
+.access-right-main {
+  text-align: center;
+  margin-bottom: clamp(55px, 6.04vw, 87px);
 }
-.access-right--bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.access-right--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.google{
-    display: flex;
-    justify-content: center;
+.google {
+  display: flex;
+  justify-content: center;
 }
 #access_google-maps::after,
 #access_route::after,
-#access_shop-info::after{
-    content:url(../../images/top/dinner/see-more-black.svg) ;
-    position: absolute;
-    right: -18px;
+#access_shop-info::after {
+  content: url(../../images/top/dinner/see-more-black.svg);
+  position: absolute;
+  right: -18px;
 }
 
 #access_google-maps::before,
 #access_route::before,
-#access_shop-info::before{
-    content:"";
-    position: absolute;
-    width: 120%;
-    height: 1px;
-    background-color: #FFFFFF;
-    bottom: -5px;
+#access_shop-info::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 1px;
+  background-color: #ffffff;
+  bottom: -5px;
 }
 
 /* ===============
       MOBILE
    =============== */
 
-   @media (max-width:600px){
-    #access{
-        background-color: #505050;
-        padding-bottom: 40px;
-    }
-    .access-wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .map{
-        width: clamp(350px,89.74vw);
-        height: clamp(230px,58.97vw);
-        display: flex;
-        margin: 0 auto;
-    }
-    .address{
-        text-align: center;
-        margin-top: 33px;
-        /* margin-bottom: min(37.2px,9.54vw); */
-        margin-bottom: 0;
-    }
-    .access-links_top{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0;
-    }
-    .access-links_bottom{
-        display: flex;
-        margin-bottom: min(60px,15.38vw);
-        /* margin-bottom: 60px; */
-    }
-    .access-right-main{
-        text-align: center;
-        margin-bottom: min(26px,6.67vw);
-    }
-    .access-right--bottom{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .access-right--bottom_tel{
-        margin-top: -10px;
-    }
-    #access_google-maps::after,
-    #access_route::after,
-    #access_shop-info::after{
-        content:url(../../images/top/dinner/see-more-black.svg) ;
-        position: absolute;
-        right: -18px;
-    }
-
-    #access_google-maps::before,
-    #access_route::before,
-    #access_shop-info::before{
-        content:"";
-        position: absolute;
-        width: 120%;
-        height: 1px;
-        background-color: #FFFFFF;
-        bottom: -10px;
-    }
-    #access_google-maps,
-    #access_route,
-    #access_shop-info{
-        padding-top:29.9px ;
-    }
-
-   }
-
-   footer{
-    background-color: #000000;
-   
-}
-
-.footer-wrapper{
+@media (max-width: 600px) {
+  #access {
+    background-color: #505050;
+    padding-bottom: 40px;
+  }
+  .access-wrapper {
     display: flex;
-  gap: clamp(144px,15.97vw,230px);
-    padding-left: clamp(50px,5.56vw,80px);
-    padding-bottom: 54px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .map {
+    width: clamp(350px, 89.74vw);
+    height: clamp(230px, 58.97vw);
+    display: flex;
+    margin: 0 auto;
+  }
+  .address {
+    text-align: center;
+    margin-top: 33px;
+    /* margin-bottom: min(37.2px,9.54vw); */
+    margin-bottom: 0;
+  }
+  .access-links_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .access-links_bottom {
+    display: flex;
+    margin-bottom: min(60px, 15.38vw);
+    /* margin-bottom: 60px; */
+  }
+  .access-right-main {
+    text-align: center;
+    margin-bottom: min(26px, 6.67vw);
+  }
+  .access-right--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .access-right--bottom_tel {
+    margin-top: -10px;
+  }
+  #access_google-maps::after,
+  #access_route::after,
+  #access_shop-info::after {
+    content: url(../../images/top/dinner/see-more-black.svg);
+    position: absolute;
+    right: -18px;
+  }
+
+  #access_google-maps::before,
+  #access_route::before,
+  #access_shop-info::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: -10px;
+  }
+  #access_google-maps,
+  #access_route,
+  #access_shop-info {
+    padding-top: 29.9px;
+  }
 }
 
-.footer-left{
-    padding-top:  clamp(30px,2.43vw,35px);
-    /* display: inline-block; */
-
+footer {
+  background-color: #000000;
 }
 
-.footer-nav{
-
+.footer-wrapper {
+  display: flex;
+  gap: clamp(144px, 15.97vw, 230px);
+  padding-left: clamp(50px, 5.56vw, 80px);
+  padding-bottom: 54px;
 }
-.footer-nav-list{
+
+.footer-left {
+  padding-top: clamp(30px, 2.43vw, 35px);
+  /* display: inline-block; */
+}
+
+.footer-nav {
+}
+.footer-nav-list {
+  margin-top: 27.7px;
+
+  display: grid;
+  row-gap: 15px;
+  column-gap: clamp(54px, 5.83vw, 85px);
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-areas:
+    "home news"
+    "feature info "
+    "lunch policy "
+    "dinner  .";
+}
+.foot-home {
+  grid-area: home;
+}
+.foot-feat {
+  grid-area: feature;
+}
+.foot-lunch {
+  grid-area: lunch;
+}
+.foot-dinner {
+  grid-area: dinner;
+}
+.foot-news {
+  grid-area: news;
+}
+.foot-info {
+  grid-area: info;
+}
+.foot-policy {
+  grid-area: policy;
+}
+.footer-logo {
+  width: 182.45px;
+  padding-bottom: clamp(15px, 1.65vw, 23.8px);
+}
+.footer-left_text {
+  padding-bottom: clamp(26.1px, 2.5vw, 36px);
+}
+
+@media (max-width: 600px) {
+  .footer-left {
+    padding-top: min(49px, 12.5641vw);
+  }
+  .footer-left_text {
+    padding-bottom: 0;
+  }
+  .footer-wrapper {
+    display: grid;
+    place-content: center;
+    gap: min(31.9px, 8.179vw);
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  footer {
+    padding-bottom: 39.7px;
+  }
+  .footer-nav-list {
     margin-top: 27.7px;
-    
+
     display: grid;
     row-gap: 15px;
-    column-gap: clamp(54px,5.83vw,85px);
+    column-gap: 54px;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-areas:
-    'home news'
-    'feature info '
-    'lunch policy '
-    'dinner  .';
-}
-.foot-home{
-    grid-area: home;
-}
-.foot-feat{
-    grid-area: feature;
-}
-.foot-lunch{
-    grid-area: lunch;
-}
-.foot-dinner{
-    grid-area: dinner;
-}
-.foot-news{
-    grid-area: news;
-}
-.foot-info{
-    grid-area: info;
-}
-.foot-policy{
-grid-area: policy;
-}
-.footer-logo{
-    width:  182.45px;
-    padding-bottom:  clamp(15px,1.65vw,23.8px);
-}
-.footer-left_text{
-    padding-bottom:  clamp(26.1px,2.5vw,36px);
-}
-
-
-@media (max-width:600px){
-    .footer-left{
-        padding-top: min(49px,12.5641vw);
-        /* display: inline-block; */
-    
-    }
-    .footer-left_text{
-        padding-bottom: 0;
-    }
-    .footer-wrapper{
-        display: grid;
-       place-content: center;
-      gap: min(31.9px,8.179vw);
-        padding-left:0;
-        padding-bottom: 0;
-    }
-    footer{
-        padding-bottom: 39.7px;
-    }
-    .footer-nav-list{
-        margin-top: 27.7px;
-        
-        display: grid;
-        row-gap: 15px;
-        column-gap: 54px;
-        /* grid-template-columns: 1fr 1fr; */
-        grid-template-areas:
-        'home news'
-        'feature info '
-        'lunch policy '
-        'dinner  .';
-    }
+      "home news"
+      "feature info "
+      "lunch policy "
+      "dinner  .";
+  }
 }
