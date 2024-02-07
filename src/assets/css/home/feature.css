@@ -222,5 +222,58 @@ z-index: 5;
     margin-left: min(20px,5.38vw);
     /* width: clamp(171px,19.03vw,274px); */
     }
+
+    .feat-main{
+        display: flex;
+      flex-direction: column;
+      gap: min(46.7px,11.9744vw);
+    }
+    .feat-main-center{
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column-reverse; */
+    
+    }
+    .feat-main--left{
+        margin-bottom: 0;
+    }
+    .feat-main--left img{
+        width: min(300px,76.9231vw);
+    }
+    .feat-main-wrapper {
+        /* border: 1px solid red;  */
+         display: unset;
+        justify-content: center;
+      
+    }
+    .feat-main--right{
+        margin-top: -150px;
+    }
+.feat-main-left-two{
+    display: flex;
+    justify-content: flex-end;
+}
+.feat-main{
+    /* border: 1px solid red; */
+    padding-left: min(21.7px,5.5641vw);
+    padding-right:  min(15px,3.8462vw);
+}
+.see-more-right{
+    /* border: 1px solid red; */
+    margin-right: 15px;
+}
+.see-more-right::after{
+    content:url(../../images/top/feature/see-more-icon-feat.svg) ;
+    height: 100%;
+    position: absolute;
+    right: -10px;
+}
+.see-more-right::before{
+    content:"";
+    position: absolute;
+    width: 115%;
+    height: 1px;
+    background-color: #505050;
+    bottom:-15px;
+}
 }
 

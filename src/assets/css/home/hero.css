@@ -293,7 +293,7 @@ z-index: 10;
     justify-content: center;
     align-items: center;
     padding-top: min(23.5px, 6.03vw);
-    padding-left: min(20.2px,5.1795vw);
+    /* padding-left: min(20.2px,5.1795vw); */
     gap: 12px;
   }
 

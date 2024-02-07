@@ -115,7 +115,7 @@ let tl = gsap.timeline({
     // end: "+=200",
     scrub: true,
     // pin: true,
-     markers: true
+    //  markers: true
   },
 });
 
@@ -128,7 +128,7 @@ let t2 = gsap.timeline({
     trigger: ".feat2",
     start: "-=200px top",
     scrub: true,
-     markers: true
+    //  markers: true
   },
 });
 
@@ -140,7 +140,7 @@ let t3 = gsap.timeline({
     trigger: ".feat3",
     start: "-=200px top",
     scrub: true,
-     markers: true
+    //  markers: true
   },
 });
 
