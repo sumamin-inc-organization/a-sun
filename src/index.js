@@ -31,7 +31,7 @@ addNavIconEventListener();
 activateCrossFadeAnimations();
 
 changeKvSrc()
-determineTypeOfAnimation();
+// determineTypeOfAnimation();
 screenResizeListener();
 
 // let images = gsap.utils.toArray(".t");
@@ -107,4 +107,17 @@ function dinnerTop() {
 //   const masterCompany = gsap.timeline();
 //   masterCompany.add(companyTop());
 
- 
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat",
+    start: "-=200px top",
+    // end: "+=200",
+    scrub: true,
+    // pin: true,
+     markers: true
+  },
+});
+
+tl
+.to(".feat-main--left", {yPercent:-100})
+// .to(".company-dot", { scale: 1})
