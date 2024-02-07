@@ -204,7 +204,13 @@ z-index: 5;
 
 
 @media (max-width:500px){
-
+    
+    .feat-eng{
+        margin-bottom: 18.7px;
+    }
+    .feat-description{
+        margin-top: 28px;
+    }
     .feature-title__text--jp{/*eng*/
         font-size:min(25.64vw,100px)
     }
