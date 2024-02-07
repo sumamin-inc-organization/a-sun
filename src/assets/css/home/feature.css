@@ -282,5 +282,8 @@ z-index: 5;
     background-color: #505050;
     bottom:-15px;
 }
+.feat-main--left{
+    margin-bottom: -100px;
+}
 }
 
