@@ -8,6 +8,7 @@
     background-size: cover;
     display: grid;
     place-content: center;
+
 }
 @media (max-width:650px) {
     #course{
@@ -85,6 +86,7 @@ margin-bottom:10px ;
             /* margin-top: -1200px; */
         }#course{
        
+      
         }
 }
 

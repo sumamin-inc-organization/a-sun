@@ -37,6 +37,8 @@
   left: 50%;
   transform: translate(-50%,-40%);
   z-index: -1;
+  min-width: 1039px;
+  /* border: 1px solid red; */
 }
 .message-main-text {
   /* border: 1px solid red; */
@@ -130,6 +132,7 @@
         left: -5%;
         transform: translateY(-5%);
         z-index: -1;
+        min-width: 428.79px;
       }
       .message-main-text {
         margin-left: 0;

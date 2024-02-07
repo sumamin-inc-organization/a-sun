@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top:clamp(63px,7vw,100.8px);
+    padding-top:clamp(63px,6.9444vw,100px);
     padding-bottom:clamp(29px,3.14vw,45.2px);
 }
 /*-----------------------------
