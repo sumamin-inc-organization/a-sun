@@ -80,7 +80,7 @@
 
    @media(max-width:500px){
     #news{
-        padding-top: clamp(19.69wv,76.8px);
+        padding-top: 78px;
     }
     
     .news-blog{
@@ -100,9 +100,13 @@
        
         margin-top: unset;
     }
+    #news-seemore{
+        padding-top: 41px;
+    }
    }
    @media(max-width:365px){
     .news-title{
         width: 100%;
     }
+   
    }

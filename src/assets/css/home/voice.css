@@ -169,4 +169,10 @@
         top: 50%;
         transform: translateY(-50%);
     }
+    .voice-wrapper{
+        padding-top: 78px;
+    }
+    #voice-seemore{
+        padding-top:43.3px ;
+    }
    }

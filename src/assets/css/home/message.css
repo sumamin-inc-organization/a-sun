@@ -178,10 +178,13 @@
       
       .message-bottom-name--eng {
         margin-top: -25px;
+        margin-bottom: 20px;
         /* border: 1px solid red; */
 
       }
-      
+      .message-bottom-text{
+        margin-top: 28px;
+      }
    }
 
   
