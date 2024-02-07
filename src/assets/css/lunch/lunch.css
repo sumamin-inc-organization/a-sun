@@ -1,0 +1,53 @@
+#overview {
+    background-image: url(../../images/lunch/lunch_bg_gray.jpg);
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 960px 1fr;
+}
+
+@media (max-width: 1280px) {
+    .overview-grid {
+        grid-template-columns: 1fr 87% 1fr;
+    }
+}
+
+.overview-inner {
+    grid-column: 2/3;
+}
+
+.overview-description {
+    text-align: center;
+}
+
+.overview-description p {
+    letter-spacing: 0.2rem;
+    line-height: 50px;
+}
+
+.overview-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 296px 37px 296px;
+    background:
+    linear-gradient(45deg,  transparent 10px, #FFFFFF 10px),
+    linear-gradient(135deg, transparent 10px, #FFFFFF 10px),
+    linear-gradient(225deg, transparent 10px, #FFFFFF 10px),
+    linear-gradient(315deg, transparent 10px, #FFFFFF 10px);
+    background-position: bottom left, top left, top right, bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.overview-hours__title p {
+    text-align: center;
+}
+
+.overview-hours__content  {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin: auto;
+}
