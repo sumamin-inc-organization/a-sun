@@ -107,9 +107,10 @@ function dinnerTop() {
 //   const masterCompany = gsap.timeline();
 //   masterCompany.add(companyTop());
 
+
 let tl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".feat",
+    trigger: ".feat1",
     start: "-=200px top",
     // end: "+=200",
     scrub: true,
@@ -119,5 +120,29 @@ let tl = gsap.timeline({
 });
 
 tl
-.to(".feat-main--left", {yPercent:-100})
+.to(".feat-main-left-one", {yPercent:-100})
 // .to(".company-dot", { scale: 1})
+
+let t2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat2",
+    start: "-=200px top",
+    scrub: true,
+     markers: true
+  },
+});
+
+t2
+.to(".feat-main-left-two", {yPercent:-100})
+
+let t3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat3",
+    start: "-=200px top",
+    scrub: true,
+     markers: true
+  },
+});
+
+t3
+.to(".feat-main-left-three", {yPercent:-100})

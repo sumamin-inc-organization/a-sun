@@ -91,7 +91,13 @@ z-index: 5;
 .feat-main{
     display: flex;
    gap: clamp(110.5px,12.319vw,177.4px);
+
 }
+.feat-main-center{
+  flex-direction: row-reverse;
+
+}
+
 .feat-main--right{
     /* border: 1px solid blue; */
     display: flex;
