@@ -96,6 +96,10 @@
         /* text-overflow: " [...]"; */
 
     }
+    .news-bottom{
+       
+        margin-top: unset;
+    }
    }
    @media(max-width:365px){
     .news-title{
