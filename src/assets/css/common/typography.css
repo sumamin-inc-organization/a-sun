@@ -36,7 +36,6 @@
 
 @media (min-width: 500px) {
   .fs-pc-8p75{
-   
   }
   .fs-pc-12 {
     font-size: 12px;
@@ -150,15 +149,115 @@
   color: #505050;
 }
 
-/*---------------------------------
-      letter spacing
-----------------------------------*/
-.letter-spacing-30 {
-  letter-spacing: 0.06em;
+/*----------------------------------
+    Line Height /行の高さ
+------------------------------------*/
+
+@media (min-width:501px){
+  .line-height-pc-65p5{
+    line-height: min(4.55vw,65.5px);
+  }
+  .line-height-pc-68p9{
+    line-height: min(4.77vw,68.9px);
+  }
+  .line-height-pc-39p2{
+    line-height: min(2.72vw,39.2px);
+  }
+  .line-height-pc-40{
+    line-height: min(2.78vw,40px);
+  }
+  .line-height-pc-49p5{
+    line-height: min(3.44vw,49.5px);
+  }
+  .line-height-pc-51p5{
+    line-height: min(3.57vw,51.5px);
+  }
+  .line-height-pc-40p9{
+    line-height: min(2.84vw,40.9px);
+  }
+  .line-height-pc-59{
+    line-height: min(4.10vw,59px);
+  }
+  .line-height-pc-36p5{
+    line-height: min(2.53vw,36.5px);
+  }
+  .line-height-pc-56{
+    line-height: min(3.89vw,56px);
+  }
+  .line-height-pc-27{
+    line-height: min(1.88vw,27px);
+  }
+  .line-height-pc-28p5{
+    line-height: min(1.98vw,28.5px);
+  }
+  .line-height-pc-43p5{
+    line-height: min(3.02vw,43.5px);
+  }
+}
+@media (max-width:500px){
+  .line-height-sp-42{
+    /* line-height: min(2.92vw,42px); */
+    line-height: 42px;
+  }
+  .line-height-sp-68p9{
+    line-height: min(17.66vw,68.9px);
+  }
+  .line-height-sp-49p5{
+    line-height: min(12.69vw,49.5px);
+  }
+  .line-height-sp-55{
+    line-height: min(14.10vw,55px);
+  }
+  .line-height-sp-40{
+    line-height: min(10.26vw,40px);
+  }
+  .line-height-sp-65p5{
+    line-height: min(16.79vw,65.5px);
+  }
+  .line-height-sp-30{
+    line-height: min(7.69vw,30px);
+  }
+  .line-height-sp-36p5{
+    line-height: min(9.36vw,36.5px);
+  }
+  .line-height-sp-140{
+    line-height: min(35.90vw,140px);
+  }
+  .line-height-sp-27{
+    line-height: min(6.92vw,27px);
+  }
+  .line-height-sp-28p5{
+    line-height: min(7.31vw,28.5px);
+  }
+  .line-height-sp-43p5{
+    line-height: min(11.15vw,43.5px);
+      }
+}
+
+/*----------------------------------
+    Letter Spacing / 文字間隔
+------------------------------------*/
+.letter-spacing-02 {
+  letter-spacing: 0.2rem;
+}
+.letter-spacing-154{
+  letter-spacing: 0.154em;
+}
+.letter-spacing-114{
+  letter-spacing: 0.114em;
 }
 .letter-spacing-01 {
   letter-spacing: 0.1rem;
 }
-.letter-spacing-02 {
-  letter-spacing: 0.2rem;
+.letter-spacing-94{
+  letter-spacing: 0.094em;
+}
+.letter-spacing-74{
+  letter-spacing: 0.074em;
+}
+.letter-spacing-60 {
+  letter-spacing: 0.06em;
+}
+.letter-spacing-40{
+  letter-spacing: 0.04em;
 }
