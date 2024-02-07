@@ -1,5 +1,5 @@
 .transition-img{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     position: fixed;
     z-index: 9997;
     width: 100vw;
@@ -25,3 +25,14 @@
     height: 100vh;
     background-color: white;
 }
+
+.load-logo{
+    width: 500px;
+}
+@media(max-width:500px){
+    .load-logo{
+        width: 60vw;
+        
+    }
+}
+

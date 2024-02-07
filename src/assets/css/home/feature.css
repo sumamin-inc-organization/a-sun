@@ -247,6 +247,7 @@ z-index: 5;
     }
     .feat-main--right{
         margin-top: -150px;
+        margin-bottom: 75px;
     }
 .feat-main-left-two{
     display: flex;

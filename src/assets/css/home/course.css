@@ -19,7 +19,7 @@
 @media (max-width:650px) {
     #course{
         min-height: 100vh;
-        margin-top: -20px;
+        margin-top: 0;
     }
 }
 
