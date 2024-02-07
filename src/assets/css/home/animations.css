@@ -1,0 +1,27 @@
+.transition-img{
+    /* border: 1px solid red; */
+    position: fixed;
+    z-index: 9997;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url(../../images/top/hero/hero-bkg.jpg);
+}
+.transition-item{
+    position: fixed;
+    z-index: 9998;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.transition-item-white{
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
