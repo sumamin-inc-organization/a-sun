@@ -90,6 +90,7 @@
 
 .message-bottom-name--eng {
   margin-top: -5px;
+  margin-bottom: 20px;
 }
 
 /* ===============
@@ -176,7 +177,7 @@
       }
       .message-job-title {
         margin-bottom: -25px;
-        /* border: 1px solid red; */
+      
       }
       
       .message-bottom-name--eng {
