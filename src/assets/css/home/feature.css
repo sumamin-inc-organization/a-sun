@@ -71,6 +71,7 @@ z-index: 5;
     background-image: url("../../images/top/feature/feature-texture.png");
     mix-blend-mode: multiply;
     pointer-events: none;
+    z-index:-1;
 }
 
 
@@ -286,4 +287,5 @@ z-index: 5;
     margin-bottom: -100px;
 }
 }
+
 
