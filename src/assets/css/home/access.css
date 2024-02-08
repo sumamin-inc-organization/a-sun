@@ -2,7 +2,6 @@
   background-color: #505050;
   padding-top: 70px;
   padding-bottom: 50px;
-  /* padding-top: 30px; */
   padding-bottom: clamp(45.5px, 5.06vw, 72.8px);
 }
 
@@ -97,7 +96,6 @@
   .address {
     text-align: center;
     margin-top: 33px;
-    /* margin-bottom: min(37.2px,9.54vw); */
     margin-bottom: 0;
   }
   .access-links_top {
@@ -110,7 +108,6 @@
   .access-links_bottom {
     display: flex;
     margin-bottom: min(60px, 15.38vw);
-    /* margin-bottom: 60px; */
   }
   .access-right-main {
     text-align: center;
@@ -162,7 +159,6 @@ footer {
 
 .footer-left {
   padding-top: clamp(30px, 2.43vw, 35px);
-  /* display: inline-block; */
 }
 
 .footer-nav {
@@ -173,7 +169,6 @@ footer {
   display: grid;
   row-gap: 15px;
   column-gap: clamp(54px, 5.83vw, 85px);
-  /* grid-template-columns: 1fr 1fr; */
   grid-template-areas:
     "home news"
     "feature info "
@@ -232,7 +227,6 @@ footer {
     display: grid;
     row-gap: 15px;
     column-gap: 54px;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-areas:
       "home news"
       "feature info "
