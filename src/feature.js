@@ -9,31 +9,59 @@ import "./assets/css/feature/feature.css";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
-//スライダー設定
-$("#slick").slick({
-    //autoplay: true, // 自動再生
-    autoplaySpeed: 2000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
-    infinite: true, // 無限スライド
-    pauseOnHover: false,//マウスホバーで一時停止
-    dots: false,
-    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>',
-    centerMode:true,
-    centerPadding:"13%", 
-    responsive: [
-        {
-        breakpoint: 1200,
-            settings: {
-                centerPadding: "22%",
+$(document).ready(function() {
+    // スライダー1の設定
+    $(".slick1").slick({
+        autoplaySpeed: 2000,
+        infinite: true,
+        pauseOnHover: false,
+        dots: false,
+        prevArrow: $('.prev-arrow1'),
+        nextArrow: $('.next-arrow1'),
+        centerMode: true,
+        centerPadding: "13%", 
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    centerPadding: "10%",
+                },
             },
-        },
-        {
-        breakpoint: 767,
-            settings: {
-                centerPadding: "0%",
+            {
+                breakpoint: 1250,
+                settings: {
+                    centerPadding: "0%",
+                },
             },
-        },
-    ],
+        ],
+    });
+
+    // スライダー2の設定
+    $(".slick2").slick({
+        autoplaySpeed: 2000,
+        infinite: true,
+        pauseOnHover: false,
+        dots: false,
+        prevArrow: $('.prev-arrow2'),
+        nextArrow: $('.next-arrow2'),
+        centerMode: true,
+        centerPadding: "13%", 
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    centerPadding: "10%",
+                },
+            },
+            {
+                breakpoint: 1250,
+                settings: {
+                    centerPadding: "0%",
+                },
+            },
+        ],
+    });
 });

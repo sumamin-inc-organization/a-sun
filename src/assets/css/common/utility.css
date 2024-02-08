@@ -113,6 +113,7 @@ text-overflow: ellipsis;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 70px 0 90px;
+  margin-top: 120px;
   text-align: center;
   grid-column: 1/4;
 }

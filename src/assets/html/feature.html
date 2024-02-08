@@ -18,79 +18,96 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
     <body class="black">
-        <!-- header -->
+        <div class="transition-item"></div>
+        <div class="transition-item-white"></div>
         <a href="#" class="reservation-btn--sp" role="button">
-            <img src="../images/common/sp-contact@2x.webp" alt="ご予約"/>
+            <img src="../images/common/sp-contact@2x.webp" alt="ご予約" />
         </a>
         <header class="header">
-            <div class="logo header__left">
-                <img class="logo__image pc-only" src="../images/common/headerlogo.svg" alt="沖縄居酒屋あーすん/earthen">
-                <img class="logo__image sp-only logo__image--sp" src="../images/common/headerlogo_sp.svg" alt="沖縄居酒屋あーすん/earthen">
-            </div>
-            <button class="meatball">
-            </button>
-            <div class="header__center">
-                <nav class="primary-nav">
-                    <ul class="primary-nav__ul">
-                        <li class="primary-nav__item primary-nav__item--home">
-                            <div class="primary-nav__item--indicator__wrapper">
-                                <img src="../images/common/nav-current.svg" alt="現在、Homeページにいます"
-                                    class="primary-nav__item--indicator active-nav" />
-                            </div>
-                            <a href="../html/index.html"
-                                class="primary-nav__link primary-nav__link-home font-zen-old fs-pc-18 black regular">Home</a>
-                        </li>
-                        <li class="primary-nav__item primary-nav__item--feature">
-                            <div class="primary-nav__item--indicator__wrapper">
-                                <img src="../images/common/nav-current.svg" alt="現在、Featureページにいます"
-                                    class="primary-nav__item--indicator" />
-                            </div>
-                            <a href="../html/feature.html"
-                                class="primary-nav__link primary-nav__link-feature font-zen-old fs-pc-18 black regular">Feature</a>
-                        </li>
-                        <li class="primary-nav__item primary-nav__item--lunch">
-                            <div class="primary-nav__item--indicator__wrapper">
-                                <img src="../images/common/nav-current.svg" alt="現在、Lunchページにいます"
-                                    class="primary-nav__item--indicator" />
-                            </div>
-                            <a href="../html/lunch.html"
-                                class="primary-nav__link primary-nav__link-lunch font-zen-old fs-pc-18 black regular">Lunch</a>
-                        </li>
-                        <li class="primary-nav__item primary-nav__item--dinner">
-                            <div class="primary-nav__item--indicator__wrapper">
-                                <img src="../images/common/nav-current.svg" alt="現在、Dinnerページにいます"
-                                    class="primary-nav__item--indicator" />
-                            </div>
-                            <a href="../html/dinner.html"
-                                class="primary-nav__link primary-nav__link-dinner font-zen-old fs-pc-18 black regular">Dinner</a>
-                        </li>
-                        <li class="primary-nav__item primary-nav__item--news">
-                            <div class="primary-nav__item--indicator__wrapper">
-                                <img src="../images/common/nav-current.svg" alt="現在、Newsページにいます"
-                                    class="primary-nav__item--indicator" />
-                            </div>
-                            <a href="../html/news.html"
-                                class="primary-nav__link primary-nav__link-news font-zen-old fs-pc-18 black regular">News</a>
-                        </li>
-                        <li class="primary-nav__item primary-nav__item--info">
-                            <div class="primary-nav__item--indicator__wrapper">
-                                <img src="../images/common/nav-current.svg" alt="現在、Informationページにいます"
-                                    class="primary-nav__item--indicator" />
-                            </div>
-                            <a href="../html/infomation.html"
-                                class="primary-nav__link primary-nav__link-information fs-pc-18 black regular font-zen-old">Information</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="dropdown" data-language-selector-btn aria-controls="dropdown-content">
-                    <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">
-                        JP
-                    </button>
-                    <div class="dropdown__content">
-                        <a href="#" class="dropdown__link dropdown__link--jp font-zen-kaku fs-pc-16 regular black"
-                            data-language-selector="jp">JP</a>
-                        <a href="#" class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black"
-                            data-language-selector="eng">ENG</a>
+            <div class="header-wrapper">
+                <div class="logo header__left">
+                    <img class="logo__image pc-only" src="../images/common/headerlogo.svg" alt="沖縄居酒屋あーすん/earthen"/>
+                    <img class="logo__image sp-only logo__image--sp" src="../images/common/headerlogo_sp.svg" alt="沖縄居酒屋あーすん/earthen"/>
+                </div>
+                <button class="meatball"></button>
+                <div class="header__center">
+                    <nav class="primary-nav">
+                        <ul class="primary-nav__ul">
+                            <li class="primary-nav__item primary-nav__item--home">
+                                <div class="primary-nav__item--indicator__wrapper">
+                                    <img src="../images/common/nav-current.svg" alt="現在、Homeページにいます" class="primary-nav__item--indicator active-nav"/>
+                                </div>
+                                <a href="./index.html" class="primary-nav__link primary-nav__link-home font-zen-old fs-pc-18 black regular">Home</a>
+                            </li>
+                            <li class="primary-nav__item primary-nav__item--feature">
+                                <div class="primary-nav__item--indicator__wrapper">
+                                    <img src="../images/common/nav-current.svg" alt="現在、Featureページにいます" class="primary-nav__item--indicator"/>
+                                </div>
+                                <a href="./feature.html" class="primary-nav__link primary-nav__link-feature font-zen-old fs-pc-18 black regular">Feature</a>
+                            </li>
+                            <li class="primary-nav__item primary-nav__item--lunch">
+                                <div class="primary-nav__item--indicator__wrapper">
+                                    <img
+                                    src="../images/common/nav-current.svg"
+                                    alt="現在、Lunchページにいます"
+                                    class="primary-nav__item--indicator"
+                                    />
+                                </div>
+                                <a
+                                href="./lunch.html"
+                                class="primary-nav__link primary-nav__link-lunch font-zen-old fs-pc-18 black regular"
+                                >Lunch</a
+                                >
+                            </li>
+                            <li class="primary-nav__item primary-nav__item--dinner">
+                                <div class="primary-nav__item--indicator__wrapper">
+                                    <img
+                                    src="../images/common/nav-current.svg"
+                                    alt="現在、Dinnerページにいます"
+                                    class="primary-nav__item--indicator"
+                                    />
+                                </div>
+                                <a
+                                href="./dinner.html"
+                                class="primary-nav__link primary-nav__link-dinner font-zen-old fs-pc-18 black regular"
+                                >Dinner</a
+                                >
+                            </li>
+                            <li class="primary-nav__item primary-nav__item--news">
+                                <div class="primary-nav__item--indicator__wrapper">
+                                    <img
+                                    src="../images/common/nav-current.svg"
+                                    alt="現在、Newsページにいます"
+                                    class="primary-nav__item--indicator"
+                                    />
+                                </div>
+                                <a
+                                href="./news.html"
+                                class="primary-nav__link primary-nav__link-news font-zen-old fs-pc-18 black regular"
+                                >News</a
+                                >
+                            </li>
+                            <li class="primary-nav__item primary-nav__item--info">
+                                <div class="primary-nav__item--indicator__wrapper">
+                                    <img
+                                    src="../images/common/nav-current.svg"
+                                    alt="現在、Informationページにいます"
+                                    class="primary-nav__item--indicator"
+                                    />
+                                </div>
+                                <a
+                                href="./infomation.html"
+                                class="primary-nav__link primary-nav__link-information fs-pc-18 black regular font-zen-old"
+                                >Information</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown" data-language-selector-btn aria-controls="dropdown-content" >
+                        <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">JP</button>
+                        <div class="dropdown__content">
+                        <a href="#" class="dropdown__link dropdown__link--jp font-zen-kaku fs-pc-16 regular black" data-language-selector="jp">JP</a>
+                        <a href="#" class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black" data-language-selector="eng">ENG</a>
                     </div>
                 </div>
             </div>
@@ -98,25 +115,19 @@
                 <div class="header__right-column header__right-column--one">
                     <div class="header__info--tel">
                         <p class="tel__text fs-pc-12 font-zen-kaku black">お電話</p>
-                        <p class="tel__number fs-pc-20 font-zen-kaku black">
-                            098-851-5360
-                        </p>
+                        <p class="tel__number fs-pc-20 font-zen-kaku black">098-851-5360</p>
                     </div>
-                    <p class="header__info--holiday fs-pc-12 regular black font-zen-kaku">
-                        定休日：日、月曜日
-                    </p>
+                    <p class="header__info--holiday fs-pc-12 regular black font-zen-kaku">定休日：日、月曜日</p>
                 </div>
                 <div class="header__right-column header__right-column--two">
                     <div class="header__info--lunch">
-                        <p class="lunch__text font-zen-kaku fs-pc-12 black regular">
-                            ランチ
-                        </p>
+                        <p class="lunch__text font-zen-kaku fs-pc-12 black regular">ランチ</p>
                         <div class="lunch__time">
                             <p class="lunch__time--TWT lunch__time--item font-zen-kaku fs-pc-12 black regular">
                                 11:00-15:00 (火、水、木曜日)
                             </p>
                             <p class="lunch__time--FSS lunch__time--item font-zen-kaku fs-pc-12 black regular">
-                                12:00-15:00(金、土曜日)
+                                2:00-15:00(金、土曜日)
                             </p>
                         </div>
                     </div>
@@ -134,7 +145,8 @@
             <a href="#" class="reservation-btn" role="button">
                 <img src="../images/common/pc-contact@2x.webp" alt="ご予約" />
             </a>
-        </header>
+        </div>
+    </header>
 
         <!-- main -->
         <main>
@@ -154,29 +166,25 @@
                             <img class="feature-title-en" src="../images/feature/feature01.svg" alt="Feature01">
                         </div>
                     </div>
-                    
                 </div>
                 <!-- swiper -->
-                <div id="slick">
+                <div class="slick slick1">
                     <div class="slick-item">
                         <img class="slick-img" src="../images/feature/feature1-1.jpg" alt="無農薬野菜">
                         <div class="slick-text">
-                            <div class="slick-text_inner">
-                                <h3><span>やんばるを中心とした<br>力強い無農薬野菜</span></h3>
-                                <p>
-                                    世界自然遺産にも登録された沖縄北部（やんばる）地域を中心に、<br>
-                                    シェフが直接畑や生産者様とお会いして厳選した食材を使用しています。<br>
-                                    沖縄特有の土壌と強い太陽の光をたっぷり受けて育った野菜達は、<br>
-                                    沖縄の方言で言う命薬（ぬちぐすい）そのものです。
-                                </p>
-                            </div>
-                            
+                            <h3><span>やんばるを中心とした<br>力強い<em>無農薬野菜</em></span></h3>
+                            <p>
+                                世界自然遺産にも登録された沖縄北部（やんばる）地域を中心に、<br>
+                                シェフが直接畑や生産者様とお会いして厳選した食材を使用しています。<br>
+                                沖縄特有の土壌と強い太陽の光をたっぷり受けて育った野菜達は、<br>
+                                沖縄の方言で言う命薬（ぬちぐすい）そのものです。
+                            </p>
                         </div>
                     </div>
                     <div class="slick-item">
                         <img class="slick-img" src="../images/feature/feature1-2.jpg" alt="ハーブ・スパイス">
                         <div class="slick-text">
-                            <h3>鮮やかに香る<br>ハーブやスパイス</h3>
+                            <h3><span>鮮やかに香る<br><em>ハーブ</em>や<em>スパイス</em></span></h3>
                             <p>
                                 沖縄の素材そのものが持つ美味しさを活かす料理に欠かせない食材として<br>
                                 注目したのが太陽をたっぷり浴びて育った地元由来のハーブやスパイス。<br>
@@ -187,7 +195,7 @@
                     <div class="slick-item">
                         <img class="slick-img" src="../images/feature/feature1-3.jpg" alt="今帰仁アグー">
                         <div class="slick-text">
-                            <h3>希少な在来種の今帰仁アグー</h3>
+                            <h3><span>希少な在来種の<em>今帰仁アグー</em></span></h3>
                             <p>
                                 豚としては日本で唯一の在来種である今帰仁アグー。<br>
                                 「今帰仁アグー」は食の世界遺産である「味の箱舟」に認定されています。<br>
@@ -200,6 +208,83 @@
                         </div>
                     </div>
                 </div>
+                <img src="../images/feature/arrow-prev.svg" alt="Previous" class="prev-arrow prev-arrow1">
+                <img src="../images/feature/arrow-next.svg" alt="Next" class="next-arrow next-arrow1">
+            </section>
+            <section id="feature2" class="feature">
+                <div class="feature2-content">
+                    <div class="feature-top">
+                        <div class="feature-title">
+                            <img class="feature-title-en" src="../images/feature/feature02.svg" alt="Feature01">
+                            <h2>
+                                ソムリエの贈り物、<br>ワインの調べ。
+                                <img src="../images/feature/terrain.svg" alt="装飾">
+                            </h2>
+                        </div>
+                    </div>
+                    <img class="feature-top-img" src="../images/feature/feature2.jpg" alt="こだわりの食材">
+                </div>
+                <!-- swiper -->
+                <div class="slick slick2">
+                    <div class="slick-item">
+                        <img class="slick-img" src="../images/feature/feature2-1.jpg" alt="無農薬野菜">
+                        <div class="slick-text">
+                            <h3><span><em>金・土曜日限定</em>、<br>
+                                週2日間のみの<br>
+                                <em>プレミアムな</em>ディナーコース</span></h3>
+                            <p>
+                                お料理は、生産者の方々とテロワールを大切にした<br>
+                                季節の料理8品〜9品のフルコースです。<br>
+                                ソムリエがお料理やお好みに合わせたワインをご提案します。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slick-item">
+                        <img class="slick-img" src="../images/feature/feature2-2.jpg" alt="ハーブ・スパイス">
+                        <div class="slick-text">
+                            <h3><span>豊富な<em>知識</em>と繊細な<em>感性</em>。</span></h3>
+                            <p>
+                                当店のソムリエは、ワインに関する知識と経験を豊富に備え、<br>
+                                それに繊細な感性を加えています。<br>
+                                畑の土壌や気候、葡萄の品種に至るまでの深い理解を持ち、<br>
+                                それを活かして最高のワイン選びを行います。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="../images/feature/arrow-prev.svg" alt="Previous" class="prev-arrow prev-arrow2">
+                <img src="../images/feature/arrow-next.svg" alt="Next" class="next-arrow next-arrow2">
+            </section>
+            <section id="feature3" class="feature">
+                <div class="feature3-content">
+                    <img class="feature-top-img" src="../images/feature/feature3.jpg" alt="こだわりの食材">
+                    <div class="feature-top">
+                        <div class="feature-title">
+                            <h2>
+                                島の器、<br>彩り豊かに。
+                                <img src="../images/feature/terrain.svg" alt="装飾">
+                            </h2>
+                            <img class="feature-title-en" src="../images/feature/feature03.svg" alt="Feature01">
+                        </div>
+                    </div>
+                </div>
+                <!-- swiper -->
+                <div class="slick">
+                    <div class="slick-item">
+                        <img class="slick-img" src="../images/feature/feature3-1.jpg" alt="無農薬野菜">
+                        <div class="slick-text">
+                            <h3><span><em>島</em>の風景、<br><em>器</em>に託して。</span></h3>
+                            <p>
+                                島cuisine あーすんでは、料理だけでなく、器にも心を込めています。<br>
+                                料理を盛り付ける際、島で生まれた器はまるで島の風景そのもの。<br>
+                                自然の美しさが食卓に広がり、食事が島の旅へと誘います。<br>
+                                そして、その独自の器が、島cuisine あーすんの空間に<br>
+                                特別な温かみを添えています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a>Homeへもどる</a>
             </section>
             <section id="access">
                 <div class="access-wrapper">
