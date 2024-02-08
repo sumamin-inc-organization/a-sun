@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 //スライダー設定
 $("#slick").slick({
-    autoplay: true, // 自動再生
+    //autoplay: true, // 自動再生
     autoplaySpeed: 2000, // 再生速度（ミリ秒設定） 1000ミリ秒=1秒
     infinite: true, // 無限スライド
     pauseOnHover: false,//マウスホバーで一時停止
@@ -21,7 +21,7 @@ $("#slick").slick({
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>',
     centerMode:true,
-    centerPadding:"26%", 
+    centerPadding:"13%", 
     responsive: [
         {
         breakpoint: 1200,

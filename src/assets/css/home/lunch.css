@@ -121,6 +121,7 @@
     background-image: url("../../images/top/lunch/paper_texture.png");
     mix-blend-mode: multiply;
     pointer-events: none;
+    z-index: -1 ;
 }
 
   /* ===============

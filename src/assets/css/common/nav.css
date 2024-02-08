@@ -6,7 +6,21 @@
   background-image: url(../../images/common/hamburger-icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
+  mix-blend-mode: difference;
+  z-index: 100000;
+  display: none;
+  -webkit-filter: grayscale(1) invert(1);
+filter: grayscale(1) invert(1);
+
+/* -webkit-filter: brightness(10);
+filter: brightness(10); */
+}
+
+@media(max-width:750px){
+  .meatball{
+    display: block;
+  }
 }

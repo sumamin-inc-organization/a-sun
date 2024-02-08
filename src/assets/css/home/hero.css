@@ -9,8 +9,15 @@
 
 position: relative;
 z-index: 10;
+/* border: 1px solid red; */
 }
+@media (min-width:750px) {
+  /* ヘッダーとの重なりを防ぐために */
+  #hero{
+    margin-top: 120px;  
 
+  }
+}
 @media (max-width: 750px) {
   .hero-background--sp {
     background-image: url(../../images/top/hero/herobkg_sp.jpg);
@@ -140,8 +147,8 @@ z-index: 10;
     height: 80px;
     position: absolute;
     left: -70px;
-    top: -52px;
-
+    top: -45px;
+  
   }
   
 }
@@ -577,17 +584,17 @@ z-index: 10;
   left: 0;
   bottom:0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: #505050;
-  transform: scaleX(0);
-  transform-origin: right;
+  transform: scaleX(1);
+  transform-origin: left;
   transition: transform  250ms ease-in;
 }
 
 .hover:hover::after{
   
-  transform: scaleX(1);
-  transform-origin: left;
+  transform: scaleX(0);
+  transform-origin: right;
 }
 
 .hover:hover{
