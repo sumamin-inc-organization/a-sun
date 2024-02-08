@@ -6,13 +6,28 @@
     Element Alignment
     エレメントの配置
 ----------------------------*/
-.header {
+
+@media (min-width:500px) {
+  .header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: white;
+  }
+  #hero{
+    margin-top: 120px;
+  }
+}
+.header-wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: relative;
   height: 120px;
   /* border: 1px solid red; */
+  /* position: f; */
 }
 
 .header__left {

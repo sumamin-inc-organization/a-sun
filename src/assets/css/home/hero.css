@@ -10,7 +10,13 @@
 position: relative;
 z-index: 10;
 }
+@media (min-width:500px) {
+  /* ヘッダーとの重なりを防ぐために */
+  #hero{
+    margin-top: 120px;  
 
+  }
+}
 @media (max-width: 750px) {
   .hero-background--sp {
     background-image: url(../../images/top/hero/herobkg_sp.jpg);
