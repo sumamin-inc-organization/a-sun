@@ -14,7 +14,6 @@ import "./assets/css/home/voice.css";
 import "./assets/css/home/news.css";
 import "./assets/css/home/insta.css";
 import "./assets/css/home/access.css";
-// import "./assets/css/common/footer.css";
 import addNavIconEventListener from "./assets/js/eventlisters/naviconEventlistener";
 import activateCrossFadeAnimations from "./assets/js/animations/crossfadeAnimation";
 
@@ -25,41 +24,33 @@ import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
 import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
+import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
 activateCrossFadeAnimations();
 
 changeKvSrc()
+
 // determineTypeOfAnimation();
 screenResizeListener();
 
-// let images = gsap.utils.toArray(".t");
 
-// images.forEach((image) => {
-//   gsap.to(image, {
-//     yPercent: -100 * image.dataset.speed,
-//     ease: "none",
-//     scrollTrigger: {
-//       scrub: image.dataset.speed,
-//     },
-//   });
-// });
 
-// activateCardParallax();
+const screenType = isItSp(); // 画面サイズをチェックします /checks for  screen size
 
-// determineTypeOfAnimation();
-
-// let images = gsap.utils.toArray(".parallax--sp");
-
-const screenType = isItSp(); //checks for  screen size
+/*-------------------------------
+    dinner background animations
+    ディナーの背景アニメーション
+-------------------------------*/
 
 const masterCompany = gsap.timeline();
 
 if(screenType){
-    masterCompany.add(dinnerTopsp()); //if the size is less than 500px then the scale will be 1
+    masterCompany.add(dinnerTopsp()); //if the size is less than 500px then the scale will be 1 / サイズが500px未満の場合、スケールは1になります
+
 }else{
-    masterCompany.add(dinnerTop()); //else its 1.7
+    masterCompany.add(dinnerTop()); //else its 1.7 /それ以外の場合は1.7です
 
 }
 
@@ -104,9 +95,12 @@ function dinnerTop() {
     return tl;
   }
   
-//   const masterCompany = gsap.timeline();
-//   masterCompany.add(companyTop());
 
+
+/*-------------------------------
+    feature parallax animations
+    フィーチャーのパララックスアニメーション
+-------------------------------*/
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -147,34 +141,42 @@ let t3 = gsap.timeline({
 t3
 .to(".feat-main-left-three", {yPercent:-100})
 
+/*-------------------------------
+    Loading animation
+   ロードアニメーション
+-------------------------------*/
 
-document.addEventListener('DOMContentLoaded',(e)=>{
-  let intro = gsap.timeline()
+// document.addEventListener('DOMContentLoaded',(e)=>{
+//   let intro = gsap.timeline()
 
-  intro
-.from('.transition-item',{y:'100%',delay:2})
-.from('.transition-item-white',{y:'100%'})
-// .set('.transition-item',{y:'-100%'})
-.set('.transition-img',{opacity:0})
-.set('.transition-img',{x:"100%" ,})
-.to('.transition-item-white',{y:'-100%'})
-.to('.transition-item-white',{display:"none"})
-.set('.transition-item',{display:"none"})
+//   intro
+// .from('.transition-item',{y:'100%',delay:2})
+// .from('.transition-item-white',{y:'100%'})
+// // .set('.transition-item',{y:'-100%'})
+// .set('.transition-img',{opacity:0})
+// .set('.transition-img',{x:"100%" ,})
+// .to('.transition-item-white',{y:'-100%'})
+// .to('.transition-item-white',{display:"none"})
+// .set('.transition-item',{display:"none"})
 
-})
+// })
 
+setLoadingAnimation()
+/*-------------------------------
+   Logo Animations
+   ロゴのアニメーション
+-------------------------------*/
 
 ScrollTrigger.create({
   trigger: ".trigger",
   start: "top -=10",
   // markers: true,
-  // onEnter: animateLogo2,
-  // onLeave: changeToBlack,
   onEnterBack: animateLogo
-  // onLeaveBack: 
 });
 
+let tween =  gsap.from(".logo__image--sp", { y:" -100% ",duration:1})
+
 function animateLogo() {
-  gsap.from(".logo__image--sp", { y:" -100% ",duration:2})
+  tween.restart();
 }
 

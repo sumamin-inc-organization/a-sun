@@ -1,7 +1,6 @@
 .transition-img{
-    /* border: 1px solid red; */
     position: fixed;
-    z-index: 9997;
+    z-index: 10000;
     width: 100vw;
     height: 100vh;
     display: grid;

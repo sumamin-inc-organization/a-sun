@@ -1,5 +1,20 @@
-#overview {
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 120px;
+}
+
+#overview, #lunchSingle {
     background-image: url(../../images/lunch/lunch_bg_gray.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .overview-grid {
@@ -15,6 +30,11 @@
 
 .overview-inner {
     grid-column: 2/3;
+    margin-top: 60px;
+    margin-bottom: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .overview-description {
@@ -30,7 +50,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px 296px 37px 296px;
+    gap: 30px;
+    margin: 60px auto 80px auto;
+    width: 100%;
+    max-width: 960px;
+    padding-top: 35px;
+    padding-bottom: 37px;
     background:
     linear-gradient(45deg,  transparent 10px, #FFFFFF 10px),
     linear-gradient(135deg, transparent 10px, #FFFFFF 10px),
@@ -45,9 +70,181 @@
     text-align: center;
 }
 
-.overview-hours__content  {
+.overview-hours__content {
     display: flex;
     flex-direction: column;
-    width: 370px;
     margin: auto;
+}
+
+.overview-hours__content--line {
+    display: flex;
+    flex-direction: row;
+}
+
+.overview-hours__content--line span:nth-child(1) {
+    display: block;
+    width: 8.4vw;
+    min-width: 80px;
+}
+
+.overview-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 67px;
+}
+
+.overview-buttons a {
+    color: #505050;
+    width: 132px;
+    text-align: center;
+}
+
+.arrow{
+	position: relative;
+}
+
+.arrow::after {
+    position: absolute;
+    content: "";
+    bottom: -16px;
+    height: 1px;
+    width: 160px;
+    background-color: #505050;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+.arrow::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	content: url(../../images/lunch/arrow.svg);
+	vertical-align: middle;
+}
+
+.lunch-headline {
+    position: relative;
+}
+
+.lunch-headline h2 {
+    text-align: center;
+    color: #505050;
+}
+
+/* lunch_course */
+.course-headline {
+    margin-top: -160px;
+}
+
+.course-headline h2 {
+    position: relative;
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.course-headline img {
+    position: absolute;
+    width: 53%;
+    min-width: 600px;
+    max-width: 1000px;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.lunch-grid {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.lunch-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.lunch-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.lunch-item {
+    width: 50%;
+    padding: clamp(10px, 3.4vw, 101px) clamp(10px, 3.4vw, 100px) clamp(16px, 3.8vw, 109px) clamp(20px, 6.2vw, 140px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lunch-text {
+    color: #505050;
+    
+}
+
+.lunch-text__title {
+    letter-spacing: 0.22rem;
+    margin-bottom: min(4vw, 51px);
+}
+
+.lunch-text__title--main {
+    margin-bottom: 4px;
+}
+
+.lunch-text__title.narrow {
+    margin-bottom: clamp(8px, 1.8vw, 28px);
+}
+
+.lunch-price {
+    color: #505050;
+    text-align: end;
+}
+
+.lunch-image {
+    width: 50%;
+}
+
+/* single_lunch */
+.single-headline {
+    padding-top: 160px;
+    padding-bottom: 102px;
+}
+
+.single-headline h2 {
+    position: relative;
+    z-index: 1;
+}
+
+.single-headline img {
+    position: absolute;
+    width: 54%;
+    min-width: 600px;
+    max-width: 1000px;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/*文字調整*/
+@media (max-width: 888px) {
+    .lunch-text__title,  .lunch-text__title--main {
+        font-size: 2.8vw;
+    }
+
+    .lunch-text__title--sub {
+        font-size: 1.2w;
+    }
+
+    p.lunch-text__description {
+        font-size: 1.1vw;
+    }
+
+    .lunch-price {
+        font-size: 2vw;
+    }
 }

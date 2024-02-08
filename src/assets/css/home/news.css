@@ -38,7 +38,17 @@
 .news-container{
     border-bottom: 1px solid black;
     padding-bottom:clamp( 14px,1.60vw,23px);
+    /* padding-top:clamp( 16.5px,1.8403vw,26.5px); */
+
 }
+.news-container:nth-child(2){
+    padding-top:clamp( 16.5px,1.8403vw,26.5px);
+}
+/* .news-container::after{
+  content: "";
+  height: 1px;
+  back
+} */
 
 .news-bottom{
     display: flex;

@@ -10,7 +10,7 @@
   top: 20px;
   right: 20px;
   mix-blend-mode: difference;
-  z-index: 100000;
+  z-index: 9000;
   display: none;
   -webkit-filter: grayscale(1) invert(1);
 filter: grayscale(1) invert(1);
