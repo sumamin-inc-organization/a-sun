@@ -227,3 +227,11 @@
     /* border: 1px solid red; */
     
 }
+
+/* .dinner-filler{
+    z-index: ;
+} */
+
+.dot{
+    border-radius: 50% 50% 0 0; 
+}
