@@ -24,6 +24,7 @@ import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
 import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
+import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -145,22 +146,22 @@ t3
    ロードアニメーション
 -------------------------------*/
 
-document.addEventListener('DOMContentLoaded',(e)=>{
-  let intro = gsap.timeline()
+// document.addEventListener('DOMContentLoaded',(e)=>{
+//   let intro = gsap.timeline()
 
-  intro
-.from('.transition-item',{y:'100%',delay:2})
-.from('.transition-item-white',{y:'100%'})
-// .set('.transition-item',{y:'-100%'})
-.set('.transition-img',{opacity:0})
-.set('.transition-img',{x:"100%" ,})
-.to('.transition-item-white',{y:'-100%'})
-.to('.transition-item-white',{display:"none"})
-.set('.transition-item',{display:"none"})
+//   intro
+// .from('.transition-item',{y:'100%',delay:2})
+// .from('.transition-item-white',{y:'100%'})
+// // .set('.transition-item',{y:'-100%'})
+// .set('.transition-img',{opacity:0})
+// .set('.transition-img',{x:"100%" ,})
+// .to('.transition-item-white',{y:'-100%'})
+// .to('.transition-item-white',{display:"none"})
+// .set('.transition-item',{display:"none"})
 
-})
+// })
 
-
+setLoadingAnimation()
 /*-------------------------------
    Logo Animations
    ロゴのアニメーション
@@ -173,7 +174,7 @@ ScrollTrigger.create({
   onEnterBack: animateLogo
 });
 
-let tween =  gsap.from(".logo__image--sp", { y:" -100% ",duration:2})
+let tween =  gsap.from(".logo__image--sp", { y:" -100% ",duration:1})
 
 function animateLogo() {
   tween.restart();
