@@ -53,6 +53,10 @@ justify-content: center;
     .insta-seemore{
         padding-top: min(42.8px,10.97vw);
     }
+    .insta-bottom{
+       
+        margin-top: unset;
+    }
 }
 
 .l{

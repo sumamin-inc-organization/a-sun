@@ -37,6 +37,8 @@
   left: 50%;
   transform: translate(-50%,-40%);
   z-index: -1;
+  min-width: 1039px;
+  /* border: 1px solid red; */
 }
 .message-main-text {
   /* border: 1px solid red; */
@@ -88,6 +90,7 @@
 
 .message-bottom-name--eng {
   margin-top: -5px;
+  margin-bottom: 20px;
 }
 
 /* ===============
@@ -130,6 +133,7 @@
         left: -5%;
         transform: translateY(-5%);
         z-index: -1;
+        min-width: 428.79px;
       }
       .message-main-text {
         margin-left: 0;
@@ -173,15 +177,18 @@
       }
       .message-job-title {
         margin-bottom: -25px;
-        /* border: 1px solid red; */
+      
       }
       
       .message-bottom-name--eng {
         margin-top: -25px;
+        margin-bottom: 20px;
         /* border: 1px solid red; */
 
       }
-      
+      .message-bottom-text{
+        margin-top: 28px;
+      }
    }
 
   

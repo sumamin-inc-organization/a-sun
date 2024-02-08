@@ -15,8 +15,19 @@
       rel="stylesheet"
     />
     <title>沖縄居酒屋あーすん</title>
-  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.bd3fa8d2c78f7e657f28.js"></script><script defer src="index.d5676359f3533a405717.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-aea31c.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
+  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.bd3fa8d2c78f7e657f28.js"></script><script defer src="index.eebd4561d16ceb652e97.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-8a6f32.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
   <body class="black">
+    <div class="transition-img">
+      <div class="transition-wrapper">
+        <img src="assets/img/logo.png" alt="logo" class="load-logo">
+      </div>
+    </div>
+    <div class="transition-item">
+      <!-- <div class="transition-time_inner">
+        <div class="texture" aria-hidden="true"></div>
+      </div> -->
+    </div>
+    <div class="transition-item-white"></div>
     <a href="#" class="reservation-btn--sp" role="button">
       <img src="assets/img/sp-contact@2x.webp" alt="ご予約" />
     </a>
@@ -51,7 +62,7 @@
                   />
                 </div>
                 <a
-                  href="../html/index.html"
+                  href="./index.html"
                   class="primary-nav__link primary-nav__link-home font-zen-old fs-pc-18 black regular"
                   >Home</a
                 >
@@ -65,7 +76,7 @@
                   />
                 </div>
                 <a
-                  href="../html/feature.html"
+                  href="./feature.html"
                   class="primary-nav__link primary-nav__link-feature font-zen-old fs-pc-18 black regular"
                   >Feature</a
                 >
@@ -79,7 +90,7 @@
                   />
                 </div>
                 <a
-                  href="../html/lunch.html"
+                  href="./lunch.html"
                   class="primary-nav__link primary-nav__link-lunch font-zen-old fs-pc-18 black regular"
                   >Lunch</a
                 >
@@ -93,7 +104,7 @@
                   />
                 </div>
                 <a
-                  href="../html/dinner.html"
+                  href="./dinner.html"
                   class="primary-nav__link primary-nav__link-dinner font-zen-old fs-pc-18 black regular"
                   >Dinner</a
                 >
@@ -107,7 +118,7 @@
                   />
                 </div>
                 <a
-                  href="../html/news.html"
+                  href="./news.html"
                   class="primary-nav__link primary-nav__link-news font-zen-old fs-pc-18 black regular"
                   >News</a
                 >
@@ -121,7 +132,7 @@
                   />
                 </div>
                 <a
-                  href="../html/infomation.html"
+                  href="./infomation.html"
                   class="primary-nav__link primary-nav__link-information fs-pc-18 black regular font-zen-old"
                   >Information</a
                 >
@@ -517,13 +528,13 @@
                   Feature01
                 </p>
                 <p
-                  class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36"
+                  class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36 no-wrap"
                 >
                   こだわりの食材、<br />
                   やんばるの息吹。
                 </p>
                 <p
-                  class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16"
+                  class="font-zen-kaku  fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16"
                 >
                   厳選された食材は、<br />
                   沖縄北部（やんばる）地域から。<br />
@@ -578,13 +589,13 @@
                   Feature02
                 </p>
                 <p
-                  class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36"
+                  class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36 no-wrap"
                 >
                 ソムリエの贈り物、<br />
                 ワインの調べ。
                 </p>
                 <p
-                  class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16"
+                  class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16 font-zen-kaku"
                 >
                 お料理に寄り添うように、<br>
                 当店のソムリエが厳選したワインが <br>
@@ -643,7 +654,7 @@
                   彩り豊かに。
                 </p>
                 <p
-                  class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16"
+                  class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16 font-zen-kaku"
                 >
                   料理を引き立てるのは、<br> 島で作られた美しい食器たち。<br>
                   優雅な空間と共に、<br> 島の温もりを感じながら <br>
@@ -680,8 +691,7 @@
           class="course-subtitle font-zen-old regular fs-pc-40 white fs-sp-36"
         >
           優雅なランチと <br />
-          ディナーの贅沢な <br />
-          舌饗宴
+          ディナーの<br class="sp-only"/>贅沢な<br class="pc-only" />舌饗宴
         </h3>
         <p class="course-paragraph font-zen-kaku fs-pc-16 white">
           ご家族や大切な方とのランチ、<br
@@ -848,6 +858,13 @@
           <!-- <div class="bottom-right">
             <img src="../images/top/dinner/dinner-final-img.jpg" alt="" class="bottom-img-right__img">
           </div> -->
+          <!-- <div class="bottom-right">
+            <img
+              src="../images/top/dinner/dinner-final-img.jpg"
+              alt=""
+              class="bottom-img-right__img"
+            />
+          </div> -->
         </div>
         <div class="bottom-right">
           <img
@@ -965,7 +982,7 @@
               Takuma Kobayashi
             </p>
             <p
-              class="message-hero font-zen-kaku fs-pc-16 medium letter-spacing-94 line-height-pc-51p5 black fs-sp-14 line-height-sp-40 no-wrap"
+              class="message-hero font-zen-kaku fs-pc-14 medium letter-spacing-94 line-height-pc-40 black fs-sp-14 line-height-sp-40 no-wrap"
             >
               東京のフランス料理店や会員制日本料理店など <br />
               都内様々なレストランで経験を積み、渡豪。 <br />
@@ -1033,6 +1050,7 @@
         </div>
         <div class="voice-bottom">
           <a
+          id="voice-seemore"
             href="#"
             class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore voice-seemore"
             >もっと見る</a
@@ -1081,6 +1099,7 @@
 
           <div class="news-bottom">
             <a
+            id="news-seemore"
               href="#"
               class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore news-seemore"
               >もっと見る</a
