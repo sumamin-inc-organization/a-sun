@@ -162,3 +162,19 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 .set('.transition-item',{display:"none"})
 
 })
+
+
+ScrollTrigger.create({
+  trigger: ".trigger",
+  start: "top -=10",
+  // markers: true,
+  // onEnter: animateLogo2,
+  // onLeave: changeToBlack,
+  onEnterBack: animateLogo
+  // onLeaveBack: 
+});
+
+function animateLogo() {
+  gsap.from(".logo__image--sp", { y:" -100% ",duration:2})
+}
+
