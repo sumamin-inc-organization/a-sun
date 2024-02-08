@@ -58,7 +58,7 @@ z-index: 5;
     margin: 0;
     position: absolute;
     bottom: 50px;
-    right:65px;
+    left:0px;
 }
 
 .texture{
