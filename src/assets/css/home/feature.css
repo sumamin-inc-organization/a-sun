@@ -170,10 +170,10 @@ z-index: 5;
 
 .feature-title__img{
     /* border: 1px solid green; */
-    width: clamp(602.5px,66.94vw,964px);
+    width:408.54px;
     position: absolute;
-    bottom: 10%;
-    left: 0px;
+    bottom: 19%;
+    left: 5px;
 }
 
 
@@ -217,7 +217,7 @@ z-index: 5;
     }
     .feature-title__text--eng{  /*jp*/
         font-size: min(5.13vw,20px);
-        right:5vw;
+        right:3vw;
     }
     
   
