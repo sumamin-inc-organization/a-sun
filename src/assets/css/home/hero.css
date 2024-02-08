@@ -10,7 +10,7 @@
 position: relative;
 z-index: 10;
 }
-@media (min-width:500px) {
+@media (min-width:750px) {
   /* ヘッダーとの重なりを防ぐために */
   #hero{
     margin-top: 120px;  
