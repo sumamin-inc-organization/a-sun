@@ -74,6 +74,9 @@
   text-align: end;
 }
 
+.text-align-center{
+  text-align: center;
+}
 .no-wrap {
 
   text-wrap: nowrap;
