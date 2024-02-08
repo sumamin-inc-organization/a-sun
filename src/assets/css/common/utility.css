@@ -103,3 +103,29 @@
 .overlfow-ellipsis{
 text-overflow: ellipsis;
 }
+
+/*-------------------------
+  下層ページのKV
+--------------------------*/
+.under-kv{
+  background-image: url(../../images/common/under_kv.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 70px 0 90px;
+  text-align: center;
+  grid-column: 1/4;
+}
+.under-kv h1{
+  font-family: "emily-austin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: 0.5rem;
+}
+.under-kv p{
+  font-family: "Zen Old Mincho", serif;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  margin-top: -40px;
+}
