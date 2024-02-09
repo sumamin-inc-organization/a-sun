@@ -47,55 +47,56 @@ const screenType = isItSp(); // 画面サイズをチェックします /checks 
 
 const masterCompany = gsap.timeline();
 
-if(screenType){
-    masterCompany.add(dinnerTopsp()); //if the size is less than 500px then the scale will be 1 / サイズが500px未満の場合、スケールは1になります
+  let dotAnimations = gsap.matchMedia();
 
-}else{
-    masterCompany.add(dinnerTop()); //else its 1.7 /それ以外の場合は1.7です
+    dotAnimations.add("(max-width: 500px)", () => {
+    
 
-}
+      function dinnerTopsp() {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#dinner",
+            start: "-=500px top",
+            end: "+=200",
+            scrub: true,
+            // pin: true,
+            //  markers: true
+          },
+        });
+      
+        tl
+        .from(".company-dot", { scale: 0})
+      
+      
+        return tl;
+      }
 
-
-function dinnerTop() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#dinner",
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-        // pin: true,
-        //  markers: true
-      },
+      masterCompany.add(dinnerTopsp());
     });
-  
-    tl
-    .fromTo(".company-dot", { scale:0},{scale: 1.7})
-    // .to(".company-dot", { scale: 1})
-  
-    return tl;
-  }
+    dotAnimations.add("(min-width: 501px)", () => {
+    
 
-
-
-  function dinnerTopsp() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#dinner",
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-        // pin: true,
-        //  markers: true
-      },
+      function dinnerTop() {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#dinner",
+            start: "-=500px top",
+            end: "+=200",
+            scrub: true,
+            // pin: true,
+            //  markers: true
+          },
+        });
+      
+        tl
+        .fromTo(".company-dot", { scale:0},{scale: 1.7})
+        // .to(".company-dot", { scale: 1})
+      
+        return tl;
+      }
+      
+      masterCompany.add(dinnerTop());
     });
-  
-    tl
-    .from(".company-dot", { scale: 0})
-  
-  
-    return tl;
-  }
-  
 
 
 /*-------------------------------
