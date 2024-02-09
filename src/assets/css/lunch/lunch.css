@@ -25,6 +25,11 @@ html {
     background-size: cover;
 }
 
+#overview.dinner, #lunchSingle.dinner,  #drink.dinner {
+    background-image: none;
+    background-color: #505050;
+}
+
 .overview-grid, .drink-grid {
     display: grid;
     grid-template-columns: 1fr 960px 1fr;
@@ -128,7 +133,6 @@ html {
 
 .lunch-headline h2 {
     text-align: center;
-    color: #505050;
     font-size: 32px;
 }
 
@@ -274,10 +278,6 @@ html {
     justify-content: space-between;
 }
 
-.drink-name {
-    /* width: min(24vw, 258px); */
-}
-
 /*文字調整*/
 @media (max-width: 888px) {
     .lunch-text__title,  .lunch-text__title--main {
@@ -298,6 +298,27 @@ html {
 }
 
 /* dinner */
+.drink-headline.dinner-headline p {
+    top: 70%;
+    letter-spacing: 0.9rem;
+}
+
+.dinner-headline p {
+    font-size: clamp(80px, 12vw, 200px);
+    text-align: center;
+    color: #737373;
+    position: absolute;
+    width: 100%;
+    min-width: 800px;
+    max-width: 1200px;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+    letter-spacing: 0.7rem;
+}
+
 .dinner-headline img {
     top: 40%;
 }
@@ -306,8 +327,16 @@ html {
     margin-bottom: 160px;
 }
 
-.overview-hours.dinner {
-    background-color: #505050;
+.lunch-item.dinner {
+    background-color: #404040;
+}
+
+.drink-grid.dinner {
+    background-color: #404040;
+}
+
+.drink-content.dinner {
+    border-bottom: 0.2px solid #FFFFFF;
 }
 
 /* home back*/
@@ -365,6 +394,7 @@ html {
         font-size: min(16px,4.10vw);
         letter-spacing: 0;
         width: 80%;
+        max-width: 360px;
     }
 
 
@@ -372,6 +402,7 @@ html {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .overview-hours__note p {
