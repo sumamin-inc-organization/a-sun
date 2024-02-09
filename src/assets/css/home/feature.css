@@ -85,8 +85,8 @@ z-index: 5;
     mask: linear-gradient(to top, transparent, white 70%, white 100%);
 } */
 .feature-eyecatcher2 {
-    -webkit-mask: linear-gradient(to top, transparent, white 70%, white 100%);
-    mask: linear-gradient(to top, transparent, white 70%, white 100%);
+    -webkit-mask: linear-gradient(to top, transparent, white 35%, white 100%);
+    mask: linear-gradient(to top, transparent, white 35%, white 100%);
 }
 
 /*------------------------------------------
