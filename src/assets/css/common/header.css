@@ -13,7 +13,6 @@
     top: 0;
     z-index: 100;
     width: 100%;
-    /* border: 1px solid red; */
     background-color: white;
   }
   #hero{
@@ -26,8 +25,6 @@
   align-items: center;
   position: relative;
   height: 120px;
-  /* border: 1px solid red; */
-  /* position: f; */
 }
 
 .header__left {

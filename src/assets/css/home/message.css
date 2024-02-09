@@ -1,12 +1,9 @@
 #message {
   min-height: 100vh;
   position: relative;
-  /* padding-top: calc(27.78vw + 5vw); */
-  /* padding-top: calc((400px + 72px) / 1440 * 100vw); */
 }
 
 .message-title-wrapper {
-  /* border: 1px solid red; */
   margin-left: clamp(117px, 10.63vw, 153px);
   margin-right: clamp(133.8px, 17.22vw, 248px);
   margin-top: clamp(71px, 7.82vw, 112.7px);
@@ -14,12 +11,10 @@
 }
 
 .message-title--eng {
-  /* border: 1px solid green; */
   display: flex;
   justify-content: center;
 }
 .message-subtitle {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   margin-top: -20px;
@@ -35,39 +30,29 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,-40%);
+  transform: translate(-50%, -40%);
   z-index: -1;
   min-width: 1039px;
-  /* border: 1px solid red; */
 }
 .message-main-text {
-  /* border: 1px solid red; */
-  /* margin-left: clamp(30px,13.19vw,190px); */
-  /* margin-left: min(190px, 13.1vw); */
   margin-top: clamp(36.2px, 3.96vw, 57px);
 }
 
-.message-bottom-wrapper {
-  /* margin-inline: min(240px, 16.67vw); */
-}
-.msg-filler{
+.msg-filler {
   position: relative;
   height: 450px;
-  height: clamp(450px,41.6667vw,600px);
-  /* height: calc(27.78vw + 5vw); */
- }
- @media (min-width:1700px){
-  .msg-filler{
+  height: clamp(450px, 41.6667vw, 600px);
+}
+@media (min-width: 1700px) {
+  .msg-filler {
     position: relative;
     height: 800px;
-    /* height: clamp(450px,41.6667vw,600px); */
-    /* height: calc(27.78vw + 5vw); */
-   }
- }
-@media (min-width:501px){
-  .message-grid-wrap{
+  }
+}
+@media (min-width: 501px) {
+  .message-grid-wrap {
     display: grid;
-    place-content: center; 
+    place-content: center;
   }
 }
 .message-imgs {
@@ -77,13 +62,9 @@
 }
 .msg-img-wrapper {
   width: clamp(187.5px, 20.83vw, 300px);
-  /* width: 300px; */
-  /* border: 1px solid blue; */
 }
 .msg-img {
-  /* object-fit: fill; */
   width: 100%;
-
 }
 
 .msg-img--top {
@@ -91,11 +72,8 @@
   position: absolute;
   top: 50%;
 }
-/* 256.3 */
 .message-bottom-text {
-  /* border: 1px solid black; */
   margin-left: min(411px, 28.54vw);
-  /* margin-left: clamp(256.3,28.54vw,411px); */
 }
 .message-job-title {
   margin-bottom: -10px;
@@ -109,115 +87,88 @@
 /* ===============
       MOBILE
    =============== */
-   @media (max-width:825px){
-    .message-title-wrapper {
-      margin-top: 250px;
-    }
-   }
-
-   @media (max-width:500px){
-    .message-title-wrapper {
-        /* border: 1px solid red; */
-        margin-left: 0;
-        margin-right: 0;
-        /* margin-top: clamp(71px, 7.82vw, 112.7px); */
-        margin-top: 160px;
-        padding-left: min(30.9px,7.92vw) ;
-        padding-right: min(7.1px,1.82vw);
-        position: relative;
-      }
-      .message-title--eng {
-        display: flex;
-        justify-content: flex-start;
-      }
-      .message-subtitle {
-        /* margin-left: min(30.9px,7.92vw) ; */
-        display: flex;
-        justify-content: flex-start;
-        margin-top: -20px;
-
-      }
-      .message-title--intro {
-     /* nochanges */
-      }
-      .message-title--img {
-        position: absolute;
-        top: 0;
-        left: -5%;
-        transform: translateY(-5%);
-        z-index: -1;
-        min-width: 428.79px;
-      }
-      .message-main-text {
-        margin-left: 0;
-        margin-top: clamp(36.2px, 3.96vw, 57px);
-      }
-      .message-bottom-wrapper {
-        /* border: 1px solid red; */
-        margin-inline: 0;
-        padding-inline: min(20px,5.13vw);
-      }
-      .msg-img{
-        width: min(150px,38.46vw);
-        /* border: 1px solid red; */
-      }
-      .headchef-sp{
-        /* border: 1px solid red; */
-        width: min(150px,38.46vw);
-        /* width: 150px; */
-      }
-      .msg-img--top {
-        /* width: clamp(187.5px, 20.83vw, 300px); */
-        /* width:min(150px,38.46vw); */
-        width: 100%;
-        position: relative;
-        /* border: 1px solid red;  */
-        margin-top: -50px;
-      }
-      .flower{
-        /* margin-bottom: min(55px,14.10vw); */
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-       }
-      .flower-img{
-        /* height: 100%;
-        width: 100%; */
-       }
-       .message-bottom-text {
-        margin-left: 0;
-
-      }
-      .message-job-title {
-        margin-bottom: -25px;
-      
-      }
-      
-      .message-bottom-name--eng {
-        margin-top: -25px;
-        margin-bottom: 20px;
-        /* border: 1px solid red; */
-
-      }
-      .message-bottom-text{
-        margin-top: 28px;
-      }
-      .msg-filler{
-        position: relative;
-        height: 300px;
-        /* height: calc(27.78vw + 5vw); */
-       }
-   }
-
-  /* .message-title--img{
-    z-index: 15;
+@media (max-width: 825px) {
+  .message-title-wrapper {
+    margin-top: 250px;
   }
-   */
+}
 
-   .message-grid-wrap{
+@media (max-width: 500px) {
+  .message-title-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 160px;
+    padding-left: min(30.9px, 7.92vw);
+    padding-right: min(7.1px, 1.82vw);
     position: relative;
-   }
-   .message-title-wrapper{
-    margin-top: 0;
-   }
+  }
+  .message-title--eng {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .message-subtitle {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -20px;
+  }
+  .message-title--intro {
+    /* nochanges */
+  }
+  .message-title--img {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    transform: translateY(-5%);
+    z-index: -1;
+    min-width: 428.79px;
+  }
+  .message-main-text {
+    margin-left: 0;
+    margin-top: clamp(36.2px, 3.96vw, 57px);
+  }
+  .message-bottom-wrapper {
+    margin-inline: 0;
+    padding-inline: min(20px, 5.13vw);
+  }
+  .msg-img {
+    width: min(150px, 38.46vw);
+  }
+  .headchef-sp {
+    width: min(150px, 38.46vw);
+  }
+  .msg-img--top {
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+  }
+  .flower {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .message-bottom-text {
+    margin-left: 0;
+  }
+  .message-job-title {
+    margin-bottom: -25px;
+  }
 
+  .message-bottom-name--eng {
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+  .message-bottom-text {
+    margin-top: 28px;
+  }
+  .msg-filler {
+    position: relative;
+    height: 300px;
+  }
+}
+
+.message-grid-wrap {
+  position: relative;
+}
+.message-title-wrapper {
+  margin-top: 0;
+}
