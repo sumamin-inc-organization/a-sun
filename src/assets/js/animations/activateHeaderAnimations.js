@@ -9,7 +9,7 @@ export default function activateHeaderAnimations(){
     pcHeaderAnim.add("(min-width: 800px)", () => {
     
       const showAnim = gsap.from('.header', { 
-        yPercent: -100,
+        yPercent: -150,
         paused: true,
         duration: 0.2
       }).progress(1);
