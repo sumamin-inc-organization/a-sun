@@ -261,10 +261,6 @@ z-index: 5;
         justify-content: center;
       
     }
-    .feat-main--right{
-        margin-top: -150px;
-        margin-bottom: 75px;
-    }
 .feat-main-left-two{
     display: flex;
     justify-content: flex-end;
@@ -294,11 +290,20 @@ z-index: 5;
 }
 .feat-main--left{
     margin-bottom: -200px;
+    /* border: 1px solid red; */
+}
+.feat-main--right{
+    margin-top: 46px;
+    margin-bottom: 75px;
 }
 .feature-eyecatcher--sp{
     /* border: 1px solid red; */
     object-fit: cover;
     width: 100%;
+}
+.feat-main{
+    border: 1px solid red;
+    margin-top: -600px;
 }
 }
 @media (max-width:400px){
