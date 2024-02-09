@@ -77,6 +77,9 @@
   bottom: -20%;
   right: 0;
 }
+.bottom-right_widescreen{
+  display: none;
+}
 @media (max-width: 780px) {
   .bottom-left {
     margin-left: 0;
@@ -252,8 +255,40 @@
   #dinner{
     padding: 50px;
   }
+  .bottom-right{
+    bottom: -10%;
+  }
 }
 
-@media (min-width:1450px){
+
+@media (min-width:1600px){
+  .bottom-left{
+    transform: translateX(50%);
+  }
+  .bottom-right{
+    display: none;
+  }
+
+    .bottom-right_widescreen{
+      display: block;
+      position: absolute;
+      bottom: -100%;
+    }
   
+  
+}
+@media (min-width:1700px){
+  .company-dot {
+    z-index: -2;
+    z-index: -2;
+    width: 80vmax;
+    height: 90vmax;
+  }
+  #dinner{
+    padding: 300px;
+  }
+}
+
+.dinner-bottom{
+  /* border: 1px solid red; */
 }
