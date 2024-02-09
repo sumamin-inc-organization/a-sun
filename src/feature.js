@@ -15,25 +15,32 @@ gsap.registerPlugin(ScrollTrigger);
 $(document).ready(function() {
     // スライダー1の設定
     $(".slick1").slick({
-        autoplaySpeed: 2000,
+        //autoplay: true,
+        autoplaySpeed: 2500,
         infinite: true,
         pauseOnHover: false,
-        dots: true, // ページネーションを有効にする
+        dots: true,
         prevArrow: $('.prev-arrow1'),
         nextArrow: $('.next-arrow1'),
         centerMode: true,
         centerPadding: "13%", 
         responsive: [
             {
-                breakpoint: 1400,
+                breakpoint: 1350,
                 settings: {
                     centerPadding: "10%",
                 },
             },
             {
-                breakpoint: 1250,
+                breakpoint: 1230,
                 settings: {
-                    centerPadding: "0%",
+                    centerPadding: "5%",
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    centerPadding: "5%",
                 },
             },
         ],
@@ -41,7 +48,8 @@ $(document).ready(function() {
 
     // スライダー2の設定
     $(".slick2").slick({
-        autoplaySpeed: 2000,
+        //autoplay: true,
+        autoplaySpeed: 2500,
         infinite: true,
         pauseOnHover: false,
         dots: true,
@@ -51,15 +59,21 @@ $(document).ready(function() {
         centerPadding: "13%", 
         responsive: [
             {
-                breakpoint: 1400,
+                breakpoint: 1350,
                 settings: {
                     centerPadding: "10%",
                 },
             },
             {
-                breakpoint: 1250,
+                breakpoint: 1230,
                 settings: {
-                    centerPadding: "0%",
+                    centerPadding: "5%",
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    centerPadding: "6%",
                 },
             },
         ],

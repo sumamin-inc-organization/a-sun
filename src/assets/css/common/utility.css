@@ -117,6 +117,11 @@ text-overflow: ellipsis;
   text-align: center;
   grid-column: 1/4;
 }
+@media(max-width:767px){
+  .under-kv{
+    margin-top: 0;
+  }
+}
 .under-kv h1{
   font-family: "emily-austin", sans-serif;
   font-weight: 400;
@@ -129,4 +134,25 @@ text-overflow: ellipsis;
   font-size: 20px;
   letter-spacing: 0.2rem;
   margin-top: -40px;
+}
+
+/*-------------------------
+  HOMEへ戻るボタン
+--------------------------*/
+.home-btn{
+  grid-column:2;
+  text-align: center;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  padding: 100px 0;
+}
+.home-btn a{
+  border-bottom: solid 1px #505050;
+  padding: 0 20px 15px;
+}
+@media(max-width:767px){
+.home-btn{
+    padding: 70px 0;
+  }
 }
