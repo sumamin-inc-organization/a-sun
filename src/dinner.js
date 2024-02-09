@@ -5,6 +5,7 @@ import "./assets/css/common/header.css";
 import "./assets/css/common/nav.css";
 import "./assets/css/home/animations.css";
 import "./assets/css/home/access.css";
+import "./assets/css/lunch/lunch.css";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 
 import { gsap } from "gsap";
