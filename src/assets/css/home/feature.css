@@ -263,7 +263,7 @@
     width: 100%;
   }
   .feat-main--1 {
-    margin-top: -400px;
+    margin-top: -500px;
   }
   .feat-main--2 {
     margin-top: -500px;
@@ -287,4 +287,8 @@
   .feat-main--left {
     margin-bottom: -120px;
   }
+}
+
+.feat-main{
+  
 }
