@@ -68,7 +68,7 @@
 
 .bottom-left {
   width: clamp(187.5px, 20.83vw, 300px);
-  margin-left: clamp(100px, 11.11vw, 160px);
+  /* margin-left: clamp(100px, 11.11vw, 160px); */
 }
 
 .bottom-right {
@@ -106,7 +106,7 @@
   }
   .bottom-right {
     position: absolute;
-    bottom: -25%;
+    bottom: -15%;
     right: 0;
   }
 }
@@ -125,7 +125,7 @@
   .bottom-right {
     width: clamp(406.25px, 45.14vw, 650px);
     position: absolute;
-    bottom: -25%;
+    bottom: -15%;
     right: 0;
   }
 }
@@ -166,7 +166,7 @@
 }
 @media (min-width: 1401px) {
   .bottom-left {
-    margin-left: 11.11vw;
+    /* margin-left: 11.11vw; */
   }
 }
 @media (min-width: 1700px) {
@@ -184,7 +184,7 @@
 
   .bottom-right {
     position: absolute;
-    bottom: -33%;
+    bottom: -30%;
     right: 0;
   }
 }
@@ -252,4 +252,8 @@
   #dinner{
     padding: 50px;
   }
+}
+
+@media (min-width:1450px){
+  
 }
