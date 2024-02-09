@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- iOSの数字が青くなるのを防止する -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="date=no" name="format-detection" />
     <!-- フォント -->
     <link rel="stylesheet" href="https://use.typekit.net/kvd6ihk.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,12 +18,17 @@
 </head>
 <body class="black">
     <div class="transition-img">
-        <div class="transition-item"></div>
+        <div class="transition-wrapper">
+            <img src="../images/top/hero/logo.png" alt="logo" class="load-logo">
+        </div>
+        </div>
+        <div class="transition-item">
+        </div>
         <div class="transition-item-white"></div>
         <a href="#" class="reservation-btn--sp" role="button">
         <img src="../images/common/sp-contact@2x.webp" alt="ご予約" />
         </a>
-        <div class="hero-background--sp"></div>
+        <div class="hero-background--sp">
         <div class="trigger"></div>
         <header class="header">
             <div class="header-wrapper">
@@ -41,9 +49,6 @@
                 </a>
             </div>
             <button class="meatball">
-                <!-- <span class="dot"> </span>
-                <span class="dot"> </span>
-                <span class="dot"> </span> -->
             </button>
             <div class="header__center">
                 <nav class="primary-nav">
@@ -139,9 +144,7 @@
                 data-language-selector-btn
                 aria-controls="dropdown-content"
                 >
-                <button
-                    class="dropdown__btn font-zen-kaku fs-pc-16 regular black"
-                >
+                <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">
                     JP
                 </button>
                 <div class="dropdown__content">
@@ -208,7 +211,7 @@
             </a>
             </div>
         </header>
-    </div>
+        </div>
     <main>
         <section class="under-kv">
             <h1>Lunch</h1>
