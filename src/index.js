@@ -25,6 +25,7 @@ import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -146,21 +147,6 @@ t3
    ロードアニメーション
 -------------------------------*/
 
-// document.addEventListener('DOMContentLoaded',(e)=>{
-//   let intro = gsap.timeline()
-
-//   intro
-// .from('.transition-item',{y:'100%',delay:2})
-// .from('.transition-item-white',{y:'100%'})
-// // .set('.transition-item',{y:'-100%'})
-// .set('.transition-img',{opacity:0})
-// .set('.transition-img',{x:"100%" ,})
-// .to('.transition-item-white',{y:'-100%'})
-// .to('.transition-item-white',{display:"none"})
-// .set('.transition-item',{display:"none"})
-
-// })
-
 setLoadingAnimation()
 /*-------------------------------
    Logo Animations
@@ -186,22 +172,4 @@ function animateLogo() {
    ヘッダーPCアニメーション
 -------------------------------*/
 
-let pcHeaderAnim = gsap.matchMedia();
-
-pcHeaderAnim.add("(min-width: 800px)", () => {
-
-  const showAnim = gsap.from('.header', { 
-    yPercent: -100,
-    paused: true,
-    duration: 0.2
-  }).progress(1);
-  
-  
-  ScrollTrigger.create({
-    start: "top top",
-    end: "max",
-    onUpdate: (self) => {
-      self.direction === -1 ? showAnim.play() : showAnim.reverse()
-    }
-  });
-});
+activateHeaderAnimations();
