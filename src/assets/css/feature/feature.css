@@ -116,3 +116,27 @@
 .slick-arrow.slick-hidden{
     display: block !important;
 }
+
+/* ドットのスタイル */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.slick-dots button{
+    padding-block: 0px !important;
+    padding-inline: 0px !important;
+}
+.slick-slider .slick-dots li button {
+    font-size: 0;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: #00000000;
+    border: solid 1px #505050;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slick-slider .slick-dots li.slick-active button {
+    background-color: #505050; /* アクティブなドットの背景色を設定 */
+}

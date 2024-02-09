@@ -18,7 +18,7 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         infinite: true,
         pauseOnHover: false,
-        dots: false,
+        dots: true, // ページネーションを有効にする
         prevArrow: $('.prev-arrow1'),
         nextArrow: $('.next-arrow1'),
         centerMode: true,
@@ -44,7 +44,7 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         infinite: true,
         pauseOnHover: false,
-        dots: false,
+        dots: true,
         prevArrow: $('.prev-arrow2'),
         nextArrow: $('.next-arrow2'),
         centerMode: true,
