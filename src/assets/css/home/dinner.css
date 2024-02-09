@@ -285,7 +285,16 @@
     height: 90vmax;
   }
   #dinner{
-    padding: 300px;
+    /* padding: 300px; */
+  }
+}
+@media (max-width:400px){
+  .company-dot {
+    width: 142vmax;
+    height: 155vmax;
+  } 
+  #dinner{
+    padding: 90px;
   }
 }
 

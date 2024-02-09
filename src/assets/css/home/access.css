@@ -69,7 +69,7 @@
   width: 120%;
   height: 1px;
   background-color: #ffffff;
-  bottom: -5px;
+  bottom: -5px; 
 }
 
 /* ===============
@@ -126,23 +126,27 @@
   #access_shop-info::after {
     content: url(../../images/top/dinner/see-more-black.svg);
     position: absolute;
-    right: -18px;
-  }
+    right: 5px;  }
 
-  #access_google-maps::before,
+   #access_google-maps::before,
   #access_route::before,
   #access_shop-info::before {
-    content: "";
+    /* content: "";
     position: absolute;
     width: 120%;
     height: 1px;
     background-color: #ffffff;
-    bottom: -10px;
+    bottom: -10px; */
+    display: none;
   }
   #access_google-maps,
   #access_route,
   #access_shop-info {
     padding-top: 29.9px;
+    border-bottom: 1px solid #ffffff;
+    padding-inline: 25px;
+    padding-bottom: 16px;
+    /* width: ; */
   }
 }
 

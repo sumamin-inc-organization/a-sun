@@ -116,7 +116,7 @@ let tl = gsap.timeline({
 });
 
 tl
-.to(".feat-main-left-one", {yPercent:-100})
+.to(".feat-main-left-one", {yPercent:-65})
 // .to(".company-dot", { scale: 1})
 
 let t2 = gsap.timeline({
@@ -129,7 +129,7 @@ let t2 = gsap.timeline({
 });
 
 t2
-.to(".feat-main-left-two", {yPercent:-100})
+.to(".feat-main-left-two", {yPercent:-65})
 
 let t3 = gsap.timeline({
   scrollTrigger: {
@@ -141,7 +141,7 @@ let t3 = gsap.timeline({
 });
 
 t3
-.to(".feat-main-left-three", {yPercent:-100})
+.to(".feat-main-left-three", {yPercent:-65})
 
 /*-------------------------------
     Loading animation
