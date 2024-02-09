@@ -122,3 +122,8 @@
   letter-spacing: 0.2rem;
   margin-top: -40px;
 }
+
+main{
+  position: relative;
+  z-index: 2;
+}
