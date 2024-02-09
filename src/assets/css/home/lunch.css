@@ -2,8 +2,8 @@
 /*       LUNCH       */
 /* ------------------- */
 
-#lunch{
-  padding-bottom: min(4.51vw,65px);
+#lunch {
+  padding-bottom: min(4.51vw, 65px);
   position: relative;
 }
 
@@ -11,175 +11,156 @@
     Lunch Title /ランチのタイトル
 -------------------------------*/
 
-.lunch-dinner-common{
-    /* padding-inline: clamp(50px,5.56vw,80px); */
-    /* border: 1px solid red; */
-    display: grid;
-    place-content: center;
+.lunch-dinner-common {
+  display: grid;
+  place-content: center;
 }
 
-.lunch-title-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top:clamp(63px,6.9444vw,100px);
-    padding-bottom:clamp(29px,3.14vw,45.2px);
+.lunch-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(63px, 6.9444vw, 100px);
+  padding-bottom: clamp(29px, 3.14vw, 45.2px);
 }
 /*-----------------------------
     Lunch gallary /ランチ ギャラリー
 -------------------------------*/
 
-
-
-.image-grid{
-    display: flex;
-    gap: 1.39vw;
-
+.image-grid {
+  display: flex;
+  gap: 1.39vw;
 }
 
-.common-img--left{
-    width: 43.75vw;
-    background-size: cover;
+.common-img--left {
+  width: 43.75vw;
+  background-size: cover;
 }
-.lunch-img--left{
-    background-image: url(../../images/top/lunch/lunch-image-left.jpg);
+.lunch-img--left {
+  background-image: url(../../images/top/lunch/lunch-image-left.jpg);
 }
-.common-img--right{
-    max-width: 40.97vw;
-    width: 100%;
-
+.common-img--right {
+  max-width: 40.97vw;
+  width: 100%;
 }
-.img-gallary-right{
-   max-width:  40.97vw;
-    width: 590px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.39vw;
+.img-gallary-right {
+  max-width: 40.97vw;
+  width: 590px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.39vw;
 }
-.lunch-left{
-    opacity: 0;
+.lunch-left {
+  opacity: 0;
 }
 
 /*----------------------------------
     Lunch Paragraph /ランチ パラグラフ
 ------------------------------------*/
 
-.lunch-dinner-paragraph-wrapper{
-    /* border: 1px solid red; */
-    padding-top:clamp(29.4px,3.28vw,47.2px);
-    display: flex;
-    justify-content: center;
+.lunch-dinner-paragraph-wrapper {
+  padding-top: clamp(29.4px, 3.28vw, 47.2px);
+  display: flex;
+  justify-content: center;
 }
 
 /*----------------------------------
     Text Adjustments /テキストの調整
 ------------------------------------*/
-.lunch-dinner-common_paragraph{
-    text-align: center;
+.lunch-dinner-common_paragraph {
+  text-align: center;
 }
 
 /*----------------------------------
    SEE MORE btn
 ------------------------------------*/
 
-.lunch-dinner-see-more-btn-wrapper_common{
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
+.lunch-dinner-see-more-btn-wrapper_common {
+  display: flex;
+  justify-content: center;
 }
 
-.lunch-dinner-common-seemore{
-    line-height: clamp(40.94px,4.55vw,65.5px);
-    letter-spacing: 0.154em;
-    position: relative;
-    margin-right: 30px;
-   
+.lunch-dinner-common-seemore {
+  line-height: clamp(40.94px, 4.55vw, 65.5px);
+  letter-spacing: 0.154em;
+  position: relative;
+  margin-right: 30px;
 }
-.lunch-dinner-common-seemore::after{
-    content:url(../../images/top/feature/see-more-icon-feat.svg) ;
-    position: absolute;
-    right: -18px;
+.lunch-dinner-common-seemore::after {
+  content: url(../../images/top/feature/see-more-icon-feat.svg);
+  position: absolute;
+  right: -18px;
 }
-.lunch-dinner-common-seemore::before{
-    content:"";
-    position: absolute;
-    width: 120%;
-    height: 1px;
-    background-color: #505050;
-    bottom: 5px;
-}
-
-.lunch-texture{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-repeat: repeat;
-    background-image: url("../../images/top/lunch/paper_texture.png");
-    mix-blend-mode: multiply;
-    pointer-events: none;
-    z-index: -1 ;
+.lunch-dinner-common-seemore::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 1px;
+  background-color: #505050;
+  bottom: 5px;
 }
 
-  /* ===============
+.lunch-texture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat;
+  background-image: url("../../images/top/lunch/paper_texture.png");
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ===============
       MOBILE
    =============== */
 
-   @media (max-width:500px){
-    #lunch{
-        padding-bottom: min(18.08vw,70.5px);
-      }
-    .lunch-dinner-common{
-        /* padding-inline: min(30px,7.69vw); */
-      
-        display: grid;
-        place-content: center;
-    }
-    .lunch-image-grid {
-        /* border: 1px solid red; */
-    }
-    .lunch-img-grid-clip{
-        overflow-x: clip;
-    }
-    .lunch-dinner-common-seemore{
-        padding-top: 48.5px;
-        padding-top: min(12.44vw,48.5px);
-    }
-    .img-gallary-right{
-        /* max-width: 42.69vw; */
-         width: 166.53px;
-         width: max(166.53px,42.69vw);
-         display: flex;
-         flex-direction: column;
-         gap: 1.44vw;
-     }
-     .lunch-img--left{
-        width:45.62vw;
-        background-image: url(../../images/top/lunch/lunch-image-left.jpg);
-        background-size: cover;
-    }
-    .common-img--left{
-        width:45.62vw;
-        background-size: cover;
-    }
-    .lunch-img--r{
-        /* display: none; */
-        opacity: 0;
-    }
-    .lunch-img--right-d{
-        min-width:45.62vw;
-        background-image: url(../../images/top/lunch/lunch-image-right_bottom.jpg);
-        background-size: cover;
-
-    }
-    .lunch-img--right-top{
-        min-width:45.62vw;
-        background-image: url(../../images/top/lunch/lunch-image-right_top.jpg);
-        background-size: cover;
-    }
-   }
-
-   
+@media (max-width: 500px) {
+  #lunch {
+    padding-bottom: min(18.08vw, 70.5px);
+  }
+  .lunch-dinner-common {
+    display: grid;
+    place-content: center;
+  }
+  .lunch-img-grid-clip {
+    overflow-x: clip;
+  }
+  .lunch-dinner-common-seemore {
+    padding-top: 48.5px;
+    padding-top: min(12.44vw, 48.5px);
+  }
+  .img-gallary-right {
+    width: 166.53px;
+    width: max(166.53px, 42.69vw);
+    display: flex;
+    flex-direction: column;
+    gap: 1.44vw;
+  }
+  .lunch-img--left {
+    width: 45.62vw;
+    background-image: url(../../images/top/lunch/lunch-image-left.jpg);
+    background-size: cover;
+  }
+  .common-img--left {
+    width: 45.62vw;
+    background-size: cover;
+  }
+  .lunch-img--r {
+    opacity: 0;
+  }
+  .lunch-img--right-d {
+    min-width: 45.62vw;
+    background-image: url(../../images/top/lunch/lunch-image-right_bottom.jpg);
+    background-size: cover;
+  }
+  .lunch-img--right-top {
+    min-width: 45.62vw;
+    background-image: url(../../images/top/lunch/lunch-image-right_top.jpg);
+    background-size: cover;
+  }
+}

@@ -25,6 +25,7 @@ import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -46,55 +47,56 @@ const screenType = isItSp(); // 画面サイズをチェックします /checks 
 
 const masterCompany = gsap.timeline();
 
-if(screenType){
-    masterCompany.add(dinnerTopsp()); //if the size is less than 500px then the scale will be 1 / サイズが500px未満の場合、スケールは1になります
+  let dotAnimations = gsap.matchMedia();
 
-}else{
-    masterCompany.add(dinnerTop()); //else its 1.7 /それ以外の場合は1.7です
+    dotAnimations.add("(max-width: 500px)", () => {
+    
 
-}
+      function dinnerTopsp() {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#dinner",
+            start: "-=500px top",
+            end: "+=200",
+            scrub: true,
+            // pin: true,
+            //  markers: true
+          },
+        });
+      
+        tl
+        .from(".company-dot", { scale: 0})
+      
+      
+        return tl;
+      }
 
-
-function dinnerTop() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#dinner",
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-        // pin: true,
-        //  markers: true
-      },
+      masterCompany.add(dinnerTopsp());
     });
-  
-    tl
-    .fromTo(".company-dot", { scale:0},{scale: 1.7})
-    // .to(".company-dot", { scale: 1})
-  
-    return tl;
-  }
+    dotAnimations.add("(min-width: 501px)", () => {
+    
 
-
-
-  function dinnerTopsp() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#dinner",
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-        // pin: true,
-        //  markers: true
-      },
+      function dinnerTop() {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#dinner",
+            start: "-=500px top",
+            end: "+=200",
+            scrub: true,
+            // pin: true,
+            //  markers: true
+          },
+        });
+      
+        tl
+        .fromTo(".company-dot", { scale:0},{scale: 1.7})
+        // .to(".company-dot", { scale: 1})
+      
+        return tl;
+      }
+      
+      masterCompany.add(dinnerTop());
     });
-  
-    tl
-    .from(".company-dot", { scale: 0})
-  
-  
-    return tl;
-  }
-  
 
 
 /*-------------------------------
@@ -114,7 +116,7 @@ let tl = gsap.timeline({
 });
 
 tl
-.to(".feat-main-left-one", {yPercent:-100})
+.to(".feat-main-left-one", {yPercent:-65})
 // .to(".company-dot", { scale: 1})
 
 let t2 = gsap.timeline({
@@ -127,7 +129,7 @@ let t2 = gsap.timeline({
 });
 
 t2
-.to(".feat-main-left-two", {yPercent:-100})
+.to(".feat-main-left-two", {yPercent:-65})
 
 let t3 = gsap.timeline({
   scrollTrigger: {
@@ -139,27 +141,12 @@ let t3 = gsap.timeline({
 });
 
 t3
-.to(".feat-main-left-three", {yPercent:-100})
+.to(".feat-main-left-three", {yPercent:-65})
 
 /*-------------------------------
     Loading animation
    ロードアニメーション
 -------------------------------*/
-
-// document.addEventListener('DOMContentLoaded',(e)=>{
-//   let intro = gsap.timeline()
-
-//   intro
-// .from('.transition-item',{y:'100%',delay:2})
-// .from('.transition-item-white',{y:'100%'})
-// // .set('.transition-item',{y:'-100%'})
-// .set('.transition-img',{opacity:0})
-// .set('.transition-img',{x:"100%" ,})
-// .to('.transition-item-white',{y:'-100%'})
-// .to('.transition-item-white',{display:"none"})
-// .set('.transition-item',{display:"none"})
-
-// })
 
 setLoadingAnimation()
 /*-------------------------------
@@ -180,3 +167,10 @@ function animateLogo() {
   tween.restart();
 }
 
+
+/*-------------------------------
+   Header PC animation
+   ヘッダーPCアニメーション
+-------------------------------*/
+
+activateHeaderAnimations();
