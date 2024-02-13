@@ -283,6 +283,8 @@
     z-index: -2;
     width: 80vmax;
     height: 85vmax;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 89%);
+
   }
   #dinner{
     padding: 200px;
@@ -300,4 +302,11 @@
 
 .dinner-bottom{
   /* border: 1px solid red; */
+}
+
+@media (min-width: 1700px) {
+ .bottom-right{
+  bottom: -90%;
+ }
+
 }
