@@ -188,3 +188,9 @@
    height: 450px;
   }
 }
+@media(max-width:500px){
+  .msg-filler {
+    position: relative;
+   height: 0px;
+  }
+}
