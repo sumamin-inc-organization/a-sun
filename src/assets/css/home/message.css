@@ -172,3 +172,11 @@
 .message-title-wrapper {
   margin-top: 0;
 }
+
+
+@media(min-width:1600px){
+  .msg-filler {
+    position: relative;
+   height: 1000px;
+  }
+}

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- iOSの数字が青くなるのを防止する -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="date=no" name="format-detection" />
     <!-- フォント -->
     <link rel="stylesheet" href="https://use.typekit.net/kvd6ihk.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,15 +15,20 @@
         href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&family=Zen+Old+Mincho&display=swap"
         rel="stylesheet"
     />
-<script defer src="lunch.88d6f603e6d33690fb8b.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-aea31c.css" rel="stylesheet"><link href="lunch.css" rel="stylesheet"></head>
+<script defer src="vendors-node_modules_gsap_index_js.74e2bd77b344ff98db30.js"></script><script defer src="lunch.86abc18d0dc5f26047d9.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-aea31c.css" rel="stylesheet"><link href="src_assets_css_home_animations_css-src_assets_css_lunch_lunch_css.css" rel="stylesheet"><link href="lunch.css" rel="stylesheet"></head>
 <body class="black">
     <div class="transition-img">
-        <div class="transition-item"></div>
+        <div class="transition-wrapper">
+            <img src="assets/img/logo.png" alt="logo" class="load-logo">
+        </div>
+        </div>
+        <div class="transition-item">
+        </div>
         <div class="transition-item-white"></div>
         <a href="#" class="reservation-btn--sp" role="button">
         <img src="assets/img/sp-contact@2x.webp" alt="ご予約" />
         </a>
-        <div class="hero-background--sp"></div>
+        <div class="hero-background--sp">
         <div class="trigger"></div>
         <header class="header">
             <div class="header-wrapper">
@@ -41,9 +49,6 @@
                 </a>
             </div>
             <button class="meatball">
-                <!-- <span class="dot"> </span>
-                <span class="dot"> </span>
-                <span class="dot"> </span> -->
             </button>
             <div class="header__center">
                 <nav class="primary-nav">
@@ -139,9 +144,7 @@
                 data-language-selector-btn
                 aria-controls="dropdown-content"
                 >
-                <button
-                    class="dropdown__btn font-zen-kaku fs-pc-16 regular black"
-                >
+                <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">
                     JP
                 </button>
                 <div class="dropdown__content">
@@ -208,7 +211,7 @@
             </a>
             </div>
         </header>
-    </div>
+        </div>
     <main>
         <section class="under-kv">
             <h1>Lunch</h1>
