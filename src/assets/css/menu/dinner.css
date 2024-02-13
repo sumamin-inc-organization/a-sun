@@ -1,0 +1,87 @@
+.under-kv.dinner {
+    background-image: url(../../images/menu/dinner_kv.jpg);
+}
+
+.under-kv.dinner h1 {
+    color: #EBB000;
+}
+
+.under-kv.dinner p {
+    color: #FFFFFF;
+}
+
+#overview.dinner, #lunchSingle.dinner,  #drink.dinner {
+    background-image: none;
+    background-color: #505050;
+}
+
+.overview-hours.dinner {
+    background-image: url(../../images/menu/dinner_date_bg.png);
+}
+
+
+.drink-headline.dinner-headline p {
+    top: 70%;
+    letter-spacing: 0.9rem;
+}
+
+.dinner-headline p {
+    font-size: clamp(80px, 12vw, 200px);
+    text-align: center;
+    color: #EBB000;
+    position: absolute;
+    width: 100%;
+    min-width: 800px;
+    max-width: 1200px;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+    letter-spacing: 0.92rem;
+}
+
+.dinner-headline img {
+    top: 40%;
+}
+
+.overview-inner.dinner {
+    margin-bottom: 160px;
+}
+
+.lunch-item.dinner {
+    background-color: #404040;
+}
+
+.drink-grid.dinner {
+    background-color: #404040;
+}
+
+.drink-content.dinner {
+    border-bottom: 0.2px solid #FFFFFF;
+}
+
+
+/* home-back */
+.home-back.dinner {
+    background-color: #505050;
+    background-image: none;
+}
+
+.home-back.dinner a {
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+@media (max-width: 750px) {
+    .dinner-headline p {
+        font-size: clamp(20px, 15vw, 100px);
+        letter-spacing: 0.32rem;
+        top: 60%;
+    }
+
+    .drink-headline.dinner-headline p {
+        letter-spacing: 0.39rem;
+        top: 58%;
+    }
+}
