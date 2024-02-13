@@ -256,7 +256,8 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 .from('.letter-eng63',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng64',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng65',{opacity:0,duration:0.5},"<10%")
-.from('.letter-eng66',{opacity:0,duration:0.5},"<10%");
+.from('.letter-eng66',{opacity:0,duration:0.5},"<10%")
+.from('.letter-eng67',{opacity:0,duration:0.5},"<10%");
 })
 
 /*-------------------------------
