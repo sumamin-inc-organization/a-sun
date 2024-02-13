@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- iOSの数字が青くなるのを防止する -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="date=no" name="format-detection" />
     <!-- フォント -->
     <link rel="stylesheet" href="https://use.typekit.net/kvd6ihk.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,22 +15,20 @@
         href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&family=Zen+Old+Mincho&display=swap"
         rel="stylesheet"
     />
-<script defer src="lunch.88d6f603e6d33690fb8b.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-aea31c.css" rel="stylesheet"><link href="lunch.css" rel="stylesheet"></head>
+<script defer src="vendors-node_modules_gsap_index_js.74e2bd77b344ff98db30.js"></script><script defer src="lunch.dea17fdd51a5c9a939cc.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-aea31c.css" rel="stylesheet"><link href="src_assets_css_home_animations_css-src_assets_css_menu_lunch_css.css" rel="stylesheet"><link href="lunch.css" rel="stylesheet"></head>
 <body class="black">
     <div class="transition-img">
-        <div class="transition-item"></div>
+        <div class="transition-wrapper">
+            <img src="assets/img/logo.png" alt="logo" class="load-logo">
+        </div>
+        </div>
+        <div class="transition-item">
+        </div>
         <div class="transition-item-white"></div>
-<<<<<<< HEAD
         <a href="https://www.hotpepper.jp/strJ001274406/yoyaku/" class="reservation-btn--sp" role="button" target="_blank">
             <img src="assets/img/sp-contact@2x.webp" alt="ご予約" />
-          </a>
-        <div class="hero-background--sp">
-=======
-        <a href="#" class="reservation-btn--sp" role="button">
-        <img src="assets/img/sp-contact@2x.webp" alt="ご予約" />
         </a>
-        <div class="hero-background--sp"></div>
->>>>>>> b2be1d6e0d77ae4311f420600141b41f96ce9692
+        <div class="hero-background--sp">
         <div class="trigger"></div>
         <header class="header">
             <div class="header-wrapper">
@@ -48,9 +49,6 @@
                 </a>
             </div>
             <button class="meatball">
-                <!-- <span class="dot"> </span>
-                <span class="dot"> </span>
-                <span class="dot"> </span> -->
             </button>
             <div class="header__center">
                 <nav class="primary-nav">
@@ -146,9 +144,7 @@
                 data-language-selector-btn
                 aria-controls="dropdown-content"
                 >
-                <button
-                    class="dropdown__btn font-zen-kaku fs-pc-16 regular black"
-                >
+                <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">
                     JP
                 </button>
                 <div class="dropdown__content">
@@ -173,7 +169,7 @@
                     <p class="tel__text fs-pc-12 font-zen-kaku black">お電話</p>
                     <a href="tel:0362645531" class="tel__number fs-pc-20 font-zen-kaku black">
                         098-851-5360
-                      </a>
+                    </a>
                 </div>
                 <p
                     class="header__info--holiday fs-pc-12 regular black font-zen-kaku"
@@ -212,12 +208,12 @@
             </div>
             <a href="https://www.hotpepper.jp/strJ001274406/yoyaku/" class="reservation-btn" role="button" target="_blank">
                 <img src="assets/img/pc-contact@2x.webp" alt="ご予約" />
-              </a>
+            </a>
             </div>
         </header>
-    </div>
+        </div>
     <main>
-        <section class="under-kv">
+        <section class="under-kv lunch">
             <h1>Lunch</h1>
             <p>ランチ</p>
         </section>
@@ -247,7 +243,11 @@
             </div>
         </section>
         <section id="lunchCourse">
-            <div class="course-headline lunch-headline"><h2 class="font-zen-old letter-spacing-02 regular ">ランチコース</h2><img src="assets/img/lunch_course_headline.svg" alt="ランチコースの見出しの画像"></div>    
+            <div class="course-headline lunch-headline">
+                <h2 class="font-zen-old letter-spacing-02 regular ">ランチコース</h2>
+                <p class="font-emily">Lunch Course</p>
+                <!-- <img src="../../assets/images/menu/lunch_course_headline.svg" alt="ランチコースの見出しの画像"> -->
+            </div>    
             <div class="lunch-grid">
                 <div class="lunch-inner">
                     <div class="lunch-content">
@@ -258,7 +258,12 @@
                             </div>
                             <p class="lunch-price fs-pc-30 font-zen-old letter-spacing-154">￥2,970</p>
                         </div>
-                        <div class="lunch-image"><img src="assets/img/lunch_course01.jpg" alt="季節のランチコース全4品の画像"></div>
+                        <div class="lunch-image">
+                            <img class="lunch-image01" src="assets/img/lunch_course01.jpg" alt="季節のランチコース全4品の画像" aria-hidden="false">
+                            <img class="lunch-image01" src="assets/img/feature1-1.jpg" alt="季節のランチコース全4品の画像" aria-hidden="true">
+                            <img class="lunch-image01" src="assets/img/feature1-2.jpg" alt="季節のランチコース全4品の画像" aria-hidden="true">
+                            <img class="lunch-image01" src="assets/img/feature1-3.jpg" alt="季節のランチコース全4品の画像" aria-hidden="true">
+                        </div>
                     </div>
                     <div class="lunch-content reverse">
                         <div class="lunch-item">
@@ -272,7 +277,14 @@
                             </div>
                             <p class="lunch-price fs-pc-30 font-zen-old letter-spacing-154">￥6,800</p>
                         </div>
-                        <div class="lunch-image"><img src="assets/img/lunch_course01.jpg" alt="季節のランチコース全6品の画像"></div>
+                        <div class="lunch-image">
+                            <img class="lunch-image02" src="assets/img/lunch_course01.jpg" alt="季節のランチコース全6品の画像" aria-hidden="false">
+                            <img class="lunch-image02" src="assets/img/lunch_course01.jpg" alt="季節のランチコース全6品の画像" aria-hidden="true">
+                            <img class="lunch-image02" src="assets/img/lunch_course01.jpg" alt="季節のランチコース全6品の画像" aria-hidden="true">
+                            <img class="lunch-image02" src="assets/img/lunch_course01.jpg" alt="季節のランチコース全6品の画像" aria-hidden="true">
+                            <img class="lunch-image02" src="assets/img/lunch_course01.jpg" alt="季節のランチコース全6品の画像" aria-hidden="true">
+                            <img class="lunch-image02" src="assets/img/lunch_course01.jpg" alt="季節のランチコース全6品の画像" aria-hidden="true">
+                        </div>
                     </div>
                     <div class="lunch-content">
                         <div class="lunch-item">
@@ -282,7 +294,13 @@
                             </div>
                             <p class="lunch-price fs-pc-30 font-zen-old letter-spacing-154">￥5,500</p>
                         </div>
-                        <div class="lunch-image"><img src="assets/img/lunch_course01.jpg" alt="アニバーサリーコース全5品の画像"></div>
+                        <div class="lunch-image">
+                            <img class="lunch-image03" src="assets/img/lunch_course01.jpg" alt="アニバーサリーコース全5品の画像" aria-hidden="false">
+                            <img class="lunch-image03" src="assets/img/lunch_course01.jpg" alt="アニバーサリーコース全5品の画像" aria-hidden="true">
+                            <img class="lunch-image03" src="assets/img/lunch_course01.jpg" alt="アニバーサリーコース全5品の画像" aria-hidden="true">
+                            <img class="lunch-image03" src="assets/img/lunch_course01.jpg" alt="アニバーサリーコース全5品の画像" aria-hidden="true">
+                            <img class="lunch-image03" src="assets/img/lunch_course01.jpg" alt="アニバーサリーコース全5品の画像" aria-hidden="true">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,7 +308,8 @@
         <section id="lunchSingle">
             <div class="single-headline lunch-headline">
                 <h2 class="font-zen-old letter-spacing-02 regular ">ランチ単品</h2>
-                <img src="assets/img/lunch_single_headline.svg" alt="ランチ単品の見出しの画像">
+                <p class="font-emily">Single Lunch</p>
+                <!-- <img src="../../assets/images/menu/lunch_single_headline.svg" alt="ランチ単品の見出しの画像"> -->
             </div>    
             <div class="lunch-grid">
                 <div class="lunch-inner">
@@ -325,7 +344,8 @@
         <section id="drink">
             <div class="drink-headline lunch-headline">
                 <h2 class="font-zen-old letter-spacing-02 regular letter-spacing-154">ドリンク</h2>
-                <img src="assets/img/lunch_drink_headline.svg" alt="ドリンクの見出しの画像">
+                <p class="font-emily">Drink</p>
+                <!-- <img src="../../assets/images/menu/lunch_drink_headline.svg" alt="ドリンクの見出しの画像"> -->
             </div> 
             <div class="drink-grid">
                 <div class="drink-inner">
@@ -406,27 +426,28 @@
                 id="access_google-maps"
                 target="_blank"
                 >Google Mapで見る</a
-              >
-              <a
-              href="https://www.google.com/maps/dir//%E5%B3%B6cuisine+%E3%81%82%E3%83%BC%E3%81%99%E3%82%93/data=!4m8!4m7!1m0!1m5!1m1!1s0x34e56940549ee693:0xe40ee1cf73b0e919!2m2!1d127.66440159999999!2d26.1956867"
-              class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
-              id="access_route"
-              target="_blank"
-              >ルートで検索</a
-            >
+                >
+                <a
+                href="https://www.google.com/maps/dir//%E5%B3%B6cuisine+%E3%81%82%E3%83%BC%E3%81%99%E3%82%93/data=!4m8!4m7!1m0!1m5!1m1!1s0x34e56940549ee693:0xe40ee1cf73b0e919!2m2!1d127.66440159999999!2d26.1956867"
+                class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
+                id="access_route"
+                target="_blank"
+                >ルートで検索</a
+                >
             </div>
             <div class="access-links_bottom">
                 <a
                 href="./information.html"
                 class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
                 id="access_shop-info"
+                target="_blank"
                 >店舗情報</a
                 >
             </div>
             </div>
             <div class="access-right">
             <p
-                class="access-right-main font-zen-kaku fs-sp-24 line-height-pc-56 letter-spacing-40 white fs-sp-16 line-height-sp-36p5 no-wrap"
+                class="access-right-main font-zen-kaku fs-pc-24 line-height-pc-56 letter-spacing-40 white fs-sp-16 line-height-sp-36p5 no-wrap"
             >
                 コースは前日までの予約が必要となります。<br />
                 お電話にてご予約くださいませ。
@@ -437,15 +458,17 @@
                 >
                 お電話でのお問い合わせ
                 </p>
+                <a href="tel:0362645531">
                 <p
-                class="access-right--bottom_tel fs-pc-40 medium font-zen-kaku letter-spacing-114 fs-sp-40 white"
+                    class="access-right--bottom_tel fs-pc-40 medium font-zen-kaku letter-spacing-114 fs-sp-40 white"
                 >
-                098-851-5360
+                    098-851-5360
                 </p>
+                </a>
             </div>
             </div>
         </div>
-    </section>
+        </section>
     <footer>
         <div class="footer-wrapper">
             <div class="footer-left">
