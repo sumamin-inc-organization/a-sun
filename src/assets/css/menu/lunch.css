@@ -6,6 +6,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.under-kv.lunch {
+    background-image: url(../../images/menu/lunch_kv.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.under-kv.lunch h1, .under-kv.lunch p {
+    color: #FFFFFF;
+}
+
 
 /*------------------------------
     Background Colors / 背景の色"
@@ -19,15 +30,10 @@ html {
 }
 
 #overview, #lunchSingle,  #drink {
-    background-image: url(../../images/lunch/lunch_bg_gray.jpg);
+    background-image: url(../../images/menu/lunch_bg_gray.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#overview.dinner, #lunchSingle.dinner,  #drink.dinner {
-    background-image: none;
-    background-color: #505050;
 }
 
 .overview-grid, .drink-grid {
@@ -70,6 +76,7 @@ html {
 
 .overview-hours__title p {
     text-align: center;
+    font-weight: 200;
 }
 
 .overview-hours__content {
@@ -123,7 +130,7 @@ html {
 	bottom: 0;
 	right: 0;
 	margin: auto;
-	content: url(../../images/lunch/arrow.svg);
+	content: url(../../images/menu/arrow.svg);
 	vertical-align: middle;
 }
 
@@ -147,16 +154,24 @@ html {
     z-index: 1;
 }
 
-.course-headline img {
+.lunch-headline p {
+    font-size: clamp(80px, 12vw, 200px);
+    text-align: center;
+    color: #FFFFFF;
     position: absolute;
-    width: 53%;
-    min-width: 600px;
-    max-width: 1000px;
-    top: 34%;
+    width: 100%;
+    min-width: 800px;
+    max-width: 1200px;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     z-index: 0;
+    letter-spacing: 0.92rem;
+}
+
+.single-headline p, .drink-headline p {
+    top: 70%;
 }
 
 .lunch-grid {
@@ -206,6 +221,12 @@ html {
 
 .lunch-image {
     width: 50%;
+}
+
+.lunch-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 /* single_lunch */
@@ -297,51 +318,9 @@ html {
     }
 }
 
-/* dinner */
-.drink-headline.dinner-headline p {
-    top: 70%;
-    letter-spacing: 0.9rem;
-}
-
-.dinner-headline p {
-    font-size: clamp(80px, 12vw, 200px);
-    text-align: center;
-    color: #737373;
-    position: absolute;
-    width: 100%;
-    min-width: 800px;
-    max-width: 1200px;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    z-index: 0;
-    letter-spacing: 0.7rem;
-}
-
-.dinner-headline img {
-    top: 40%;
-}
-
-.overview-inner.dinner {
-    margin-bottom: 160px;
-}
-
-.lunch-item.dinner {
-    background-color: #404040;
-}
-
-.drink-grid.dinner {
-    background-color: #404040;
-}
-
-.drink-content.dinner {
-    border-bottom: 0.2px solid #FFFFFF;
-}
-
 /* home back*/
 .home-back {
-    background-image: url(../../images/lunch/lunch_bg_gray.jpg);
+    background-image: url(../../images/menu/lunch_bg_gray.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -422,6 +401,11 @@ html {
         font-size: 28px;
     }
 
+    .lunch-headline p {
+        font-size: clamp(20px, 15vw, 100px);
+        letter-spacing: 0.32rem;
+    }
+
     .course-headline {
         margin-top: -180px;
     }
@@ -430,13 +414,12 @@ html {
         padding: 40px 0;
     }
 
-    .course-headline img {
-        min-width: 300px;
-        top: 50%;
+    .single-headline p {
+        top: 60%;
     }
 
-    .course-headline img {
-        min-width: 300px;
+    .drink-headline p {
+        top: 58%;
     }
 
     .lunch-content {
@@ -453,6 +436,12 @@ html {
     }
 
     .lunch-image {
+        width: 100%;
+    }
+
+    .lunch-image img {
+        object-fit: cover;
+        height: auto;
         width: 100%;
     }
 
@@ -523,3 +512,27 @@ html {
         display: block;
     }
 }
+
+/* animation */
+.lunch-image {
+    display: grid;
+}
+
+.lunch-image01, .lunch-image02, .lunch-image03 {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    transition: 800ms ease-out;
+}
+
+.lunch-image > [aria-hidden="true"] {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.access-links_top a, .access-links_bottom a{
+    line-height: clamp(40.94px, 4.55vw, 65.5px);
+    letter-spacing: 0.154em;
+    position: relative;
+    margin-right: 30px;
+}
+
