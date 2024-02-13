@@ -83,7 +83,15 @@
   margin-top: -5px;
   margin-bottom: 20px;
 }
+@media (max-width:800px){
+  .message-job-title {
+    margin-bottom: -5px;
+  }
 
+  .message-bottom-name--eng {
+    margin-top: 0px;
+  }
+}
 /* ===============
       MOBILE
    =============== */
