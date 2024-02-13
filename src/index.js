@@ -257,7 +257,10 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 .from('.letter-eng64',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng65',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng66',{opacity:0,duration:0.5},"<10%")
-.from('.letter-eng67',{opacity:0,duration:0.5},"<10%");
+.from('.letter-eng67',{opacity:0,duration:0.5},"<10%")
+.from('.eyecatcher-slideshow',{opacity:0,scale:0,duration:2},"4.5")
+.from('.eyecatcher__scrollimg',{opacity:0,y:-100,duration:2},"<50%")
+
 })
 
 /*-------------------------------
