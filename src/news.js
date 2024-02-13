@@ -12,3 +12,60 @@ import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import { gsap } from "gsap";
 setLoadingAnimation();
 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
+let mm = gsap.matchMedia();
+/* sp */
+mm.add("(max-width: 767px)", () => {
+    // news title
+    let news_title = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#news-top",
+            start: "-=500px",
+            scrub: false,
+        },
+    });
+
+    news_title
+    .from(".news-content", { y: 30, opacity: 0, duration: 2}, "+=3")
+
+    // news pagination
+    let news_pagination = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".news-pagination",
+            start: "-=740px",
+            scrub: false,
+        },
+    });
+
+    news_pagination
+    .from(".news-pagination", { y: 30, opacity: 0, duration: 1})
+});
+
+/* pc */
+mm.add("(min-width: 768px)", () => {
+    // news content
+    let news_title = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#news-top",
+            start: "-=500px",
+            scrub: false,
+        },
+    });
+
+    news_title
+    .from(".news-content", { y: 30, opacity: 0, duration: 2}, "+=3")
+    // news pagination
+    let news_pagination = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".news-pagination",
+            start: "-=680px",
+            scrub: false,
+        },
+    });
+
+    news_pagination
+    .from(".news-pagination", { y: 30, opacity: 0, duration: 1})
+});
