@@ -13,7 +13,6 @@
     top: 0;
     z-index: 100;
     width: 100%;
-    /* border: 1px solid red; */
     background-color: white;
   }
   #hero{
@@ -26,8 +25,6 @@
   align-items: center;
   position: relative;
   height: 120px;
-  /* border: 1px solid red; */
-  /* position: f; */
 }
 
 .header__left {
@@ -247,4 +244,15 @@ letter-spacing: 0.114em;
 
 .reservation-btn--sp:hover{
   opacity: 1;
+}
+
+@media (min-width:750px) {
+  /* ヘッダーとの重なりを防ぐために */
+  /* #hero{
+    margin-top: 120px;  
+
+  } */
+  body{
+    /* margin-top: 120px; */
+  }
 }

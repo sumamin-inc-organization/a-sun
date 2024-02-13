@@ -15,19 +15,16 @@
       rel="stylesheet"
     />
     <title>沖縄居酒屋あーすん</title>
-  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js.bd3fa8d2c78f7e657f28.js"></script><script defer src="index.3a61e8d5002957a91eae.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-8a6f32.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
+  <script defer src="vendors-node_modules_gsap_index_js.74e2bd77b344ff98db30.js"></script><script defer src="vendors-node_modules_gsap_ScrollTrigger_js.63d3d1d19aa5d88c5f93.js"></script><script defer src="index.3768e6504a617820040a.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-aea31c.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
   <body class="black">
-    <div class="transition-img">
+    <div class="transition-img upper-elem">
       <div class="transition-wrapper">
-        <img src="assets/img/logo.png" alt="logo" class="load-logo">
+        <img src="assets/img/logo.png" alt="logo" class="load-logo" />
       </div>
     </div>
-    <div class="transition-item">
-      <!-- <div class="transition-time_inner">
-        <div class="texture" aria-hidden="true"></div>
-      </div> -->
-    </div>
-    <div class="transition-item-white"></div>
+    <div class="transition-item upper-elem"></div>
+    <div class="transition-item-white upper-elem"></div>
+    <main>
     <a href="#" class="reservation-btn--sp" role="button">
       <img src="assets/img/sp-contact@2x.webp" alt="ご予約" />
     </a>
@@ -36,16 +33,20 @@
       <header class="header">
         <div class="header-wrapper">
           <div class="logo header__left">
-            <img
-              class="logo__image pc-only"
-              src="assets/img/headerlogo.svg"
-              alt="沖縄居酒屋あーすん/earthen"
-            />
-            <img
-              class="logo__image sp-only logo__image--sp"
-              src="assets/img/headerlogo_sp.svg"
-              alt="沖縄居酒屋あーすん/earthen"
-            />
+            <a href="./index.html">
+              <img
+                class="logo__image pc-only"
+                src="assets/img/headerlogo.svg"
+                alt="沖縄居酒屋あーすん/earthen"
+              />
+            </a>
+            <a href="./index.html">
+              <img
+                class="logo__image sp-only logo__image--sp"
+                src="assets/img/headerlogo_sp.svg"
+                alt="沖縄居酒屋あーすん/earthen"
+              />
+            </a>
           </div>
           <button class="meatball">
             <!-- <span class="dot"> </span>
@@ -146,7 +147,9 @@
               data-language-selector-btn
               aria-controls="dropdown-content"
             >
-              <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">
+              <button
+                class="dropdown__btn font-zen-kaku fs-pc-16 regular black"
+              >
                 JP
               </button>
               <div class="dropdown__content">
@@ -402,7 +405,7 @@
       <div class="feature-title">
         <div class="feature-title__text">
           <h2
-            class="feature-title__text--jp feature-title_text--item font-emily fs-pc-100 regular black"
+            class="feature-title__text--jp feature-title_text--item font-emily fs-pc-100 regular black letter-spacing-74"
           >
             Feature
           </h2>
@@ -417,101 +420,22 @@
         </div>
         <div class="texture" aria-hidden="true"></div>
       </div>
-      <!-- <div class="feature-one">
-        <div class="feature-eyecatcher--one feature-eyecatcher">
-          <img src="../images/top/feature/feature-main-img_pc.jpg" alt="島の器、彩り豊かに。" class="feature-pc-tab">
-          <img src="../images/top/feature/feature01-eye-sp.jpg" alt="島の器、彩り豊かに。" class="feature-sp">
-        </div>
-        <div class="feature-one_main-wrapper margin_left-and-right feature-sp-padding">
-          <div class="feature-one_main">
-            <div class="f-wrapper">
-              <div class="feature-one-main__left parallax feature-img-wrapper parallax--sp feature-sp-ani01"data-speed="3" data-sp="1.2">
-                <img src="../images/top/feature/feature01-img_pc.jpg" alt="料理を引き立てるのは、島で作られた美しい食器たち。" class="feature-img t" data-sp="5">
-              </div>
-            </div>
-            <div class="feature-one-main__right feature-info text-align-end parallax" data-speed="0.6">
-              <div class=" feature-info__inner-wrapper ">
-                <h4 class="feature-info--subtitle feature-info--subtitle-eng font-zen-old fs-pc-18--11p25 regular black">Feature01</h4>
-                <h3 class="feature-info--title feature-info--title-jp  font-zen-old black fs-pc-40 regular no-wrap ">こだわりの食材、<br>やんばるの息吹。</h3>
-                <p class="feature-info--paragraph font-zen-kaku medium fs-pc-16 black  no-wrap feat-p">厳選された食材は、<br>
-                  沖縄北部（やんばる）地域から。<br>
-                  シェフが直接足を運び、<br>生産者様との対話を通じて<br>
-                  特に「今帰仁アグー」は、。<br>
-                  その貴重な存在感で食の舞台を彩ります。</p>
-                <a href="#" class="feature-info--see-more feature-info--see-more--margin font-zen-kaku fs-pc-20 medium black">もっと見る</a>
-                            </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="feature-two">
-        <div class="feature-eyecatcher--two feature-eyecatcher">
-          <img src="../images/top/feature/feature-eyecatcher-img_1.jpg" alt="ソムリエの贈り物、ワインの調べ。"  class="feature-pc-tab">
-          <img src="../images/top/feature/feature02-eye-sp.jpg" alt="島の器、彩り豊かに。" class="feature-sp">
-        </div>
-        <div class="feature-two_main-wrapper margin_left-and-right feature-sp-padding">
-          <div class="feature-two_main">
-            <div class="feature-two-main__left feature-info parallax parallax--sp" data-speed="0.6"  data-sp="-1" id="parallax--sp">
-              <div class="feature-info__inner-wrapper">
-                <h4 class="feature-info--subtitle feature-info--subtitle-eng font-zen-old fs-pc-18--11p25 regular black">Feature02</h4>
-                <h3 class="feature-info--title feature-info--title-jp  font-zen-old black fs-pc-40 regular no-wrap ">ソムリエの贈り物、</br>ワインの調べ。</h3>
-                <p class="feature-info--paragraph font-zen-kaku medium fs-pc-16 black  no-wrap feat-p">お料理に寄り添うように、<br>
-                  当店のソムリエが厳選したワインが<br>
-                  お待ちしています。<br>
-                  食とワインのハーモニーが、<br>
-                  贅沢なひと時を生み出します。</p>
-                <a href="#" class="feature-info--see-more font-zen-kaku fs-pc-20 medium black">もっと見る</a>
-              </div>
-            </div>
-            <div class="f-wrapper2">
-              <div class="feature-one-main__right parallax feature-img-wrapper parallax--sp feature-sp-ani02"data-speed="3" data-sp="-1" id="parallax--sp">
-                <img src="../images/top/feature/feature02-img_pc.jpg" alt="シェフが直接足を運び、生産者様との対話を通じて育てられた食材たち。" class="feature-img t"  data-sp="5">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="feature-three">
-        <div class="feature-eyecatcher--one feature-eyecatcher">
-          <img src="../images/top/feature/feature-eyecatcher-img_2.jpg" alt="島の器、彩り豊かに。" class="feature-pc-tab">
-          <img src="../images/top/feature/feature03-eye-sp.jpg" alt="島の器、彩り豊かに。" class="feature-sp">
-        </div>
-        <div class="feature-one_main-wrapper margin_left-and-right feature-sp-padding">
-          <div class="feature-three_main">
-            <div class="feature-three-main__left parallax feature-img-wrapper parallax--sp feature-sp-ani03"data-speed="2.5" data-sp="5">
-              <img src="../images/top/feature/feature03-img_pc.jpg" alt="料理を引き立てるのは、島で作られた美しい食器たち。" class="feature-img t" data-sp="5">
-            </div>
-            <div class="feature-one-main__right feature-info text-align-end parallax" data-speed="0.6">
-              <div class="feature-info__inner-wrapper">
-                <h4 class="feature-info--subtitle feature-info--subtitle-eng font-zen-old fs-pc-18--11p25 regular black">Feature03</h4>
-                <h3 class="feature-info--title feature-info--title-jp  font-zen-old black fs-pc-40 regular no-wrap ">島の器、<br>彩り豊かに。</h3>
-                <p class="feature-info--paragraph font-zen-kaku medium fs-pc-16 black  no-wrap feat-p">料理を引き立てるのは、<br>
-                  島で作られた美しい食器たち。<br>
-                  優雅な空間と共に、<br>
-                  島の温もりを感じながら<br>
-                  特別なひとときをお過ごしください。</p>
-                <a href="#" class="feature-info--see-more feature-info--see-more--margin feature-info--see-more--3 font-zen-kaku fs-pc-20 medium black">もっと見る</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="feature-bottom">
         <div class="feat feat1">
           <div class="feature-bottom-img_wrapper">
             <img
               src="assets/img/feature-main-img_pc.jpg"
               alt="こだわりの食材、やんばるの息吹。"
-              class="pc-only feature-eyecatcher"
+              class="pc-only feature-eyecatcher2"
             />
             <img
-              src="assets/img/feat-eyecatch-sp-rework.jpg"
+              src="assets/img/01.jpg"
               alt="こだわりの食材、やんばるの息吹。"
-              class="sp-only feature-eyecatcher"
+              class="sp-only feature-eyecatcher2"
             />
           </div>
           <div class="feat-main-wrapper">
-            <div class="feat-main">
+            <div class="feat-main feat-main--1">
               <div class="feat-main--left feat-main-left-one">
                 <img
                   src="assets/img/feature01-img_pc.jpg"
@@ -524,7 +448,7 @@
                   class="sp-only"
                 />
               </div>
-              <div class="feat-main--right text-align-end">
+              <div class="feat-main--right text-align-end feat-main--right-1">
                 <p
                   class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
                 >
@@ -537,7 +461,7 @@
                   やんばるの息吹。
                 </p>
                 <p
-                  class="font-zen-kaku  fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16"
+                  class="font-zen-kaku fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16"
                 >
                   厳選された食材は、<br />
                   沖縄北部（やんばる）地域から。<br />
@@ -550,7 +474,7 @@
                 <div class="feat-see-more-btn-wrapper">
                   <a
                     href="#"
-                    class=" see-more-right feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r"
+                    class="see-more-right feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r"
                     >もっと見る</a
                   >
                 </div>
@@ -566,13 +490,13 @@
               class="pc-only feature-eyecatcher"
             />
             <img
-              src="assets/img/feat2-eye-sp-rework.jpg"
+              src="assets/img/02.jpg"
               alt="こだわりの食材、やんばるの息吹。"
               class="sp-only feature-eyecatcher"
             />
           </div>
           <div class="feat-main-wrapper">
-            <div class="feat-main feat-main-center">
+            <div class="feat-main feat-main-center feat-main--2">
               <div class="feat-main--left feat-main-left-two">
                 <img
                   src="assets/img/feature02-img_pc.jpg"
@@ -585,7 +509,7 @@
                   class="sp-only"
                 />
               </div>
-              <div class="feat-main--right ">
+              <div class="feat-main--right feat-main--right--2">
                 <p
                   class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
                 >
@@ -594,17 +518,17 @@
                 <p
                   class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36 no-wrap"
                 >
-                ソムリエの贈り物、<br />
-                ワインの調べ。
+                  ソムリエの贈り物、<br />
+                  ワインの調べ。
                 </p>
                 <p
                   class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16 font-zen-kaku"
                 >
-                お料理に寄り添うように、<br>
-                当店のソムリエが厳選したワインが <br>
-                お待ちしています。<br>
-                食とワインのハーモニーが、<br>
-                贅沢なひと時を生み出します。
+                  お料理に寄り添うように、<br />
+                  当店のソムリエが厳選したワインが <br />
+                  お待ちしています。<br />
+                  食とワインのハーモニーが、<br />
+                  贅沢なひと時を生み出します。
                 </p>
                 <div class="feat-see-more-btn-wrapper">
                   <a
@@ -625,14 +549,14 @@
               class="pc-only feature-eyecatcher"
             />
             <img
-              src="assets/img/feature03-eye-sp.jpg"
+              src="assets/img/03.jpg"
               alt="こだわりの食材、やんばるの息吹。"
               class="sp-only feature-eyecatcher feature-eyecatcher--sp"
             />
           </div>
           <div class="feat-main-wrapper">
-            <div class="feat-main">
-              <div class="feat-main--left feat-main-left-three">
+            <div class="feat-main feat-main--3">
+              <div class="feat-main--left feat-main-left-three ">
                 <img
                   src="assets/img/feature03-img_pc.jpg"
                   alt="feature 03"
@@ -644,7 +568,7 @@
                   class="sp-only"
                 />
               </div>
-              <div class="feat-main--right text-align-end">
+              <div class="feat-main--right text-align-end feat-main--3-txt">
                 <p
                   class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
                 >
@@ -659,8 +583,10 @@
                 <p
                   class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16 font-zen-kaku"
                 >
-                  料理を引き立てるのは、<br> 島で作られた美しい食器たち。<br>
-                  優雅な空間と共に、<br> 島の温もりを感じながら <br>
+                  料理を引き立てるのは、<br />
+                  島で作られた美しい食器たち。<br />
+                  優雅な空間と共に、<br />
+                  島の温もりを感じながら <br />
                   特別なひとときをお過ごしください。
                 </p>
                 <div class="feat-see-more-btn-wrapper">
@@ -694,7 +620,7 @@
           class="course-subtitle font-zen-old regular fs-pc-40 white fs-sp-36"
         >
           優雅なランチと <br />
-          ディナーの<br class="sp-only"/>贅沢な<br class="pc-only" />舌饗宴
+          ディナーの<br class="sp-only" />贅沢な<br class="pc-only" />舌饗宴
         </h3>
         <p class="course-paragraph font-zen-kaku fs-pc-16 white">
           ご家族や大切な方とのランチ、<br
@@ -783,21 +709,18 @@
       </div>
     </section>
     <section id="dinner">
-      <!-- <div class="lunch-texture" aria-hidden="true"></div> -->
       <div class="dinner-top-filler"></div>
-      <!-- <div class="lunch-texture" aria-hidden="true"></div> -->
       <div class="dot company-dot"></div>
       <div class="full company-hero">
         <div class="lunch-texture" aria-hidden="true"></div>
-        <!-- <div class="dot company-dot"></div> -->
         <div class="lunch-title-wrapper dinner-title-wrapper">
           <p
-            class="lunch-subtitle font-zen-old fs-pc-16 regular white letter-spacing-154 fs-sp-16"
+            class="lunch-subtitle font-zen-old fs-pc-16 regular white letter-spacing-154 fs-sp-16 no-wrap"
           >
             島の美味、夜の調べ
           </p>
           <h2
-            class="lunch-title fs-pc-40 font-zen-old regular white letter-spacing-154 fs-sp-32"
+            class="lunch-title fs-pc-40 font-zen-old regular white letter-spacing-154 fs-sp-32 no-wrap"
           >
             - ディナーコース -
           </h2>
@@ -807,9 +730,7 @@
         <div class="lunch-image-grid image-grid">
           <div
             class="lunch-image-grid-image_wrapper dinner-img--left lunch-img image-grid-image_wrapper common-img--left"
-          >
-            <!-- <img src="../images/top/dinner/dinner-left-img_pc.jpg" alt="テーブルに並んだカトラリー" class="image-grid-img image-grid-img-left lunch-left " id="dinner-left"> -->
-          </div>
+          ></div>
           <div class="img-gallary-right">
             <div
               class="lunch-image-grid-image_wrapper lunch-img--right lunch-img image-grid-image_wrapper common-img--right"
@@ -860,16 +781,13 @@
               class="bottom-left__img"
             />
           </div>
-          <!-- <div class="bottom-right">
-            <img src="../images/top/dinner/dinner-final-img.jpg" alt="" class="bottom-img-right__img">
-          </div> -->
-          <!-- <div class="bottom-right">
+          <div class="bottom-right bottom-right_widescreen">
             <img
-              src="../images/top/dinner/dinner-final-img.jpg"
+              src="assets/img/dinner-final-img.jpg"
               alt=""
               class="bottom-img-right__img"
             />
-          </div> -->
+          </div>
         </div>
         <div class="bottom-right">
           <img
@@ -879,13 +797,11 @@
           />
         </div>
       </div>
-      <div class="dinner-filler"></div>
     </section>
     <section id="message">
       <div class="msg-filler">
         <div class="lunch-texture" aria-hidden="true"></div>
       </div>
-      <!-- <div class="lunch-texture" aria-hidden="true"></div> -->
       <div class="message-grid-wrap">
         <div class="lunch-texture" aria-hidden="true"></div>
         <div class="message-title-wrapper">
@@ -999,7 +915,7 @@
               多民族国家の様々な体験をしながら
               <br class="sp-only" />計6年シドニーにて料理長を務める。 <br />
               オーストラリア滞在時、インターネットラジオで
-              <br class="sp-only" />聞いた島の音楽と、 <br />
+              <br class="sp-only" />聞いた島の音楽と、 <br class="pc-only" />
               おじぃの話す言葉に
               <br class="sp-only" />心揺さぶられ、沖縄に惹かれていく。 <br />
               帰国後、星のや竹富島(沖縄)で
@@ -1020,7 +936,6 @@
       <div class="lunch-texture" aria-hidden="true"></div>
       <div class="voice-wrapper">
         <div class="voice-sp-title-wrapper">
-          <!-- <img src="../images/top/voice/voice-title.png" alt="お客様の声" class="voice-title-img--sp "> -->
           <img
             src="assets/img/voice-title.svg"
             alt="お客様の声"
@@ -1028,7 +943,6 @@
           />
         </div>
         <div class="voice-top">
-          <!-- <img src="../images/top/voice/voice-title.png" alt="お客様の声" class="voice-title-img"> -->
           <img
             src="assets/img/voice-title.svg"
             alt="お客様の声"
@@ -1060,7 +974,7 @@
         </div>
         <div class="voice-bottom">
           <a
-          id="voice-seemore"
+            id="voice-seemore"
             href="#"
             class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore voice-seemore"
             >もっと見る</a
@@ -1073,7 +987,6 @@
       <div class="news-wrapper">
         <div class="news-left">
           <div class="news-right--sp">
-            <!-- <img src="../images/top/news/news-title.png" alt="お知らせ" class="news-title-img--sp"> -->
             <img
               src="assets/img/news-title.svg"
               alt="お知らせ"
@@ -1082,34 +995,38 @@
           </div>
           <div class="news-blog">
             <div class="news-container">
-              <div
-                class="date fs-pc-14 medium font-zen-kaku line-height-pc-36p5 letter-spacing-40 black fs-sp-14 line-height-sp-36p5"
-              >
-                2024年2月29日
-              </div>
-              <p
-                class="news-title fs-pc-18 line-height-pc-36p5 letter-spacing-40 font-zen-kaku medium fs-sp-18 line-height-sp-36p5 no-wrap overlfow-ellipsis"
-              >
-                【Gault&Millau ゴ・エ・ミヨ2023、2024】掲載
-              </p>
+              <a href="#">
+                <div
+                  class="date fs-pc-14 medium font-zen-kaku line-height-pc-36p5 letter-spacing-40 black fs-sp-14 line-height-sp-36p5"
+                >
+                  2024年2月29日
+                </div>
+                <p
+                  class="black news-title fs-pc-18 line-height-pc-36p5 letter-spacing-40 font-zen-kaku medium fs-sp-18 line-height-sp-36p5 no-wrap overlfow-ellipsis"
+                >
+                  【Gault&Millau ゴ・エ・ミヨ2023、2024】掲載
+                </p>
+              </a>
             </div>
             <div class="news-container">
-              <div
-                class="date fs-pc-14 medium font-zen-kaku line-height-pc-36p5 letter-spacing-40 black fs-sp-14 line-height-sp-36p5"
-              >
-                2024年2月29日
-              </div>
-              <div
-                class="news-title fs-pc-18 line-height-pc-36p5 letter-spacing-40 font-zen-kaku medium fs-sp-18 line-height-sp-36p5 no-wrap overlfow-ellipsis"
-              >
-                ホームページを公開いたしました。
-              </div>
+              <a href="#">
+                <div
+                  class="date fs-pc-14 medium font-zen-kaku line-height-pc-36p5 letter-spacing-40 black fs-sp-14 line-height-sp-36p5"
+                >
+                  2024年2月29日
+                </div>
+                <div
+                  class="black news-title fs-pc-18 line-height-pc-36p5 letter-spacing-40 font-zen-kaku medium fs-sp-18 line-height-sp-36p5 no-wrap overlfow-ellipsis"
+                >
+                  ホームページを公開いたしました。
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="news-bottom">
             <a
-            id="news-seemore"
+              id="news-seemore"
               href="#"
               class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore news-seemore"
               >もっと見る</a
@@ -1124,9 +1041,6 @@
             />
           </div>
         </div>
-        <!-- <div class="news-right">
-          <img src="../images/top/news/news-title.png" alt="お知らせ" class="news-title-img">
-        </div> -->
       </div>
     </section>
     <section id="insta">
@@ -1228,7 +1142,7 @@
         </div>
         <div class="access-right">
           <p
-            class="access-right-main font-zen-kaku fs-sp-24 line-height-pc-56 letter-spacing-40 white fs-sp-16 line-height-sp-36p5 no-wrap"
+            class="access-right-main font-zen-kaku fs-pc-24 line-height-pc-56 letter-spacing-40 white fs-sp-16 line-height-sp-36p5 no-wrap"
           >
             コースは前日までの予約が必要となります。<br />
             お電話にてご予約くださいませ。
@@ -1239,11 +1153,13 @@
             >
               お電話でのお問い合わせ
             </p>
-            <p
-              class="access-right--bottom_tel fs-pc-40 medium font-zen-kaku letter-spacing-114 fs-sp-40 white"
-            >
-              098-851-5360
-            </p>
+            <a href="tel:0362645531">
+              <p
+                class="access-right--bottom_tel fs-pc-40 medium font-zen-kaku letter-spacing-114 fs-sp-40 white"
+              >
+                098-851-5360
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -1320,11 +1236,12 @@
           </ul>
         </nav>
         <p
-          class="copyright-sp medium letter-spacing-40 line-height-sp-28p5 white no-wrap sp-only font-zen-kaku"
+          class="copyright-sp medium letter-spacing-40 line-height-sp-28p5 white no-wrap sp-only font-zen-kaku fs-sp-12 text-align-center"
         >
           &copy; あーすん 島 Cuisine. All Rights Reserved.
         </p>
       </div>
     </footer>
+  </main>
   </body>
 </html>

@@ -39,6 +39,7 @@
 .feature-title h2{
     font-size: 52px;
     font-family: "Zen Old Mincho", serif;
+    font-weight: 400;
     letter-spacing: 0.8rem;
     padding: 35px 0 60px;
     display: inline-block;
@@ -83,6 +84,7 @@
 .slick-text h3{
     font-size: 40px;
     font-family: "Zen Old Mincho", serif;
+    font-weight: 400;
     margin-bottom: 25px;
     letter-spacing: 0.5rem;
 }
@@ -96,6 +98,7 @@
 .slick-text p{
     font-size: 16px;
     font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
     line-height: 3.12;
     letter-spacing: 0.1rem;
 }
@@ -212,6 +215,9 @@
     }
     .slick-text h3{
         font-size: 30px;
+    }
+    .slick-text h3 span{
+        background: linear-gradient(transparent 98%, #505050 0%);
     }
     .slick-text p{
         line-height: 2.5;
@@ -365,13 +371,19 @@
         margin-left: 6%;
     }
     .prev-arrow{
-        left: 6%;
+        left: 4%;
         width: 24px;
         top: 70%;
     }
     .next-arrow{
-        right: 6%;
+        right: 4%;
         width: 24px;
         top: 70%;
+    }
+}
+
+@media(max-width:500px){
+    .slick-text p{
+        text-align: left;
     }
 }

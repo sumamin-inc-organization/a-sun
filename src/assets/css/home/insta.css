@@ -2,65 +2,64 @@
 /* INSTA          */
 /* ------------------- */
 
-#insta{
-    position: relative;
-    padding-top: clamp(61.5px,6.85vw,98.7px);
-    padding-bottom: clamp(74.4px,8.25vw,118.8px);;
+#insta {
+  position: relative;
+  padding-top: clamp(61.5px, 6.85vw, 98.7px);
+  padding-bottom: clamp(74.4px, 8.25vw, 118.8px);
 }
 
-.insta-wrapper{
-display: grid;
-justify-content: center;
+.insta-wrapper {
+  display: grid;
+  justify-content: center;
 }
-.gallary-item{
-    width: clamp(143.75px,15.97vw,230px);
-    aspect-ratio: 1;
+.gallary-item {
+  width: clamp(143.75px, 15.97vw, 230px);
+  aspect-ratio: 1;
 }
-.gallary{
+.gallary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(8.5px, 0.95vw, 13.7px);
+}
+
+.insta-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: clamp(20.8px, 2.26vw, 32.5px);
+}
+.insta-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(26.1px, 2.9722vw, 42.8px);
+}
+@media (max-width: 602px) {
+  .gallary {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:clamp(8.5px,0.95vw,13.7px) ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(8.5px, 0.95vw, 13.7px);
+  }
 }
 
-.insta-title{
-    display: flex;
-    justify-content: center;
-    margin-bottom: clamp(20.8px,2.26vw,32.5px);
-}
-.insta-bottom{
-    display: flex;
-    justify-content: center;
-    margin-top: clamp(26.1px,2.9722vw,42.8px);
-}
-@media (max-width:602px){
-    .gallary{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:clamp(8.5px,0.95vw,13.7px) ;
-    }
-}
-
-@media (max-width:500px){
-    .gallary{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:clamp(8.5px,0.95vw,13.7px) ;
-    }
-    .gallary-item{
-        width:min(170px,43.59vw );
-        aspect-ratio: 1;
-    }
-    .insta-seemore{
-        padding-top: min(42.8px,10.97vw);
-    }
-    .insta-bottom{
-       
-        margin-top: unset;
-    }
+@media (max-width: 500px) {
+  .gallary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(8.5px, 0.95vw, 13.7px);
+  }
+  .gallary-item {
+    width: min(170px, 43.59vw);
+    aspect-ratio: 1;
+  }
+  .insta-seemore {
+    padding-top: min(42.8px, 10.97vw);
+  }
+  .insta-bottom {
+    margin-top: unset;
+  }
 }
 
-.l{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.l {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

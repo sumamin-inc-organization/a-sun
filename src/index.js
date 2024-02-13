@@ -14,7 +14,6 @@ import "./assets/css/home/voice.css";
 import "./assets/css/home/news.css";
 import "./assets/css/home/insta.css";
 import "./assets/css/home/access.css";
-// import "./assets/css/common/footer.css";
 import addNavIconEventListener from "./assets/js/eventlisters/naviconEventlistener";
 import activateCrossFadeAnimations from "./assets/js/animations/crossfadeAnimation";
 
@@ -25,88 +24,85 @@ import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
 import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
+import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
 activateCrossFadeAnimations();
 
 changeKvSrc()
+
 // determineTypeOfAnimation();
 screenResizeListener();
 
-// let images = gsap.utils.toArray(".t");
 
-// images.forEach((image) => {
-//   gsap.to(image, {
-//     yPercent: -100 * image.dataset.speed,
-//     ease: "none",
-//     scrollTrigger: {
-//       scrub: image.dataset.speed,
-//     },
-//   });
-// });
 
-// activateCardParallax();
+const screenType = isItSp(); // 画面サイズをチェックします /checks for  screen size
 
-// determineTypeOfAnimation();
-
-// let images = gsap.utils.toArray(".parallax--sp");
-
-const screenType = isItSp(); //checks for  screen size
+/*-------------------------------
+    dinner background animations
+    ディナーの背景アニメーション
+-------------------------------*/
 
 const masterCompany = gsap.timeline();
 
-if(screenType){
-    masterCompany.add(dinnerTopsp()); //if the size is less than 500px then the scale will be 1
-}else{
-    masterCompany.add(dinnerTop()); //else its 1.7
+  let dotAnimations = gsap.matchMedia();
 
-}
+    dotAnimations.add("(max-width: 500px)", () => {
+    
 
+      function dinnerTopsp() {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#dinner",
+            start: "-=500px top",
+            end: "+=200",
+            scrub: true,
+            // pin: true,
+            //  markers: true
+          },
+        });
+      
+        tl
+        .from(".company-dot", { scale: 0})
+      
+      
+        return tl;
+      }
 
-function dinnerTop() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#dinner",
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-        // pin: true,
-        //  markers: true
-      },
+      masterCompany.add(dinnerTopsp());
     });
-  
-    tl
-    .fromTo(".company-dot", { scale:0},{scale: 1.7})
-    // .to(".company-dot", { scale: 1})
-  
-    return tl;
-  }
+    dotAnimations.add("(min-width: 501px)", () => {
+    
 
-
-
-  function dinnerTopsp() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#dinner",
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-        // pin: true,
-        //  markers: true
-      },
+      function dinnerTop() {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: "#dinner",
+            start: "-=500px top",
+            end: "+=200",
+            scrub: true,
+            // pin: true,
+            //  markers: true
+          },
+        });
+      
+        tl
+        .fromTo(".company-dot", { scale:0},{scale: 1.7})
+        // .to(".company-dot", { scale: 1})
+      
+        return tl;
+      }
+      
+      masterCompany.add(dinnerTop());
     });
-  
-    tl
-    .from(".company-dot", { scale: 0})
-  
-  
-    return tl;
-  }
-  
-//   const masterCompany = gsap.timeline();
-//   masterCompany.add(companyTop());
 
+
+/*-------------------------------
+    feature parallax animations
+    フィーチャーのパララックスアニメーション
+-------------------------------*/
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -120,7 +116,7 @@ let tl = gsap.timeline({
 });
 
 tl
-.to(".feat-main-left-one", {yPercent:-100})
+.to(".feat-main-left-one", {yPercent:-65})
 // .to(".company-dot", { scale: 1})
 
 let t2 = gsap.timeline({
@@ -133,7 +129,7 @@ let t2 = gsap.timeline({
 });
 
 t2
-.to(".feat-main-left-two", {yPercent:-100})
+.to(".feat-main-left-two", {yPercent:-65})
 
 let t3 = gsap.timeline({
   scrollTrigger: {
@@ -145,36 +141,36 @@ let t3 = gsap.timeline({
 });
 
 t3
-.to(".feat-main-left-three", {yPercent:-100})
+.to(".feat-main-left-three", {yPercent:-65})
 
+/*-------------------------------
+    Loading animation
+   ロードアニメーション
+-------------------------------*/
 
-document.addEventListener('DOMContentLoaded',(e)=>{
-  let intro = gsap.timeline()
-
-  intro
-.from('.transition-item',{y:'100%',delay:2})
-.from('.transition-item-white',{y:'100%'})
-// .set('.transition-item',{y:'-100%'})
-.set('.transition-img',{opacity:0})
-.set('.transition-img',{x:"100%" ,})
-.to('.transition-item-white',{y:'-100%'})
-.to('.transition-item-white',{display:"none"})
-.set('.transition-item',{display:"none"})
-
-})
-
+setLoadingAnimation()
+/*-------------------------------
+   Logo Animations
+   ロゴのアニメーション
+-------------------------------*/
 
 ScrollTrigger.create({
   trigger: ".trigger",
   start: "top -=10",
   // markers: true,
-  // onEnter: animateLogo2,
-  // onLeave: changeToBlack,
   onEnterBack: animateLogo
-  // onLeaveBack: 
 });
 
+let tween =  gsap.from(".logo__image--sp", { y:" -100% ",duration:1})
+
 function animateLogo() {
-  gsap.from(".logo__image--sp", { y:" -100% ",duration:2})
+  tween.restart();
 }
 
+
+/*-------------------------------
+   Header PC animation
+   ヘッダーPCアニメーション
+-------------------------------*/
+
+activateHeaderAnimations();

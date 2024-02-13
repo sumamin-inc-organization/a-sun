@@ -1,89 +1,77 @@
-footer{
-    background-color: #000000;
-
-   
+footer {
+  background-color: #000000;
 }
 
-.footer-wrapper{
-    display: flex;
-  gap: clamp(144px,15.97vw,230px);
-    padding-left: clamp(50px,5.56vw,80px);
+.footer-wrapper {
+  display: flex;
+  gap: clamp(144px, 15.97vw, 230px);
+  padding-left: clamp(50px, 5.56vw, 80px);
 }
 
-.footer-left{
-    padding-top:  clamp(30px,2.43vw,35px);
-    /* display: inline-block; */
+.footer-left {
+  padding-top: clamp(30px, 2.43vw, 35px);
+}
+.footer-nav-list {
+  margin-top: 27.7px;
 
+  display: grid;
+  row-gap: 15px;
+  column-gap: 86px !important;
+  grid-template-areas:
+    "home news"
+    "feature info "
+    "lunch policy "
+    "dinner  .";
+}
+.foot-home {
+  grid-area: home;
+}
+.foot-feat {
+  grid-area: feature;
+}
+.foot-lunch {
+  grid-area: lunch;
+}
+.foot-dinner {
+  grid-area: dinner;
+}
+.foot-news {
+  grid-area: news;
+}
+.foot-info {
+  grid-area: info;
+}
+.foot-policy {
+  grid-area: policy;
+}
+.footer-logo {
+  width: 182.45px;
+  padding-bottom: clamp(15px, 1.65vw, 23.8px);
+}
+.footer-left_text {
+  padding-bottom: clamp(26.1px, 2.5vw, 36px);
 }
 
-.footer-nav{
-    /* border: 1px solid red; */
-    /* display: inline-block; */
-}
-.footer-nav-list{
+@media (max-width: 600px) {
+  .footer-wrapper {
+    display: grid;
+    place-content: center;
+    gap: 31px;
+    padding-left: 0;
+  }
+  footer {
+    padding-bottom: 39.7px;
+  }
+  .footer-nav-list {
     margin-top: 27.7px;
-    
+
     display: grid;
     row-gap: 15px;
-    column-gap: 86px !important;
-    /* grid-template-columns: 1fr 1fr; */
+    column-gap: 54px;
     grid-template-areas:
-    'home news'
-    'feature info '
-    'lunch policy '
-    'dinner  .';
-}
-.foot-home{
-    grid-area: home;
-}
-.foot-feat{
-    grid-area: feature;
-}
-.foot-lunch{
-    grid-area: lunch;
-}
-.foot-dinner{
-    grid-area: dinner;
-}
-.foot-news{
-    grid-area: news;
-}
-.foot-info{
-    grid-area: info;
-}
-.foot-policy{
-grid-area: policy;
-}
-.footer-logo{
-    width:  182.45px;
-    padding-bottom:  clamp(15px,1.65vw,23.8px);
-}
-.footer-left_text{
-    padding-bottom:  clamp(26.1px,2.5vw,36px);
-}
-
-
-@media (max-width:600px){
-    .footer-wrapper{
-        display: grid;
-       place-content: center;
-      gap: 31px;
-        padding-left:0;
-    }
-    footer{
-        padding-bottom: 39.7px;
-    }
-    .footer-nav-list{
-        margin-top: 27.7px;
-        
-        display: grid;
-        row-gap: 15px;
-        column-gap: 54px;
-        /* grid-template-columns: 1fr 1fr; */
-        grid-template-areas:
-        'home news'
-        'feature info '
-        'lunch policy '
-        'dinner  .';
-    }
+      "home news"
+      "feature info "
+      "lunch policy "
+      "dinner  .";
+  }
 }

@@ -2,7 +2,6 @@
   background-color: #505050;
   padding-top: 70px;
   padding-bottom: 50px;
-  /* padding-top: 30px; */
   padding-bottom: clamp(45.5px, 5.06vw, 72.8px);
 }
 
@@ -70,7 +69,7 @@
   width: 120%;
   height: 1px;
   background-color: #ffffff;
-  bottom: -5px;
+  bottom: -5px; 
 }
 
 /* ===============
@@ -97,7 +96,6 @@
   .address {
     text-align: center;
     margin-top: 33px;
-    /* margin-bottom: min(37.2px,9.54vw); */
     margin-bottom: 0;
   }
   .access-links_top {
@@ -110,7 +108,6 @@
   .access-links_bottom {
     display: flex;
     margin-bottom: min(60px, 15.38vw);
-    /* margin-bottom: 60px; */
   }
   .access-right-main {
     text-align: center;
@@ -129,23 +126,27 @@
   #access_shop-info::after {
     content: url(../../images/top/dinner/see-more-black.svg);
     position: absolute;
-    right: -18px;
-  }
+    right: 5px;  }
 
-  #access_google-maps::before,
+   #access_google-maps::before,
   #access_route::before,
   #access_shop-info::before {
-    content: "";
+    /* content: "";
     position: absolute;
     width: 120%;
     height: 1px;
     background-color: #ffffff;
-    bottom: -10px;
+    bottom: -10px; */
+    display: none;
   }
   #access_google-maps,
   #access_route,
   #access_shop-info {
     padding-top: 29.9px;
+    border-bottom: 1px solid #ffffff;
+    padding-inline: 25px;
+    padding-bottom: 16px;
+    /* width: ; */
   }
 }
 
@@ -162,7 +163,6 @@ footer {
 
 .footer-left {
   padding-top: clamp(30px, 2.43vw, 35px);
-  /* display: inline-block; */
 }
 
 .footer-nav {
@@ -173,7 +173,6 @@ footer {
   display: grid;
   row-gap: 15px;
   column-gap: clamp(54px, 5.83vw, 85px);
-  /* grid-template-columns: 1fr 1fr; */
   grid-template-areas:
     "home news"
     "feature info "
@@ -232,7 +231,6 @@ footer {
     display: grid;
     row-gap: 15px;
     column-gap: 54px;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-areas:
       "home news"
       "feature info "
@@ -241,6 +239,6 @@ footer {
   }
   .footer-logo {
     width: 182.45px;
-    padding-bottom: 23.8px
+    padding-bottom: 23.8px;
   }
 }

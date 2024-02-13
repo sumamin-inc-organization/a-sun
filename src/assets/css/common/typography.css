@@ -13,10 +13,14 @@
 
 .font-zen-kaku {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-zen-old {
   font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*----------------------------
@@ -62,6 +66,10 @@
     font-size: 20px;
     font-size: clamp(12.5px, 1.39vw, 20px);
   }
+  .fs-pc-24 {
+    font-size: 24px;
+    font-size: clamp(15px, 1.6667vw, 24px);
+  }
   .fs-pc-30 {
     font-size: 30px;
     font-size: clamp(18.75px, 2.08vw, 30px);
@@ -83,7 +91,6 @@
   }
 
   .fs-pc-100 {
-    /* font-size: 100px; */
     font-size: clamp(65.2px, 69.44vw, 100px);
   }
 }
@@ -92,6 +99,7 @@
 @media (max-width: 500px) {
   .fs-sp-12 {
     font-size: 12px;
+    font-size: min(12px,3.0769vw);
   }
   .fs-sp-14 {
     font-size: 14px;

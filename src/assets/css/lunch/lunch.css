@@ -1,53 +1,525 @@
-#overview {
-    background-image: url(../../images/lunch/lunch_bg_gray.jpg);
+* {
+    margin: 0;
 }
 
-.overview-grid {
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*------------------------------
+    Background Colors / 背景の色"
+------------------------------*/
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+.bg-black {
+    background-color: #505050;
+}
+
+#overview, #lunchSingle,  #drink {
+    background-image: url(../../images/lunch/lunch_bg_gray.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overview.dinner, #lunchSingle.dinner,  #drink.dinner {
+    background-image: none;
+    background-color: #505050;
+}
+
+.overview-grid, .drink-grid {
     display: grid;
     grid-template-columns: 1fr 960px 1fr;
 }
 
 @media (max-width: 1280px) {
-    .overview-grid {
+    .overview-grid, .drink-grid {
         grid-template-columns: 1fr 87% 1fr;
     }
 }
 
 .overview-inner {
     grid-column: 2/3;
+    margin-top: 60px;
+    margin-bottom: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .overview-description {
     text-align: center;
 }
 
-.overview-description p {
-    letter-spacing: 0.2rem;
-    line-height: 50px;
-}
-
 .overview-hours {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 35px 296px 37px 296px;
-    background:
-    linear-gradient(45deg,  transparent 10px, #FFFFFF 10px),
-    linear-gradient(135deg, transparent 10px, #FFFFFF 10px),
-    linear-gradient(225deg, transparent 10px, #FFFFFF 10px),
-    linear-gradient(315deg, transparent 10px, #FFFFFF 10px);
-    background-position: bottom left, top left, top right, bottom right;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
+    gap: 30px;
+    margin: 60px auto 80px auto;
+    width: 100%;
+    max-width: 960px;
+    padding-top: 35px;
+    padding-bottom: 37px;
+    background-color: #FFFFFF;
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
 }
 
 .overview-hours__title p {
     text-align: center;
 }
 
-.overview-hours__content  {
+.overview-hours__content {
     display: flex;
     flex-direction: column;
-    width: 370px;
     margin: auto;
+}
+
+.overview-hours__content--line {
+    display: flex;
+    flex-direction: row;
+}
+
+.overview-hours__content--line span:nth-child(1) {
+    display: block;
+    width: 8.4vw;
+    min-width: 80px;
+}
+
+.overview-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 67px;
+}
+
+.overview-buttons a {
+    color: #505050;
+    width: 132px;
+    text-align: center;
+}
+
+.arrow{
+	position: relative;
+}
+
+.arrow::after {
+    position: absolute;
+    content: "";
+    bottom: -16px;
+    height: 1px;
+    width: 160px;
+    background-color: #505050;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+}
+
+.arrow::before {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	content: url(../../images/lunch/arrow.svg);
+	vertical-align: middle;
+}
+
+.lunch-headline {
+    position: relative;
+}
+
+.lunch-headline h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+/* lunch_course */
+.course-headline {
+    margin-top: -160px;
+}
+
+.course-headline h2 {
+    position: relative;
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.course-headline img {
+    position: absolute;
+    width: 53%;
+    min-width: 600px;
+    max-width: 1000px;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.lunch-grid {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.lunch-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.lunch-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.lunch-item {
+    width: 50%;
+    padding: clamp(10px, 3.4vw, 101px) clamp(10px, 3.4vw, 100px) clamp(16px, 3.8vw, 109px) clamp(20px, 6.2vw, 140px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lunch-text {
+    color: #505050;
+    
+}
+
+.lunch-text__title {
+    letter-spacing: 0.22rem;
+    margin-bottom: min(4vw, 51px);
+}
+
+.lunch-text__title--main {
+    margin-bottom: 4px;
+}
+
+.lunch-text__title.narrow {
+    margin-bottom: clamp(8px, 1.8vw, 28px);
+}
+
+.lunch-price {
+    text-align: end;
+}
+
+.lunch-image {
+    width: 50%;
+}
+
+/* single_lunch */
+.single-headline {
+    padding-top: 90px;
+}
+
+.single-headline h2 {
+    position: relative;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.single-headline img {
+    position: absolute;
+    width: 54%;
+    min-width: 600px;
+    max-width: 1000px;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* drink */
+.drink-headline {
+    padding-top: 90px;
+}
+
+.drink-headline h2 {
+    position: relative;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.drink-headline img {
+    position: absolute;
+    width: 30%;
+    min-width: 300px;
+    max-width: 700px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.drink-grid {
+    background-color: #FFFFFF;
+    padding: 20px 0 80px 0;
+}
+
+.drink-inner {
+    grid-column: 2/3;
+}
+
+.drink-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 60px 30px 60px 30px;
+    border-bottom: 0.2px solid #505050;
+
+}
+
+.drink-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*文字調整*/
+@media (max-width: 888px) {
+    .lunch-text__title,  .lunch-text__title--main {
+        font-size: 2.8vw;
+    }
+
+    .lunch-text__title--sub {
+        font-size: 1.2w;
+    }
+
+    p.lunch-text__description {
+        font-size: 1.1vw;
+    }
+
+    .lunch-price {
+        font-size: 2vw;
+    }
+}
+
+/* dinner */
+.drink-headline.dinner-headline p {
+    top: 70%;
+    letter-spacing: 0.9rem;
+}
+
+.dinner-headline p {
+    font-size: clamp(80px, 12vw, 200px);
+    text-align: center;
+    color: #737373;
+    position: absolute;
+    width: 100%;
+    min-width: 800px;
+    max-width: 1200px;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 0;
+    letter-spacing: 0.7rem;
+}
+
+.dinner-headline img {
+    top: 40%;
+}
+
+.overview-inner.dinner {
+    margin-bottom: 160px;
+}
+
+.lunch-item.dinner {
+    background-color: #404040;
+}
+
+.drink-grid.dinner {
+    background-color: #404040;
+}
+
+.drink-content.dinner {
+    border-bottom: 0.2px solid #FFFFFF;
+}
+
+/* home back*/
+.home-back {
+    background-image: url(../../images/lunch/lunch_bg_gray.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.home-back a {
+    display: block;
+    width: clamp(160px, 14.6vw, 240px);
+    margin: auto;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #505050;
+}
+
+.sp {
+    display: none;
+}
+
+
+/*  sp */
+@media (max-width: 750px) {
+    .under-kv {
+        margin-top: 0px;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr 90% 1fr;
+    }
+
+    div.overview-description p {
+        line-height: min(12.69vw,49.5px);
+        font-size: min(16px,4.10vw);
+    }
+
+    .overview-hours {
+        margin: 40px auto 40px auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap: 15px;
+    }
+
+    .overview-hours__title p {
+        line-height: 20px;
+        font-size: min(16px,4.10vw);
+    }
+
+    .overview-hours__content {
+        line-height: 30px;
+        font-size: min(16px,4.10vw);
+        letter-spacing: 0;
+        width: 80%;
+        max-width: 360px;
+    }
+
+
+    .overview-hours__content--line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .overview-hours__note p {
+        font-size: min(14px,3.8vw);
+        letter-spacing: 0.012rem;
+    }
+
+    .overview-buttons {
+        gap: 48px;
+    }
+
+    .overview-buttons a {
+        font-size: 20px;
+    }
+
+    .lunch-headline h2 {
+        font-size: 28px;
+    }
+
+    .course-headline {
+        margin-top: -180px;
+    }
+
+    .course-headline h2 {
+        padding: 40px 0;
+    }
+
+    .course-headline img {
+        min-width: 300px;
+        top: 50%;
+    }
+
+    .course-headline img {
+        min-width: 300px;
+    }
+
+    .lunch-content {
+        flex-direction:column-reverse
+    }
+
+    .lunch-content.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .lunch-item {
+        width: 100%;
+        padding: clamp(10px, 6vw, 101px) clamp(10px, 3.4vw, 100px) clamp(16px, 6.4vw, 109px) clamp(20px, 6.2vw, 140px);
+    }
+
+    .lunch-image {
+        width: 100%;
+    }
+
+    .lunch-text__title, .lunch-text__title--main {
+        letter-spacing: 0.12rem;
+        font-size: 28px;
+    }
+
+    .lunch-text__title span {
+        letter-spacing: 0.1rem;
+        font-size: 16px;    
+    }
+
+    .lunch-text__title--sub {
+        letter-spacing: 0.12rem;
+        font-size: 16px;
+    }
+
+    p.lunch-text__description {
+        font-size: 14px;
+        line-height: 35px;
+        letter-spacing: 0.02rem;
+    }
+
+    .lunch-price {
+        font-size: 20px;
+    }
+
+    .single-headline, .drink-headline {
+        padding-top: 0;
+    }
+
+    .single-headline h2, .drink-headline h2 {
+        padding: 54px 0;
+    }
+
+    .single-headline img {
+        min-width: 300px;
+        width: 60%;
+        top: 60%;
+    }
+
+    .lunch-text__title.narrow {
+        margin-bottom: clamp(12px, 2vw, 28px);
+    }
+
+    .drink-grid {
+        grid-template-columns: 1fr 90% 1fr;
+        padding: 20px 0 60px 0;
+    }
+
+    .drink-headline img {
+        min-width: 160px;
+        width: 20%;
+        top: 56%;
+    }
+
+    .drink-content {
+        padding: 40px 10px 40px 10px;
+    }
+
+    .drink-note {
+        font-size: 14px;
+        letter-spacing: 0.07rem;
+    }
+
+    .sp {
+        display: block;
+    }
 }

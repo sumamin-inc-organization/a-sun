@@ -2,47 +2,44 @@
 /*     Utility         */
 /* ------------------- */
 
-
 /*-----------------------------------------------
   Marks The Current Page In The Primary Nav
   プライマリナビゲーションで現在のページをマークします
 ------------------------------------------------*/
-.active-nav{
-    display:block !important;
+.active-nav {
+  display: block !important;
 }
 
 /*------------------------------------------------------------
   Sets the display of elements depending on the screen size
   画面サイズに応じて要素の表示を設定します
 -------------------------------------------------------------*/
-.display-max--500{
+.display-max--500 {
   display: none;
 }
 
-
-.sp-only{
+.sp-only {
   display: none;
 }
-.pc-only{
-
+.pc-only {
 }
 
-.tab-and-sp{
+.tab-and-sp {
   display: none;
 }
-@media(max-width:920px){
-  .tab-and-sp{
-    display: block;
-  } 
-}
-@media (max-width:500px){
-  .sp-only{
+@media (max-width: 920px) {
+  .tab-and-sp {
     display: block;
   }
-  .pc-only{
-  display: none;
+}
+@media (max-width: 500px) {
+  .sp-only {
+    display: block;
   }
-  .display-max--500{
+  .pc-only {
+    display: none;
+  }
+  .display-max--500 {
     display: block;
   }
 }
@@ -52,62 +49,57 @@
   要素を同じマージンに保つためのユーティリティクラス
 -------------------------------------------------------------*/
 
-.margin_left-and-right{
-  /* margin-inline: clamp(150px,16.67vw,240px); */
+.margin_left-and-right {
   display: grid;
   place-content: center;
-
-
-}
-.coulmn-2{
-  /* grid-column: 2; */
-}
-.margin_left{
-  margin-left: clamp(150px,16.67vw,240px);
-}
-.margin_right{
-  margin-left: clamp(150px,16.67vw,240px);
 }
 
+.margin_left {
+  margin-left: clamp(150px, 16.67vw, 240px);
+}
+.margin_right {
+  margin-left: clamp(150px, 16.67vw, 240px);
+}
 
-.text-align-end{
+.text-align-end {
   text-align: end;
 }
 
+.text-align-center {
+  text-align: center;
+}
 .no-wrap {
-
   text-wrap: nowrap;
-  
+
   /* Standard syntax */
-  
+
   white-space: nowrap;
-  
+
   /* Vendor prefixes for older versions of iOS/Webkit */
-  
+
   -webkit-white-space: nowrap;
-  
 }
 
-@media(max-width:500px){
-  .letter-spacing-sp-100{
+@media (max-width: 500px) {
+  .letter-spacing-sp-100 {
     letter-spacing: 0.1em;
   }
-  .sp-opacity-0{
+  .sp-opacity-0 {
     opacity: 0;
   }
 }
-.bg-black{
-  background-color:#505050;
+.bg-black {
+  background-color: #505050;
 }
 
-.overlfow-ellipsis{
-text-overflow: ellipsis;
+.overlfow-ellipsis {
+  text-overflow: ellipsis;
 }
 
 /*-------------------------
   下層ページのKV
 --------------------------*/
-.under-kv{
+.under-kv {
   background-image: url(../../images/common/under_kv.jpg);
   background-position: center top;
   background-size: cover;
@@ -129,7 +121,7 @@ text-overflow: ellipsis;
   font-size: 100px;
   letter-spacing: 0.5rem;
 }
-.under-kv p{
+.under-kv p {
   font-family: "Zen Old Mincho", serif;
   font-size: 20px;
   letter-spacing: 0.2rem;

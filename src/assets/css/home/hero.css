@@ -6,17 +6,21 @@
     Backgrounds / 背景
 -------------------------------*/
 #hero {
-
-position: relative;
-z-index: 10;
-/* border: 1px solid red; */
+  position: relative;
+  z-index: 10;
 }
-@media (min-width:750px) {
+.hero-background--sp {
+  z-index: 5;
+}
+@media (min-width: 750px) {
   /* ヘッダーとの重なりを防ぐために */
-  #hero{
+  /* #hero{
     margin-top: 120px;  
 
-  }
+  } */
+  /* body{
+    margin-top: 120px;
+  } */
 }
 @media (max-width: 750px) {
   .hero-background--sp {
@@ -59,12 +63,10 @@ z-index: 10;
 
 .keyvisual__text--jp {
   letter-spacing: 0.114em;
-  /* line-height: 59px; */
 }
 .keyvisual__text--eng {
   margin-top: clamp(10px, 1.25vw, 18px);
   letter-spacing: 0.02em;
-  /* line-height: 39.24px; */
 }
 
 /*-------------------------------------------------
@@ -108,7 +110,6 @@ z-index: 10;
 --------------------------------------------------*/
 
 .eyecatcher__scrollimg {
-  /* border: 1px solid red; */
   width: clamp(15px, 1.67vw, 24px);
 }
 
@@ -133,24 +134,21 @@ z-index: 10;
   padding: 0;
   letter-spacing: 0.154em;
   line-height: 33.5px;
-  /* border-bottom: 1px solid black; */
 }
-.link-img{
+.link-img {
   width: 60px;
   height: 80px;
   margin-top: 10px;
   margin-right: 9px;
 }
-@media (min-width:501px){
-  .link-img-pc{
+@media (min-width: 501px) {
+  .link-img-pc {
     width: 60px;
     height: 80px;
     position: absolute;
     left: -70px;
     top: -45px;
-  
   }
-  
 }
 .gault-millau_link--pc {
   position: relative;
@@ -248,7 +246,6 @@ z-index: 10;
   place-content: center;
   padding-bottom: 110px;
   padding-bottom: min(110px, 7.64vw);
-  /* border: 1px solid red; */
   transform: translateX(60px);
 }
 .kv-hero__img--secondary {
@@ -268,9 +265,8 @@ z-index: 10;
 .kv-hero__img--right {
   top: 50%;
   right: calc(clamp(182.65px, 20.31vw, 292.23px) - 70%);
-  right: -16.67vw; 
+  right: -16.67vw;
   right: -240.168px;
-  /* border: 1px solid red; */
 }
 
 .kv-hero__img--bottom {
@@ -300,7 +296,6 @@ z-index: 10;
     justify-content: center;
     align-items: center;
     padding-top: min(23.5px, 6.03vw);
-    /* padding-left: min(20.2px,5.1795vw); */
     gap: 12px;
   }
 
@@ -375,29 +370,28 @@ z-index: 10;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: min(7.77vw,30.3px);
+    gap: min(7.77vw, 30.3px);
     margin-top: clamp(56px, 6.18vw, 89px);
- 
   }
   .keyvisual-main__text__title {
-    width: min(93.33vw,364px);
+    width: min(93.33vw, 364px);
   }
-  
+
   .keyvisual-main__text__description {
     width: min(330px, 84.62vw);
-    line-height: min(46px,11.79vw);
+    line-height: min(46px, 11.79vw);
     letter-spacing: 0.154em;
   }
-  
+
   .kv-main__text__title--eng {
-    line-height: min(22px,5.64vw);
+    line-height: min(22px, 5.64vw);
     letter-spacing: 0.02em;
     text-align: center;
     margin-top: min(13.3px, 3.41vw);
   }
-  
+
   .kv-main__text__title--jp {
-    line-height:min(54px,13.85vw);
+    line-height: min(54px, 13.85vw);
     letter-spacing: 0.154em;
     text-align: center;
     text-wrap: nowrap;
@@ -409,15 +403,12 @@ z-index: 10;
 /*----------------------------------------------------------------------------
     Keyvisual Main Hero Widths Mobile/ キービジュアル メイン ヒーローの幅 モバイル
 ------------------------------------------------------------------------------*/
-@media (max-width:899px){
+@media (max-width: 899px) {
   .kv-hero__img--center {
-    width: clamp(350px,57.09vw,513.84px);
-    /* border: 1px solid red; */
-    /* transform: translateX(0); */
- 
+    width: clamp(350px, 57.09vw, 513.84px);
   }
   .kv-hero__img--top-right {
-    width: clamp(126.89px, 20.74vw,186.63px);
+    width: clamp(126.89px, 20.74vw, 186.63px);
   }
   .kv-hero__img--right {
     width: clamp(124.18px, 20.31vw, 182.65px);
@@ -426,33 +417,28 @@ z-index: 10;
     width: clamp(126.89px, 20.74vw, 186.63px);
   }
   .kv-hero__img--left {
-    width: clamp(119.96px, 19.60vw, 176.44px);
+    width: clamp(119.96px, 19.6vw, 176.44px);
   }
   .kv-hero__img--top-left {
     width: clamp(117.28px, 19.17vw, 172.5px);
   }
   .keyvisual-main_hero {
     transform: translateX(0px);
-  } 
-
+  }
 }
 
-
-@media (max-width:500px){
+@media (max-width: 500px) {
   .keyvisual-main_hero {
-    margin-top: min(71px,18.21vw);
+    margin-top: min(71px, 18.21vw);
     margin-top: 200px;
     padding-bottom: 110px;
-    /* padding-bottom: min(110px, 7.64vw); */
-    /* border: 1px solid red; */
   }
 
   .kv-hero__img--center {
-    width: min(350px,89.74vw);
- 
+    width: min(350px, 89.74vw);
   }
   .kv-hero__img--top-right {
-    width: min(126.89px,32.54vw)
+    width: min(126.89px, 32.54vw);
   }
   .kv-hero__img--right {
     width: min(124.18px, 31.86vw);
@@ -467,33 +453,27 @@ z-index: 10;
     width: min(117.28px, 30.07vw);
   }
 
-#keyvisual-main{
-  padding-bottom: 50px;
+  #keyvisual-main {
+    padding-bottom: 50px;
+  }
 }
-}
-
 
 /*---------------------------------------------------------------------------------
     Keyvisual Main Hero Positioning Mobile/ キービジュアル メイン ヒーローの配置 モバイル
 ----------------------------------------------------------------------------------*/
-@media (max-width:899px){
+@media (max-width: 899px) {
   .kv-hero__img--left {
     left: -35%;
     bottom: 50px;
   }
-  .keyvisual-main_hero {
-    /* border: 1px solid red; */
-  }
+
   .kv-hero__img--top-right {
     top: -10px;
     right: -60px;
-    /* right: min(12px,3.08vw); */
-    /* border: 1px solid red; */
   }
   .kv-hero__img--right {
     top: 50%;
     right: -150px;
-    /* right: min(-40px,-10.26vw); */
   }
   .kv-hero__img--bottom {
     transform: translateX(3%);
@@ -502,102 +482,82 @@ z-index: 10;
     left: -35%;
     bottom: 45px;
   }
-  
+
   .kv-hero__img--top-left {
     top: 10px;
     left: -100px;
   }
   .keyvisual-main_hero {
-    margin-top: min(35px,18.21vw);
+    margin-top: min(35px, 18.21vw);
     padding-bottom: 110px;
     padding-bottom: min(110px, 7.64vw);
-    /* border: 1px solid red; */
   }
 }
 
-
-@media (max-width:500px){
+@media (max-width: 500px) {
   .kv-hero__img--left {
     left: -35%;
     bottom: 50px;
   }
-  .keyvisual-main_hero {
-
-  }
   .kv-hero__img--top-right {
     top: -2px;
     right: 5px;
-    /* right: min(12px,3.08vw); */
-    /* border: 1px solid red; */
   }
   .kv-hero__img--right {
     top: 90%;
-    /* border: 1px solid red; */
     right: -30px;
-    /* right: min(-40px,-10.26vw); */
-      /* changed */
+    /* changed */
   }
   .kv-hero__img--bottom {
     transform: translateX(-40%);
     bottom: -40%;
-      /* changed */
+    /* changed */
   }
   .kv-hero__img--left {
     left: -19%;
     bottom: -50px;
     /* changed */
   }
-  
+
   .kv-hero__img--top-left {
     top: 10px;
     left: -30px;
   }
   .keyvisual-main_hero {
-    margin-top: min(35px,18.21vw);
+    margin-top: min(35px, 18.21vw);
     padding-bottom: 110px;
     padding-bottom: min(110px, 7.64vw);
     transform: translateX(15px);
-    /* transform: translate(15px,60px); */
-    /* border: 1px solid red; */
   }
-  .kv-hero__img--center{
-    /* transform: translateX(15px); 
-    */
+  .center--img {
+    transform: translateY(20px);
   }
- .center--img{
-  /* border: 1px solid red; */
-  transform: translateY(20px);
- }
- .keyvisual-main_text{
-  margin-bottom: 50px;
- }
+  .keyvisual-main_text {
+    margin-bottom: 50px;
+  }
 }
 
-
-.hover{
-  position:relative;
+.hover {
+  position: relative;
 }
-.hover::after{
-
+.hover::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   height: 1px;
   background: #505050;
   transform: scaleX(1);
   transform-origin: left;
-  transition: transform  250ms ease-in;
+  transition: transform 250ms ease-in;
 }
 
-.hover:hover::after{
-  
+.hover:hover::after {
   transform: scaleX(0);
   transform-origin: right;
 }
 
-.hover:hover{
+.hover:hover {
   cursor: pointer;
 }
-
