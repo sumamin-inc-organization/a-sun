@@ -282,10 +282,10 @@
     z-index: -2;
     z-index: -2;
     width: 80vmax;
-    height: 90vmax;
+    height: 85vmax;
   }
   #dinner{
-    /* padding: 300px; */
+    padding: 200px;
   }
 }
 @media (max-width:400px){

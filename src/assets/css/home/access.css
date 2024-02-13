@@ -126,7 +126,8 @@
   #access_shop-info::after {
     content: url(../../images/top/dinner/see-more-black.svg);
     position: absolute;
-    right: 5px;  }
+    right: 5px;
+    }
 
    #access_google-maps::before,
   #access_route::before,

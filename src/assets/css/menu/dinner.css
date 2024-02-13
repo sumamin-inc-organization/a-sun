@@ -1,5 +1,8 @@
 .under-kv.dinner {
     background-image: url(../../images/menu/dinner_kv.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .under-kv.dinner h1 {

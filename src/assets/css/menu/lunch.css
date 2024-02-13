@@ -8,6 +8,9 @@ html {
 
 .under-kv.lunch {
     background-image: url(../../images/menu/lunch_kv.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .under-kv.lunch h1, .under-kv.lunch p {
