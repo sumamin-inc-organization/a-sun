@@ -1,0 +1,225 @@
+/* main grid */
+.main_grid{
+    display: grid;
+    grid-template-columns: 1fr 960px 1fr;
+}
+
+@media (max-width: 1280px) {
+    .main_grid{
+        grid-template-columns: 1fr 87% 1fr;
+    }
+}
+
+#news_top{
+    background-image: url(../../images/common/gray_bg_pc.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news_content {
+    grid-column: 2;
+    z-index: 10;
+    margin-top: 92px;
+}
+
+.news_inner {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    background-color: #FFFFFF;
+    padding: 80px 80px 60px 80px;
+}
+
+.news_inner .news_item {
+    display: flex;
+    flex-flow: row;
+    gap: 15px;
+    border-bottom: 0.2px solid #505050;
+    font-size: 14px;
+    letter-spacing: 0.2rem;
+    align-items: center;
+    transition: 0.3s;
+    padding-bottom: 30px;
+}
+
+.news_inner .news_item:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.news_inner .item_text {
+    color: #505050 ;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.item_date {
+    color: #EBB000;
+}
+
+/*ページネーション pc*/
+.news_pagination {
+    margin: 60px auto 0 auto;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    gap: 20px; 
+}
+
+.arrow_right {
+    display: inline-block;
+    vertical-align: middle;
+    color: #EBB000;
+    line-height: 1;
+    position: relative;
+    width: 0.8rem;
+    height: 0.8rem;
+    transform: translateX(-25%) translateY(-10%) rotate(45deg);
+}
+
+.arrow_right::before, .arrow_right::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 0.1em;
+}
+
+.arrow_right::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.1em;
+    }
+
+.arrow_right::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.1em;
+}
+
+.arrow_left {
+    display: inline-block;
+    vertical-align: middle;
+    color: #EBB000;
+    line-height: 1;
+    position: relative;
+    width: 0.8rem;
+    height: 0.8rem;
+    transform: translateX(25%) translateY(-10%) rotate(225deg);
+}
+
+.arrow_left::before, .arrow_left::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 0.1em;
+}
+
+.arrow_left::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.1em;
+}
+
+.arrow_left::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.1em;
+    }
+
+.nav_links ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.nav_links li > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    height: 30px;
+}
+
+.nav_links li > *:not(.dots) {
+    width: 30px;
+    border-radius: 50%;
+    color: #505050;
+    background: #FFFFFF;
+    transition: color 0.3s ease, background 0.3s ease;
+    transition: 0.3s;
+}
+
+.nav_links li > .current,
+.nav_links li > a:hover:not(.dots) {
+    color: #EBB000;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transition: 0.3s;
+}
+
+/* home back*/
+.home-back {
+    padding: 80px 0;
+}
+
+.home-back a {
+    display: block;
+    width: clamp(160px, 14.6vw, 240px);
+    margin: auto;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #505050;
+}
+
+.access-links_top a, .access-links_bottom a{
+    line-height: clamp(40.94px, 4.55vw, 65.5px);
+    letter-spacing: 0.154em;
+    position: relative;
+    margin-right: 30px;
+}
+
+
+/*sp*/
+@media (max-width: 767px) {
+    /*newsbox sp*/
+    .news_inner {
+        padding: 54px 20px 60px 20px;
+    }
+
+    .news_content {
+        grid-column: 2 / 3;
+        margin-top: 60px;
+    }
+
+    .news_inner .news_item {
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /*ページネーション sp*/
+    .news_pagination {
+        margin: 60px auto 0 auto;
+    }
+
+    .arrow_left {
+        transform: translateX(25%) translateY(-20%) rotate(225deg);
+    }
+
+    .arrow_right {
+        transform: translateX(-25%) translateY(-20%) rotate(45deg);
+    }
+    
+}
