@@ -174,9 +174,9 @@
 }
 
 
-@media(min-width:1600px){
+@media(min-width:1000px){
   .msg-filler {
     position: relative;
-   height: 1000px;
+   height: 450px;
   }
 }
