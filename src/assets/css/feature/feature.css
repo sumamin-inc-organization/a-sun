@@ -137,6 +137,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 10px;
 }
 .slick-dots button{
     padding-block: 0px !important;
@@ -362,9 +363,8 @@
         height: 6px !important;
     }
     .slick-dots {
-        display: flex;
-        justify-content: center;
         gap: 10px;
+        padding-top: 5px;
     }
     .slick-slide {
         margin: 5px;
