@@ -304,9 +304,14 @@
   /* border: 1px solid red; */
 }
 
+
+
+ 
+ 
 @media (min-width: 1700px) {
  .bottom-right{
   bottom: -90%;
  }
 
 }
+
