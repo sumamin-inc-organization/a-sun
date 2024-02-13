@@ -100,8 +100,15 @@
   height: 1px;
   background-color: #505050;
   bottom: 5px;
-}
 
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+.lunch-dinner-common-seemore:hover::before {
+  transform: scaleX(0);
+  transform-origin: right;
+}
 .lunch-texture {
   position: absolute;
   top: 0;
