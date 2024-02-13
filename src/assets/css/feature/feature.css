@@ -102,10 +102,20 @@
     line-height: 3.12;
     letter-spacing: 0.1rem;
 }
+/* ボタン */
+.position_content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 1010px;
+}
 .next-arrow {
     position: absolute;
     top: 70%;
-	right: 15%;
+	right: 0;
     width: 50px;
     height: 50px;
     z-index: 10;
@@ -113,7 +123,7 @@
 .prev-arrow {
     position: absolute;
     top: 70%;
-	left: 15%;
+	left: 0;
     width: 50px;
     height: 50px;
     z-index: 10;
@@ -147,6 +157,14 @@
 }
 
 /* responsive */
+@media(min-width:1500px){
+    .slick-text{
+        width: 1050px;
+    }
+    .position_content {
+        width: 1100px;
+    }
+}
 @media(max-width:1300px){
     .feature-content{
         grid-template-columns: 1fr 90% 1fr;
@@ -167,27 +185,18 @@
     .feature3-inner{
         gap: 50px;
     }
-    .prev-arrow{
-        left: 11%;
-    }
-    .next-arrow{
-        right: 11%;
-    }
 }
 @media(max-width:1190px){
     .feature-title h2{
         font-size: 36px;
     }
-    .prev-arrow{
-        left: 8%;
-    }
-    .next-arrow{
-        right: 8%;
-    }
 }
 @media(max-width:1080px){
     .slick-text{
         width: 850px;
+    }
+    .position_content{
+        width: 900px;
     }
 }
 @media(max-width:960px){
@@ -222,14 +231,14 @@
     .slick-text p{
         line-height: 2.5;
     }
+    .position_content{
+        top: 70%;
+        width: 730px;
+    }
     .prev-arrow{
-        left: 11%;
-        top: 68%;
         width: 40px;
     }
     .next-arrow{
-        right: 11%;
-        top: 68%;
         width: 40px;
     }
 }
@@ -248,12 +257,6 @@
     .feature3-inner{
         gap: 40px;
     }
-    .prev-arrow{
-        left: 8%;
-    }
-    .next-arrow{
-        right: 8%;
-    }
 }
 @media(max-width:785px){
     .feature-title h2{
@@ -269,15 +272,15 @@
     .slick-text p{
         font-size: 14px;
     }
+    .position_content{
+        top: 67%;
+        width: 690px;
+    }
     .prev-arrow{
-        left: 6%;
         width: 30px;
-        top: 66%;
     }
     .next-arrow{
-        right: 6%;
         width: 30px;
-        top: 66%;
     }
 }
 @media(max-width:767px){
@@ -370,15 +373,15 @@
         margin-right: 6%;
         margin-left: 6%;
     }
-    .prev-arrow{
-        left: 4%;
-        width: 24px;
+    .position_content{
         top: 70%;
+        width: 90%;
+    }
+    .prev-arrow{
+        width: 24px;
     }
     .next-arrow{
-        right: 4%;
         width: 24px;
-        top: 70%;
     }
 }
 

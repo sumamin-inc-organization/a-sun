@@ -101,7 +101,7 @@
 --------------------------*/
 .under-kv {
   background-image: url(../../images/common/under_kv.jpg);
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 70px 0 90px;
