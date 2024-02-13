@@ -174,3 +174,11 @@ function animateLogo() {
 -------------------------------*/
 
 activateHeaderAnimations();
+
+// let letters = gsap.utils.toArray(".letter");
+
+// letters.forEach((letter) => {
+//   gsap.from(letter, {
+//    opacity:0
+//   });
+// });

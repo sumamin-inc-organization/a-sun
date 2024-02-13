@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+const letter = document.querySelector('[data-splittext]')
 
 export default function setLoadingAnimation(){
 document.addEventListener('DOMContentLoaded',(e)=>{
@@ -12,7 +13,24 @@ document.addEventListener('DOMContentLoaded',(e)=>{
   .set('.transition-img',{x:"100%" ,})
   .to('.transition-item-white',{y:'-100%'})
   .to('.transition-item-white',{display:"none"})
-  .set('.transition-item',{display:"none"})
+  .set('.transition-item',{display:"none"});
   
+  toggleVisibility()
+
   })
+  console.log(letter)
+}
+
+function animateText(){
+  let texttl = gsap.timeline()
+
+
+  texttl
+  .from('.keyvisual__text--jp',{opacity:0})
+
+}
+// gsap.from(".letter",{y:100,duration:2});
+
+function toggleVisibility(){
+  letter.classList.add('visibled');
 }

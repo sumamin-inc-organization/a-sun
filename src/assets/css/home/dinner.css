@@ -315,3 +315,15 @@
 
 }
 
+[data-splittext] .letter {
+  opacity: 0;
+}
+[data-splittext].visibled .letter {
+  transition: all .6s cubic-bezier(0.43, 0.05, 0.17, 1) var(--delay);
+  transition-property: opacity;
+  opacity: 1;
+}
+
+.letter{
+  display: inline-block;
+}
