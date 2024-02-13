@@ -148,7 +148,51 @@ t3
    ロードアニメーション
 -------------------------------*/
 
-setLoadingAnimation()
+// setLoadingAnimation()
+
+
+document.addEventListener('DOMContentLoaded',(e)=>{
+  let intro = gsap.timeline()
+
+  intro
+.from('.transition-item',{y:'100%',delay:2})
+.from('.transition-item-white',{y:'100%'})
+// .set('.transition-item',{y:'-100%'})
+.set('.transition-img',{opacity:0})
+.set('.transition-img',{x:"100%" ,})
+.to('.transition-item-white',{y:'-100%'})
+.to('.transition-item-white',{display:"none"})
+.set('.transition-item',{display:"none"})
+.from('.keyvisual-top__logo',{opacity:0,x:-100,duration:1})
+.from('.letter1',{opacity:0,duration:0.5},"<20%")
+.from('.letter2',{opacity:0,duration:0.5},"<10%")
+.from('.letter3',{opacity:0,duration:0.5},"<10%")
+.from('.letter4',{opacity:0,duration:0.5},"<10%")
+.from('.letter5',{opacity:0,duration:0.5},"<10%")
+.from('.letter6',{opacity:0,duration:0.5},"<10%")
+.from('.letter7',{opacity:0,duration:0.5},"<10%")
+.from('.letter8',{opacity:0,duration:0.5},"<10%")
+.from('.letter9',{opacity:0,duration:0.5},"<10%")
+.from('.letter10',{opacity:0,duration:0.5},"<10%")
+.from('.letter11',{opacity:0,duration:0.5},"<10%")
+.from('.letter12',{opacity:0,duration:0.5},"<10%")
+.from('.letter13',{opacity:0,duration:0.5},"<10%")
+.from('.letter14',{opacity:0,duration:0.5},"<10%")
+.from('.letter15',{opacity:0,duration:0.5},"<10%")
+.from('.letter16',{opacity:0,duration:0.5},"<10%")
+.from('.letter17',{opacity:0,duration:0.5},"<10%")
+.from('.letter18',{opacity:0,duration:0.5},"<10%")
+.from('.letter19',{opacity:0,duration:0.5},"<10%")
+.from('.letter20',{opacity:0,duration:0.5},"<10%")
+.from('.letter21',{opacity:0,duration:0.5},"<10%")
+.from('.letter22',{opacity:0,duration:0.5},"<10%")
+.from('.letter23',{opacity:0,duration:0.5},"<10%")
+.from('.letter24',{opacity:0,duration:0.5},"<10%")
+.from('.letter25',{opacity:0,duration:0.5},"<10%")
+.from('.letter26',{opacity:0,duration:0.5},"<10%")
+.from('.letter27',{opacity:0,duration:0.5},"<10%")
+})
+
 /*-------------------------------
    Logo Animations
    ロゴのアニメーション

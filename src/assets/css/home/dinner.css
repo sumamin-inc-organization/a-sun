@@ -314,7 +314,7 @@
  }
 
 }
-
+/* 
 [data-splittext] .letter {
   opacity: 0;
 }
@@ -322,8 +322,14 @@
   transition: all .6s cubic-bezier(0.43, 0.05, 0.17, 1) var(--delay);
   transition-property: opacity;
   opacity: 1;
-}
+} */
 
-.letter{
+[data-splittext]{
+  font-kerning: none;
+  letter-spacing: normal;
+}
+.letter-spacing-adjust{
   display: inline-block;
+  letter-spacing:-0.114em ;
+  /* letter-spacing: 0.114em; */
 }

@@ -13,12 +13,8 @@ document.addEventListener('DOMContentLoaded',(e)=>{
   .set('.transition-img',{x:"100%" ,})
   .to('.transition-item-white',{y:'-100%'})
   .to('.transition-item-white',{display:"none"})
-  .set('.transition-item',{display:"none"});
-  
-  toggleVisibility()
-
+  .set('.transition-item',{display:"none"})
   })
-  console.log(letter)
 }
 
 function animateText(){
