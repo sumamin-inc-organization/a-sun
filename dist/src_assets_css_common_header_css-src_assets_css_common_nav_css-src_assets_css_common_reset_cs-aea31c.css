@@ -136,10 +136,14 @@
 
 .font-zen-kaku {
   font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-zen-old {
   font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*----------------------------
@@ -498,7 +502,7 @@ a,button{
 --------------------------*/
 .under-kv {
   background-image: url(assets/img/under_kv.jpg);
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 70px 0 90px;
