@@ -12,10 +12,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// slick
 $(document).ready(function() {
-    // スライダー1の設定
     $(".slick1").slick({
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2500,
         infinite: true,
         pauseOnHover: false,
@@ -46,9 +46,8 @@ $(document).ready(function() {
         ],
     });
 
-    // スライダー2の設定
     $(".slick2").slick({
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2500,
         infinite: true,
         pauseOnHover: false,
@@ -79,3 +78,53 @@ $(document).ready(function() {
         ],
     });
 });
+
+// 出現アニメーション
+let kv_title = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".feature-page",
+        start: "-=500px",
+        scrub: false,
+    },
+});
+kv_title
+.from(".under-kv", { opacity: 0, duration: 2 });
+
+let feature1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#feature1",
+        start: "-=500px",
+        scrub: false,
+    },
+});
+feature1
+.from("#feature1 .feature-title", { y: 30, opacity: 0, duration: 2 })
+.from("#feature1 .feature-top-img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".slick1", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+
+let feature2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#feature2",
+        start: "-=500px",
+        scrub: false,
+    },
+});
+feature2
+.from("#feature2 .feature-title", { y: 30, opacity: 0, duration: 2 })
+.from("#feature2 .feature-top-img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".slick2", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+
+let feature3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#feature3",
+        start: "-=500px",
+        scrub: false,
+    },
+});
+feature3
+.from("#feature3 .feature-title", { y: 30, opacity: 0, duration: 2 })
+.from("#feature3 .feature-top-img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+.from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");

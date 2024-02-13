@@ -65,7 +65,7 @@ const pages = [
   "lunch",
   "dinner",
   "news",
-  "infomation",
+  "information",
 ];
 module.exports = {
   mode: "development",

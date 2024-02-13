@@ -2,6 +2,10 @@
 /*     Utility         */
 /* ------------------- */
 
+a,button{
+  cursor: pointer;
+}
+
 /*-----------------------------------------------
   Marks The Current Page In The Primary Nav
   プライマリナビゲーションで現在のページをマークします
@@ -32,7 +36,7 @@
     display: block;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .sp-only {
     display: block;
   }
@@ -140,8 +144,24 @@
   padding: 100px 0;
 }
 .home-btn a{
-  border-bottom: solid 1px #505050;
   padding: 0 20px 15px;
+  position: relative;
+}
+.home-btn a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #505050;
+  transition: transform .3s;
+  transform-origin: left top;
+}
+.home-btn a:hover::after {
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
 }
 @media(max-width:767px){
 .home-btn{
