@@ -23,6 +23,10 @@
 }
 
 
+.lunch-grid.dinner {
+    background-color: #404040;
+}
+
 .drink-headline.dinner-headline p {
     top: 70%;
     letter-spacing: 0.9rem;
