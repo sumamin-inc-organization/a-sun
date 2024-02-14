@@ -727,3 +727,22 @@ messageTitle.add("(max-width: 767px)", () => {
     duration: 1,
   });
 });
+
+/*-------------------------------
+Voice Animations
+ Voice アニメーション
+-------------------------------*/
+let voiceTitletl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#voice",
+    start: "-=500px",
+    scrub: false,
+    markers: true,
+  },
+});
+
+voiceTitletl.from(".voice-title-anime", {
+  opacity: 0,
+  y: -50,
+  duration: 1,
+});
