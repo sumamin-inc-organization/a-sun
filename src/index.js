@@ -163,7 +163,8 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 .to('.transition-item-white',{y:'-100%'})
 .to('.transition-item-white',{display:"none"})
 .set('.transition-item',{display:"none"})
-.from('.keyvisual-top__logo',{opacity:0,x:-100,duration:1})
+.from('.keyvisual-top__logo',{opacity:0,duration:1})
+.from('.eyecatcher-slideshow',{opacity:0,duration:2},"<25%")
 .from('.letter1',{opacity:0,duration:0.5},"<20%")
 .from('.letter2',{opacity:0,duration:0.5},"<10%")
 .from('.letter3',{opacity:0,duration:0.5},"<10%")
@@ -191,6 +192,7 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 .from('.letter25',{opacity:0,duration:0.5},"<10%")
 .from('.letter26',{opacity:0,duration:0.5},"<10%")
 .from('.letter27',{opacity:0,duration:0.5},"<10%")
+.from('.kv-eng-txt-sp',{opacity:0,x:-50,duration:0.5})
 .from('.letter-eng1',{opacity:0,duration:0.5},"4.5")
 .from('.letter-eng2',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng3',{opacity:0,duration:0.5},"<10%")
@@ -258,8 +260,7 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 .from('.letter-eng65',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng66',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng67',{opacity:0,duration:0.5},"<10%")
-.from('.eyecatcher-slideshow',{opacity:0,scale:0,duration:2},"4.5")
-.from('.eyecatcher__scrollimg',{opacity:0,y:-100,duration:2},"<50%")
+.from('.eyecatcher__scrollimg',{opacity:0,y:-100,duration:1},"<20%")
 
 })
 
