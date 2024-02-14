@@ -2,12 +2,18 @@
 <html lang="jp">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>沖縄居酒屋あーすん</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>沖縄居酒屋あーすん | あーすんについて</title>
+        <!-- ogp -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="沖縄居酒屋あーすん">
+        <meta property="og:description" content="沖縄県那覇市金城の閑静な住宅街に佇む、一軒家のレストラン。生産者の想い、料理人の技と愛情、そしてお客様の笑顔。全てが調和し、美味しさが生まれる瞬間をお届けしいています。">
+        <meta property="og:site_name" content="沖縄居酒屋あーすん">
+        <meta property="og:image" content="/src/assets/images/common/ogp.jpg">
         <!-- iOSの数字が青くなるのを防止する -->
         <meta name="format-detection" content="telephone=no" />
         <meta content="date=no" name="format-detection" />
-        <!-- フォント -->
+        <!-- font -->
         <link rel="stylesheet" href="https://use.typekit.net/kvd6ihk.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,139 +23,202 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
-    <body class="black">
-        <div class="transition-item"></div>
+    <body>
+        <div class="transition-img">
+        <div class="transition-wrapper">
+            <img src="../images/top/hero/logo.png" alt="logo" class="load-logo">
+        </div>
+        </div>
+        <div class="transition-item">
+        </div>
         <div class="transition-item-white"></div>
         <a href="https://www.hotpepper.jp/strJ001274406/yoyaku/" class="reservation-btn--sp" role="button" target="_blank">
-            <img src="../images/common/sp-contact@2x.webp" alt="ご予約" />
+        <img src="../images/common/sp-contact@2x.webp" alt="ご予約" />
         </a>
-        <header class="header">
-            <div class="header-wrapper">
+        <div class="hero-background--sp">
+        <div class="trigger"></div>
+            <header class="header">
+                <div class="header-wrapper">
                 <div class="logo header__left">
-                    <img class="logo__image pc-only" src="../images/common/headerlogo.svg" alt="沖縄居酒屋あーすん/earthen"/>
-                    <img class="logo__image sp-only logo__image--sp" src="../images/common/headerlogo_sp.svg" alt="沖縄居酒屋あーすん/earthen"/>
+                    <a href="./index.html">
+                    <img
+                        class="logo__image pc-only"
+                        src="../images/common/headerlogo.svg"
+                        alt="沖縄居酒屋あーすん/earthen"
+                    />
+                    </a>
+                    <a href="./index.html">
+                    <img
+                        class="logo__image sp-only logo__image--sp"
+                        src="../images/common/headerlogo_sp.svg"
+                        alt="沖縄居酒屋あーすん/earthen"
+                    />
+                    </a>
                 </div>
-                <button class="meatball"></button>
+                <button class="meatball">
+                </button>
                 <div class="header__center">
                     <nav class="primary-nav">
-                        <ul class="primary-nav__ul">
-                            <li class="primary-nav__item primary-nav__item--home">
-                                <div class="primary-nav__item--indicator__wrapper">
-                                    <img src="../images/common/nav-current.svg" alt="現在、Homeページにいます" class="primary-nav__item--indicator"/>
-                                </div>
-                                <a href="./index.html" class="primary-nav__link primary-nav__link-home font-zen-old fs-pc-18 black regular">Home</a>
-                            </li>
-                            <li class="primary-nav__item primary-nav__item--feature">
-                                <div class="primary-nav__item--indicator__wrapper">
-                                    <img src="../images/common/nav-current.svg" alt="現在、Featureページにいます" class="primary-nav__item--indicator active-nav"/>
-                                </div>
-                                <a href="./feature.html" class="primary-nav__link primary-nav__link-feature font-zen-old fs-pc-18 black regular">Feature</a>
-                            </li>
-                            <li class="primary-nav__item primary-nav__item--lunch">
-                                <div class="primary-nav__item--indicator__wrapper">
-                                    <img
-                                    src="../images/common/nav-current.svg"
-                                    alt="現在、Lunchページにいます"
-                                    class="primary-nav__item--indicator"
-                                    />
-                                </div>
-                                <a
-                                href="./lunch.html"
-                                class="primary-nav__link primary-nav__link-lunch font-zen-old fs-pc-18 black regular"
-                                >Lunch</a
-                                >
-                            </li>
-                            <li class="primary-nav__item primary-nav__item--dinner">
-                                <div class="primary-nav__item--indicator__wrapper">
-                                    <img
-                                    src="../images/common/nav-current.svg"
-                                    alt="現在、Dinnerページにいます"
-                                    class="primary-nav__item--indicator"
-                                    />
-                                </div>
-                                <a
-                                href="./dinner.html"
-                                class="primary-nav__link primary-nav__link-dinner font-zen-old fs-pc-18 black regular"
-                                >Dinner</a
-                                >
-                            </li>
-                            <li class="primary-nav__item primary-nav__item--news">
-                                <div class="primary-nav__item--indicator__wrapper">
-                                    <img
-                                    src="../images/common/nav-current.svg"
-                                    alt="現在、Newsページにいます"
-                                    class="primary-nav__item--indicator"
-                                    />
-                                </div>
-                                <a
-                                href="./news.html"
-                                class="primary-nav__link primary-nav__link-news font-zen-old fs-pc-18 black regular"
-                                >News</a
-                                >
-                            </li>
-                            <li class="primary-nav__item primary-nav__item--info">
-                                <div class="primary-nav__item--indicator__wrapper">
-                                    <img
-                                    src="../images/common/nav-current.svg"
-                                    alt="現在、Informationページにいます"
-                                    class="primary-nav__item--indicator"
-                                    />
-                                </div>
-                                <a
-                                href="./information.html"
-                                class="primary-nav__link primary-nav__link-information fs-pc-18 black regular font-zen-old"
-                                >Information</a
-                                >
-                            </li>
-                        </ul>
+                    <ul class="primary-nav__ul">
+                        <li class="primary-nav__item primary-nav__item--home">
+                        <div class="primary-nav__item--indicator__wrapper">
+                            <img
+                            src="../images/common/nav-current.svg"
+                            alt="現在、Homeページにいます"
+                            class="primary-nav__item--indicator"
+                            />
+                        </div>
+                        <a
+                            href="./index.html"
+                            class="primary-nav__link primary-nav__link-home font-zen-old fs-pc-18 black regular"
+                            >Home</a
+                        >
+                        </li>
+                        <li class="primary-nav__item primary-nav__item--feature">
+                        <div class="primary-nav__item--indicator__wrapper">
+                            <img
+                            src="../images/common/nav-current.svg"
+                            alt="現在、Featureページにいます"
+                            class="primary-nav__item--indicator active-nav"
+                            />
+                        </div>
+                        <a
+                            href="./feature.html"
+                            class="primary-nav__link primary-nav__link-feature font-zen-old fs-pc-18 black regular"
+                            >Feature</a
+                        >
+                        </li>
+                        <li class="primary-nav__item primary-nav__item--lunch">
+                        <div class="primary-nav__item--indicator__wrapper">
+                            <img
+                            src="../images/common/nav-current.svg"
+                            alt="現在、Lunchページにいます"
+                            class="primary-nav__item--indicator"
+                            />
+                        </div>
+                        <a
+                            href="./lunch.html"
+                            class="primary-nav__link primary-nav__link-lunch font-zen-old fs-pc-18 black regular"
+                            >Lunch</a
+                        >
+                        </li>
+                        <li class="primary-nav__item primary-nav__item--dinner">
+                        <div class="primary-nav__item--indicator__wrapper">
+                            <img
+                            src="../images/common/nav-current.svg"
+                            alt="現在、Dinnerページにいます"
+                            class="primary-nav__item--indicator"
+                            />
+                        </div>
+                        <a
+                            href="./dinner.html"
+                            class="primary-nav__link primary-nav__link-dinner font-zen-old fs-pc-18 black regular"
+                            >Dinner</a
+                        >
+                        </li>
+                        <li class="primary-nav__item primary-nav__item--news">
+                        <div class="primary-nav__item--indicator__wrapper">
+                            <img
+                            src="../images/common/nav-current.svg"
+                            alt="現在、Newsページにいます"
+                            class="primary-nav__item--indicator"
+                            />
+                        </div>
+                        <a
+                            href="./news.html"
+                            class="primary-nav__link primary-nav__link-news font-zen-old fs-pc-18 black regular"
+                            >News</a
+                        >
+                        </li>
+                        <li class="primary-nav__item primary-nav__item--info">
+                        <div class="primary-nav__item--indicator__wrapper">
+                            <img
+                            src="../images/common/nav-current.svg"
+                            alt="現在、Informationページにいます"
+                            class="primary-nav__item--indicator"
+                            />
+                        </div>
+                        <a
+                            href="./information.html"
+                            class="primary-nav__link primary-nav__link-information fs-pc-18 black regular font-zen-old"
+                            >Information</a
+                        >
+                        </li>
+                    </ul>
                     </nav>
-                    <div class="dropdown" data-language-selector-btn aria-controls="dropdown-content" >
-                        <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">JP</button>
-                        <div class="dropdown__content">
-                        <a href="#" class="dropdown__link dropdown__link--jp font-zen-kaku fs-pc-16 regular black" data-language-selector="jp">JP</a>
-                        <a href="#" class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black" data-language-selector="eng">ENG</a>
+                    <div
+                    class="dropdown"
+                    data-language-selector-btn
+                    aria-controls="dropdown-content"
+                    >
+                    <button class="dropdown__btn font-zen-kaku fs-pc-16 regular black">
+                        JP
+                    </button>
+                    <div class="dropdown__content">
+                        <a
+                        href="#"
+                        class="dropdown__link dropdown__link--jp font-zen-kaku fs-pc-16 regular black"
+                        data-language-selector="jp"
+                        >JP</a
+                        >
+                        <a
+                        href="#"
+                        class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black"
+                        data-language-selector="eng"
+                        >ENG</a
+                        >
+                    </div>
                     </div>
                 </div>
-            </div>
-            <div class="header__right header__info">
-                <div class="header__right-column header__right-column--one">
+                <div class="header__right header__info">
+                    <div class="header__right-column header__right-column--one">
                     <div class="header__info--tel">
                         <p class="tel__text fs-pc-12 font-zen-kaku black">お電話</p>
                         <a href="tel:0362645531" class="tel__number fs-pc-20 font-zen-kaku black">
-                            098-851-5360
+                        098-851-5360
                         </a>
                     </div>
-                    <p class="header__info--holiday fs-pc-12 regular black font-zen-kaku">定休日：日、月曜日</p>
-                </div>
-                <div class="header__right-column header__right-column--two">
+                    <p
+                        class="header__info--holiday fs-pc-12 regular black font-zen-kaku"
+                    >
+                        定休日：日、月曜日
+                    </p>
+                    </div>
+                    <div class="header__right-column header__right-column--two">
                     <div class="header__info--lunch">
-                        <p class="lunch__text font-zen-kaku fs-pc-12 black regular">ランチ</p>
+                        <p class="lunch__text font-zen-kaku fs-pc-12 black regular">
+                        ランチ
+                        </p>
                         <div class="lunch__time">
-                            <p class="lunch__time--TWT lunch__time--item font-zen-kaku fs-pc-12 black regular">
-                                11:00-15:00 (火、水、木曜日)
-                            </p>
-                            <p class="lunch__time--FSS lunch__time--item font-zen-kaku fs-pc-12 black regular">
-                                2:00-15:00(金、土曜日)
-                            </p>
+                        <p
+                            class="lunch__time--TWT lunch__time--item font-zen-kaku fs-pc-12 black regular"
+                        >
+                            11:00-15:00 (火、水、木曜日)
+                        </p>
+                        <p
+                            class="lunch__time--FSS lunch__time--item font-zen-kaku fs-pc-12 black regular"
+                        >
+                            12:00-15:00(金、土曜日)
+                        </p>
                         </div>
                     </div>
                     <div class="header__info--dinner">
                         <p class="dinner__text font-zen-kaku fs-pc-12 black regular">
-                            ディナー
+                        ディナー
                         </p>
                         <p class="dinner__time font-zen-kaku fs-pc-12 black regular">
-                            18:30-23:00 予約制
+                        18:30-23:00 予約制
                         </p>
                     </div>
+                    </div>
+                    <div class="header__right-column header__right-column--three"></div>
                 </div>
-                <div class="header__right-column header__right-column--three"></div>
-            </div>
-            <a href="https://www.hotpepper.jp/strJ001274406/yoyaku/" class="reservation-btn" role="button" target="_blank">
-                <img src="../images/common/pc-contact@2x.webp" alt="ご予約" />
-            </a>
+                <a href="https://www.hotpepper.jp/strJ001274406/yoyaku/" class="reservation-btn" role="button" target="_blank">
+                    <img src="../images/common/pc-contact@2x.webp" alt="ご予約" />
+                </a>
+                </div>
+            </header>
         </div>
-    </header>
-
         <!-- main -->
         <main class="feature-page">
             <section class="under-kv">
@@ -298,23 +367,23 @@
                     </div>
                 </div>
                 <div class="home-btn">
-                    <a class="font-zen-kaku">Homeへもどる</a>
+                    <a href="./index.html" class="font-zen-kaku">Homeへもどる</a>
                 </div>
             </section>
             <section id="access">
                 <div class="access-wrapper">
                     <div class="access-left">
                         <div class="access-title-wrapper">
-                        <h2
-                            class="access-title access-eng font-emily fs-pc-100 line-height-pc-68p9 letter-spacing-74 white regular fs-sp-100 line-height-sp-68p9"
-                        >
-                            Access
-                        </h2>
-                        <p
-                            class="access-subtitle access-jp font-zen-old fs-pc-20 regular white letter-spacing-154 line-height-pc-49p5 font-zen-old line-height-sp-49p5"
-                        >
-                            アクセス
-                        </p>
+                            <h2
+                                class="access-title access-eng font-emily fs-pc-100 line-height-pc-68p9 letter-spacing-74 white regular fs-sp-100 line-height-sp-68p9"
+                            >
+                                Access
+                            </h2>
+                            <p
+                                class="access-subtitle access-jp font-zen-old fs-pc-20 regular white letter-spacing-154 line-height-pc-49p5 font-zen-old line-height-sp-49p5"
+                            >
+                                アクセス
+                            </p>
                         </div>
                         <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.1734113251514!2d127.66252633466131!3d26.19566658753622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56940549ee693%3A0xe40ee1cf73b0e919!2z5bO2Y3Vpc2luZSDjgYLjg7zjgZnjgpM!5e0!3m2!1sja!2sjp!4v1707287555097!5m2!1sja!2sjp"
@@ -333,29 +402,29 @@
                         赤嶺駅 徒歩10分
                         </p>
                         <div class="access-links_top">
-                        <a
-                            href="https://maps.app.goo.gl/cTD8aYzP6R8txwBM6"
-                            class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
-                            id="access_google-maps"
-                            target="_blank"
-                            >Google Mapで見る</a
-                        >
-                        <a
-                            href="https://www.google.com/maps/dir//%E5%B3%B6cuisine+%E3%81%82%E3%83%BC%E3%81%99%E3%82%93/data=!4m8!4m7!1m0!1m5!1m1!1s0x34e56940549ee693:0xe40ee1cf73b0e919!2m2!1d127.66440159999999!2d26.1956867"
-                            class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
-                            id="access_route"
-                            target="_blank"
-                            >ルートで検索</a
-                        >
+                            <a
+                                href="https://maps.app.goo.gl/cTD8aYzP6R8txwBM6"
+                                class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
+                                id="access_google-maps"
+                                target="_blank"
+                                >Google Mapで見る</a
+                            >
+                            <a
+                                href="https://www.google.com/maps/dir//%E5%B3%B6cuisine+%E3%81%82%E3%83%BC%E3%81%99%E3%82%93/data=!4m8!4m7!1m0!1m5!1m1!1s0x34e56940549ee693:0xe40ee1cf73b0e919!2m2!1d127.66440159999999!2d26.1956867"
+                                class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
+                                id="access_route"
+                                target="_blank"
+                                >ルートで検索</a
+                            >
                         </div>
                         <div class="access-links_bottom">
-                        <a
-                            href="./information.html"
-                            class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
-                            id="access_shop-info"
-                            target="_blank"
-                            >店舗情報</a
-                        >
+                            <a
+                                href="./information.html"
+                                class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore access-link acess-link_top--left google"
+                                id="access_shop-info"
+                                target="_blank"
+                                >店舗情報</a
+                            >
                         </div>
                     </div>
                     <div class="access-right">
@@ -366,27 +435,28 @@
                         お電話にてご予約くださいませ。
                         </p>
                         <div class="access-right--bottom">
-                        <p
-                            class="access-right--bottom_text fs-pc-18 medium letter-spacing-40 line-height-pc-36p5 white fs-sp-16 line-height-sp-36p5 no-wrap"
-                        >
-                            お電話でのお問い合わせ
-                        </p>
-                        <a href="tel:0362645531">
                             <p
-                            class="access-right--bottom_tel fs-pc-40 medium font-zen-kaku letter-spacing-114 fs-sp-40 white"
+                                class="access-right--bottom_text fs-pc-18 medium letter-spacing-40 line-height-pc-36p5 white fs-sp-16 line-height-sp-36p5 no-wrap"
                             >
-                            098-851-5360
+                                お電話でのお問い合わせ
                             </p>
-                        </a>
+                            <a href="tel:0362645531">
+                                <p
+                                class="access-right--bottom_tel fs-pc-40 medium font-zen-kaku letter-spacing-114 fs-sp-40 white"
+                                >
+                                098-851-5360
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <footer>
-                <div class="footer-wrapper">
+        </main>
+        <footer>
+            <div class="footer-wrapper">
                 <div class="footer-left">
                     <div class="footer-logo">
-                    <img src="../images/common/white-logo.svg" alt="a-sun" />
+                        <img src="../images/common/white-logo.svg" alt="a-sun" />
                     </div>
                     <p
                     class="footer-left_text fs-pc-14 medium font-zen-kaku line-height-pc-27 letter-spacing-40 line-height-sp-27 white"
@@ -402,55 +472,55 @@
                 </div>
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
-                    <li class="footer-nav-list__item foot-home">
-                        <a
-                        href="./index.html"
-                        class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
-                        >Home</a
-                        >
-                    </li>
-                    <li class="footer-nav-list__item foot-feat">
-                        <a
-                        href="./feature.html"
-                        class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
-                        >Feature</a
-                        >
-                    </li>
-                    <li class="footer-nav-list__item foot-lunch">
-                        <a
-                        href="./lunch.html"
-                        class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp- fs-sp-18"
-                        >Lunch</a
-                        >
-                    </li>
-                    <li class="footer-nav-list__item foot-dinner">
-                        <a
-                        href="./dinner.html"
-                        class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
-                        >Dinner</a
-                        >
-                    </li>
-                    <li class="footer-nav-list__item foot-news">
-                        <a
-                        href="./news.html"
-                        class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
-                        >News</a
-                        >
-                    </li>
-                    <li class="footer-nav-list__item foot-info">
-                        <a
-                        href="./information.html"
-                        class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
-                        >Information</a
-                        >
-                    </li>
-                    <li class="footer-nav-list__item foot-policy">
-                        <a
-                        href="#"
-                        class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
-                        >プライバシーポリシー</a
-                        >
-                    </li>
+                        <li class="footer-nav-list__item foot-home">
+                            <a
+                            href="./index.html"
+                            class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
+                            >Home</a
+                            >
+                        </li>
+                        <li class="footer-nav-list__item foot-feat">
+                            <a
+                            href="./feature.html"
+                            class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
+                            >Feature</a
+                            >
+                        </li>
+                        <li class="footer-nav-list__item foot-lunch">
+                            <a
+                            href="./lunch.html"
+                            class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp- fs-sp-18"
+                            >Lunch</a
+                            >
+                        </li>
+                        <li class="footer-nav-list__item foot-dinner">
+                            <a
+                            href="./dinner.html"
+                            class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
+                            >Dinner</a
+                            >
+                        </li>
+                        <li class="footer-nav-list__item foot-news">
+                            <a
+                            href="./news.html"
+                            class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
+                            >News</a
+                            >
+                        </li>
+                        <li class="footer-nav-list__item foot-info">
+                            <a
+                            href="./information.html"
+                            class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
+                            >Information</a
+                            >
+                        </li>
+                        <li class="footer-nav-list__item foot-policy">
+                            <a
+                            href="#"
+                            class="white fs-pc-18 regular font-zen-old line-height-pc-43p5 letter-spacing-74 line-height-sp-43p5 fs-sp-18"
+                            >プライバシーポリシー</a
+                            >
+                        </li>
                     </ul>
                 </nav>
                 <p
@@ -458,7 +528,7 @@
                 >
                     &copy; あーすん 島 Cuisine. All Rights Reserved.
                 </p>
-                </div>
-            </footer>
+            </div>
+        </footer>
     </body>
 </html>

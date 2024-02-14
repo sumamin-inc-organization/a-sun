@@ -306,6 +306,8 @@
         margin-left: auto;
         margin-right: 5%;
         justify-content: end;
+        position: relative;
+        z-index: 1;
     }
     .feature1-inner .feature-title{
         gap: 10px;
@@ -379,9 +381,11 @@
     }
     .prev-arrow{
         width: 24px;
+        left: -5px;
     }
     .next-arrow{
         width: 24px;
+        right: -5px;
     }
 }
 
