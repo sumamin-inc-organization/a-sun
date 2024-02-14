@@ -579,8 +579,6 @@ featureThree.add("(min-width: 768px)", () => {
     .from(".feat-main--3-txt", { opacity: 0, y: 100, duration: 1 }, "<");
 });
 
-
-
 /*-------------------------------
   Course Animations
    Course アニメーション
@@ -595,7 +593,7 @@ courseTitle.add("(min-width: 768px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
-      markers: true
+      markers: true,
     },
   });
 
@@ -605,5 +603,22 @@ courseTitle.add("(min-width: 768px)", () => {
     .from(".course-title--eng-letter16", { opacity: 0, duration: 1 }, "<10%")
     .from(".course-title--eng-letter17", { opacity: 0, duration: 1 }, "<10%")
     .from(".course-title--eng-letter18", { opacity: 0, duration: 1 }, "<10%")
-    .from(".course-title--eng-letter19", { opacity: 0, duration: 1 }, "<10%")
+    .from(".course-title--eng-letter19", { opacity: 0, duration: 1 }, "<10%");
+});
+
+courseTitle.add("(max-width: 767px)", () => {
+  let courseTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#course",
+      start: "-=500px",
+      scrub: false,
+      markers: true,
+    },
+  });
+
+  courseTitletl.from(".course-title--eng", {
+    opacity: 0,
+    x: -50,
+    duration: 1,
+  });
 });
