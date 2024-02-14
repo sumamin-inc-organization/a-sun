@@ -320,7 +320,7 @@
         z-index: 1;
     }
     .feature1-inner .feature-title{
-        gap: 10px;
+        gap: 15px;
     }
     .feature2-inner .feature-title{
         flex-flow: row-reverse;
