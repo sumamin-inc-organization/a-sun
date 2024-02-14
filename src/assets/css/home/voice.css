@@ -120,7 +120,8 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width:767px) {
+  /* was 500 */
   .review-wrapper {
     display: flex;
     justify-content: space-between;
