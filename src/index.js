@@ -57,7 +57,7 @@ dotAnimations.add("(max-width: 500px)", () => {
         end: "+=200",
         scrub: true,
         // pin: true,
-        //  markers: true
+   
       },
     });
 
@@ -593,7 +593,6 @@ courseTitle.add("(min-width: 768px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
-      markers: true,
     },
   });
 
@@ -612,11 +611,212 @@ courseTitle.add("(max-width: 767px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
-      markers: true,
     },
   });
 
   courseTitletl.from(".course-title--eng", {
+    opacity: 0,
+    x: -50,
+    duration: 1,
+  });
+});
+
+/*-------------------------------
+  Lunch Animations
+   Lunch アニメーション
+-------------------------------*/
+let LunchImgtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#lunch",
+    start: "-=500px",
+    scrub: false,
+  },
+});
+
+LunchImgtl
+.fromTo(".reveal", {
+  "--width":"100%",
+  duration:0.5
+},
+{
+  "--width":"0%",
+  duration:0.5
+}
+).from(".lunch-title-anime",{opacity:0,x:-100})
+.from(".lunch-subtitle-anime",{opacity:0,x:100},"<");
+
+
+/*-------------------------------
+  Dinner Animations
+   Dinner アニメーション
+-------------------------------*/
+
+let dinnerImgtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#dinner",
+    start: "-=500px",
+    scrub: false,
+    // markers: true,
+  },
+});
+
+dinnerImgtl
+.fromTo(".reveal-black", {
+  "--width": "100%",
+  duration: 0.5
+}, {
+  "--width": "0%",
+  duration: 0.5
+})
+.fromTo(".reveal-black-right", {
+  "--width": "100%",
+  duration: 0.5
+}, {
+  "--width": "0%",
+  duration: 0.5
+}, "<")
+.from(".dinner-title-anime",{opacity:0,x:-100})
+.from(".dinner-subtitle-anime",{opacity:0,x:100},"<");
+
+
+/*-------------------------------
+  Message Animations
+   Message アニメーション
+-------------------------------*/
+
+
+let messageTitle = gsap.matchMedia();
+messageTitle.add("(min-width: 768px)", () => {
+  splitText("message-title--eng", "message-title--eng-letter");
+
+  let messageTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#message",
+      start: "-=500px",
+      scrub: false,
+    },
+  });
+
+  messageTitletl
+    .from(".message-title--eng-letter14", { opacity: 0, duration: 1 }, "")
+    .from(".message-title--eng-letter15", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter16", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter17", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter18", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter19", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter20", { opacity: 0, duration: 1 }, "<10%");
+});
+
+messageTitle.add("(max-width: 767px)", () => {
+  let messageTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#message",
+      start: "-=500px",
+      scrub: false,
+    },
+  });
+
+  messageTitletl.from(".message-title--eng", {
+    opacity: 0,
+    x: -50,
+    duration: 1,
+  });
+});
+
+/*-------------------------------
+Voice Animations
+ Voice アニメーション
+-------------------------------*/
+let voiceTitletl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#voice",
+    start: "-=500px",
+    scrub: false,
+    // markers: true,
+  },
+});
+
+voiceTitletl.from(".voice-title-anime", {
+  opacity: 0,
+  y: -50,
+  duration: 1,
+});
+
+/*-------------------------------
+NEWS Animations
+ NEWS アニメーション
+-------------------------------*/
+let newsTitletl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#news",
+    start: "-=500px",
+    scrub: false,
+    // markers: true,
+  },
+});
+
+newsTitletl.from(".news-title-anime", {
+  opacity: 0,
+  y: -50,
+  duration: 1,
+});
+
+
+/*-------------------------------
+Insta Animations
+ Insta アニメーション
+-------------------------------*/
+let instaTitletl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#insta",
+    start: "-=500px",
+    scrub: false,
+    // markers: true,
+  },
+});
+
+instaTitletl.from(".insta-title", {
+  opacity: 0,
+  x: -50,
+  duration: 1,
+});
+
+
+/*-------------------------------
+acess Animations
+ acess アニメーション
+-------------------------------*/
+let accessTitle = gsap.matchMedia();
+accessTitle.add("(min-width: 768px)", () => {
+  splitText("access-eng", "access-eng-letter");
+
+  let accessTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#access",
+      start: "-=500px",
+      scrub: false,
+    },
+  });
+
+  accessTitletl
+    .from(".access-eng-letter16", { opacity: 0, duration: 1 }, "")
+    .from(".access-eng-letter17", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter18", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter19", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter20", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter21", { opacity: 0, duration: 1 }, "<10%");
+});
+
+accessTitle.add("(max-width: 767px)", () => {
+  let accessTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#access",
+      start: "-=500px",
+      scrub: false,
+    },
+  });
+
+  accessTitletl.from(".access-eng", {
     opacity: 0,
     x: -50,
     duration: 1,
