@@ -528,11 +528,3 @@ html {
     visibility: hidden;
     opacity: 0;
 }
-
-.access-links_top a, .access-links_bottom a{
-    line-height: clamp(40.94px, 4.55vw, 65.5px);
-    letter-spacing: 0.154em;
-    position: relative;
-    margin-right: 30px;
-}
-
