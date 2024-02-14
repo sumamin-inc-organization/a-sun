@@ -40,7 +40,8 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  /* was 500 */
   .gallary {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
