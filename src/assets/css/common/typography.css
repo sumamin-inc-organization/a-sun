@@ -161,7 +161,7 @@
     Line Height /行の高さ
 ------------------------------------*/
 
-@media (min-width:501px){
+@media (min-width:768px){
   .line-height-pc-65p5{
     line-height: min(4.55vw,65.5px);
   }
@@ -202,7 +202,7 @@
     line-height: min(3.02vw,43.5px);
   }
 }
-@media (max-width:500px){
+@media (max-width:767px){
   .line-height-sp-42{
     /* line-height: min(2.92vw,42px); */
     line-height: 42px;
