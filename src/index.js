@@ -158,7 +158,6 @@ document.addEventListener('DOMContentLoaded',(e)=>{
   intro
 .from('.transition-item',{y:'100%',delay:2})
 .from('.transition-item-white',{y:'100%'})
-// .set('.transition-item',{y:'-100%'})
 .set('.transition-img',{opacity:0})
 .set('.transition-img',{x:"100%" ,})
 .to('.transition-item-white',{y:'-100%'})
@@ -261,7 +260,7 @@ document.addEventListener('DOMContentLoaded',(e)=>{
 .from('.letter-eng65',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng66',{opacity:0,duration:0.5},"<10%")
 .from('.letter-eng67',{opacity:0,duration:0.5},"<10%")
-.from('.eyecatcher__scrollimg',{opacity:0,y:-100,duration:1},"<20%")
+.from('.eyecatcher__scrollimg',{opacity:0,y:-100,duration:1},"<25%")
 
 })
 
@@ -467,9 +466,9 @@ featureTitle.add("(min-width: 768px)", () => {
   let featureTitletl= gsap.timeline({
     scrollTrigger: {
       trigger: "#feature",
-      start: "-600px",
+      start: "-=600px",
       scrub: false,
-      markers: true
+      // markers: true
     },
   });
   
@@ -491,12 +490,122 @@ featureTitle.add("(max-width: 767px)", () => {
   let featureTitletl= gsap.timeline({
     scrollTrigger: {
       trigger: "#feature",
-      start: "-600px",
+      start: "-=600px",
       scrub: false,
-      markers: true
+      // markers: true
     },
   });
   
   featureTitletl
   .from('.feature-title__text--jp',{opacity:0,x:-50,duration:1}) 
+});
+
+  /*-------------------------------
+   Feature 1 Animations
+   Feature 1 アニメーション
+-------------------------------*/
+
+
+let featureEyetl= gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat1",
+    start: "-=700px",
+    scrub: false,
+    // markers: true
+  },
+});
+
+featureEyetl
+.from('.feat-1-eyewrapper',{opacity:0,y:70,duration:1}) 
+
+
+let featureOne = gsap.matchMedia(); 
+
+featureOne.add("(min-width: 768px)", () => {
+ 
+
+  let featureOnetl= gsap.timeline({
+    scrollTrigger: {
+      trigger: ".feat-1-eyewrapper",
+      start: "+=170px",
+      scrub: false,
+      markers: true
+    },
+  });
+  
+  featureOnetl
+  .from('.feat-main-left-one',{opacity:0,y:-100,duration:1}) 
+  .from('.feat-main--right-1',{opacity:0,y:100,duration:1},"<") 
+});
+
+  /*-------------------------------
+   Feature 2 Animations
+   Feature 2 アニメーション
+-------------------------------*/
+
+let featureEyeTwotl= gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat2",
+    start: "-=700px",
+    scrub: false,
+    // markers: true
+  },
+});
+
+featureEyeTwotl
+.from('.feat-2-eyewrapper',{opacity:0,y:70,duration:1}) 
+
+let featureTwo = gsap.matchMedia(); 
+
+featureTwo.add("(min-width: 768px)", () => {
+ 
+
+  let featureTwotl= gsap.timeline({
+    scrollTrigger: {
+      trigger: ".feat-2-eyewrapper",
+      start: "+=170px",
+      scrub: false,
+      markers: true
+    },
+  });
+  
+  featureTwotl
+  .from('.feat-main-left-two',{opacity:0,y:-100,duration:1}) 
+  .from('.feat-main--right--2',{opacity:0,y:100,duration:1},"<") 
+});
+
+  /*-------------------------------
+   Feature 3 Animations
+   Feature 3 アニメーション
+-------------------------------*/
+
+let featureEyeThreetl= gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat3",
+    start: "-=700px",
+    scrub: false,
+    // markers: true
+  },
+});
+
+featureEyeThreetl
+.from('.feat-3-eyewrapper',{opacity:0,y:70,duration:1}) 
+
+let featureThree = gsap.matchMedia(); 
+
+featureThree.add("(min-width: 768px)", () => {
+ 
+
+  let featureThreetl= gsap.timeline({
+    scrollTrigger: {
+      trigger: ".feat-3-eyewrapper",
+      start: "+=170px",
+      scrub: false,
+      markers: true
+    },
+  });
+  
+  featureThreetl
+  .from('.feat-main-left-three',{opacity:0,y:-100,duration:1}) 
+  .from('.feat-main--3-txt',{opacity:0,y:100,duration:1},"<") 
 });
