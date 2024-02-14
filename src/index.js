@@ -459,27 +459,44 @@ kvMaintl
    Feature Title Animation
    機能タイトルのアニメーション
 -------------------------------*/
-splitText("feature-title__text--jp","feature-title-letter")
 
-let featureTitletl= gsap.timeline({
-  scrollTrigger: {
-    trigger: "#feature",
-    start: "-600px",
-    scrub: false,
-    markers: true
-  },
+let featureTitle = gsap.matchMedia(); 
+featureTitle.add("(min-width: 768px)", () => {
+  splitText("feature-title__text--jp","feature-title-letter")
+
+  let featureTitletl= gsap.timeline({
+    scrollTrigger: {
+      trigger: "#feature",
+      start: "-600px",
+      scrub: false,
+      markers: true
+    },
+  });
+  
+  featureTitletl
+  .from('.feature-title-letter14',{opacity:0,duration:1},"")
+    .from('.feature-title-letter15',{opacity:0,duration:1},"<10%")
+    .from('.feature-title-letter16',{opacity:0,duration:1},"<10%")
+    .from('.feature-title-letter17',{opacity:0,duration:1},"<10%")
+    .from('.feature-title-letter18',{opacity:0,duration:1},"<10%")
+    .from('.feature-title-letter19',{opacity:0,duration:1},"<10%")
+    .from('.feature-title-letter20',{opacity:0,duration:1},"<10%")
+  
+ 
 });
 
-featureTitletl
-.from('.feature-title-letter14',{opacity:0,duration:1},"")
-  .from('.feature-title-letter15',{opacity:0,duration:1},"<10%")
-  .from('.feature-title-letter16',{opacity:0,duration:1},"<10%")
-  .from('.feature-title-letter17',{opacity:0,duration:1},"<10%")
-  .from('.feature-title-letter18',{opacity:0,duration:1},"<10%")
-  .from('.feature-title-letter19',{opacity:0,duration:1},"<10%")
-  .from('.feature-title-letter20',{opacity:0,duration:1},"<10%")
-// .from('.kv-hero__img--top-right',{opacity:0,duration:0.5})
-// .from('.kv-hero__img--right',{opacity:0,duration:0.5})
-// .from('.kv-hero__img--bottom',{opacity:0,duration:0.5})
-// .from('.kv-hero__img--left',{opacity:0,duration:0.5})
-// .from('.kv-hero__img--top-left',{opacity:0,duration:0.5})
+featureTitle.add("(max-width: 767px)", () => {
+ 
+
+  let featureTitletl= gsap.timeline({
+    scrollTrigger: {
+      trigger: "#feature",
+      start: "-600px",
+      scrub: false,
+      markers: true
+    },
+  });
+  
+  featureTitletl
+  .from('.feature-title__text--jp',{opacity:0,x:-50,duration:1}) 
+});
