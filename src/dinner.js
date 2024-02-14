@@ -9,28 +9,25 @@ import "./assets/css/menu/lunch.css";
 import "./assets/css/menu/dinner.css";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 
+import $ from 'jquery';
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import { gsap } from "gsap";
 setLoadingAnimation();
 
-setInterval(() => {
-    switchImages(document.getElementsByClassName("lunch-image01"));
-    switchImages(document.getElementsByClassName("lunch-image02"));
-    switchImages(document.getElementsByClassName("lunch-image03"));
-}, 3000);
-
-/*画像切り替え関数*/
-function switchImages (elem) {
-    for(var i=0; i < elem.length; i++) {
-        if (i != elem.length-1) {
-            if (elem[i].ariaHidden === 'false') {
-                elem[i].ariaHidden = true;
-                elem[i+1].ariaHidden = false;
-                break;
-            }
-        } else {
-            elem[i].ariaHidden = true;
-            elem[0].ariaHidden = false;
-            break;
-        }
-    }
-}
+/* slick animation */
+var $slide = $(".slick-slide")
+.slick({
+    fade: true,
+    speed: 1000,
+    autoplaySpeed: 2500,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    // adaptiveHeight:true
+});

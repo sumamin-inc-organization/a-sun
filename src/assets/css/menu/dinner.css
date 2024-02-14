@@ -66,14 +66,17 @@
 
 
 /* home-back */
-.home-back.dinner {
-    background-color: #505050;
+.home-btn.dinner {
     background-image: none;
+    background-color: #505050;
 }
 
-.home-back.dinner a {
+.home-btn.dinner a {
     color: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+}
+
+.home-btn.dinner a::after {
+    background-color: #FFFFFF;
 }
 
 @media (max-width: 750px) {
