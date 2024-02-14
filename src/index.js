@@ -26,6 +26,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
+import splitText from "./assets/js/otherlogic/splitText";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -453,3 +454,32 @@ kvMaintl
   .from('.kv-hero__img--left',{opacity:0,duration:0.5})
   .from('.kv-hero__img--top-left',{opacity:0,duration:0.5})
   
+
+  /*-------------------------------
+   Feature Title Animation
+   機能タイトルのアニメーション
+-------------------------------*/
+splitText("feature-title__text--jp","feature-title-letter")
+
+let featureTitletl= gsap.timeline({
+  scrollTrigger: {
+    trigger: "#feature",
+    start: "-600px",
+    scrub: false,
+    markers: true
+  },
+});
+
+featureTitletl
+.from('.feature-title-letter14',{opacity:0,duration:1},"")
+  .from('.feature-title-letter15',{opacity:0,duration:1},"<10%")
+  .from('.feature-title-letter16',{opacity:0,duration:1},"<10%")
+  .from('.feature-title-letter17',{opacity:0,duration:1},"<10%")
+  .from('.feature-title-letter18',{opacity:0,duration:1},"<10%")
+  .from('.feature-title-letter19',{opacity:0,duration:1},"<10%")
+  .from('.feature-title-letter20',{opacity:0,duration:1},"<10%")
+// .from('.kv-hero__img--top-right',{opacity:0,duration:0.5})
+// .from('.kv-hero__img--right',{opacity:0,duration:0.5})
+// .from('.kv-hero__img--bottom',{opacity:0,duration:0.5})
+// .from('.kv-hero__img--left',{opacity:0,duration:0.5})
+// .from('.kv-hero__img--top-left',{opacity:0,duration:0.5})
