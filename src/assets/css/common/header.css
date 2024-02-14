@@ -7,7 +7,7 @@
     エレメントの配置
 ----------------------------*/
 
-@media (min-width:751px) {
+@media (min-width:768px) {
   .header{
     position: fixed;
     top: 0;
@@ -204,7 +204,7 @@ letter-spacing: 0.114em;
 .reservation-btn--sp{
   display: none;
 }
-@media (max-width:750px){
+@media (max-width:767px){
   .header__center {
     display: none;
   }

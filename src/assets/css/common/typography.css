@@ -38,7 +38,7 @@
     Font Sizes / フォントサイズ
 ----------------------------*/
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .fs-pc-8p75{
   }
   .fs-pc-12 {
@@ -96,7 +96,7 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .fs-sp-12 {
     font-size: 12px;
     font-size: min(12px,3.0769vw);
@@ -161,7 +161,7 @@
     Line Height /行の高さ
 ------------------------------------*/
 
-@media (min-width:501px){
+@media (min-width:768px){
   .line-height-pc-65p5{
     line-height: min(4.55vw,65.5px);
   }
@@ -202,7 +202,7 @@
     line-height: min(3.02vw,43.5px);
   }
 }
-@media (max-width:500px){
+@media (max-width:767px){
   .line-height-sp-42{
     /* line-height: min(2.92vw,42px); */
     line-height: 42px;
@@ -218,6 +218,9 @@
   }
   .line-height-sp-40{
     line-height: min(10.26vw,40px);
+  }
+  .line-height-sp-46{
+    line-height: min(11.7949vw,46px);
   }
   .line-height-sp-65p5{
     line-height: min(16.79vw,65.5px);

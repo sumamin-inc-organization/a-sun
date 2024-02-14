@@ -126,7 +126,8 @@
       MOBILE
    =============== */
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  /* was 500 */
   #lunch {
     padding-bottom: min(18.08vw, 70.5px);
   }

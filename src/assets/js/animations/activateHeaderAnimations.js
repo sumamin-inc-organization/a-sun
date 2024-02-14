@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function activateHeaderAnimations(){
     let pcHeaderAnim = gsap.matchMedia();
 
-    pcHeaderAnim.add("(min-width: 800px)", () => {
+    pcHeaderAnim.add("(min-width: 768px)", () => {
     
       const showAnim = gsap.from('.header', { 
         yPercent: -150,

@@ -16,7 +16,7 @@
 .voice-title-img {
   width: clamp(54px, 5.97vw, 86px);
   position: absolute;
-  left: -120px;
+  left: -140px;
   top: 50%;
   transform: translateY(-40%);
 }
@@ -59,10 +59,17 @@
     left: -150px;
   }
 }
-
+@media (min-width: 1000px) {
+  .voice-title-img {
+    left: -130px;
+    left: -130px;
+    left: -17%;
+  }
+}
 @media (min-width: 1300px) {
   .voice-title-img {
     left: -130px;
+    left: -170px;
   }
 }
 
@@ -113,7 +120,8 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width:767px) {
+  /* was 500 */
   .review-wrapper {
     display: flex;
     justify-content: space-between;
