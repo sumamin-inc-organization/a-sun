@@ -157,7 +157,7 @@
   display: none;
 }
 .gault-millau_link--sp p {
-  padding-bottom: 4px;
+  padding-top: 10px;
   border-bottom: 1px solid #505050;
 }
 
@@ -353,7 +353,6 @@
     margin-right: min(19.6px, 5.03vw);
   }
   .gault-millau_link {
-    line-height: 40.17px;
     letter-spacing: 0.154em;
   }
   .keyvisual__text--jp {

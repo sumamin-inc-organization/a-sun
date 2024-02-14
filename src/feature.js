@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 $(document).ready(function() {
     $(".slick1").slick({
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 6000,
         infinite: true,
         pauseOnHover: false,
         dots: true,
@@ -50,7 +50,7 @@ $(document).ready(function() {
 
     $(".slick2").slick({
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 6000,
         infinite: true,
         pauseOnHover: false,
         dots: true,

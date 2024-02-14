@@ -98,7 +98,7 @@
 .slick-text p{
     font-size: 16px;
     font-family: "Zen Kaku Gothic Antique", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 3.12;
     letter-spacing: 0.1rem;
 }
@@ -119,6 +119,11 @@
     width: 50px;
     height: 50px;
     z-index: 10;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.next-arrow:hover {
+    transform: scale(1.2, 1.2);
 }
 .prev-arrow {
     position: absolute;
@@ -127,6 +132,11 @@
     width: 50px;
     height: 50px;
     z-index: 10;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.prev-arrow:hover {
+    transform: scale(1.2, 1.2);
 }
 .slick-arrow.slick-hidden{
     display: block !important;

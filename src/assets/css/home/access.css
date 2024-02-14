@@ -60,6 +60,7 @@
   letter-spacing: 0.154em;
   padding: 0 20px 15px;
   position: relative;
+  display: flex;
 }
 .footer-link-hover::after {
   position: absolute;
