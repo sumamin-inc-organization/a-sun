@@ -623,7 +623,10 @@ courseTitle.add("(max-width: 767px)", () => {
   });
 });
 
-
+/*-------------------------------
+  Lunch Animations
+   Lunch アニメーション
+-------------------------------*/
 let LunchImgtl = gsap.timeline({
   scrollTrigger: {
     trigger: "#lunch",
@@ -646,6 +649,10 @@ LunchImgtl
 .from(".lunch-subtitle-anime",{opacity:0,x:100},"<");
 
 
+/*-------------------------------
+  Dinner Animations
+   Dinner アニメーション
+-------------------------------*/
 
 let dinnerImgtl = gsap.timeline({
   scrollTrigger: {
@@ -675,3 +682,48 @@ dinnerImgtl
 .from(".dinner-subtitle-anime",{opacity:0,x:100},"<");
 
 
+/*-------------------------------
+  Message Animations
+   Message アニメーション
+-------------------------------*/
+
+
+let messageTitle = gsap.matchMedia();
+messageTitle.add("(min-width: 768px)", () => {
+  splitText("message-title--eng", "message-title--eng-letter");
+
+  let messageTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#message",
+      start: "-=500px",
+      scrub: false,
+      markers: true,
+    },
+  });
+
+  messageTitletl
+    .from(".message-title--eng-letter14", { opacity: 0, duration: 1 }, "")
+    .from(".message-title--eng-letter15", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter16", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter17", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter18", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter19", { opacity: 0, duration: 1 }, "<10%")
+    .from(".message-title--eng-letter20", { opacity: 0, duration: 1 }, "<10%");
+});
+
+messageTitle.add("(max-width: 767px)", () => {
+  let messageTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#message",
+      start: "-=500px",
+      scrub: false,
+      markers: true,
+    },
+  });
+
+  messageTitletl.from(".message-title--eng", {
+    opacity: 0,
+    x: -50,
+    duration: 1,
+  });
+});
