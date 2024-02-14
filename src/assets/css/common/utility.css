@@ -6,6 +6,10 @@ a,button{
   cursor: pointer;
 }
 
+body{
+  color: #505050;
+}
+
 /*-----------------------------------------------
   Marks The Current Page In The Primary Nav
   プライマリナビゲーションで現在のページをマークします
@@ -144,6 +148,7 @@ a,button{
   padding: 100px 0;
 }
 .home-btn a{
+  color: #505050;
   padding: 0 20px 15px;
   position: relative;
 }
