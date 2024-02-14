@@ -593,7 +593,6 @@ courseTitle.add("(min-width: 768px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
-      markers: true,
     },
   });
 
@@ -612,7 +611,6 @@ courseTitle.add("(max-width: 767px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
-      markers: true,
     },
   });
 
@@ -632,7 +630,6 @@ let LunchImgtl = gsap.timeline({
     trigger: "#lunch",
     start: "-=500px",
     scrub: false,
-    markers: true,
   },
 });
 
@@ -697,7 +694,6 @@ messageTitle.add("(min-width: 768px)", () => {
       trigger: "#message",
       start: "-=500px",
       scrub: false,
-      markers: true,
     },
   });
 
@@ -717,7 +713,6 @@ messageTitle.add("(max-width: 767px)", () => {
       trigger: "#message",
       start: "-=500px",
       scrub: false,
-      markers: true,
     },
   });
 
