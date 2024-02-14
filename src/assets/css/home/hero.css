@@ -569,3 +569,6 @@
   cursor: pointer;
 }
 
+.feature-title-letter{
+  display: inline-block;
+}
