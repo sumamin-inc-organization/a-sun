@@ -76,7 +76,8 @@
       MOBILE
    =============== */
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+  /* was 500 */
   #access {
     background-color: #505050;
     padding-bottom: 40px;
@@ -209,7 +210,8 @@ footer {
   padding-bottom: clamp(26.1px, 2.5vw, 36px);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+  /* was 500 */
   .footer-left {
     padding-top: min(49px, 12.5641vw);
   }
