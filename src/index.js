@@ -520,3 +520,18 @@ kvMaintl
   .from('.kv-main__text-eng119',{opacity:0,duration:0.5},"<10%")
 
 
+
+
+
+  let kvFoodtl= gsap.timeline({
+    scrollTrigger: {
+      trigger: ".keyvisual-main_hero",
+      start: "-=100px",
+      scrub: false,
+      markers: true
+    },
+  });
+  
+  kvFoodtl
+  .from('.kv-hero__img--top-right',{opacity:0,duration:0.5})
+  
