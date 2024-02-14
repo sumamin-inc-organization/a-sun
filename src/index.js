@@ -741,3 +741,22 @@ voiceTitletl.from(".voice-title-anime", {
   y: -50,
   duration: 1,
 });
+
+/*-------------------------------
+NEWS Animations
+ NEWS アニメーション
+-------------------------------*/
+let newsTitletl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#news",
+    start: "-=500px",
+    scrub: false,
+    markers: true,
+  },
+});
+
+newsTitletl.from(".news-title-anime", {
+  opacity: 0,
+  y: -50,
+  duration: 1,
+});
