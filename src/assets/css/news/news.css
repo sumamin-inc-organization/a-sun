@@ -170,17 +170,8 @@
 }
 
 /* home back*/
-.home-back {
+.home-btn {
     padding: 80px 0;
-}
-
-.home-back a {
-    display: block;
-    width: clamp(160px, 14.6vw, 240px);
-    margin: auto;
-    text-align: center;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #505050;
 }
 
 .access-links_top a, .access-links_bottom a{
