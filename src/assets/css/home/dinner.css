@@ -256,7 +256,7 @@
     padding: 50px;
   }
   .bottom-right{
-    bottom: -10%;
+    bottom: 3%;
   }
 }
 
@@ -293,7 +293,8 @@
 @media (max-width:400px){
   .company-dot {
     width: 142vmax;
-    height: 155vmax;
+    height: 140vmax;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 89%);
   } 
   #dinner{
     padding: 90px;
@@ -314,58 +315,11 @@
  }
 
 }
-/* 
-[data-splittext] .letter {
-  opacity: 0;
-}
-[data-splittext].visibled .letter {
-  transition: all .6s cubic-bezier(0.43, 0.05, 0.17, 1) var(--delay);
-  transition-property: opacity;
-  opacity: 1;
-} */
 
-[data-splittext]{
-  font-kerning: none;
-  letter-spacing: normal;
-}
-.letter-spacing-adjust{
-  display: inline-block;
-  letter-spacing:-0.114em ;
-  /* letter-spacing: 0.114em; */
-}
-
-.letter-spacing-adjust-eng{
-  display: inline-block;
-  letter-spacing:-0.2em ;
-}
-
-.keyvisual__text--eng{
-/* letter-spacing: -0.02em; */
-}
-
-
-@media (max-width:500px){
-  .letter-eng11{
-    margin-left: -5px;
+ 
+@media (max-width: 500px) {
+  #dinner{
+   padding: 150px;
   }
-  .letter-eng13{
-    margin-left: -8px;
-  }
-  .letter-eng20{
-    margin-left: -5px;
-  }
-
-  .letter-eng18{
-    margin-left: -8px;
-  }
-.letter-eng20{
-  margin-left: -8px;
-}
-.letter-eng21{
-  margin-left: -8px;
-}
-.letter-spacing-adjust-eng{
-  display: inline-block;
-  letter-spacing:-0.3em ;
-}
-}
+ 
+ }
