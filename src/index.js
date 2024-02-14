@@ -622,3 +622,56 @@ courseTitle.add("(max-width: 767px)", () => {
     duration: 1,
   });
 });
+
+
+let LunchImgtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#lunch",
+    start: "-=500px",
+    scrub: false,
+    markers: true,
+  },
+});
+
+LunchImgtl
+.fromTo(".reveal", {
+  "--width":"100%",
+  duration:0.5
+},
+{
+  "--width":"0%",
+  duration:0.5
+}
+).from(".lunch-title-anime",{opacity:0,x:-100})
+.from(".lunch-subtitle-anime",{opacity:0,x:100},"<");
+
+
+
+let dinnerImgtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#dinner",
+    start: "-=500px",
+    scrub: false,
+    // markers: true,
+  },
+});
+
+dinnerImgtl
+.fromTo(".reveal-black", {
+  "--width": "100%",
+  duration: 0.5
+}, {
+  "--width": "0%",
+  duration: 0.5
+})
+.fromTo(".reveal-black-right", {
+  "--width": "100%",
+  duration: 0.5
+}, {
+  "--width": "0%",
+  duration: 0.5
+}, "<")
+.from(".dinner-title-anime",{opacity:0,x:-100})
+.from(".dinner-subtitle-anime",{opacity:0,x:100},"<");
+
+

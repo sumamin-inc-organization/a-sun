@@ -84,3 +84,42 @@
     letter-spacing:-0.3em ;
   }
   }
+
+  .reveal{
+    --width: 0%;
+position: relative;
+transform-origin: top;
+  }
+
+  .reveal::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--width);
+    background-color: white;
+    transform-origin: top;
+  }
+  .reveal-black{
+    --width: 0%;
+    position: relative;
+    transform-origin: left;
+  }
+
+  .reveal-black::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--width);
+    background-color: #505050;
+    transform-origin: left;
+  }
+  .reveal-black-right{
+    transform-origin: right;
+  }
+  .reveal-black-right::after{
+    transform-origin: right;
+  }
