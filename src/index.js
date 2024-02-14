@@ -344,3 +344,179 @@ activateHeaderAnimations();
 
 // master.add(loader);
 // master.add(textAnime);
+
+
+
+/*------------------------------------
+  KV Main Content Title Animations
+  KVメインコンテンツタイトルのアニメーション
+-------------------------------------*/
+
+
+let kvMain = gsap.matchMedia();  
+
+// kvMain.add("(min-width: 768px)", () => {  
+  
+//   let kvMaintl= gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".eyecatcher_scrollimg--image",
+//       start: "-=100px",
+//       scrub: false,
+//       markers: true
+//     },
+//   });
+  
+//   kvMaintl
+//   .from('.kv-main-content_title',{opacity:0,duration:0.5},"")
+//     .from('.kv-main-content_title1',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title2',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title3',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title4',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title5',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title6',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title7',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title8',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title9',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title10',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title11',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title12',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title13',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main-content_title14',{opacity:0,duration:0.5},"<10%")
+//     .from('.kv-main__text__title--eng ',{opacity:0,x:-20,duration:0.5},"<10%")
+//   });  
+// const textContainer = document.querySelector('.kv-main-txt-eng-pc');
+// const text = textContainer.textContent;
+// const letters = text.split('');
+
+// textContainer.innerHTML = ''; // Clear the original content
+
+// letters.forEach((letter, index) => {
+//   const span = document.createElement('span');
+//   span.textContent = letter;
+//   span.classList.add(`kv-main__text-eng${index + 1}`);
+//   textContainer.appendChild(span);
+// });
+
+
+const textContainer = document.querySelector('.kv-main-txt-eng-pc');
+const fragments = textContainer.innerHTML.split('<br>');
+
+    textContainer.innerHTML = ''; // Clear the original content
+    let classCounter = 1; // Counter for unique class names
+
+    fragments.forEach((fragment, index) => {
+      const fragmentWrapper = document.createElement('div');
+      fragmentWrapper.innerHTML = fragment;
+
+      const fragmentSpans = fragmentWrapper.childNodes;
+      fragmentSpans.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const letters = node.textContent.split('');
+          letters.forEach(letter => {
+            const span = document.createElement('span');
+            span.textContent = letter;
+            span.classList.add(`kv-main__text-eng${classCounter}`);
+            textContainer.appendChild(span);
+            classCounter++;
+          });
+        } else {
+          textContainer.appendChild(node.cloneNode(true));
+        }
+      });
+
+      if (index < fragments.length - 1) {
+        textContainer.appendChild(document.createElement('br'));
+      }
+    });
+
+let kvMaintl= gsap.timeline({
+  scrollTrigger: {
+    trigger: ".eyecatcher_scrollimg--image",
+    start: "-=100px",
+    scrub: false,
+    markers: true
+  },
+});
+
+kvMaintl
+.from('.kv-main-content_title',{opacity:0,duration:0.5},"")
+  .from('.kv-main-content_title1',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title2',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title3',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title4',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title5',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title6',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title7',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title8',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title9',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title10',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title11',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title12',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title13',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-content_title14',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main-txt-eng-sp',{opacity:0,x:-20,duration:0.5},"<10%")
+  .from('.kv-main__text-eng16',{opacity:0,duration:0.5},"<")
+  .from('.kv-main__text-eng17',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng18',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng20',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng21',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng22',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng23',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng24',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng25',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng26',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng27',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng28',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng30',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng31',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng33',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng34',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng35',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng37',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng38',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng39',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng40',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng41',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng42',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng44',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng45',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng46',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng47',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng49',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng50',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng51',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng52',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng53',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng54',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng55',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng56',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng57',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng59',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng60',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng61',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng62',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng93',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng94',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng95',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng96',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng98',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng99',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng100',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng101',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng103',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng104',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng105',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng106',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng107',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng109',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng110',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng111',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng112',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng114',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng115',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng116',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng117',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng118',{opacity:0,duration:0.5},"<10%")
+  .from('.kv-main__text-eng119',{opacity:0,duration:0.5},"<10%")
+
+
