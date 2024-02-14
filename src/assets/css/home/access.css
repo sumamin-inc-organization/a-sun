@@ -53,23 +53,35 @@
   display: flex;
   justify-content: center;
 }
-#access_google-maps::after,
-#access_route::after,
-#access_shop-info::after {
-  content: url(../../images/top/dinner/see-more-black.svg);
+/*-------------------------
+  ホバー下線アニメーション
+--------------------------*/
+.footer-link-hover {
+  letter-spacing: 0.154em;
+  padding: 0 20px 15px;
+  position: relative;
+}
+.footer-link-hover::after {
   position: absolute;
   right: -18px;
 }
-
-#access_google-maps::before,
-#access_route::before,
-#access_shop-info::before {
+.footer-link-hover::before {
   content: "";
   position: absolute;
-  width: 120%;
+  width: 100%;
   height: 1px;
   background-color: #ffffff;
-  bottom: -5px; 
+  bottom: 0;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+.footer-link-hover:hover::before {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.footer-link-hover span{
+  padding-right: 10px;
 }
 
 /* ===============
@@ -122,23 +134,9 @@
   .access-right--bottom_tel {
     margin-top: -10px;
   }
-  #access_google-maps::after,
-  #access_route::after,
-  #access_shop-info::after {
-    content: url(../../images/top/dinner/see-more-black.svg);
-    position: absolute;
-    right: 5px;
-    }
-
-   #access_google-maps::before,
+  #access_google-maps::before,
   #access_route::before,
   #access_shop-info::before {
-    /* content: "";
-    position: absolute;
-    width: 120%;
-    height: 1px;
-    background-color: #ffffff;
-    bottom: -10px; */
     display: none;
   }
   #access_google-maps,
@@ -148,7 +146,6 @@
     border-bottom: 1px solid #ffffff;
     padding-inline: 25px;
     padding-bottom: 16px;
-    /* width: ; */
   }
 }
 

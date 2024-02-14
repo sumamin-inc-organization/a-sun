@@ -124,7 +124,6 @@
   right: -12px;
 }
 
-
 .feat-see-more::before {
   content: "";
   position: absolute;
@@ -132,7 +131,6 @@
   height: 1px;
   background-color: #505050;
   bottom: -15px;
-
   transform: scaleX(1);
   transform-origin: left;
   transition: transform 250ms ease-in;
