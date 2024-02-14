@@ -192,6 +192,6 @@
 @media(max-width:500px){
   .msg-filler {
     position: relative;
-   height: 0px;
+   height: 50px;
   }
 }
