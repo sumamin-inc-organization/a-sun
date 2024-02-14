@@ -22,14 +22,14 @@
     margin-top: 120px;
   } */
 }
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .hero-background--sp {
     background-image: url(../../images/top/hero/herobkg_sp.jpg);
     background-size: cover;
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
   #hero {
     background-image: url(../../images/top/hero/hero-bkg.jpg);
     background-size: cover;
