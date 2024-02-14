@@ -290,60 +290,7 @@ function animateLogo() {
 
 activateHeaderAnimations();
 
-// let letters = gsap.utils.toArray(".letter");
 
-// letters.forEach((letter) => {
-//   gsap.from(letter, {
-//    opacity:0
-//   });
-// });
-
-// const master = gsap.timeline({paused:true});
-
-// const loader = gsap
-//   .timeline()
-//   .from('.transition-item',{y:'100%',delay:2})
-// .from('.transition-item-white',{y:'100%'})
-// .set('.transition-img',{opacity:0} )
-// .set('.transition-img',{x:"100%" ,})
-// .to('.transition-item-white',{y:'-100%'})
-// .to('.transition-item-white',{display:"none"})
-// .set('.transition-item',{display:"none"})
-// .from('.keyvisual-top__logo',{opacity:0,x:-100,duration:1});
-
-// const textAnime = gsap.timeline()
-// .from('.letter1',{opacity:0,duration:0.5},"<20%")
-// .from('.letter2',{opacity:0,duration:0.5},"<10%")
-// .from('.letter3',{opacity:0,duration:0.5},"<10%")
-// .from('.letter4',{opacity:0,duration:0.5},"<10%")
-// .from('.letter5',{opacity:0,duration:0.5},"<10%")
-// .from('.letter6',{opacity:0,duration:0.5},"<10%")
-// .from('.letter7',{opacity:0,duration:0.5},"<10%")
-// .from('.letter8',{opacity:0,duration:0.5},"<10%")
-// .from('.letter9',{opacity:0,duration:0.5},"<10%")
-// .from('.letter10',{opacity:0,duration:0.5},"<10%")
-// .from('.letter11',{opacity:0,duration:0.5},"<10%")
-// .from('.letter12',{opacity:0,duration:0.5},"<10%")
-// .from('.letter13',{opacity:0,duration:0.5},"<10%")
-// .from('.letter14',{opacity:0,duration:0.5},"<10%")
-// .from('.letter15',{opacity:0,duration:0.5},"<10%")
-// .from('.letter16',{opacity:0,duration:0.5},"<10%")
-// .from('.letter17',{opacity:0,duration:0.5},"<10%")
-// .from('.letter18',{opacity:0,duration:0.5},"<10%")
-// .from('.letter19',{opacity:0,duration:0.5},"<10%")
-// .from('.letter20',{opacity:0,duration:0.5},"<10%")
-// .from('.letter21',{opacity:0,duration:0.5},"<10%")
-// .from('.letter22',{opacity:0,duration:0.5},"<10%")
-// .from('.letter23',{opacity:0,duration:0.5},"<10%")
-// .from('.letter24',{opacity:0,duration:0.5},"<10%")
-// .from('.letter25',{opacity:0,duration:0.5},"<10%")
-// .from('.letter26',{opacity:0,duration:0.5},"<10%")
-// .from('.letter27',{opacity:0,duration:0.5},"<10%")
-
-
-
-// master.add(loader);
-// master.add(textAnime);
 
 
 
@@ -353,49 +300,8 @@ activateHeaderAnimations();
 -------------------------------------*/
 
 
-let kvMain = gsap.matchMedia();  
+// let kvMain = gsap.matchMedia();  
 
-// kvMain.add("(min-width: 768px)", () => {  
-  
-//   let kvMaintl= gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".eyecatcher_scrollimg--image",
-//       start: "-=100px",
-//       scrub: false,
-//       markers: true
-//     },
-//   });
-  
-//   kvMaintl
-//   .from('.kv-main-content_title',{opacity:0,duration:0.5},"")
-//     .from('.kv-main-content_title1',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title2',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title3',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title4',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title5',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title6',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title7',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title8',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title9',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title10',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title11',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title12',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title13',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main-content_title14',{opacity:0,duration:0.5},"<10%")
-//     .from('.kv-main__text__title--eng ',{opacity:0,x:-20,duration:0.5},"<10%")
-//   });  
-// const textContainer = document.querySelector('.kv-main-txt-eng-pc');
-// const text = textContainer.textContent;
-// const letters = text.split('');
-
-// textContainer.innerHTML = ''; // Clear the original content
-
-// letters.forEach((letter, index) => {
-//   const span = document.createElement('span');
-//   span.textContent = letter;
-//   span.classList.add(`kv-main__text-eng${index + 1}`);
-//   textContainer.appendChild(span);
-// });
 
 
 const textContainer = document.querySelector('.kv-main-txt-eng-pc');
@@ -429,12 +335,17 @@ const fragments = textContainer.innerHTML.split('<br>');
       }
     });
 
+
+/*-------------------------------
+   KV Title Animation
+   KVタイトルのアニメーション
+-------------------------------*/
 let kvMaintl= gsap.timeline({
   scrollTrigger: {
     trigger: ".eyecatcher_scrollimg--image",
     start: "-=100px",
     scrub: false,
-    markers: true
+    // markers: true
   },
 });
 
@@ -520,18 +431,25 @@ kvMaintl
   .from('.kv-main__text-eng119',{opacity:0,duration:0.5},"<10%")
 
 
-
+/*-------------------------------
+   KV Food Image Animation
+   KVフード画像のアニメーション
+-------------------------------*/
 
 
   let kvFoodtl= gsap.timeline({
     scrollTrigger: {
       trigger: ".keyvisual-main_hero",
-      start: "-=100px",
+      start: "-500px",
       scrub: false,
-      markers: true
+      // markers: true
     },
   });
   
   kvFoodtl
   .from('.kv-hero__img--top-right',{opacity:0,duration:0.5})
+  .from('.kv-hero__img--right',{opacity:0,duration:0.5})
+  .from('.kv-hero__img--bottom',{opacity:0,duration:0.5})
+  .from('.kv-hero__img--left',{opacity:0,duration:0.5})
+  .from('.kv-hero__img--top-left',{opacity:0,duration:0.5})
   
