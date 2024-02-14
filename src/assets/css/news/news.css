@@ -170,7 +170,7 @@
 }
 
 /* home back*/
-.home-back {
+.home-btn {
     padding: 80px 0;
 }
 
@@ -182,14 +182,6 @@
     padding-bottom: 16px;
     border-bottom: 1px solid #505050;
 }
-
-.access-links_top a, .access-links_bottom a{
-    line-height: clamp(40.94px, 4.55vw, 65.5px);
-    letter-spacing: 0.154em;
-    position: relative;
-    margin-right: 30px;
-}
-
 
 /*sp*/
 @media (max-width: 767px) {
