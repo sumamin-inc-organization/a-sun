@@ -529,7 +529,7 @@ featureOne.add("(min-width: 768px)", () => {
       trigger: ".feat-1-eyewrapper",
       start: "+=170px",
       scrub: false,
-      markers: true
+      // markers: true
     },
   });
   
@@ -565,7 +565,7 @@ featureTwo.add("(min-width: 768px)", () => {
       trigger: ".feat-2-eyewrapper",
       start: "+=170px",
       scrub: false,
-      markers: true
+      // markers: true
     },
   });
   
@@ -601,7 +601,7 @@ featureThree.add("(min-width: 768px)", () => {
       trigger: ".feat-3-eyewrapper",
       start: "+=170px",
       scrub: false,
-      markers: true
+      // markers: true
     },
   });
   
