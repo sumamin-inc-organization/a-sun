@@ -161,7 +161,8 @@
   border-bottom: 1px solid #505050;
 }
 
-@media (max-width: 500px) {
+@media (max-width:  767px) {
+  /* was 500 */
   .gault-millau_link--pc {
     display: none;
   }
@@ -289,7 +290,8 @@
 /*--------------------------------------------------------------
     Keyvisual Top Mobile/ キービジュアル トップ モバイル
 ---------------------------------------------------------------*/
-@media (max-width: 500px) {
+@media (max-width:  767px) {
+  /* was 500 */
   .keyvisual-top {
     display: flex;
     flex-direction: column;
@@ -320,7 +322,8 @@
 /*-------------------------------------------------------------------
     Keyvisual Eyecatcher Mobile / キービジュアル アイキャッチャー モバイル
 ------------------------------------------------------------------*/
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  /* was 500 */
   .kevvisual-eyecatcher {
     display: flex;
     justify-content: flex-end;
@@ -341,7 +344,8 @@
 /*---------------------------------------------------------------
     Eyecatcher Subtitle Mobile / アイキャッチャーのサブタイトル モバイル
 ----------------------------------------------------------------*/
-@media (max-width: 500px) {
+@media (max-width:  767px) {
+  /* was 500 */
   .gault-millau {
     display: flex;
     justify-content: flex-end;
@@ -364,7 +368,8 @@
     Keyvisual Main Text Mobile / キービジュアル メインテキスト モバイル
 ----------------------------------------------------------------*/
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  /* was 500 */
   .keyvisual-main_text {
     display: flex;
     flex-direction: column;
@@ -427,7 +432,8 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width:  767px) {
+  /* was 500 */
   .keyvisual-main_hero {
     margin-top: min(71px, 18.21vw);
     margin-top: 200px;
@@ -494,7 +500,8 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  /* was 500 */
   .kv-hero__img--left {
     left: -35%;
     bottom: 50px;
@@ -582,7 +589,8 @@
 }
 
 
-@media (max-width:500px){
+@media (max-width:767px){
+  /* was 500 */
   .letter-eng11{
     margin-left: -5px;
   }

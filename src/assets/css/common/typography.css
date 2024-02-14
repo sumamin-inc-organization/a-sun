@@ -38,7 +38,7 @@
     Font Sizes / フォントサイズ
 ----------------------------*/
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .fs-pc-8p75{
   }
   .fs-pc-12 {
@@ -96,7 +96,7 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .fs-sp-12 {
     font-size: 12px;
     font-size: min(12px,3.0769vw);
@@ -218,6 +218,9 @@
   }
   .line-height-sp-40{
     line-height: min(10.26vw,40px);
+  }
+  .line-height-sp-46{
+    line-height: min(11.7949vw,46px);
   }
   .line-height-sp-65p5{
     line-height: min(16.79vw,65.5px);
