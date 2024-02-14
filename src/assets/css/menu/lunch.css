@@ -351,7 +351,7 @@ html {
 }
 
 /* sp */
-@media (max-width: 750px) {
+@media (max-width: 767px) {
     .under-kv {
         margin-top: 0px;
     }
@@ -566,7 +566,7 @@ ul.slick-dots li.slick-active button:before {
     background-color: #FFFFFF;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
     .slick-slide img {
         height: auto;
     }

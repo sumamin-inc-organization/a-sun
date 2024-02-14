@@ -83,7 +83,7 @@
     background-color: #FFFFFF;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
     .dinner-headline p {
         font-size: clamp(20px, 15vw, 100px);
         letter-spacing: 0.32rem;
