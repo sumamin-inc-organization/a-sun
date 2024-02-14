@@ -765,3 +765,23 @@ newsTitletl.from(".news-title-anime", {
   y: -50,
   duration: 1,
 });
+
+
+/*-------------------------------
+Insta Animations
+ Insta アニメーション
+-------------------------------*/
+let instaTitletl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#insta",
+    start: "-=500px",
+    scrub: false,
+    markers: true,
+  },
+});
+
+instaTitletl.from(".insta-title", {
+  opacity: 0,
+  x: -50,
+  duration: 1,
+});
