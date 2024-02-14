@@ -157,7 +157,15 @@
     right: 0;
   }
 }
+@media(max-width:768px){
+  .bottom-right {
+    width: min(200px, 51.28vw);
+    position: absolute;
+    bottom: 1.5%;
 
+    right: 0;
+  }
+}
 #lunch {
   padding-bottom: 0;
 }
@@ -256,7 +264,7 @@
     padding: 50px;
   }
   .bottom-right{
-    bottom: 3%;
+    /* bottom: 3%; */
   }
 }
 
@@ -295,6 +303,7 @@
     width: 142vmax;
     height: 140vmax;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 89%);
+    
   } 
   #dinner{
     padding: 90px;
@@ -321,5 +330,11 @@
   #dinner{
    padding: 150px;
   }
- 
+ .company-dot{
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 93%);
+
+
+
+
+ }
  }

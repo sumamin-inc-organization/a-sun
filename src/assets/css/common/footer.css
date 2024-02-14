@@ -52,7 +52,8 @@ footer {
   padding-bottom: clamp(26.1px, 2.5vw, 36px);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
+  /* was 500 */
   .footer-wrapper {
     display: grid;
     place-content: center;

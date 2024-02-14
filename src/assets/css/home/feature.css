@@ -185,7 +185,7 @@
       MOBILE
    =============== */
 
-@media (max-width: 650px) {
+@media (max-width: 767px) {
   .feature-title__img {
     width: 408.54px;
     position: absolute;
@@ -214,7 +214,8 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  /* was 500 */
   .feat-eng {
     margin-bottom: 18.7px;
   }

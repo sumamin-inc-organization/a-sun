@@ -67,7 +67,8 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width:767px) {
+  /* was 500 */
   #news {
     padding-top: 78px;
   }
