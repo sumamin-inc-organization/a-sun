@@ -12,6 +12,7 @@ import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import { gsap } from "gsap";
 setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 // slick
@@ -130,3 +131,8 @@ feature3
 .from("#feature3 .feature-top-img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
 .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
 .from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+
+
+
+
+activateHeaderAnimations();

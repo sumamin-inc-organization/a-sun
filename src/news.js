@@ -13,6 +13,7 @@ import { gsap } from "gsap";
 setLoadingAnimation();
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -69,3 +70,6 @@ mm.add("(min-width: 768px)", () => {
     news_pagination
     .from(".news-pagination", { y: 30, opacity: 0, duration: 1})
 });
+
+
+activateHeaderAnimations();

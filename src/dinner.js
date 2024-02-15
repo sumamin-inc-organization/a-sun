@@ -16,6 +16,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 setLoadingAnimation();
@@ -140,3 +141,5 @@ mm.add("(min-width: 768px)", () => {
     .from(".home-btn a", { y: 30, opacity: 0, duration: 1})
 
 });
+
+activateHeaderAnimations();

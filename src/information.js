@@ -12,6 +12,7 @@ import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import { gsap } from "gsap";
 setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 // 出現アニメーション
@@ -49,3 +50,6 @@ information_bottom
 .from(".information-bottom-title", { y: 30, opacity: 0, duration: 2 })
 .from("table", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
 .from(".home-btn", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
+
+
+activateHeaderAnimations();

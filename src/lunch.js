@@ -16,6 +16,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 setLoadingAnimation();
@@ -185,3 +186,4 @@ $( document ).ready(function() {
     });
 });
 
+activateHeaderAnimations();
