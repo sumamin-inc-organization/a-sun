@@ -105,10 +105,24 @@
     top: 0;
   }
 }
+@media (max-width: 1499px) {
+  .news-right {
+    position: absolute;
+    right: -160px;
+    top: 0;
+  }
+}
 @media (max-width: 1300px) {
   .news-right {
     position: absolute;
-    right: -120px;
+    right: -130px;
+    top: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .news-right {
+    position: absolute;
+    right: -115px;
     top: 0;
   }
 }
