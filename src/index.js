@@ -665,9 +665,10 @@ dinnerImgtl
 
 let dinnerBottomtl = gsap.timeline({
   scrollTrigger: {
-    trigger: "#dinner-seemore",
-    start: "-=300px",
+    trigger: ".dinner-bottom",
+    start: "-=100px",
     scrub: false,
+    markers:true
   },
 });
 
