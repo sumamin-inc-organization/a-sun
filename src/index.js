@@ -274,7 +274,6 @@ activateHeaderAnimations();
   KVメインコンテンツタイトルのアニメーション
 -------------------------------------*/
 
-
 const textContainer = document.querySelector(".kv-main-txt-eng-pc");
 const fragments = textContainer.innerHTML.split("<br>");
 
