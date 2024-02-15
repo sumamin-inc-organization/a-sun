@@ -668,7 +668,6 @@ let dinnerBottomtl = gsap.timeline({
     trigger: ".dinner-bottom",
     start: "-=100px",
     scrub: false,
-    markers:true
   },
 });
 
