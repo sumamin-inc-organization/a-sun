@@ -19,34 +19,32 @@ toggleSpMenu();
 
 // 出現アニメーション
 let kv_title = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".feature-page",
-        start: "-=500px",
-        scrub: false,
-    },
+  scrollTrigger: {
+    trigger: ".feature-page",
+    start: "-=500px",
+    scrub: false,
+  },
 });
-kv_title
-.from(".under-kv", { opacity: 0, duration: 2 });
+kv_title.from(".under-kv", { opacity: 0, duration: 2 });
 
 let news_details = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#news-details",
-        start: "-=500px",
-        scrub: false,
-    },
+  scrollTrigger: {
+    trigger: "#news-details",
+    start: "-=500px",
+    scrub: false,
+  },
 });
 news_details
-.from(".return-btn", { y: 30, opacity: 0, duration: 2 })
-.from(".news-inner", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-.from(".news-header", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-.from(".news-main", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
+  .from(".return-btn", { y: 30, opacity: 0, duration: 2 })
+  .from(".news-inner", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+  .from(".news-header", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+  .from(".news-main", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
 
 let home_btn = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".home-btn",
-        start: "-=500px",
-        scrub: false,
-    },
+  scrollTrigger: {
+    trigger: ".home-btn",
+    start: "-=500px",
+    scrub: false,
+  },
 });
-home_btn
-.from(".home-btn", { y: 30, opacity: 0, duration: 2 });
+home_btn.from(".home-btn", { y: 30, opacity: 0, duration: 2 });

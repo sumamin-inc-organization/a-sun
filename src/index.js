@@ -18,7 +18,7 @@ import addNavIconEventListener from "./assets/js/eventlisters/naviconEventlisten
 import activateCrossFadeAnimations from "./assets/js/animations/crossfadeAnimation";
 
 import { gsap } from "gsap";
-import $ from 'jquery';
+import $ from "jquery";
 import screenResizeListener from "./assets/js/eventlisters/screensizeChange";
 import isItSp from "./assets/js/otherlogic/isitSP";
 import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
@@ -61,7 +61,6 @@ dotAnimations.add("(max-width: 500px)", () => {
         end: "+=200",
         scrub: true,
         // pin: true,
-   
       },
     });
 
@@ -634,18 +633,19 @@ let LunchImgtl = gsap.timeline({
   },
 });
 
-LunchImgtl
-.fromTo(".reveal", {
-  "--width":"100%",
-  duration:0.5
-},
-{
-  "--width":"0%",
-  duration:0.5
-}
-).from(".lunch-title-anime",{opacity:0,x:-100,duration:1})
-.from(".lunch-subtitle-anime",{opacity:0,x:100,duration:1},"<");
-
+LunchImgtl.fromTo(
+  ".reveal",
+  {
+    "--width": "100%",
+    duration: 0.5,
+  },
+  {
+    "--width": "0%",
+    duration: 0.5,
+  }
+)
+  .from(".lunch-title-anime", { opacity: 0, x: -100, duration: 1 })
+  .from(".lunch-subtitle-anime", { opacity: 0, x: 100, duration: 1 }, "<");
 
 /*-------------------------------
   Dinner Animations
@@ -662,24 +662,31 @@ let dinnerImgtl = gsap.timeline({
 });
 
 dinnerImgtl
-.fromTo(".reveal-black", {
-  "--width": "100%",
-  duration: 0.5
-}, {
-  "--width": "0%",
-  duration: 0.5
-})
-.fromTo(".reveal-black-right", {
-  "--width": "100%",
-  duration: 0.5
-}, {
-  "--width": "0%",
-  duration: 0.5
-}, "<")
-.from(".dinner-title-anime",{opacity:0,x:-100,duration:1})
-.from(".dinner-subtitle-anime",{opacity:0,x:100,duration:1},"<");
-
-
+  .fromTo(
+    ".reveal-black",
+    {
+      "--width": "100%",
+      duration: 0.5,
+    },
+    {
+      "--width": "0%",
+      duration: 0.5,
+    }
+  )
+  .fromTo(
+    ".reveal-black-right",
+    {
+      "--width": "100%",
+      duration: 0.5,
+    },
+    {
+      "--width": "0%",
+      duration: 0.5,
+    },
+    "<"
+  )
+  .from(".dinner-title-anime", { opacity: 0, x: -100, duration: 1 })
+  .from(".dinner-subtitle-anime", { opacity: 0, x: 100, duration: 1 }, "<");
 
 let dinnerBottomtl = gsap.timeline({
   scrollTrigger: {
@@ -690,25 +697,31 @@ let dinnerBottomtl = gsap.timeline({
   },
 });
 
-dinnerBottomtl.fromTo(".bottom-left__img", {
-  "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)"
-},
-{
-  "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
-})
-.fromTo(".bottom-img-right__img", {
-  "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)"
-},
-{
-  "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
-},"<");
-
+dinnerBottomtl
+  .fromTo(
+    ".bottom-left__img",
+    {
+      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+    },
+    {
+      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    }
+  )
+  .fromTo(
+    ".bottom-img-right__img",
+    {
+      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+    },
+    {
+      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    },
+    "<"
+  );
 
 /*-------------------------------
   Message Animations
    Message アニメーション
 -------------------------------*/
-
 
 let messageTitle = gsap.matchMedia();
 messageTitle.add("(min-width: 768px)", () => {
@@ -756,17 +769,20 @@ let messageImgtl = gsap.timeline({
 });
 
 messageImgtl
-.from(".flower-anime", {
-  opacity:0,
-  x:100,
-  duration:1
+  .from(".flower-anime", {
+    opacity: 0,
+    x: 100,
+    duration: 1,
   })
-.from(".chef-anime", {
-  opacity:0,
-x:-100,
-duration:1
-},"<");
-
+  .from(
+    ".chef-anime",
+    {
+      opacity: 0,
+      x: -100,
+      duration: 1,
+    },
+    "<"
+  );
 
 /*-------------------------------
 Voice Animations
@@ -806,7 +822,6 @@ newsTitletl.from(".news-title-anime", {
   duration: 1,
 });
 
-
 /*-------------------------------
 Insta Animations
  Insta アニメーション
@@ -825,7 +840,6 @@ instaTitletl.from(".insta-title", {
   x: -50,
   duration: 1,
 });
-
 
 /*-------------------------------
 acess Animations
@@ -866,6 +880,3 @@ accessTitle.add("(max-width: 767px)", () => {
     duration: 1,
   });
 });
-
-
-
