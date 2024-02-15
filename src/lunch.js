@@ -37,6 +37,15 @@ var $slide = $(".slick-slide").slick({
 });
 
 /*  Appearance Animation */
+let kv_title = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".lunch-page",
+        start: "-=500px",
+        scrub: false,
+    },
+});
+kv_title.from(".under-kv", { opacity: 0, duration: 2 , delay: 3});
+
 let mm = gsap.matchMedia();
 /* sp */
 mm.add("(max-width: 767px)", () => {
@@ -213,7 +222,7 @@ mm.add("(min-width: 768px)", () => {
       scrub: false,
     },
   });
-  home_btn.from(".home-btn a", { y: 30, opacity: 0, duration: 1 });
+  home_btn.from(".home-btn a", { y: 30, opacity: 0, duration: 2 });
 });
 
 activateHeaderAnimations();

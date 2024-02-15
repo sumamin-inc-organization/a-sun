@@ -20,12 +20,12 @@ toggleSpMenu();
 // 出現アニメーション
 let kv_title = gsap.timeline({
   scrollTrigger: {
-    trigger: ".feature-page",
+    trigger: ".news-details-page",
     start: "-=500px",
     scrub: false,
   },
 });
-kv_title.from(".under-kv", { opacity: 0, duration: 2 });
+kv_title.from(".under-kv", { opacity: 0, duration: 2 , delay: 3});
 
 let news_details = gsap.timeline({
   scrollTrigger: {
@@ -35,7 +35,7 @@ let news_details = gsap.timeline({
   },
 });
 news_details
-  .from(".return-btn", { y: 30, opacity: 0, duration: 2 })
+  .from(".return-btn", { y: 30, opacity: 0, duration: 2 }, "+=3")
   .from(".news-inner", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
   .from(".news-header", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
   .from(".news-main", { y: 30, opacity: 0, duration: 2 }, "-=1.5");

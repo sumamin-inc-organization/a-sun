@@ -27,7 +27,7 @@ let kv_title = gsap.timeline({
     scrub: false,
   },
 });
-kv_title.from(".under-kv", { opacity: 0, duration: 2 });
+kv_title.from(".under-kv", { opacity: 0, duration: 2 , delay: 3});
 
 let information_top = gsap.timeline({
   scrollTrigger: {
@@ -37,10 +37,9 @@ let information_top = gsap.timeline({
   },
 });
 information_top
-  .from(".information-top-text", { y: 30, opacity: 0, duration: 2 })
+  .from(".information-top-text", { y: 30, opacity: 0, duration: 2 }, "+=3")
   .from(".room-rent", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
   .from(".information-top-img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-  .from(".kv_img", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
 
 let information_bottom = gsap.timeline({
   scrollTrigger: {
