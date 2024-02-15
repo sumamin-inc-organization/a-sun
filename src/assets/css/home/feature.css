@@ -116,6 +116,11 @@
 .feat-see-more {
   position: relative;
   width: max-content;
+  margin-right: 16px;
+}
+.feat-main--right-1,
+.feat-main--3-txt{
+  /* border: 1px solid red; */
 }
 .feat-see-more::after {
   content: url(../../images/top/feature/see-more-icon-feat.svg);
@@ -127,7 +132,7 @@
 .feat-see-more::before {
   content: "";
   position: absolute;
-  width: 125%;
+  width: 117%;
   height: 1px;
   background-color: #505050;
   bottom: -15px;
