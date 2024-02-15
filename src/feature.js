@@ -13,7 +13,12 @@ import { gsap } from "gsap";
 setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
+import $ from 'jquery';
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 toggleSpMenu();
 
@@ -133,3 +138,26 @@ feature3
 .from("#feature3 .feature-top-img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
 .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
 .from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+
+
+
+
+activateHeaderAnimations();
+
+
+
+/* spハンバーガーメニュー開閉 */
+$( document ).ready(function() {
+    $('#closeMenuBtn').on('click', function() {
+        if ($('#spNavMenu').hasClass('open')) {
+            $('#spNavMenu').removeClass('open');
+        }
+    });
+    
+    $('.meatball').on('click', function() {
+        if (!$('#spNavMenu').hasClass('open')) {
+            $('#spNavMenu').addClass('open');
+        }
+    });
+  });
+  

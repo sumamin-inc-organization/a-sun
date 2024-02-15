@@ -18,6 +18,7 @@ import addNavIconEventListener from "./assets/js/eventlisters/naviconEventlisten
 import activateCrossFadeAnimations from "./assets/js/animations/crossfadeAnimation";
 
 import { gsap } from "gsap";
+import $ from 'jquery';
 import screenResizeListener from "./assets/js/eventlisters/screensizeChange";
 import isItSp from "./assets/js/otherlogic/isitSP";
 import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
@@ -722,6 +723,27 @@ messageTitle.add("(max-width: 767px)", () => {
   });
 });
 
+let messageImgtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".message-bottom-wrapper",
+    start: "-=500px",
+    scrub: false,
+  },
+});
+
+messageImgtl
+.from(".flower-anime", {
+  opacity:0,
+  x:100,
+  duration:1
+  })
+.from(".chef-anime", {
+  opacity:0,
+x:-100,
+duration:1
+},"<");
+
+
 /*-------------------------------
 Voice Animations
  Voice アニメーション
@@ -817,7 +839,22 @@ accessTitle.add("(max-width: 767px)", () => {
 
   accessTitletl.from(".access-eng", {
     opacity: 0,
-    x: -50,
     duration: 1,
+  });
+});
+
+
+/* spハンバーガーメニュー開閉 */
+$( document ).ready(function() {
+  $('#closeMenuBtn').on('click', function() {
+      if ($('#spNavMenu').hasClass('open')) {
+          $('#spNavMenu').removeClass('open');
+      }
+  });
+  
+  $('.meatball').on('click', function() {
+      if (!$('#spNavMenu').hasClass('open')) {
+          $('#spNavMenu').addClass('open');
+      }
   });
 });
