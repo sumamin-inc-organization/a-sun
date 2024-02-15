@@ -17,7 +17,21 @@
 .message-subtitle {
   display: flex;
   justify-content: center;
-  margin-top: -20px;
+  margin-top: -10px;
+}
+@media(min-width:1500px){
+  .message-subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+  }
+}
+@media(max-width:1000px){
+  .message-subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
 }
 
 .message-title--intro {
