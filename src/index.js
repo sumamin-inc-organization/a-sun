@@ -614,7 +614,6 @@ courseTitle.add("(max-width: 767px)", () => {
 
   courseTitletl.from(".course-title--eng", {
     opacity: 0,
-    x: -50,
     duration: 1,
   });
 });
