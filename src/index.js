@@ -680,6 +680,30 @@ dinnerImgtl
 .from(".dinner-subtitle-anime",{opacity:0,x:100,duration:1},"<");
 
 
+
+let dinnerBottomtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#dinner-seemore",
+    start: "-=300px",
+    scrub: false,
+    markers: true,
+  },
+});
+
+dinnerBottomtl.fromTo(".bottom-left__img", {
+  "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)"
+},
+{
+  "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+})
+.fromTo(".bottom-img-right__img", {
+  "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)"
+},
+{
+  "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+},"<");
+
+
 /*-------------------------------
   Message Animations
    Message アニメーション
@@ -845,17 +869,3 @@ accessTitle.add("(max-width: 767px)", () => {
 
 
 
-
-
-// let dinnerBottomtl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#dinner-seemore",
-//     start: "-=300px",
-//     scrub: false,
-//     markers: true,
-//   },
-// });
-
-// dinnerBottomtl.from(".bottom-left__img", {
-//   "--path": " polygon(0 0, 0 0, 0 100%, 0 100%)"
-// });
