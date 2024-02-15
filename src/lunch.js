@@ -16,10 +16,12 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 setLoadingAnimation();
+toggleSpMenu();
 
 /* slick animation */
 var $slide = $(".slick-slide")
@@ -170,6 +172,7 @@ mm.add("(min-width: 768px)", () => {
     .from(".home-btn a", { y: 30, opacity: 0, duration: 1})
 
 });
+
 
 /* spハンバーガーメニュー開閉 */
 $( document ).ready(function() {

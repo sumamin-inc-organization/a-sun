@@ -13,8 +13,11 @@ import { gsap } from "gsap";
 setLoadingAnimation();
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
+
+toggleSpMenu();
 
 
 let mm = gsap.matchMedia();
