@@ -471,7 +471,6 @@ featureTitle.add("(max-width: 767px)", () => {
 
   featureTitletl.from(".feature-title__text--jp", {
     opacity: 0,
-    x: -50,
     duration: 1,
   });
 });
@@ -490,7 +489,7 @@ let featureEyetl = gsap.timeline({
   },
 });
 
-featureEyetl.from(".feat-1-eyewrapper", { opacity: 0, y: 70, duration: 1 });
+featureEyetl.from(".feat-1-eyewrapper", { opacity: 0, duration: 1 });
 
 let featureOne = gsap.matchMedia();
 
@@ -505,8 +504,8 @@ featureOne.add("(min-width: 768px)", () => {
   });
 
   featureOnetl
-    .from(".feat-main-left-one", { opacity: 0, y: -100, duration: 1 })
-    .from(".feat-main--right-1", { opacity: 0, y: 100, duration: 1 }, "<");
+    .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
+    .from(".feat-main--right-1", { opacity: 0, x: 100, duration: 1 }, "<");
 });
 
 /*-------------------------------
@@ -523,7 +522,7 @@ let featureEyeTwotl = gsap.timeline({
   },
 });
 
-featureEyeTwotl.from(".feat-2-eyewrapper", { opacity: 0, y: 70, duration: 1 });
+featureEyeTwotl.from(".feat-2-eyewrapper", { opacity: 0, duration: 1 });
 
 let featureTwo = gsap.matchMedia();
 
@@ -538,8 +537,8 @@ featureTwo.add("(min-width: 768px)", () => {
   });
 
   featureTwotl
-    .from(".feat-main-left-two", { opacity: 0, y: -100, duration: 1 })
-    .from(".feat-main--right--2", { opacity: 0, y: 100, duration: 1 }, "<");
+    .from(".feat-main-left-two", { opacity: 0, x: 100, duration: 1 })
+    .from(".feat-main--right--2", { opacity: 0, x: -100, duration: 1 }, "<");
 });
 
 /*-------------------------------
@@ -558,7 +557,6 @@ let featureEyeThreetl = gsap.timeline({
 
 featureEyeThreetl.from(".feat-3-eyewrapper", {
   opacity: 0,
-  y: 70,
   duration: 1,
 });
 
@@ -575,8 +573,8 @@ featureThree.add("(min-width: 768px)", () => {
   });
 
   featureThreetl
-    .from(".feat-main-left-three", { opacity: 0, y: -100, duration: 1 })
-    .from(".feat-main--3-txt", { opacity: 0, y: 100, duration: 1 }, "<");
+    .from(".feat-main-left-three", { opacity: 0, x: -100, duration: 1 })
+    .from(".feat-main--3-txt", { opacity: 0, x: 100, duration: 1 }, "<");
 });
 
 /*-------------------------------
