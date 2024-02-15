@@ -639,8 +639,8 @@ LunchImgtl
   "--width":"0%",
   duration:0.5
 }
-).from(".lunch-title-anime",{opacity:0,x:-100})
-.from(".lunch-subtitle-anime",{opacity:0,x:100},"<");
+).from(".lunch-title-anime",{opacity:0,x:-100,duration:1})
+.from(".lunch-subtitle-anime",{opacity:0,x:100,duration:1},"<");
 
 
 /*-------------------------------
