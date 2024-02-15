@@ -61,16 +61,16 @@ activateHeaderAnimations();
 
 
 /* spハンバーガーメニュー開閉 */
-$( document ).ready(function() {
-    $('#closeMenuBtn').on('click', function() {
-        if ($('#spNavMenu').hasClass('open')) {
-            $('#spNavMenu').removeClass('open');
-        }
-    });
+// $( document ).ready(function() {
+//     $('#closeMenuBtn').on('click', function() {
+//         if ($('#spNavMenu').hasClass('open')) {
+//             $('#spNavMenu').removeClass('open');
+//         }
+//     });
     
-    $('.meatball').on('click', function() {
-        if (!$('#spNavMenu').hasClass('open')) {
-            $('#spNavMenu').addClass('open');
-        }
-    });
-  });
+//     $('.meatball').on('click', function() {
+//         if (!$('#spNavMenu').hasClass('open')) {
+//             $('#spNavMenu').addClass('open');
+//         }
+//     });
+//   });
