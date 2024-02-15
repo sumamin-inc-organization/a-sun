@@ -237,6 +237,12 @@
   .line-height-sp-27{
     line-height: min(6.92vw,27px);
   }
+  .line-height-sp-18{
+    line-height: min(5vw,18px);
+  }
+  .line-height-sp-14{
+    line-height: min(4.2vw,14px);
+  }
   .line-height-sp-28p5{
     line-height: min(7.31vw,28.5px);
   }

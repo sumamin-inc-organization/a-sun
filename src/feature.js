@@ -12,12 +12,15 @@ import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import { gsap } from "gsap";
 setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
 import $ from 'jquery';
 import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+toggleSpMenu();
 
 // slick
 $(document).ready(function() {
