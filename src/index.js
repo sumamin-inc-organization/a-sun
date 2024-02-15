@@ -79,8 +79,6 @@ dotAnimations.add("(min-width: 501px)", () => {
         start: "-=500px top",
         end: "+=200",
         scrub: true,
-        // pin: true,
-        //  markers: true
       },
     });
 
@@ -102,22 +100,17 @@ let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".feat1",
     start: "-=200px top",
-    // end: "+=200",
     scrub: true,
-    // pin: true,
-    //  markers: true
   },
 });
 
 tl.to(".feat-main-left-one", { yPercent: -65 });
-// .to(".company-dot", { scale: 1})
 
 let t2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".feat2",
     start: "-=200px top",
     scrub: true,
-    //  markers: true
   },
 });
 
@@ -128,7 +121,6 @@ let t3 = gsap.timeline({
     trigger: ".feat3",
     start: "-=200px top",
     scrub: true,
-    //  markers: true
   },
 });
 
@@ -138,9 +130,6 @@ t3.to(".feat-main-left-three", { yPercent: -65 });
     Loading animation
    ロードアニメーション
 -------------------------------*/
-
-// setLoadingAnimation()
-
 document.addEventListener("DOMContentLoaded", (e) => {
   let intro = gsap.timeline();
 
@@ -264,7 +253,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 ScrollTrigger.create({
   trigger: ".trigger",
   start: "top -=10",
-  // markers: true,
   onEnterBack: animateLogo,
 });
 
@@ -286,7 +274,6 @@ activateHeaderAnimations();
   KVメインコンテンツタイトルのアニメーション
 -------------------------------------*/
 
-// let kvMain = gsap.matchMedia();
 
 const textContainer = document.querySelector(".kv-main-txt-eng-pc");
 const fragments = textContainer.innerHTML.split("<br>");
@@ -328,7 +315,6 @@ let kvMaintl = gsap.timeline({
     trigger: ".eyecatcher_scrollimg--image",
     start: "-=100px",
     scrub: false,
-    // markers: true
   },
 });
 
@@ -423,7 +409,6 @@ let kvFoodtl = gsap.timeline({
     trigger: ".keyvisual-main_hero",
     start: "-500px",
     scrub: false,
-    // markers: true
   },
 });
 
@@ -448,7 +433,6 @@ featureTitle.add("(min-width: 768px)", () => {
       trigger: "#feature",
       start: "-=600px",
       scrub: false,
-      // markers: true
     },
   });
 
@@ -468,7 +452,6 @@ featureTitle.add("(max-width: 767px)", () => {
       trigger: "#feature",
       start: "-=600px",
       scrub: false,
-      // markers: true
     },
   });
 
@@ -488,7 +471,6 @@ let featureEyetl = gsap.timeline({
     trigger: ".feat1",
     start: "-=700px",
     scrub: false,
-    // markers: true
   },
 });
 
@@ -502,7 +484,6 @@ featureOne.add("(min-width: 768px)", () => {
       trigger: ".feat-1-eyewrapper",
       start: "+=170px",
       scrub: false,
-      // markers: true
     },
   });
 
@@ -521,7 +502,6 @@ let featureEyeTwotl = gsap.timeline({
     trigger: ".feat2",
     start: "-=700px",
     scrub: false,
-    // markers: true
   },
 });
 
@@ -535,7 +515,6 @@ featureTwo.add("(min-width: 768px)", () => {
       trigger: ".feat-2-eyewrapper",
       start: "+=170px",
       scrub: false,
-      // markers: true
     },
   });
 
@@ -554,7 +533,6 @@ let featureEyeThreetl = gsap.timeline({
     trigger: ".feat3",
     start: "-=700px",
     scrub: false,
-    // markers: true
   },
 });
 
@@ -571,7 +549,6 @@ featureThree.add("(min-width: 768px)", () => {
       trigger: ".feat-3-eyewrapper",
       start: "+=170px",
       scrub: false,
-      // markers: true
     },
   });
 
@@ -657,7 +634,6 @@ let dinnerImgtl = gsap.timeline({
     trigger: "#dinner",
     start: "-=500px",
     scrub: false,
-    // markers: true,
   },
 });
 
@@ -693,7 +669,6 @@ let dinnerBottomtl = gsap.timeline({
     trigger: "#dinner-seemore",
     start: "-=300px",
     scrub: false,
-    markers: true,
   },
 });
 
@@ -793,7 +768,6 @@ let voiceTitletl = gsap.timeline({
     trigger: "#voice",
     start: "-=500px",
     scrub: false,
-    // markers: true,
   },
 });
 
@@ -812,7 +786,6 @@ let newsTitletl = gsap.timeline({
     trigger: "#news",
     start: "-=500px",
     scrub: false,
-    // markers: true,
   },
 });
 
@@ -831,7 +804,6 @@ let instaTitletl = gsap.timeline({
     trigger: "#insta",
     start: "-=500px",
     scrub: false,
-    // markers: true,
   },
 });
 
