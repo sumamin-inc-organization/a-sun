@@ -715,7 +715,6 @@ messageTitle.add("(max-width: 767px)", () => {
 
   messageTitletl.from(".message-title--eng", {
     opacity: 0,
-    x: -50,
     duration: 1,
   });
 });
