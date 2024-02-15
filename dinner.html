@@ -17,6 +17,10 @@
     <meta name="format-detection" content="telephone=no" />
     <meta content="date=no" name="format-detection" />
     <!-- slick -->
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     <!-- <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -39,7 +43,7 @@
       href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&family=Zen+Old+Mincho&display=swap"
       rel="stylesheet"
     />
-  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js-node_modules_jquery_dis-0c1656.bd13fcc89b2fe791318b.js"></script><script defer src="vendors-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_s-4ab45a.bc3fe496f3ecdde1500c.js"></script><script defer src="dinner.5148c300295c3b763f3a.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-45994d.css" rel="stylesheet"><link href="node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick_css-b7dfb9.css" rel="stylesheet"><link href="dinner.css" rel="stylesheet"></head>
+  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js-node_modules_jquery_dis-0c1656.bd13fcc89b2fe791318b.js"></script><script defer src="dinner.69d4d6ce197e4229890e.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-45994d.css" rel="stylesheet"><link href="src_assets_css_menu_lunch_css.css" rel="stylesheet"><link href="dinner.css" rel="stylesheet"></head>
   <body class="white">
     <div class="transition-img">
       <div class="transition-wrapper">
@@ -841,5 +845,34 @@
         </p>
       </div>
     </footer>
+       <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script> 
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    /> -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      /* slick animation */
+var $slide = $(".slick-slide").slick({
+  fade: true,
+  speed: 1000,
+  autoplaySpeed: 2500,
+  arrows: false,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  dots: true,
+});
+
+    </script>
   </body>
 </html>
