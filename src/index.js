@@ -698,8 +698,9 @@ dinnerImgtl
 let dinnerBottomtl = gsap.timeline({
   scrollTrigger: {
     trigger: "#dinner-seemore",
-    start: "-=100px",
+    start: "-=500px",
     scrub: false,
+    // markers:true
   },
 });
 
@@ -721,7 +722,7 @@ dinnerBottomtl
     {
       "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     },
-    "<"
+    
   );
 
 /*-------------------------------
