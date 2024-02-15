@@ -571,3 +571,9 @@
 .feature-title-letter{
   display: inline-block;
 }
+
+@media(min-width:1000px){
+  .keyvisual-top__logo{
+    padding-top: 12px;
+  }
+}
