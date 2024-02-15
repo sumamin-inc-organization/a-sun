@@ -835,7 +835,6 @@ accessTitle.add("(max-width: 767px)", () => {
 
   accessTitletl.from(".access-eng", {
     opacity: 0,
-    x: -50,
     duration: 1,
   });
 });
