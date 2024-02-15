@@ -473,7 +473,9 @@ let featureEyetl = gsap.timeline({
   },
 });
 
-featureEyetl.from(".feat-1-eyewrapper", { opacity: 0, duration: 1 });
+featureEyetl
+.from(".feat-1-eyewrapper", { opacity: 0, duration: 1 })
+.from(".feature-title__img", { opacity: 0, duration: 0.5 });
 
 let featureOne = gsap.matchMedia();
 
@@ -665,7 +667,7 @@ dinnerImgtl
 
 let dinnerBottomtl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".dinner-bottom",
+    trigger: "#dinner-seemore",
     start: "-=100px",
     scrub: false,
   },
