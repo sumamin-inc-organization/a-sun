@@ -14,6 +14,10 @@ setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 gsap.registerPlugin(ScrollTrigger);
+import $ from 'jquery';
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 // slick
 $(document).ready(function() {
@@ -136,3 +140,21 @@ feature3
 
 
 activateHeaderAnimations();
+
+
+
+/* spハンバーガーメニュー開閉 */
+$( document ).ready(function() {
+    $('#closeMenuBtn').on('click', function() {
+        if ($('#spNavMenu').hasClass('open')) {
+            $('#spNavMenu').removeClass('open');
+        }
+    });
+    
+    $('.meatball').on('click', function() {
+        if (!$('#spNavMenu').hasClass('open')) {
+            $('#spNavMenu').addClass('open');
+        }
+    });
+  });
+  
