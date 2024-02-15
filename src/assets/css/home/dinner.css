@@ -324,6 +324,19 @@
  }
 
 }
+ 
+@media (max-width: 1666px) {
+  .bottom-right{
+   bottom: -5%;
+  }
+ 
+ }
+ @media (max-width: 1100px) {
+  .bottom-right{
+   bottom: 5%;
+  }
+ 
+ }
 
  
 @media (max-width: 500px) {
@@ -337,15 +350,4 @@
 
 
  }
- }
-
-
- .bottom-left__img{
-  --path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: var(--path);
- }
-
- .bottom-img-right__img{
-  --path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: var(--path);
  }
