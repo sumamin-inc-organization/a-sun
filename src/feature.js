@@ -102,7 +102,7 @@ kv_title.from(".under-kv", { opacity: 0, duration: 2, delay: 3.5 });
 let feature1 = gsap.timeline({
   scrollTrigger: {
     trigger: "#feature1",
-    start: "-=700px",
+    start: "-=500px",
     scrub: false,
   },
 });
@@ -124,7 +124,7 @@ feature1
 let feature2 = gsap.timeline({
   scrollTrigger: {
     trigger: "#feature2",
-    start: "-=700px",
+    start: "-=500px",
     scrub: false,
   },
 });
@@ -141,7 +141,7 @@ feature2
 let feature3 = gsap.timeline({
   scrollTrigger: {
     trigger: "#feature3",
-    start: "-=700px",
+    start: "-=500px",
     scrub: false,
   },
 });
@@ -154,5 +154,14 @@ feature3
   )
   .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
   .from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+
+let home_btn = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".home-btn",
+        start: "-=500px",
+        scrub: false,
+    },
+});
+home_btn.from(".home-btn", { y: 30, opacity: 0, duration: 2 });
 
 activateHeaderAnimations();

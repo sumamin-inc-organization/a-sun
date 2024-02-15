@@ -144,10 +144,8 @@
 
 /* ドットのスタイル */
 .slick-dots {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 10px;
+    margin-bottom: -35px !important;
+    bottom: 0 !important;
 }
 .slick-dots button{
     padding-block: 0px !important;
@@ -165,6 +163,9 @@
 }
 .slick-slider .slick-dots li.slick-active button {
     background-color: #505050;
+}
+.slick-dots li button:before{
+    display: none !important;
 }
 
 /* responsive */
@@ -377,6 +378,9 @@
     .slick-dots {
         gap: 10px;
         padding-top: 5px;
+    }
+    .slick-dots li{
+        width: 5px !important;
     }
     .slick-slide {
         margin: 5px;
