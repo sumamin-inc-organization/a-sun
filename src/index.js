@@ -665,6 +665,7 @@ let dinnerImgtl = gsap.timeline({
     trigger: "#dinner",
     start: "-=500px",
     scrub: false,
+    // markers:true
   },
 });
 
