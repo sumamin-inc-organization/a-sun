@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 $(document).ready(function() {
     $(".slick1").slick({
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 6000,
         infinite: true,
         pauseOnHover: false,
         dots: true,
@@ -50,7 +50,7 @@ $(document).ready(function() {
 
     $(".slick2").slick({
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 6000,
         infinite: true,
         pauseOnHover: false,
         dots: true,
@@ -90,17 +90,17 @@ let kv_title = gsap.timeline({
     },
 });
 kv_title
-.from(".under-kv", { opacity: 0, duration: 2 });
+.from(".under-kv", { opacity: 0, duration: 2, delay: 3.5 });
 
 let feature1 = gsap.timeline({
     scrollTrigger: {
         trigger: "#feature1",
-        start: "-=500px",
+        start: "-=700px",
         scrub: false,
     },
 });
 feature1
-.from("#feature1 .feature-title", { y: 30, opacity: 0, duration: 2 })
+.from("#feature1 .feature-title", { y: 30, opacity: 0, duration: 2, delay: 3.5 })
 .from("#feature1 .feature-top-img", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
 .from(".slick1", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
 .from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
@@ -108,7 +108,7 @@ feature1
 let feature2 = gsap.timeline({
     scrollTrigger: {
         trigger: "#feature2",
-        start: "-=500px",
+        start: "-=700px",
         scrub: false,
     },
 });
@@ -121,7 +121,7 @@ feature2
 let feature3 = gsap.timeline({
     scrollTrigger: {
         trigger: "#feature3",
-        start: "-=500px",
+        start: "-=700px",
         scrub: false,
     },
 });
