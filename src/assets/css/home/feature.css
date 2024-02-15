@@ -322,3 +322,15 @@
 .feature-bottom-img_wrapper{
   position: relative;
 }
+
+@media (max-width: 830px) and (min-width: 767px) {
+  .feat-main--2{
+    /* border: 1px solid red; */
+    padding-inline: 20px;
+  }
+  .feat-main--1{
+    padding-inline: 20px;
+  }
+ 
+
+}

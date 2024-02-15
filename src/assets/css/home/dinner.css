@@ -323,7 +323,7 @@
     height: 63vmax;
   }
   .dinner-title-wrapper{
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
   }
 
 }
