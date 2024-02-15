@@ -296,10 +296,6 @@ letter-spacing: 0.114em;
   filter: grayscale(1) invert(1);
 }
 
-.sp-nav__menu {
-  margin: auto;
-}
-
 .sp-nav__upper {
   position: relative;
   width: 100%;
@@ -308,9 +304,18 @@ letter-spacing: 0.114em;
 
 .sp-nav__upper a {
   position: absolute;
-  width: 65vw;
+  width: 41vw;
   top: 18px;
   left: 20px;
+}
+
+.sp-nav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  max-height: 500px;
 }
 
 .sp-nav__ul {
