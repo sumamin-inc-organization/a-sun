@@ -13,7 +13,10 @@ import { gsap } from "gsap";
 setLoadingAnimation();
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 gsap.registerPlugin(ScrollTrigger);
+
+toggleSpMenu();
 
 
 let mm = gsap.matchMedia();

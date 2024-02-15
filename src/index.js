@@ -27,6 +27,7 @@ import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnim
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 import splitText from "./assets/js/otherlogic/splitText";
+import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -38,6 +39,8 @@ changeKvSrc();
 screenResizeListener();
 
 const screenType = isItSp(); // 画面サイズをチェックします /checks for  screen size
+
+toggleSpMenu();
 
 /*-------------------------------
     dinner background animations
@@ -52,7 +55,7 @@ dotAnimations.add("(max-width: 500px)", () => {
   function dinnerTopsp() {
     let tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#dinner",
+        trigger: ".dinner-trigger", //#dinner
         start: "-=500px top",
         end: "+=200",
         scrub: true,
@@ -72,7 +75,7 @@ dotAnimations.add("(min-width: 501px)", () => {
   function dinnerTop() {
     let tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#dinner",
+        trigger: ".dinner-trigger", //#dinner
         start: "-=500px top",
         end: "+=200",
         scrub: true,
@@ -178,7 +181,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     .from(".letter25", { opacity: 0, duration: 0.5 }, "<10%")
     .from(".letter26", { opacity: 0, duration: 0.5 }, "<10%")
     .from(".letter27", { opacity: 0, duration: 0.5 }, "<10%")
-    .from(".kv-eng-txt-sp", { opacity: 0, x: -50, duration: 0.5 })
+    .from(".kv-eng-txt-sp", { opacity: 0, duration: 0.5 })
     .from(".letter-eng1", { opacity: 0, duration: 0.5 }, "4.5")
     .from(".letter-eng2", { opacity: 0, duration: 0.5 }, "<10%")
     .from(".letter-eng3", { opacity: 0, duration: 0.5 }, "<10%")
@@ -345,7 +348,7 @@ kvMaintl
   .from(".kv-main-content_title12", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title13", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title14", { opacity: 0, duration: 0.5 }, "<10%")
-  .from(".kv-main-txt-eng-sp", { opacity: 0, x: -20, duration: 0.5 }, "<10%")
+  .from(".kv-main-txt-eng-sp", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main__text-eng16", { opacity: 0, duration: 0.5 }, "<")
   .from(".kv-main__text-eng17", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main__text-eng18", { opacity: 0, duration: 0.5 }, "<10%")
@@ -471,7 +474,6 @@ featureTitle.add("(max-width: 767px)", () => {
 
   featureTitletl.from(".feature-title__text--jp", {
     opacity: 0,
-    x: -50,
     duration: 1,
   });
 });
@@ -490,7 +492,7 @@ let featureEyetl = gsap.timeline({
   },
 });
 
-featureEyetl.from(".feat-1-eyewrapper", { opacity: 0, y: 70, duration: 1 });
+featureEyetl.from(".feat-1-eyewrapper", { opacity: 0, duration: 1 });
 
 let featureOne = gsap.matchMedia();
 
@@ -505,8 +507,8 @@ featureOne.add("(min-width: 768px)", () => {
   });
 
   featureOnetl
-    .from(".feat-main-left-one", { opacity: 0, y: -100, duration: 1 })
-    .from(".feat-main--right-1", { opacity: 0, y: 100, duration: 1 }, "<");
+    .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
+    .from(".feat-main--right-1", { opacity: 0, x: 100, duration: 1 }, "<");
 });
 
 /*-------------------------------
@@ -523,7 +525,7 @@ let featureEyeTwotl = gsap.timeline({
   },
 });
 
-featureEyeTwotl.from(".feat-2-eyewrapper", { opacity: 0, y: 70, duration: 1 });
+featureEyeTwotl.from(".feat-2-eyewrapper", { opacity: 0, duration: 1 });
 
 let featureTwo = gsap.matchMedia();
 
@@ -538,8 +540,8 @@ featureTwo.add("(min-width: 768px)", () => {
   });
 
   featureTwotl
-    .from(".feat-main-left-two", { opacity: 0, y: -100, duration: 1 })
-    .from(".feat-main--right--2", { opacity: 0, y: 100, duration: 1 }, "<");
+    .from(".feat-main-left-two", { opacity: 0, x: 100, duration: 1 })
+    .from(".feat-main--right--2", { opacity: 0, x: -100, duration: 1 }, "<");
 });
 
 /*-------------------------------
@@ -558,7 +560,6 @@ let featureEyeThreetl = gsap.timeline({
 
 featureEyeThreetl.from(".feat-3-eyewrapper", {
   opacity: 0,
-  y: 70,
   duration: 1,
 });
 
@@ -575,8 +576,8 @@ featureThree.add("(min-width: 768px)", () => {
   });
 
   featureThreetl
-    .from(".feat-main-left-three", { opacity: 0, y: -100, duration: 1 })
-    .from(".feat-main--3-txt", { opacity: 0, y: 100, duration: 1 }, "<");
+    .from(".feat-main-left-three", { opacity: 0, x: -100, duration: 1 })
+    .from(".feat-main--3-txt", { opacity: 0, x: 100, duration: 1 }, "<");
 });
 
 /*-------------------------------
@@ -616,7 +617,6 @@ courseTitle.add("(max-width: 767px)", () => {
 
   courseTitletl.from(".course-title--eng", {
     opacity: 0,
-    x: -50,
     duration: 1,
   });
 });
@@ -642,8 +642,8 @@ LunchImgtl
   "--width":"0%",
   duration:0.5
 }
-).from(".lunch-title-anime",{opacity:0,x:-100})
-.from(".lunch-subtitle-anime",{opacity:0,x:100},"<");
+).from(".lunch-title-anime",{opacity:0,x:-100,duration:1})
+.from(".lunch-subtitle-anime",{opacity:0,x:100,duration:1},"<");
 
 
 /*-------------------------------
@@ -675,8 +675,8 @@ dinnerImgtl
   "--width": "0%",
   duration: 0.5
 }, "<")
-.from(".dinner-title-anime",{opacity:0,x:-100})
-.from(".dinner-subtitle-anime",{opacity:0,x:100},"<");
+.from(".dinner-title-anime",{opacity:0,x:-100,duration:1})
+.from(".dinner-subtitle-anime",{opacity:0,x:100,duration:1},"<");
 
 
 /*-------------------------------
@@ -718,7 +718,6 @@ messageTitle.add("(max-width: 767px)", () => {
 
   messageTitletl.from(".message-title--eng", {
     opacity: 0,
-    x: -50,
     duration: 1,
   });
 });
