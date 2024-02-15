@@ -502,7 +502,7 @@ let featureOnetl = gsap.timeline({
 
 featureOnetl
   // .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
-  .from(".feat-main--right-1", { opacity: 0,  duration: 3 });
+  .from(".feat-main--right-1", { opacity: 0,  duration: 2 });
 /*-------------------------------
    Feature 2 Animations
    Feature 2 アニメーション
@@ -516,24 +516,34 @@ let featureEyeTwotl = gsap.timeline({
   },
 });
 
-featureEyeTwotl.from(".feat-2-eyewrapper", { opacity: 0, duration: 1 });
+featureEyeTwotl.from(".feat-2-eyewrapper", { opacity: 0, duration: 2 });
 
-let featureTwo = gsap.matchMedia();
+// let featureTwo = gsap.matchMedia();
 
-featureTwo.add("(min-width: 768px)", () => {
-  let featureTwotl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".feat-2-eyewrapper",
-      start: "+=170px",
-      scrub: false,
-    },
-  });
+// featureTwo.add("(min-width: 768px)", () => {
+//   let featureTwotl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".feat-2-eyewrapper",
+//       start: "+=170px",
+//       scrub: false,
+//     },
+//   });
 
-  featureTwotl
-    .from(".feat-main-left-two", { opacity: 0, x: 100, duration: 1 })
-    .from(".feat-main--right--2", { opacity: 0, x: -100, duration: 1 }, "<");
+//   featureTwotl
+//     // .from(".feat-main-left-two", { opacity: 0, x: 100, duration: 1 })
+//     .from(".feat-main--right--2", { opacity: 0,  duration: 1 });
+// });
+let featureTwotl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat-2-eyewrapper",
+    start: "+=170px",
+    scrub: false,
+  },
 });
 
+featureTwotl
+  // .from(".feat-main-left-two", { opacity: 0, x: 100, duration: 1 })
+  .from(".feat-main--right--2", { opacity: 0,  duration: 1 });
 /*-------------------------------
    Feature 3 Animations
    Feature 3 アニメーション
@@ -552,22 +562,32 @@ featureEyeThreetl.from(".feat-3-eyewrapper", {
   duration: 1,
 });
 
-let featureThree = gsap.matchMedia();
+// let featureThree = gsap.matchMedia();
 
-featureThree.add("(min-width: 768px)", () => {
-  let featureThreetl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".feat-3-eyewrapper",
-      start: "+=170px",
-      scrub: false,
-    },
-  });
+// featureThree.add("(min-width: 768px)", () => {
+//   let featureThreetl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".feat-3-eyewrapper",
+//       start: "+=170px",
+//       scrub: false,
+//     },
+//   });
 
-  featureThreetl
-    .from(".feat-main-left-three", { opacity: 0, x: -100, duration: 1 })
-    .from(".feat-main--3-txt", { opacity: 0, x: 100, duration: 1 }, "<");
+//   featureThreetl
+//     .from(".feat-main-left-three", { opacity: 0, x: -100, duration: 1 })
+//     .from(".feat-main--3-txt", { opacity: 0, x: 100, duration: 1 }, "<");
+// });
+let featureThreetl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat-3-eyewrapper",
+    start: "+=170px",
+    scrub: false,
+  },
 });
 
+featureThreetl
+  // .from(".feat-main-left-three", { opacity: 0, x: -100, duration: 1 })
+  .from(".feat-main--3-txt", { opacity: 0, duration: 2 });
 /*-------------------------------
   Course Animations
    Course アニメーション
