@@ -855,3 +855,17 @@ $( document ).ready(function() {
       }
   });
 });
+
+
+let dinnerBottomtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#dinner-seemore",
+    start: "-=300px",
+    scrub: false,
+    markers: true,
+  },
+});
+
+dinnerBottomtl.from(".bottom-left__img", {
+  "--path": " polygon(0 0, 0 0, 0 100%, 0 100%)"
+});
