@@ -10,6 +10,7 @@ import "./assets/css/information/information.css";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 
 import { gsap } from "gsap";
+import $ from 'jquery';
 setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
@@ -53,3 +54,20 @@ information_bottom
 
 
 activateHeaderAnimations();
+
+
+
+/* spハンバーガーメニュー開閉 */
+$( document ).ready(function() {
+    $('#closeMenuBtn').on('click', function() {
+        if ($('#spNavMenu').hasClass('open')) {
+            $('#spNavMenu').removeClass('open');
+        }
+    });
+    
+    $('.meatball').on('click', function() {
+        if (!$('#spNavMenu').hasClass('open')) {
+            $('#spNavMenu').addClass('open');
+        }
+    });
+  });
