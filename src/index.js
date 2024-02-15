@@ -719,6 +719,27 @@ messageTitle.add("(max-width: 767px)", () => {
   });
 });
 
+let messageImgtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".message-bottom-wrapper",
+    start: "-=500px",
+    scrub: false,
+  },
+});
+
+messageImgtl
+.from(".flower-anime", {
+  opacity:0,
+  x:100,
+  duration:1
+  })
+.from(".chef-anime", {
+  opacity:0,
+x:-100,
+duration:1
+},"<");
+
+
 /*-------------------------------
 Voice Animations
  Voice アニメーション
