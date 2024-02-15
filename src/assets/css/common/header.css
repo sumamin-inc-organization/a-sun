@@ -316,12 +316,13 @@ letter-spacing: 0.114em;
   align-items: center;
   height: 100svh;
   max-height: 500px;
+  z-index: 100;
 }
 
 .sp-nav__ul {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   align-items: center;
 
 }
@@ -333,10 +334,13 @@ letter-spacing: 0.114em;
 .sp-nav__info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 15px;
+  margin-top: 25px;
 }
 
 .info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   text-align: center;
 }

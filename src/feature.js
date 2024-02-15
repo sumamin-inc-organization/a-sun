@@ -12,7 +12,10 @@ import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import { gsap } from "gsap";
 setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 gsap.registerPlugin(ScrollTrigger);
+
+toggleSpMenu();
 
 // slick
 $(document).ready(function() {

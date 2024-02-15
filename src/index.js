@@ -27,6 +27,7 @@ import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnim
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 import splitText from "./assets/js/otherlogic/splitText";
+import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -38,6 +39,8 @@ changeKvSrc();
 screenResizeListener();
 
 const screenType = isItSp(); // 画面サイズをチェックします /checks for  screen size
+
+toggleSpMenu();
 
 /*-------------------------------
     dinner background animations
