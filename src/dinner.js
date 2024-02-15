@@ -9,10 +9,10 @@ import "./assets/css/menu/lunch.css";
 import "./assets/css/menu/dinner.css";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 
-import $ from "jquery";
-import "slick-carousel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import $ from "jquery";
+// import "slick-carousel";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -23,18 +23,18 @@ gsap.registerPlugin(ScrollTrigger);
 setLoadingAnimation();
 toggleSpMenu();
 
-/* slick animation */
-var $slide = $(".slick-slide").slick({
-  fade: true,
-  speed: 1000,
-  autoplaySpeed: 2500,
-  arrows: false,
-  autoplay: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  infinite: true,
-  dots: true,
-});
+// /* slick animation */
+// var $slide = $(".slick-slide").slick({
+//   fade: true,
+//   speed: 1000,
+//   autoplaySpeed: 2500,
+//   arrows: false,
+//   autoplay: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   infinite: true,
+//   dots: true,
+// });
 
 /*  Appearance Animation */
 let kv_title = gsap.timeline({

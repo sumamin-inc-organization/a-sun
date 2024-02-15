@@ -479,20 +479,30 @@ featureEyetl
 
 let featureOne = gsap.matchMedia();
 
-featureOne.add("(min-width: 768px)", () => {
-  let featureOnetl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".feat-1-eyewrapper",
-      start: "+=170px",
-      scrub: false,
-    },
-  });
+// featureOne.add("(min-width: 768px)", () => {
+//   let featureOnetl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".feat-1-eyewrapper",
+//       start: "+=170px",
+//       scrub: false,
+//     },
+//   });
 
-  featureOnetl
-    .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
-    .from(".feat-main--right-1", { opacity: 0, x: 100, duration: 1 }, "<");
+//   featureOnetl
+//     // .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
+//     .from(".feat-main--right-1", { opacity: 0,  duration: 3 });
+// });
+let featureOnetl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feat-1-eyewrapper",
+    start: "+=170px",
+    scrub: false,
+  },
 });
 
+featureOnetl
+  // .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
+  .from(".feat-main--right-1", { opacity: 0,  duration: 3 });
 /*-------------------------------
    Feature 2 Animations
    Feature 2 アニメーション
