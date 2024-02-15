@@ -77,7 +77,7 @@
   bottom: -20%;
   right: 0;
 }
-.bottom-right_widescreen{
+.bottom-right_widescreen {
   display: none;
 }
 @media (max-width: 780px) {
@@ -157,7 +157,7 @@
     right: 0;
   }
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .bottom-right {
     width: min(200px, 51.28vw);
     position: absolute;
@@ -203,43 +203,40 @@
 .dot {
   border-radius: 50% 50% 0 0;
 }
-@media(max-width:1699px){
-  .dot{
+@media (max-width: 1699px) {
+  .dot {
     width: 100vmax;
     height: 87vmax;
-    
   }
-  #dinner{
+  #dinner {
     padding: 250px;
   }
 }
-@media(max-width:1500px){
-  .dot{
+@media (max-width: 1500px) {
+  .dot {
     width: 100vmax;
     height: 87vmax;
-    
   }
-  #dinner{
+  #dinner {
     padding: 250px;
   }
 }
-@media(max-width:1300px){
-  .dot{
+@media (max-width: 1300px) {
+  .dot {
     width: 100vmax;
     height: 87vmax;
-    
   }
-  #dinner{
+  #dinner {
     padding: 250px;
   }
 }
-@media(max-width:1000px){
-  .dot{
+@media (max-width: 1000px) {
+  .dot {
     width: 100vmax;
     height: 87vmax;
-    
+    height: 110vmax;
   }
-  #dinner{
+  #dinner {
     padding: 200px;
   }
 }
@@ -254,100 +251,105 @@
   }
 } */
 
-@media(max-width:500px){
-  .dot{
+@media (max-width: 500px) {
+  .dot {
     width: 142vmax;
     height: 135vmax;
-    
   }
-  #dinner{
+  #dinner {
     padding: 50px;
-  }
-  .bottom-right{
-    /* bottom: 3%; */
   }
 }
 
-
-@media (min-width:1600px){
-  .bottom-left{
+@media (min-width: 1600px) {
+  .bottom-left {
     transform: translateX(50%);
   }
-  .bottom-right{
+  .bottom-right {
     display: none;
   }
 
-    .bottom-right_widescreen{
-      display: block;
-      position: absolute;
-      bottom: -100%;
-    }
-  
-  
+  .bottom-right_widescreen {
+    display: block;
+    position: absolute;
+    bottom: -100%;
+  }
 }
-@media (min-width:1700px){
+@media (min-width: 1700px) {
   .company-dot {
     z-index: -2;
     z-index: -2;
     width: 80vmax;
     height: 85vmax;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 89%);
-
   }
-  #dinner{
+  #dinner {
     padding: 200px;
   }
 }
-@media (max-width:400px){
+@media (max-width: 400px) {
   .company-dot {
     width: 142vmax;
     height: 140vmax;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 89%);
-    
-  } 
-  #dinner{
+  }
+  #dinner {
     padding: 90px;
   }
 }
-
-.dinner-bottom{
-  /* border: 1px solid red; */
-}
-
-
-
- 
- 
 @media (min-width: 1700px) {
- .bottom-right{
-  bottom: -90%;
- }
-
+  .bottom-right {
+    bottom: -90%;
+  }
 }
- 
+
 @media (max-width: 1666px) {
-  .bottom-right{
-   bottom: -5%;
+  .bottom-right {
+    bottom: -5%;
   }
- 
- }
- @media (max-width: 1100px) {
-  .bottom-right{
-   bottom: 5%;
+}
+@media (max-width: 1100px) {
+  .bottom-right {
+    bottom: 5%;
   }
- 
- }
+}
 
- 
+@media (max-width: 767px) {
+  .company-dot {
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 93%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 92%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 89%);
+  }
+  .bottom-right {
+    bottom: 3%;
+  }
+}
+
 @media (max-width: 500px) {
-  #dinner{
-   padding: 150px;
+  #dinner {
+    padding: 150px;
   }
- .company-dot{
-  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 93%);
+  .company-dot {
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 93%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 92%);
+  }
+  .bottom-right {
+    bottom: 3%;
+  }
+}
 
+@media (max-width: 376px) {
+  .company-dot {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    width: 142vmax;
+    height: 170vmax;
+  }
+}
 
-
-
- }
- }
+@media (max-width: 330px) {
+  .company-dot {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    width: 142vmax;
+    height: 140vmax;
+  }
+}
