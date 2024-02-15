@@ -844,31 +844,18 @@ accessTitle.add("(max-width: 767px)", () => {
 });
 
 
-/* spハンバーガーメニュー開閉 */
-$( document ).ready(function() {
-  $('#closeMenuBtn').on('click', function() {
-      if ($('#spNavMenu').hasClass('open')) {
-          $('#spNavMenu').removeClass('open');
-      }
-  });
-  
-  $('.meatball').on('click', function() {
-      if (!$('#spNavMenu').hasClass('open')) {
-          $('#spNavMenu').addClass('open');
-      }
-  });
-});
 
 
-let dinnerBottomtl = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#dinner-seemore",
-    start: "-=300px",
-    scrub: false,
-    markers: true,
-  },
-});
 
-dinnerBottomtl.from(".bottom-left__img", {
-  "--path": " polygon(0 0, 0 0, 0 100%, 0 100%)"
-});
+// let dinnerBottomtl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#dinner-seemore",
+//     start: "-=300px",
+//     scrub: false,
+//     markers: true,
+//   },
+// });
+
+// dinnerBottomtl.from(".bottom-left__img", {
+//   "--path": " polygon(0 0, 0 0, 0 100%, 0 100%)"
+// });
