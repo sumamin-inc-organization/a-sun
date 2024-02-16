@@ -67,9 +67,15 @@
 }
 
 @media (min-width: 1500px) {
+  .dinner-bottom-wrapper {
+    width: 74vw;
+  }
+
   .dinner-bottom-right-img {
     display: none;
   }
   .dinner-bottom-right-img--widescreen {
     display: block;
-  }}
+    bottom: -52%;
+  }
+}
