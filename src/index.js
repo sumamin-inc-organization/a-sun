@@ -777,21 +777,43 @@ let messageImgtl = gsap.timeline({
   },
 });
 
+
+// messageImgtl
+//   .from(".flower-anime", {
+//     opacity: 0,
+//     x: 100,
+//     duration: 1,
+//   })
+//   .from(
+//     ".chef-anime",
+//     {
+//       opacity: 0,
+//       x: -100,
+//       duration: 1,
+//     },
+//     "<"
+//   );
+
 messageImgtl
-  .from(".flower-anime", {
-    opacity: 0,
-    x: 100,
-    duration: 1,
-  })
-  .from(
-    ".chef-anime",
-    {
-      opacity: 0,
-      x: -100,
-      duration: 1,
-    },
-    "<"
-  );
+.fromTo(
+  ".flower-anime",
+  {
+    "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+  },
+  {
+    "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+  }
+)
+.fromTo(
+  ".chef-anime",
+  {
+    "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+  },
+  {
+    "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+  },
+  
+);
 
 /*-------------------------------
 Voice Animations
