@@ -324,6 +324,7 @@ letter-spacing: 0.114em;
   align-items: center;
   gap: 40px;
   max-height: 500px;
+  position: relative;
   z-index: 100;
 }
 
@@ -352,6 +353,7 @@ letter-spacing: 0.114em;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding-bottom: 20px;
 }
 
 .info-item {
