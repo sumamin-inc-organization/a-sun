@@ -352,6 +352,7 @@ letter-spacing: 0.114em;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding-bottom: 20px;
 }
 
 .info-item {
