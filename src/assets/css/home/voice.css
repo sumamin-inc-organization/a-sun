@@ -73,6 +73,13 @@
   }
 }
 
+@media (min-width: 856px) and (max-width: 999px) {
+  .voice-title-img, .news-title-img {
+    margin-left: 5%;
+  }
+
+}
+
 .voice-title-img--sp {
   display: none;
 }
