@@ -54,8 +54,8 @@
 
 .msg-filler {
   position: relative;
-  height: 450px;
-  height: clamp(450px, 41.6667vw, 600px);
+  /* height: 450px;
+  height: clamp(450px, 41.6667vw, 600px); */
 }
 @media (min-width: 1700px) {
   .msg-filler {
@@ -188,7 +188,7 @@
   }
   .msg-filler {
     position: relative;
-    height: 300px;
+    /* height: 300px; */
   }
 }
 
@@ -211,9 +211,17 @@
    height: 250px;
   }
 }
+@media (min-width: 1600px){
+  .msg-filler {
+    position: relative;
+    height: 450px;
+}
+}
+
 @media(max-width:500px){
   .msg-filler {
     position: relative;
    height: 50px;
   }
 }
+

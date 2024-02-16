@@ -148,4 +148,32 @@ transform-origin: top;
   }
 
 
+/*--------------------------------------------------------------------
+   Dinner Bottom Image animations/ ディナーボトム画像のアニメーション
+----------------------------------------------------------------------*/
+
+  .bottom-img-right__img{
+    --path:polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path: var(--path);
+  }
   
+  .bottom-left__img{
+    --path:polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path: var(--path);
+  }
+  
+
+/*--------------------------------------------------------------------
+   Message Bottom Image animations/ メッセージボトム画像のアニメーション
+----------------------------------------------------------------------*/
+
+
+.flower-anime{
+  --path:polygon(0 0, 0 0, 0 100%, 0 100%);
+  clip-path: var(--path);
+}
+
+.chef-anime{
+  --path:polygon(0 0, 0 0, 0 100%, 0 100%);
+  clip-path: var(--path);
+}
