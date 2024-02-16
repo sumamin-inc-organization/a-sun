@@ -5,7 +5,7 @@
 #lunch {
   padding-bottom: min(4.51vw, 65px);
   position: relative;
-  padding-bottom: 41px !important;
+  padding-bottom: 100px !important;
 }
 
 /*-----------------------------
@@ -23,7 +23,14 @@
   justify-content: center;
   align-items: center;
   padding-top: clamp(63px, 6.9444vw, 100px);
+  padding-top: 150px;
   padding-bottom: clamp(29px, 3.14vw, 45.2px);
+}
+
+@media (max-width: 767px) {
+  .lunch-title-wrapper {
+    padding-top: 120px;
+  }
 }
 /*-----------------------------
     Lunch gallary /ランチ ギャラリー

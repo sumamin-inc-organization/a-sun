@@ -54,12 +54,7 @@
 
 .msg-filler {
   position: relative;
-}
-@media (min-width: 1700px) {
-  .msg-filler {
-    position: relative;
-    height: 800px;
-  }
+  height: 21vw;
 }
 @media (min-width: 501px) {
   .message-grid-wrap {
@@ -212,51 +207,14 @@
 .message-title-wrapper {
   margin-top: 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .msg-filler {
-    position: relative;
-    height: 150px;
-  }
-}
-@media (min-width: 1000px) {
-  .msg-filler {
-    position: relative;
-    height: 50px;
+    height: 20vw;
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width:1500px) {
   .msg-filler {
-    position: relative;
-    height: 500px;
-  }
-}
-@media (min-width: 1700px) {
-  .msg-filler {
-    position: relative;
-    height: 450px;
-  }
-}
-@media (min-width: 1700px) {
-  .msg-filler {
-    position: relative;
-    height: 450px;
-  }
-}
-@media (max-width: 1699px) and (min-width: 1630px) {
-  .msg-filler {
-    position: relative;
-    height: 50px;
-  }
-}
-@media (max-width: 1050px) and (min-width: 1000px) {
-  .msg-filler {
-    height: 200px;
-  }
-}
-@media (max-width: 500px) {
-  .msg-filler {
-    position: relative;
-    height: 50px;
+    height: 24vw;
   }
 }
