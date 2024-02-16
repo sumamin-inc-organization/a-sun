@@ -898,21 +898,26 @@ acess Animations
 
 activateAccessTitleAnimations();
 
+// title-trigger
+
 let dinnerTitletl = gsap.timeline({
   scrollTrigger: {
-    trigger: "#dinner",
-    start: "-=500px",
-    end:"+=300px",
-    scrub: true,
-    
+    trigger: ".dinner-trigger",
+    start: "top top",
+    // scrub: true,
+    markers:true
   },
 });
 
+// title -timeline
 dinnerTitletl
   .to("#dinner", {backgroundColor:"#505050" }, "")
-  .from(".dinner-subtitle-anime", {color:"#505050" }, "<")
-  .from(".dinner-title-anime", {color:"#505050" }, "<")
+  .from(".dinner-subtitle-anime", {color:"#505050" ,opacity:0}, "<")
+  .from(".dinner-title-anime", {color:"#505050",opacity:0 }, "<")
   
+
+
+  // shita img trigger 
 
   let  dinnerImgtl = gsap.timeline({
     scrollTrigger: {

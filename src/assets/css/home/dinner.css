@@ -1,6 +1,5 @@
 #dinner {
   position: relative;
-    
 }
 .dinner-main {
   min-height: 100vh;
@@ -24,52 +23,53 @@
   bottom: 5px;
 }
 
-.dinner-bottom{
+.dinner-bottom {
   display: grid;
   place-content: center;
 }
 
-.dinner-bottom-wrapper{
+.dinner-bottom-wrapper {
   /* border: 1px solid red; */
   position: relative;
   width: 45.1vw;
 }
 
-
 #lunch {
   padding-bottom: 0;
 }
 
-.dinner-gallary-wrapper{
+.dinner-gallary-wrapper {
   width: 100vw;
   display: grid;
   place-content: center;
+
 }
-.dinner-img--left { background-image: url(../../images/top/dinner/dinner-left-img_pc.jpg); }
+.dinner-img--left {
+  background-image: url(../../images/top/dinner/dinner-left-img_pc.jpg);
+}
 
-
-.dinner-bottom_left-img{
+.dinner-bottom_left-img {
   width: 20.8vw;
 }
 
-.dinner-bottom-right-img{
+.dinner-bottom-right-img {
   width: 45.1vw;
   position: absolute;
   bottom: -20%;
   right: 0;
 }
-.dinner-bottom-right-img{
-display: block;
+.dinner-bottom-right-img {
+  display: block;
 }
-.dinner-bottom-right-img--widescreen{
-display: none;
+.dinner-bottom-right-img--widescreen {
+  display: none;
 }
 
-@media(min-width:1500px){
-  .dinner-bottom-right-img{
+@media (min-width: 1500px) {
+  .dinner-bottom-right-img {
     display: none;
-    }
-    .dinner-bottom-right-img--widescreen{
-    display: none;
-    }
+  }
+  .dinner-bottom-right-img--widescreen {
+    display: block;
+  }
 }
