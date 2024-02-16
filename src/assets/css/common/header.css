@@ -324,6 +324,7 @@ letter-spacing: 0.114em;
   align-items: center;
   gap: 40px;
   max-height: 500px;
+  position: relative;
   z-index: 100;
 }
 
