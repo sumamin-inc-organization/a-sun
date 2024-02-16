@@ -19,6 +19,7 @@ import $ from "jquery";
 import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { activateAccessTitleAnimationsFeature } from "./assets/js/animations/activateAccessTitleAnimations";
 
 toggleSpMenu();
 
@@ -164,4 +165,10 @@ let home_btn = gsap.timeline({
 });
 home_btn.from(".home-btn", { y: 30, opacity: 0, duration: 2 });
 
+/*--------------------------------------------
+   Header PC animation / ヘッダーPCアニメーション
+---------------------------------------------*/
 activateHeaderAnimations();
+
+
+activateAccessTitleAnimationsFeature();

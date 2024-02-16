@@ -13,6 +13,9 @@ import { gsap } from "gsap";
 setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
+import { activateAccessTitleAnimationsFeature } from "./assets/js/animations/activateAccessTitleAnimations";
+import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
+
 gsap.registerPlugin(ScrollTrigger);
 
 toggleSpMenu();
@@ -48,3 +51,11 @@ let home_btn = gsap.timeline({
   },
 });
 home_btn.from(".home-btn", { y: 30, opacity: 0, duration: 2 });
+
+/*--------------------------------------------
+   Header PC animation / ヘッダーPCアニメーション
+---------------------------------------------*/
+activateHeaderAnimations();
+
+
+activateAccessTitleAnimationsFeature();

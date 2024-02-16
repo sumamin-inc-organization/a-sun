@@ -29,7 +29,7 @@ import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 import splitText from "./assets/js/otherlogic/splitText";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
-import activateAccessTitleAnimations from "./assets/js/animations/activateAccessTitleAnimations";
+import { activateAccessTitleAnimations } from "./assets/js/animations/activateAccessTitleAnimations";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
