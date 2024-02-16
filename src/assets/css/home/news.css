@@ -22,13 +22,6 @@
 .news-title-img {
   width: clamp(62px, 6.81vw, 98px);
 }
-/* @media(min-width:1500){
-  .news-right {
-    position: absolute;
-    right: -170px;
-    top: 0;
-  }
-} */
 
 .news-blog {
   width: clamp(600.79px, 66.75vw, 961.26px);
