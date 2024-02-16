@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&family=Zen+Old+Mincho&display=swap" rel="stylesheet"/>
-  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js-node_modules_jquery_dis-0c1656.bd13fcc89b2fe791318b.js"></script><script defer src="index.2029119578b8cffbe9f6.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-45994d.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
+  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js-node_modules_jquery_dis-0c1656.bd13fcc89b2fe791318b.js"></script><script defer src="index.4153d8054fd883bc04d7.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-45994d.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
   <body class="black">
     <div class="transition-img upper-elem">
       <div class="transition-wrapper">
@@ -888,10 +888,9 @@
       <div class="dinner-trigger" aria-hidden="true"></div>
     </section>
     <section id="dinner">
-      <div class="dinner-top-filler"></div>
-      <div class="dot company-dot"></div>
-      <div class="full company-hero">
-        <div class="lunch-texture" aria-hidden="true"></div>
+      <div class="dinner-trigger"></div>
+      <div class="lunch-texture" aria-hidden="true"></div>
+      <div class="dinner-main">
         <div class="lunch-title-wrapper dinner-title-wrapper">
           <p
             class="lunch-subtitle font-zen-old fs-pc-16 regular white letter-spacing-154 fs-sp-16 no-wrap dinner-subtitle-anime"
@@ -904,30 +903,32 @@
             - ディナーコース -
           </h2>
         </div>
-      </div>
-      <div class="company-main dinner-main lunch-dinner-common ">
-        <div class="lunch-image-grid image-grid dinner-img-trigger">
-          <div
-            class="lunch-image-grid-image_wrapper dinner-img--left lunch-img image-grid-image_wrapper common-img--left reveal-black"
-          ></div>
-          <div class="img-gallary-right">
+        <div class="dinner-gallary-wrapper">
+          <div class="lunch-image-grid image-grid lunch-img-grid-clip">
             <div
-              class="lunch-image-grid-image_wrapper lunch-img--right lunch-img image-grid-image_wrapper common-img--right reveal-black reveal-black-right"
+              class="lunch-image-grid-image_wrapper lunch-img--left lunch-img image-grid-image_wrapper common-img--left reveal dinner-img--left dinner-anime"
             >
-              <img
-                src="assets/img/dinner-right-img-pc_top.jpg"
-                alt="【ランチ】 プレミアム今帰仁アグーハンバーグ"
-                class="image-grid-img image-grid-img-right"
-              />
+    
             </div>
-            <div
-              class="lunch-image-grid-image_wrapper lunch-img--right lunch-img image-grid-image_wrapper common-img--right reveal-black reveal-black-right"
-            >
+            <div class="img-gallary-right">
+              <div
+                class="lunch-image-grid-image_wrapper lunch-img--right lunch-img image-grid-image_wrapper common-img--right lunch-img--right-top reveal"
+              >
+              <img
+              src="assets/img/dinner-right-img-pc_top.jpg"
+              alt="【ランチ】 プレミアム今帰仁アグーハンバーグ"
+              class="image-grid-img image-grid-img-right dinner-anime"
+            />
+              </div>
+              <div
+                class="lunch-image-grid-image_wrapper lunch-img--right lunch-img image-grid-image_wrapper common-img--right lunch-img--right-d reveal dinner-anime"
+              >
               <img
                 src="assets/img/dinner-right-img-pc_bottom.jpg"
                 alt="サラダの画像"
                 class="image-grid-img image-grid-img-right"
               />
+              </div>
             </div>
           </div>
         </div>
@@ -943,38 +944,27 @@
           </p>
         </div>
         <div
-          class="lunch-see-more-btn-wrapper lunch-dinner-see-more-btn-wrapper_common"
+        class="lunch-see-more-btn-wrapper lunch-dinner-see-more-btn-wrapper_common"
+      >
+        <a
+          href="#"
+          class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore dinner-seemore"
+          id="dinner-seemore"
+          >もっと見る</a
         >
-          <a
-            href="#"
-            class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore dinner-seemore"
-            id="dinner-seemore"
-            >もっと見る</a
-          >
-        </div>
-        <div class="dinner-bottom">
-          <div class="bottom-left">
-            <img
-              src="assets/img/dinner-img-yellow.jpg"
-              alt=""
-              class="bottom-left__img"
-            />
+      </div>
+      <div class="dinner-bottom">
+        <div class="dinner-bottom-wrapper">
+          <div class="dinner-bottom_left-img bottom-left__img">
+            <img src="assets/img/dinner-img-yellow.jpg" alt="">
           </div>
-          <div class="bottom-right bottom-right_widescreen">
-            <img
-              src="assets/img/dinner-final-img.jpg"
-              alt=""
-              class="bottom-img-right__img"
-            />
+          <div class="dinner-bottom-right-img bottom-img-right__img dinner-bottom-right-img--widescreen">
+            <img src="assets/img/dinner-final-img.jpg" alt="">
           </div>
         </div>
-        <div class="bottom-right">
-          <img
-            src="assets/img/dinner-final-img.jpg"
-            alt=""
-            class="bottom-img-right__img"
-          />
-        </div>
+      </div>
+      <div class="dinner-bottom-right-img bottom-img-right__img dinner-bottom-right-img--normal">
+        <img src="assets/img/dinner-final-img.jpg" alt="">
       </div>
     </section>
     <section id="message">
