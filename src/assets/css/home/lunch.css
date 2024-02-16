@@ -142,6 +142,9 @@
     padding-top: 48.5px;
     padding-top: min(12.44vw, 48.5px);
   }
+  .lunch-dinner-common-seemore::before {
+    bottom: -5px;
+  }
   .img-gallary-right {
     width: 166.53px;
     width: max(166.53px, 42.69vw);
