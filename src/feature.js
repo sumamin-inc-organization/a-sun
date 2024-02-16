@@ -165,5 +165,10 @@ let home_btn = gsap.timeline({
 });
 home_btn.from(".home-btn", { y: 30, opacity: 0, duration: 2 });
 
+/*--------------------------------------------
+   Header PC animation / ヘッダーPCアニメーション
+---------------------------------------------*/
 activateHeaderAnimations();
+
+
 activateAccessTitleAnimationsFeature();
