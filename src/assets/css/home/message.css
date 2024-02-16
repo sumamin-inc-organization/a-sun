@@ -217,6 +217,12 @@
 .message-title-wrapper {
   margin-top: 0;
 }
+@media(min-width:768px){
+  .msg-filler {
+    position: relative;
+   height: 150px;
+  }
+}
 @media(min-width:1000px){
   .msg-filler {
     position: relative;
@@ -224,17 +230,30 @@
   }
 }
 
+
 @media(min-width:1050px){
   .msg-filler {
     position: relative;
-   height: 250px;
+   height: 200px;
   }
 }
-@media (min-width: 1600px){
+@media (min-width: 1700px){
   .msg-filler {
     position: relative;
     height: 450px;
 }
+}
+@media (min-width: 1700px){
+  .msg-filler {
+    position: relative;
+    height: 450px;
+}
+}
+@media (max-width: 1699px) and (min-width: 1630px) {
+  .msg-filler {
+    position: relative;
+   height: 50px;
+  }
 }
 
 @media(max-width:500px){
