@@ -18,6 +18,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
+import activateAccessTitleAnimations, { activateAccessTitleAnimationsDinner } from "./assets/js/animations/activateAccessTitleAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 setLoadingAnimation();
@@ -182,3 +183,4 @@ mm.add("(min-width: 768px)", () => {
 });
 
 activateHeaderAnimations();
+activateAccessTitleAnimationsDinner();
