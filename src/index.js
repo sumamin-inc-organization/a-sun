@@ -908,7 +908,6 @@ let dinnerTitletl = gsap.timeline({
     trigger: ".dinner-trigger",
     start: "top top", // トリガーの上部がビューポートの上部に到達したとき
     // scrub: true,  // scrubはスクロール時にアニメーションが発生します。（falseの場合、ユーザーがスクロールした距離に関係なく、アニメーションは最初から最後まで進みます）
-    markers:true// マーカーはトリガーをマークします
 
   },
 });

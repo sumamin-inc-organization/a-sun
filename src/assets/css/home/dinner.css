@@ -79,3 +79,30 @@
     bottom: -52%;
   }
 }
+
+@media (max-width: 767px) {
+  .dinner-main {
+    padding-bottom: 88px;
+  }
+
+  .dinner-bottom {
+    padding-top: 63px;
+  }
+
+  .dinner-bottom-wrapper {
+    width: 90vw;
+  }
+
+  .dinner-bottom_left-img {
+    width: 38.5vw;
+  }
+
+  .dinner-bottom-right-img {
+    width: 51.3vw;
+    top: 89%;
+  }
+
+  a#dinner-seemore::before {
+    bottom: -5px;
+  }
+}
