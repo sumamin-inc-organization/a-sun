@@ -81,3 +81,41 @@ accessTitle.add("(max-width: 767px)", () => {
 
 }
 
+export function activateAccessTitleAnimationsFeature(){
+    let accessTitle = gsap.matchMedia();
+accessTitle.add("(min-width: 768px)", () => {
+  splitText("access-eng", "access-eng-letter");
+
+  let accessTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#access",
+      start: "-=500px",
+      scrub: false,
+    },
+  });
+
+  accessTitletl
+    .from(".access-eng-letter30", { opacity: 0, duration: 1 }, )
+    .from(".access-eng-letter31", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter32", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter33", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter34", { opacity: 0, duration: 1 }, "<10%")
+    .from(".access-eng-letter35", { opacity: 0, duration: 1 }, "<10%");
+});
+
+accessTitle.add("(max-width: 767px)", () => {
+  let accessTitletl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#access",
+      start: "-=500px",
+      scrub: false,
+    },
+  });
+
+  accessTitletl.from(".access-eng", {
+    opacity: 0,
+    duration: 1,
+  });
+});
+
+}
