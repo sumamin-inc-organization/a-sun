@@ -426,7 +426,7 @@
 @media (max-width: 400px) and (min-width: 393px) {
   /* dmspp iphone */
   .company-dot {
-    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 92%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
  
   }
 }
@@ -586,7 +586,10 @@
 @media (max-width: 400px) and (min-width: 393px) {
   .company-dot {
     width: 142vmax;
-    height: 150vmax;
+    height: 160vmax;
+  }
+  .bottom-right{
+    bottom: -3%;
   }
 }
 
