@@ -54,7 +54,11 @@ information_bottom
   .from("table", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
   .from(".home-btn", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
 
+/*--------------------------------------------
+   Header PC animation / ヘッダーPCアニメーション
+---------------------------------------------*/
 activateHeaderAnimations();
+
 
 
 activateAccessTitleAnimationsFeature();
