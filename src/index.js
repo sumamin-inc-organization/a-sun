@@ -698,35 +698,35 @@ LunchImgtl.fromTo(
 //   .from(".dinner-title-anime", { opacity: 0, x: -100, duration: 1 })
 //   .from(".dinner-subtitle-anime", { opacity: 0, x: 100, duration: 1 }, "<");
 
-// let dinnerBottomtl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#dinner-seemore",
-//     start: "-=500px",
-//     scrub: false,
-//     // markers:true
-//   },
-// });
+let dinnerBottomtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#dinner-seemore",
+    start: "-=500px",
+    scrub: false,
+    // markers:true
+  },
+});
 
-// dinnerBottomtl
-//   .fromTo(
-//     ".bottom-left__img",
-//     {
-//       "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
-//     },
-//     {
-//       "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-//     }
-//   )
-//   .fromTo(
-//     ".bottom-img-right__img",
-//     {
-//       "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
-//     },
-//     {
-//       "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-//     },
+dinnerBottomtl
+  .fromTo(
+    ".bottom-left__img",
+    {
+      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+    },
+    {
+      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    }
+  )
+  .fromTo(
+    ".bottom-img-right__img",
+    {
+      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+    },
+    {
+      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    },
     
-//   );
+  );
 
 /*-------------------------------
   Message Animations
@@ -919,7 +919,6 @@ dinnerTitletl
       trigger: ".dinner-gallary-wrapper",
       start: "-=400px",
       scrub: false,
-      markers:true
     },
   });
   

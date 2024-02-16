@@ -234,7 +234,7 @@
 @media(min-width:1050px){
   .msg-filler {
     position: relative;
-   height: 200px;
+   height: 500px;
   }
 }
 @media (min-width: 1700px){
