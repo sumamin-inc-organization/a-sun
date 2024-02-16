@@ -19,14 +19,14 @@
   justify-content: center;
   margin-top: -5px;
 }
-@media(min-width:1400px){
+@media (min-width: 1400px) {
   .message-subtitle {
     display: flex;
     justify-content: center;
     margin-top: -15px;
   }
 }
-@media(max-width:1000px){
+@media (max-width: 1000px) {
   .message-subtitle {
     display: flex;
     justify-content: center;
@@ -54,8 +54,6 @@
 
 .msg-filler {
   position: relative;
-  /* height: 450px;
-  height: clamp(450px, 41.6667vw, 600px); */
 }
 @media (min-width: 1700px) {
   .msg-filler {
@@ -97,7 +95,7 @@
   margin-top: -5px;
   margin-bottom: 20px;
 }
-@media (max-width:800px){
+@media (max-width: 800px) {
   .message-job-title {
     margin-bottom: -5px;
   }
@@ -106,7 +104,6 @@
     margin-top: 0px;
   }
 }
-
 
 /* ===============
       TABLET
@@ -122,7 +119,6 @@
   .message-title {
     font-size: clamp(50px, 7.6vw, 80px);
   }
-  
 }
 
 /* ===============
@@ -134,7 +130,7 @@
   }
 }
 
-@media (max-width:  767px) {
+@media (max-width: 767px) {
   /* was 500 */
   .message-title-wrapper {
     margin-left: 0;
@@ -207,7 +203,6 @@
   }
   .msg-filler {
     position: relative;
-    /* height: 300px; */
   }
 }
 
@@ -217,53 +212,51 @@
 .message-title-wrapper {
   margin-top: 0;
 }
-@media(min-width:768px){
+@media (min-width: 768px) {
   .msg-filler {
     position: relative;
-   height: 150px;
+    height: 150px;
   }
 }
-@media(min-width:1000px){
+@media (min-width: 1000px) {
   .msg-filler {
     position: relative;
-   height: 50px;
+    height: 50px;
   }
 }
 
-
-@media(min-width:1050px){
+@media (min-width: 1050px) {
   .msg-filler {
     position: relative;
-   height: 500px;
+    height: 500px;
   }
 }
-@media (min-width: 1700px){
+@media (min-width: 1700px) {
   .msg-filler {
     position: relative;
     height: 450px;
+  }
 }
-}
-@media (min-width: 1700px){
+@media (min-width: 1700px) {
   .msg-filler {
     position: relative;
     height: 450px;
-}
+  }
 }
 @media (max-width: 1699px) and (min-width: 1630px) {
   .msg-filler {
     position: relative;
-   height: 50px;
+    height: 50px;
   }
 }
 @media (max-width: 1050px) and (min-width: 1000px) {
   .msg-filler {
-   height: 200px;
+    height: 200px;
   }
 }
-@media(max-width:500px){
+@media (max-width: 500px) {
   .msg-filler {
     position: relative;
-   height: 50px;
+    height: 50px;
   }
 }
-
