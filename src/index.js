@@ -49,48 +49,48 @@ toggleSpMenu();
     ディナーの背景アニメーション
 -------------------------------*/
 
-const masterCompany = gsap.timeline();
+// const masterCompany = gsap.timeline();
 
-let dotAnimations = gsap.matchMedia();
+// let dotAnimations = gsap.matchMedia();
 
-dotAnimations.add("(max-width: 500px)", () => {
-  function dinnerTopsp() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".dinner-trigger", //#dinner
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-        // pin: true,
-      },
-    });
+// dotAnimations.add("(max-width: 500px)", () => {
+//   function dinnerTopsp() {
+//     let tl = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: ".dinner-trigger", //#dinner
+//         start: "-=500px top",
+//         end: "+=200",
+//         scrub: true,
+//         // pin: true,
+//       },
+//     });
 
-    tl.from(".company-dot", { scale: 0 });
+//     tl.from(".company-dot", { scale: 0 });
 
-    return tl;
-  }
+//     return tl;
+//   }
 
-  masterCompany.add(dinnerTopsp());
-});
-dotAnimations.add("(min-width: 501px)", () => {
-  function dinnerTop() {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".dinner-trigger", //#dinner
-        start: "-=500px top",
-        end: "+=200",
-        scrub: true,
-      },
-    });
+//   masterCompany.add(dinnerTopsp());
+// });
+// dotAnimations.add("(min-width: 501px)", () => {
+//   function dinnerTop() {
+//     let tl = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: ".dinner-trigger", //#dinner
+//         start: "-=500px top",
+//         end: "+=200",
+//         scrub: true,
+//       },
+//     });
 
-    tl.fromTo(".company-dot", { scale: 0 }, { scale: 1.7 });
-    // .to(".company-dot", { scale: 1})
+//     tl.fromTo(".company-dot", { scale: 0 }, { scale: 1.7 });
+//     // .to(".company-dot", { scale: 1})
 
-    return tl;
-  }
+//     return tl;
+//   }
 
-  masterCompany.add(dinnerTop());
-});
+//   masterCompany.add(dinnerTop());
+// });
 
 /*-------------------------------
     feature parallax animations
