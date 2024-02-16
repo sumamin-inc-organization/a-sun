@@ -707,6 +707,8 @@ let dinnerBottomtl = gsap.timeline({
   },
 });
 
+// ディナーセクションの下部画像のアニメーションタイムライン
+
 dinnerBottomtl
   .fromTo(
     ".bottom-left__img",
@@ -898,26 +900,28 @@ acess Animations
 
 activateAccessTitleAnimations();
 
-// title-trigger
+/// 背景/タイトルアニメーショントリガー
+
 
 let dinnerTitletl = gsap.timeline({
   scrollTrigger: {
     trigger: ".dinner-trigger",
-    start: "top top",
-    // scrub: true,
-    markers:true
+    start: "top top", // トリガーの上部がビューポートの上部に到達したとき
+    // scrub: true,  // scrubはスクロール時にアニメーションが発生します。（falseの場合、ユーザーがスクロールした距離に関係なく、アニメーションは最初から最後まで進みます）
+    markers:true// マーカーはトリガーをマークします
+
   },
 });
 
-// title -timeline
+// 背景/タイトルアニメーションタイムライン
 dinnerTitletl
   .to("#dinner", {backgroundColor:"#505050" }, "")
-  .from(".dinner-subtitle-anime", {color:"#505050" ,opacity:0}, "<")
+  .from(".dinner-subtitle-anime", {color:"#505050" ,opacity:0}, "<") // "<" は、前のアニメーションの開始時点に挿入することを意味します
   .from(".dinner-title-anime", {color:"#505050",opacity:0 }, "<")
   
 
 
-  // shita img trigger 
+  /// ギャラリー画像トリガー
 
   let  dinnerImgtl = gsap.timeline({
     scrollTrigger: {
@@ -928,7 +932,8 @@ dinnerTitletl
   });
   
   
-  
+  // ギャラリーアニメーションタイムライン
+
   dinnerImgtl
   .fromTo(
     ".dinner-anime",
