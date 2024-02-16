@@ -704,6 +704,7 @@ let dinnerBottomtl = gsap.timeline({
     start: "-=500px",
     scrub: false,
     // markers:true
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -908,6 +909,7 @@ let dinnerTitletl = gsap.timeline({
     trigger: ".dinner-trigger",
     start: "top top", // トリガーの上部がビューポートの上部に到達したとき
     // scrub: true,  // scrubはスクロール時にアニメーションが発生します。（falseの場合、ユーザーがスクロールした距離に関係なく、アニメーションは最初から最後まで進みます）
+    toggleActions:'play play play reverse',
 
   },
 });
@@ -927,6 +929,7 @@ dinnerTitletl
       trigger: ".dinner-gallary-wrapper",
       start: "-=400px",
       scrub: false,
+      toggleActions:'play play play reverse',
     },
   });
   
