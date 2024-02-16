@@ -319,6 +319,7 @@ let kvMaintl = gsap.timeline({
 
 kvMaintl
   .from(".kv-main-content_title", { opacity: 0, duration: 0.5 }, "")
+  .from(".kv-main-txt-eng-sp", { opacity: 0, duration: 2 }, "<")
   .from(".kv-main-content_title1", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title2", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title3", { opacity: 0, duration: 0.5 }, "<10%")
@@ -333,8 +334,8 @@ kvMaintl
   .from(".kv-main-content_title12", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title13", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title14", { opacity: 0, duration: 0.5 }, "<10%")
-  .from(".kv-main-txt-eng-sp", { opacity: 0, duration: 0.5 }, "<10%")
-  .from(".kv-main__text-eng16", { opacity: 0, duration: 0.5 }, "<")
+  // .from(".kv-main-txt-eng-sp", { opacity: 0, duration: 0.5 }, "<")
+  .from(".kv-main__text-eng16", { opacity: 0, duration: 0.5 }, 0)
   .from(".kv-main__text-eng17", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main__text-eng18", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main__text-eng20", { opacity: 0, duration: 0.5 }, "<10%")
