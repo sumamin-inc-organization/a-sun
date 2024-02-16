@@ -5,6 +5,7 @@
 #lunch {
   padding-bottom: min(4.51vw, 65px);
   position: relative;
+  padding-bottom: 41px !important;
 }
 
 /*-----------------------------

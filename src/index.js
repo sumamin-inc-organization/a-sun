@@ -662,71 +662,71 @@ LunchImgtl.fromTo(
    Dinner アニメーション
 -------------------------------*/
 
-let dinnerImgtl = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#dinner",
-    start: "-=500px",
-    scrub: false,
-    // markers:true
-  },
-});
+// let dinnerImgtl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#dinner",
+//     start: "-=500px",
+//     scrub: false,
+//     // markers:true
+//   },
+// });
 
-dinnerImgtl
-  .fromTo(
-    ".reveal-black",
-    {
-      "--width": "100%",
-      duration: 0.5,
-    },
-    {
-      "--width": "0%",
-      duration: 0.5,
-    }
-  )
-  .fromTo(
-    ".reveal-black-right",
-    {
-      "--width": "100%",
-      duration: 0.5,
-    },
-    {
-      "--width": "0%",
-      duration: 0.5,
-    },
-    "<"
-  )
-  .from(".dinner-title-anime", { opacity: 0, x: -100, duration: 1 })
-  .from(".dinner-subtitle-anime", { opacity: 0, x: 100, duration: 1 }, "<");
+// dinnerImgtl
+//   .fromTo(
+//     ".reveal-black",
+//     {
+//       "--width": "100%",
+//       duration: 0.5,
+//     },
+//     {
+//       "--width": "0%",
+//       duration: 0.5,
+//     }
+//   )
+//   .fromTo(
+//     ".reveal-black-right",
+//     {
+//       "--width": "100%",
+//       duration: 0.5,
+//     },
+//     {
+//       "--width": "0%",
+//       duration: 0.5,
+//     },
+//     "<"
+//   )
+//   .from(".dinner-title-anime", { opacity: 0, x: -100, duration: 1 })
+//   .from(".dinner-subtitle-anime", { opacity: 0, x: 100, duration: 1 }, "<");
 
-let dinnerBottomtl = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#dinner-seemore",
-    start: "-=500px",
-    scrub: false,
-    // markers:true
-  },
-});
+// let dinnerBottomtl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#dinner-seemore",
+//     start: "-=500px",
+//     scrub: false,
+//     // markers:true
+//   },
+// });
 
-dinnerBottomtl
-  .fromTo(
-    ".bottom-left__img",
-    {
-      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
-    },
-    {
-      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    }
-  )
-  .fromTo(
-    ".bottom-img-right__img",
-    {
-      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
-    },
-    {
-      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    },
+// dinnerBottomtl
+//   .fromTo(
+//     ".bottom-left__img",
+//     {
+//       "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+//     },
+//     {
+//       "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+//     }
+//   )
+//   .fromTo(
+//     ".bottom-img-right__img",
+//     {
+//       "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+//     },
+//     {
+//       "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+//     },
     
-  );
+//   );
 
 /*-------------------------------
   Message Animations
@@ -779,21 +779,6 @@ let messageImgtl = gsap.timeline({
 });
 
 
-// messageImgtl
-//   .from(".flower-anime", {
-//     opacity: 0,
-//     x: 100,
-//     duration: 1,
-//   })
-//   .from(
-//     ".chef-anime",
-//     {
-//       opacity: 0,
-//       x: -100,
-//       duration: 1,
-//     },
-//     "<"
-//   );
 
 messageImgtl
 .fromTo(
@@ -912,3 +897,42 @@ acess Animations
 
 
 activateAccessTitleAnimations();
+
+let dinnerTitletl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#dinner",
+    start: "-=500px",
+    end:"+=300px",
+    scrub: true,
+    
+  },
+});
+
+dinnerTitletl
+  .to("#dinner", {backgroundColor:"#505050" }, "")
+  .from(".dinner-subtitle-anime", {color:"#505050" }, "<")
+  .from(".dinner-title-anime", {color:"#505050" }, "<")
+  
+
+  let  dinnerImgtl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".dinner-gallary-wrapper",
+      start: "-=400px",
+      scrub: false,
+      markers:true
+    },
+  });
+  
+  
+  
+  dinnerImgtl
+  .fromTo(
+    ".dinner-anime",
+    {
+      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+    },
+    {
+      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    }
+  )
+ 

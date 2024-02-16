@@ -1,6 +1,5 @@
 #dinner {
   position: relative;
-    background-color:#505050 ;;
     
 }
 .dinner-main {
@@ -36,3 +35,4 @@
   display: grid;
   place-content: center;
 }
+.dinner-img--left { background-image: url(../../images/top/dinner/dinner-left-img_pc.jpg); }
