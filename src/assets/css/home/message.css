@@ -255,7 +255,11 @@
    height: 50px;
   }
 }
-
+@media (max-width: 1050px) and (min-width: 1000px) {
+  .msg-filler {
+   height: 200px;
+  }
+}
 @media(max-width:500px){
   .msg-filler {
     position: relative;
