@@ -29,6 +29,7 @@ import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 import splitText from "./assets/js/otherlogic/splitText";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
+import activateAccessTitleAnimations from "./assets/js/animations/activateAccessTitleAnimations";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -873,38 +874,41 @@ instaTitletl.from(".insta-title", {
 acess Animations
  acess アニメーション
 -------------------------------*/
-let accessTitle = gsap.matchMedia();
-accessTitle.add("(min-width: 768px)", () => {
-  splitText("access-eng", "access-eng-letter");
+// let accessTitle = gsap.matchMedia();
+// accessTitle.add("(min-width: 768px)", () => {
+//   splitText("access-eng", "access-eng-letter");
 
-  let accessTitletl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#access",
-      start: "-=500px",
-      scrub: false,
-    },
-  });
+//   let accessTitletl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "#access",
+//       start: "-=500px",
+//       scrub: false,
+//     },
+//   });
 
-  accessTitletl
-    .from(".access-eng-letter16", { opacity: 0, duration: 1 }, "")
-    .from(".access-eng-letter17", { opacity: 0, duration: 1 }, "<10%")
-    .from(".access-eng-letter18", { opacity: 0, duration: 1 }, "<10%")
-    .from(".access-eng-letter19", { opacity: 0, duration: 1 }, "<10%")
-    .from(".access-eng-letter20", { opacity: 0, duration: 1 }, "<10%")
-    .from(".access-eng-letter21", { opacity: 0, duration: 1 }, "<10%");
-});
+//   accessTitletl
+//     .from(".access-eng-letter16", { opacity: 0, duration: 1 }, "")
+//     .from(".access-eng-letter17", { opacity: 0, duration: 1 }, "<10%")
+//     .from(".access-eng-letter18", { opacity: 0, duration: 1 }, "<10%")
+//     .from(".access-eng-letter19", { opacity: 0, duration: 1 }, "<10%")
+//     .from(".access-eng-letter20", { opacity: 0, duration: 1 }, "<10%")
+//     .from(".access-eng-letter21", { opacity: 0, duration: 1 }, "<10%");
+// });
 
-accessTitle.add("(max-width: 767px)", () => {
-  let accessTitletl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#access",
-      start: "-=500px",
-      scrub: false,
-    },
-  });
+// accessTitle.add("(max-width: 767px)", () => {
+//   let accessTitletl = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: "#access",
+//       start: "-=500px",
+//       scrub: false,
+//     },
+//   });
 
-  accessTitletl.from(".access-eng", {
-    opacity: 0,
-    duration: 1,
-  });
-});
+//   accessTitletl.from(".access-eng", {
+//     opacity: 0,
+//     duration: 1,
+//   });
+// });
+
+
+activateAccessTitleAnimations();
