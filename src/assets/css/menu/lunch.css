@@ -29,17 +29,6 @@ html {
     background-color: #505050;
 }
 
-#lunchCourse {
-    margin-top: -300px;
-    padding-top: 300px;
-}
-
-#lunchSingle {
-    margin-top: -120px;
-    padding-top: 120px;
-    z-index: -1;
-}
-
 #overview, #lunchSingle,  #drink {
     background-image: url(../../images/menu/lunch_bg_gray.jpg);
     background-position: top center;
