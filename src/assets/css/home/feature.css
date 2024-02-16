@@ -333,9 +333,11 @@
   .feat-main--2{
     /* border: 1px solid red; */
     padding-inline: 20px;
+    padding-inline: 40px;
   }
   .feat-main--1{
     padding-inline: 20px;
+    padding-inline: 40px;
   }
  
 
