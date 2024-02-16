@@ -3,6 +3,7 @@
 }
 .dinner-main {
   min-height: 100vh;
+  padding-bottom: 150px;
 }
 
 .dinner-img--left {
@@ -31,7 +32,7 @@
 .dinner-bottom-wrapper {
   /* border: 1px solid red; */
   position: relative;
-  width: 45.1vw;
+  width: 70vw;
 }
 
 #lunch {
@@ -55,7 +56,7 @@
 .dinner-bottom-right-img {
   width: 45.1vw;
   position: absolute;
-  bottom: -20%;
+  bottom: -8%;
   right: 0;
 }
 .dinner-bottom-right-img {
@@ -71,5 +72,4 @@
   }
   .dinner-bottom-right-img--widescreen {
     display: block;
-  }
-}
+  }}
