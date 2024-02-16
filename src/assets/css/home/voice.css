@@ -74,10 +74,10 @@
 }
 
 @media (min-width: 856px) and (max-width: 999px) {
-  .voice-title-img, .news-title-img {
+  .voice-title-img,
+  .news-title-img {
     margin-left: 5%;
   }
-
 }
 
 .voice-title-img--sp {
@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   /* was 500 */
   .review-wrapper {
     display: flex;

@@ -1,184 +1,172 @@
-.transition-img{
-    position: fixed;
-    inset: 0;
-    z-index: 10000;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-content: center;
-    background-image: url(../../images/top/hero/hero-bkg.jpg);
+.transition-img {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-image: url(../../images/top/hero/hero-bkg.jpg);
 }
-.transition-item{
-    position: fixed;
-    z-index: 9998;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    
-}
-
-.transition-item-white{
-    position: fixed;
-    z-index: 9999;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
+.transition-item {
+  position: fixed;
+  z-index: 9998;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
-.load-logo{
-    width: 500px;
-}
-@media(max-width:500px){
-    .load-logo{
-        width: 60vw;
-        
-    }
+.transition-item-white {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
 }
 
-
-
-[data-splittext]{
-    font-kerning: none;
-    letter-spacing: normal;
-  }
-  .letter-spacing-adjust{
-    display: inline-block;
-    letter-spacing:-0.25em ;
-    /* letter-spacing: -0.114em; */
-  }
-  
-  .letter-spacing-adjust-eng{
-    display: inline-block;
-    letter-spacing:-0.2em ;
-  }
-  
-  .keyvisual__text--eng{
-  /* letter-spacing: -0.02em; */
-  }
-  
-  .letter-eng11{
-    margin-left: -5px;
-  }
-  .letter-eng13{
-    margin-left: -8px;
-  }
-  .letter-eng20{
-    margin-left: -5px;
-  }
-
-  .letter-eng18{
-    margin-left: -8px;
-  }
-.letter-eng20{
-  margin-left: -8px;
+.load-logo {
+  width: 500px;
 }
-.letter-eng21{
-  margin-left: -8px;
+@media (max-width: 500px) {
+  .load-logo {
+    width: 60vw;
+  }
 }
-.letter-spacing-adjust-eng{
+
+[data-splittext] {
+  font-kerning: none;
+  letter-spacing: normal;
+}
+.letter-spacing-adjust {
   display: inline-block;
-  letter-spacing:-0.3em ;
+  letter-spacing: -0.25em;
 }
-  
-  @media (max-width:767px){
-    /* was 500 */
-    .letter-eng11{
-      margin-left: -5px;
-    }
-    .letter-eng13{
-      margin-left: -8px;
-    }
-    .letter-eng20{
-      margin-left: -5px;
-    }
-  
-    .letter-eng18{
-      margin-left: -8px;
-    }
-  .letter-eng20{
+
+.letter-spacing-adjust-eng {
+  display: inline-block;
+  letter-spacing: -0.2em;
+}
+
+.letter-eng11 {
+  margin-left: -5px;
+}
+.letter-eng13 {
+  margin-left: -8px;
+}
+.letter-eng20 {
+  margin-left: -5px;
+}
+
+.letter-eng18 {
+  margin-left: -8px;
+}
+.letter-eng20 {
+  margin-left: -8px;
+}
+.letter-eng21 {
+  margin-left: -8px;
+}
+.letter-spacing-adjust-eng {
+  display: inline-block;
+  letter-spacing: -0.3em;
+}
+
+@media (max-width: 767px) {
+  /* was 500 */
+  .letter-eng11 {
+    margin-left: -5px;
+  }
+  .letter-eng13 {
     margin-left: -8px;
   }
-  .letter-eng21{
+  .letter-eng20 {
+    margin-left: -5px;
+  }
+
+  .letter-eng18 {
     margin-left: -8px;
   }
-  .letter-spacing-adjust-eng{
+  .letter-eng20 {
+    margin-left: -8px;
+  }
+  .letter-eng21 {
+    margin-left: -8px;
+  }
+  .letter-spacing-adjust-eng {
     display: inline-block;
-    letter-spacing:-0.3em ;
+    letter-spacing: -0.3em;
   }
-  }
+}
 
-  .reveal{
-    --width: 0%;
-position: relative;
-transform-origin: top;
-  }
+.reveal {
+  --width: 0%;
+  position: relative;
+  transform-origin: top;
+}
 
-  .reveal::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--width);
-    background-color: white;
-    transform-origin: top;
-  }
-  .reveal-black{
-    --width: 0%;
-    position: relative;
-    transform-origin: left;
-  }
+.reveal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--width);
+  background-color: white;
+  transform-origin: top;
+}
+.reveal-black {
+  --width: 0%;
+  position: relative;
+  transform-origin: left;
+}
 
-  .reveal-black::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: var(--width);
-    background-color: #505050;
-    transform-origin: left;
-  }
-  .reveal-black-right{
-    transform-origin: right;
-  }
-  .reveal-black-right::after{
-    transform-origin: right;
-  }
-
+.reveal-black::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--width);
+  background-color: #505050;
+  transform-origin: left;
+}
+.reveal-black-right {
+  transform-origin: right;
+}
+.reveal-black-right::after {
+  transform-origin: right;
+}
 
 /*--------------------------------------------------------------------
    Dinner Bottom Image animations/ ディナーボトム画像のアニメーション
 ----------------------------------------------------------------------*/
 
-  .bottom-img-right__img{
-    --path:polygon(0 0, 0 0, 0 100%, 0 100%);
-    clip-path: var(--path);
-  }
-  
-  .bottom-left__img{
-    --path:polygon(0 0, 0 0, 0 100%, 0 100%);
-    clip-path: var(--path);
-  }
-  
+.bottom-img-right__img {
+  --path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  clip-path: var(--path);
+}
 
-  .dinner-anime{
-    --path:polygon(0 0, 0 0, 0 100%, 0 100%);
-    clip-path: var(--path);
-  }
+.bottom-left__img {
+  --path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  clip-path: var(--path);
+}
+
+.dinner-anime {
+  --path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  clip-path: var(--path);
+}
 
 /*--------------------------------------------------------------------
    Message Bottom Image animations/ メッセージボトム画像のアニメーション
 ----------------------------------------------------------------------*/
 
-
-.flower-anime{
-  --path:polygon(0 0, 0 0, 0 100%, 0 100%);
+.flower-anime {
+  --path: polygon(0 0, 0 0, 0 100%, 0 100%);
   clip-path: var(--path);
 }
 
-.chef-anime{
-  --path:polygon(0 0, 0 0, 0 100%, 0 100%);
+.chef-anime {
+  --path: polygon(0 0, 0 0, 0 100%, 0 100%);
   clip-path: var(--path);
 }
