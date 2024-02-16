@@ -117,6 +117,10 @@
     font-size: 20px;
     font-size: min(5.13vw,20px);
   }
+  .fs-sp-22{
+    font-size: 22px;
+    font-size: min(5.8vw,22px);
+  }
   .fs-sp-25{
     font-size: 25px;
     font-size: min(25px,6.41vw);
@@ -127,7 +131,6 @@
     font-size: min(30px,7.69vw);
   }
   .fs-sp-40 {
-
     font-size:40px;
     font-size: min(40px,10.26vw);
   }
@@ -135,6 +138,10 @@
     font-size: 32px;
   font-size: min(32px,8.21vw);
   font-size: clamp(20,8.21vw,32);
+  }
+  .fs-sp-34{
+    font-size: 34px;
+    font-size: min(34px,8.21vw);
   }
   .fs-sp-36{
     font-size: 36px;

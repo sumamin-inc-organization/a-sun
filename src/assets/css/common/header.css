@@ -265,7 +265,7 @@ letter-spacing: 0.114em;
 .sp-nav {
   display: none;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   background-color: #FFFFFF;
   margin: 0;
   z-index: 9999;
@@ -273,11 +273,19 @@ letter-spacing: 0.114em;
 
   flex-direction: column;
   align-items: center;
+
 }
 
 .sp-nav.open {
   display: flex;
   position: fixed;
+}
+
+.sp-nav__inner {
+  height: 100dvh;
+  overflow-y: scroll;
+  width: 100%;
+  position: relative;
 }
 
 .close-btn__sp {
@@ -299,7 +307,7 @@ letter-spacing: 0.114em;
 .sp-nav__upper {
   position: relative;
   width: 100%;
-  height: 124px;
+  height: 160px;
 }
 
 .sp-nav__upper a {
@@ -314,33 +322,41 @@ letter-spacing: 0.114em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100svh;
+  gap: 40px;
   max-height: 500px;
   z-index: 100;
+}
+
+.sp-nav__content {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  width: 244px;
 }
 
 .sp-nav__ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  gap: 30px;
+}
 
+.sp-nav__li {
+  text-align: left;
 }
 
 .reservation-btn__menu a img {
-  width: 180px;
+  width: 244px;
 }
 
 .sp-nav__info {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 25px;
+  gap: 25px;
 }
 
 .info-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   text-align: center;
 }
