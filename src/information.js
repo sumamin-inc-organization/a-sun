@@ -15,6 +15,7 @@ setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
+import { activateAccessTitleAnimationsFeature } from "./assets/js/animations/activateAccessTitleAnimations";
 gsap.registerPlugin(ScrollTrigger);
 
 toggleSpMenu();
@@ -54,3 +55,6 @@ information_bottom
   .from(".home-btn", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
 
 activateHeaderAnimations();
+
+
+activateAccessTitleAnimationsFeature();
