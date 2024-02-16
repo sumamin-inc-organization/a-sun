@@ -212,6 +212,8 @@
     padding: 250px;
   }
 }
+
+
 @media (max-width: 1500px) {
   .dot {
     width: 100vmax;
@@ -312,6 +314,16 @@
   .bottom-right {
     bottom: 5%;
   }
+}
+@media (max-width: 1699px) and (min-width:1550px){
+  #dinner {
+    padding-top: 200px;
+    padding-bottom: 500px;
+}
+.bottom-right {
+  bottom: -50%;
+  right: -50px;
+}
 }
 @media (max-width: 1100px) and (min-width: 1001px) {
   .company-dot {
