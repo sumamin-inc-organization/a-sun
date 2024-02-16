@@ -92,9 +92,6 @@
   }
 }
 @media (min-width: 1400px) {
-  #dinner {
-    padding-top: 300px;
-  }
   .dinner-filler {
     height: 600px;
     width: 100%;
@@ -114,9 +111,6 @@
   }
 }
 @media (max-width: 1400px) {
-  #dinner {
-    padding-top: 100px;
-  }
   .dinner-filler {
     height: 600px;
     width: 100%;
@@ -133,10 +127,6 @@
   }
 }
 @media (max-width: 1200px) {
-  #dinner {
-    padding-top: 100px;
-  }
-
   .bottom-right {
     width: clamp(406.25px, 45.14vw, 650px);
     position: absolute;
@@ -169,9 +159,7 @@
 #lunch {
   padding-bottom: 0;
 }
-#dinner {
-  padding-top: 0px;
-}
+
 .dot {
   margin-top: 60px;
 }
@@ -208,28 +196,18 @@
     width: 100vmax;
     height: 87vmax;
   }
-  #dinner {
-    padding: 250px;
-  }
 }
-
 
 @media (max-width: 1500px) {
   .dot {
     width: 100vmax;
     height: 87vmax;
   }
-  #dinner {
-    padding: 250px;
-  }
 }
 @media (max-width: 1300px) {
   .dot {
     width: 100vmax;
     height: 87vmax;
-  }
-  #dinner {
-    padding: 250px;
   }
 }
 @media (max-width: 1000px) {
@@ -238,28 +216,12 @@
     height: 87vmax;
     height: 110vmax;
   }
-  #dinner {
-    padding: 200px;
-  }
 }
-/* @media(min-width:501px){
-  .dot{
-    width: 87vmax;
-    height: 87vmax;
-    
-  }
-  #dinner{
-    padding: 200px;
-  }
-} */
 
 @media (max-width: 500px) {
   .dot {
     width: 142vmax;
     height: 135vmax;
-  }
-  #dinner {
-    padding: 50px;
   }
 }
 
@@ -285,18 +247,12 @@
     height: 85vmax;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 89%);
   }
-  #dinner {
-    padding: 200px;
-  }
 }
 @media (max-width: 400px) {
   .company-dot {
     width: 142vmax;
     height: 140vmax;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 89%);
-  }
-  #dinner {
-    padding: 90px;
   }
 }
 @media (min-width: 1700px) {
@@ -315,22 +271,17 @@
     bottom: 5%;
   }
 }
-@media (max-width: 1699px) and (min-width:1550px){
-  #dinner {
-    padding-top: 200px;
-    padding-bottom: 500px;
-}
-/* .bottom-right {
+@media (max-width: 1699px) and (min-width: 1550px) {
+  /* .bottom-right {
   bottom: -50%;
   right: -50px;
 } */
 }
-@media (max-width: 1699px) and (min-width:1600px){
-
-.bottom-right {
-  bottom: -50%;
-  right: -50px;
-}
+@media (max-width: 1699px) and (min-width: 1600px) {
+  .bottom-right {
+    bottom: -50%;
+    right: -50px;
+  }
 }
 @media (max-width: 1100px) and (min-width: 1001px) {
   .company-dot {
@@ -341,10 +292,9 @@
     width: 70vmax;
     height: 63vmax;
   }
-  .dinner-title-wrapper{
+  .dinner-title-wrapper {
     /* transform: translateY(100px); */
   }
-
 }
 @media (max-width: 1000px) and (min-width: 900px) {
   .company-dot {
@@ -356,7 +306,8 @@
   .company-dot {
     width: 80vmax;
     height: 80vmax;
-    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 89%);  }
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 89%);
+  }
 }
 @media (max-width: 767px) {
   .company-dot {
@@ -368,20 +319,16 @@
     bottom: 3%;
   }
 }
-@media (max-width: 700px){
-.company-dot {
+@media (max-width: 700px) {
+  .company-dot {
     clip-path: polygon(0 0, 100% 0, 100% 94%, 0 93%);
     /* clip-path: polygon(0 0, 100% 0, 100% 93%, 0 92%); */
     /* clip-path: polygon(0 0, 100% 0, 100% 89%, 0 89%); */
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
-
-}
+  }
 }
 
 @media (max-width: 500px) {
-  #dinner {
-    padding: 150px;
-  }
   .company-dot {
     clip-path: polygon(0 0, 100% 0, 100% 94%, 0 93%);
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 92%);
@@ -401,8 +348,6 @@
 @media (max-width: 361px) {
   .company-dot {
     clip-path: polygon(0 0, 100% 0, 100% 88%, 0 88%);
-
-
   }
 }
 
@@ -414,3 +359,94 @@
   }
 }
 
+/*--------------------------------------------------------------------
+  Dinner Paddings/ ディナーパディング
+----------------------------------------------------------------------*/
+
+#dinner {
+  padding-top: 0px;
+}
+@media (min-width: 1700px) {
+  #dinner {
+    padding: 200px;
+  }
+}
+@media (max-width: 1699px) {
+  #dinner {
+    padding: 250px;
+  }
+}
+@media (max-width: 1699px) and (min-width: 1550px) {
+  #dinner {
+    padding-top: 200px;
+    padding-bottom: 500px;
+  }
+}
+@media (max-width: 1500px) {
+  #dinner {
+    padding: 250px;
+  }
+}
+@media (max-width: 1300px) {
+  #dinner {
+    padding: 250px;
+  }
+}
+@media (max-width: 1200px) {
+  #dinner {
+    padding-top: 130px;
+  }
+}
+@media (max-width: 1050px) {
+  #dinner {
+    padding: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  #dinner {
+    padding: 100px;
+  }
+}
+@media (max-width: 900px) {
+  #dinner {
+    padding: 200px;
+  }
+}
+@media (max-width: 700px) {
+  #dinner {
+    padding: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  #dinner {
+    padding: 270px;
+  }
+}
+@media (max-width: 500px) {
+  #dinner {
+    padding: 70px;
+  }
+}
+@media (max-width: 450px) {
+  #dinner {
+    padding: 85px; 
+  }
+}
+@media (max-width: 400px) {
+  #dinner {
+    /* looks fine on the real device */
+    padding: 70px; 
+  }
+}
+@media (max-width: 376px) {
+  #dinner {
+    padding: 120px; 
+  }
+}
+
+@media (max-width: 330px) {
+  #dinner {
+    padding: 100px;
+  }
+}
