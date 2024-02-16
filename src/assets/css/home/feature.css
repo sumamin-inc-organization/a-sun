@@ -181,6 +181,12 @@
 /* ===============
       TAB
    =============== */
+@media (max-width: 1024px) {
+  .feature-title__img {
+    bottom: -24px;
+    left: 120px;
+  }
+}
 @media (max-width: 739px) {
 }
 

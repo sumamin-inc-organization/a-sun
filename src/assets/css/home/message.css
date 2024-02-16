@@ -106,6 +106,25 @@
     margin-top: 0px;
   }
 }
+
+
+/* ===============
+      TABLET
+   =============== */
+@media (max-width: 1024px) {
+  .message-title--img {
+    top: 34px;
+    min-width: 650px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .message-title {
+    font-size: clamp(50px, 7.6vw, 80px);
+  }
+  
+}
+
 /* ===============
       MOBILE
    =============== */
