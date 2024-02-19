@@ -296,6 +296,10 @@
     }
 }
 @media(max-width:767px){
+    .feature {
+        padding: 60px 0 20px;
+    }
+
     .feature1-inner,
     .feature3-inner{
         grid-column: 1/4;
@@ -348,7 +352,7 @@
         z-index: 1;
     }
     .slick {
-        margin-top: -475px;
+        margin-top: -488px;
     }
     .slick-img {
         width: 250px;

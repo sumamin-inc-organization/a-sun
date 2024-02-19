@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="4.61" y="14.34" width="118.78" height="99.32"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <image id="_長方形_78" data-name="長方形 78" class="cls-3" width="470" height="198" transform="translate(4.72 32.08) scale(.75)" xlink:href="../../Documents/kumagawa/a-sun/src/assets/images/common/5778AEB77B54C0CF.png"/>
+  </g>
+</svg>

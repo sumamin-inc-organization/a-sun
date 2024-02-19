@@ -171,4 +171,4 @@ home_btn.from(".home-btn", { y: 30, opacity: 0, duration: 2 });
 activateHeaderAnimations();
 
 
-// activateAccessTitleAnimationsFeature();
+activateAccessTitleAnimationsFeature();
