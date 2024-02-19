@@ -406,5 +406,6 @@
 @media(max-width:500px){
     .slick-text p{
         text-align: left;
+        letter-spacing: 0.01rem;
     }
 }
