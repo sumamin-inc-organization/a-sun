@@ -733,7 +733,7 @@ dinnerBottomtl
 
 /*-------------------------------
   Message Animations
-   Message アニメーション
+  Message アニメーション
 -------------------------------*/
 
 let messageTitle = gsap.matchMedia();
