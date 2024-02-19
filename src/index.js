@@ -315,6 +315,7 @@ let kvMaintl = gsap.timeline({
     trigger: ".eyecatcher_scrollimg--image",
     start: "-=100px",
     scrub: false,
+    toggleActions:'play play play reset',
   },
 });
 
@@ -410,6 +411,7 @@ let kvFoodtl = gsap.timeline({
     trigger: ".keyvisual-main_hero",
     start: "-500px",
     scrub: false,
+    toggleActions:'play play play reset',
   },
 });
 
@@ -434,6 +436,7 @@ featureTitle.add("(min-width: 768px)", () => {
       trigger: "#feature",
       start: "-=600px",
       scrub: false,
+      toggleActions:'play play play reverse',
     },
   });
 
@@ -453,6 +456,7 @@ featureTitle.add("(max-width: 767px)", () => {
       trigger: "#feature",
       start: "-=600px",
       scrub: false,
+      toggleActions:'play play play reverse',
     },
   });
 
@@ -472,6 +476,7 @@ let featureEyetl = gsap.timeline({
     trigger: ".feat1",
     start: "-=700px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -499,6 +504,7 @@ let featureOnetl = gsap.timeline({
     trigger: ".feat-1-eyewrapper",
     start: "+=170px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -515,6 +521,7 @@ let featureEyeTwotl = gsap.timeline({
     trigger: ".feat2",
     start: "-=700px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -540,6 +547,7 @@ let featureTwotl = gsap.timeline({
     trigger: ".feat-2-eyewrapper",
     start: "+=170px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -556,6 +564,7 @@ let featureEyeThreetl = gsap.timeline({
     trigger: ".feat3",
     start: "-=700px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -584,6 +593,7 @@ let featureThreetl = gsap.timeline({
     trigger: ".feat-3-eyewrapper",
     start: "+=170px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -604,6 +614,7 @@ courseTitle.add("(min-width: 768px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
+      toggleActions:'play play play reverse',
     },
   });
 
@@ -622,6 +633,7 @@ courseTitle.add("(max-width: 767px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
+      toggleActions:'play play play reverse',
     },
   });
 
@@ -640,6 +652,7 @@ let LunchImgtl = gsap.timeline({
     trigger: "#lunch",
     start: "-=500px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -745,6 +758,7 @@ messageTitle.add("(min-width: 768px)", () => {
       trigger: "#message",
       start: "-=500px",
       scrub: false,
+      toggleActions:'play play play reverse',
     },
   });
 
@@ -764,6 +778,7 @@ messageTitle.add("(max-width: 767px)", () => {
       trigger: "#message",
       start: "-=500px",
       scrub: false,
+      toggleActions:'play play play reverse',
     },
   });
 
@@ -778,6 +793,7 @@ let messageImgtl = gsap.timeline({
     trigger: ".message-bottom-wrapper",
     start: "-=500px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -813,6 +829,7 @@ let voiceTitletl = gsap.timeline({
     trigger: "#voice",
     start: "-=500px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -831,6 +848,7 @@ let newsTitletl = gsap.timeline({
     trigger: "#news",
     start: "-=500px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -849,6 +867,7 @@ let instaTitletl = gsap.timeline({
     trigger: "#insta",
     start: "-=500px",
     scrub: false,
+    toggleActions:'play play play reverse',
   },
 });
 
@@ -910,7 +929,6 @@ let dinnerTitletl = gsap.timeline({
     start: "top top", // トリガーの上部がビューポートの上部に到達したとき
     // scrub: true,  // scrubはスクロール時にアニメーションが発生します。（falseの場合、ユーザーがスクロールした距離に関係なく、アニメーションは最初から最後まで進みます）
     toggleActions:'play play play reverse',
-
   },
 });
 
@@ -946,8 +964,3 @@ dinnerTitletl
       "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     }
   )
- 
-
-
-
-  // test comment
