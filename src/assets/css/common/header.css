@@ -95,6 +95,7 @@
 .dropdown__link:hover{
 color: white;
 background-color: #505050;
+cursor: pointer;
 }
 
 /*----------------------------
