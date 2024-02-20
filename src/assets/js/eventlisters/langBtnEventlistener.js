@@ -23,6 +23,7 @@ export default function activateLangBtnEventListener() {
 
   SELECTORS.forEach((selector) => {
     selector.addEventListener("click", (e) => {
+        e.preventDefault();
       const clicked = e.target;
       determineBtnClicked(clicked,LOCAL_STORAGE_LANGUAGE_KEY);
     });
