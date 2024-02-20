@@ -174,9 +174,8 @@ body{
   }
 }
 [data-lang]{
-  display: none;
+  /* display: none; */
 }
-
-.visible{
-  display: block;
+.hidden{
+  display: none;
 }

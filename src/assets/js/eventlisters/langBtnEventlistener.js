@@ -2,6 +2,7 @@ import { selector } from "gsap";
 import GetStorageItems from "../otherlogic/getStorage";
 import updateLangBtnText from "../otherlogic/updateLangBtnText";
 import setStorageItem from "../otherlogic/setStorage";
+import toggleLanguage from "../otherlogic/toggleLanguage";
 
 function determineBtnClicked(element,key) {
     const LANGUAGE = element.dataset.languageSelector;
@@ -26,6 +27,8 @@ export default function activateLangBtnEventListener() {
         e.preventDefault();
       const clicked = e.target;
       determineBtnClicked(clicked,LOCAL_STORAGE_LANGUAGE_KEY);
+      let currentLang = GetStorageItems(LOCAL_STORAGE_LANGUAGE_KEY);
+      toggleLanguage(currentLang);
     });
   });
 }
