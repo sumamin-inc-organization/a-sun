@@ -161,7 +161,7 @@
   border-bottom: 1px solid #505050;
 }
 
-@media (max-width:  767px) {
+@media (max-width: 767px) {
   /* was 500 */
   .gault-millau_link--pc {
     display: none;
@@ -290,7 +290,7 @@
 /*--------------------------------------------------------------
     Keyvisual Top Mobile/ キービジュアル トップ モバイル
 ---------------------------------------------------------------*/
-@media (max-width:  767px) {
+@media (max-width: 767px) {
   /* was 500 */
   .keyvisual-top {
     display: flex;
@@ -344,7 +344,7 @@
 /*---------------------------------------------------------------
     Eyecatcher Subtitle Mobile / アイキャッチャーのサブタイトル モバイル
 ----------------------------------------------------------------*/
-@media (max-width:  767px) {
+@media (max-width: 767px) {
   /* was 500 */
   .gault-millau {
     display: flex;
@@ -431,7 +431,7 @@
   }
 }
 
-@media (max-width:  767px) {
+@media (max-width: 767px) {
   /* was 500 */
   .keyvisual-main_hero {
     margin-top: min(71px, 18.21vw);
@@ -568,12 +568,12 @@
   cursor: pointer;
 }
 
-.feature-title-letter{
+.feature-title-letter {
   display: inline-block;
 }
 
-@media(min-width:1000px){
-  .keyvisual-top__logo{
+@media (min-width: 1000px) {
+  .keyvisual-top__logo {
     padding-top: 12px;
   }
 }
