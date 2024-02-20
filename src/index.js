@@ -718,7 +718,7 @@ LunchImgtl.fromTo(
 
 let dinnerBottomtl = gsap.timeline({
   scrollTrigger: {
-    trigger: "#dinner-seemore",
+    trigger: ".dinner-seemore-trigger",
     start: "-=500px",
     scrub: false,
     // markers:true
