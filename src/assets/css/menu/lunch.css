@@ -570,3 +570,12 @@ ul.slick-dots li.slick-active button:before {
     letter-spacing: 0.1rem;
     margin-bottom: min(4vw, 10px);
 }
+
+.lunch-text__title.narrow:has(.lunch-text__title--sub[data-lang="en"]) {
+    margin-bottom: clamp(8px, 1.2vw, 12px);
+}
+
+.overview-hours__content--line[data-lang="en"] span:nth-child(1){
+    width: 12vw;
+    min-width: 10 0px;
+}
