@@ -177,6 +177,10 @@ body{
   display: none;
 }
 
-.visible{
+/* .visible{
   display: block;
+} */
+
+.hidden{
+  display: none;
 }
