@@ -173,3 +173,10 @@ body{
     padding: 70px 0;
   }
 }
+[data-lang]{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
