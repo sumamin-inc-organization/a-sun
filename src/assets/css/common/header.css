@@ -229,6 +229,9 @@ letter-spacing: 0.114em;
   .reservation-btn{
     display: none;
   }
+  .header__left {
+    top: 18.6px;
+  }
 }
 
 .tel__number{

@@ -565,3 +565,8 @@ ul.slick-dots li.slick-active button:before {
     }
 }
 
+/* en */
+.lunch-text__title[data-lang="en"] {
+    letter-spacing: 0.1rem;
+    margin-bottom: min(4vw, 10px);
+}
