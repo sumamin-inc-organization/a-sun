@@ -33,6 +33,7 @@ import { activateAccessTitleAnimations } from "./assets/js/animations/activateAc
 import GetStorageItems from "./assets/js/otherlogic/getStorage";
 import setStorageItem from "./assets/js/otherlogic/setStorage";
 import activateLangBtnEventListener from "./assets/js/eventlisters/langBtnEventlistener";
+import updateLangBtnText from "./assets/js/otherlogic/updateLangBtnText";
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
@@ -979,5 +980,6 @@ const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang" ; //the key to the local storage 
 let currentLang = GetStorageItems(LOCAL_STORAGE_LANGUAGE_KEY) || "jp"; //checks whether theres a language preffred by  a user who has visited before. if not it will default to "jp"
 // const langBtns = document.querySelectorAll(".lang-btn-text");
 setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY,currentLang);
+updateLangBtnText(currentLang);
 
 activateLangBtnEventListener();
