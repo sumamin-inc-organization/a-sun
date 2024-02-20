@@ -81,10 +81,20 @@
   display: flex;
   flex-direction: column;
   display: none;
+  text-align: center;
 }
+.dropdown:hover > .dropdown__content{
+  display: flex;
+}
+
 
 .dropdown {
   padding-top: 22px;
+}
+
+.dropdown__link:hover{
+color: white;
+background-color: #505050;
 }
 
 /*----------------------------
