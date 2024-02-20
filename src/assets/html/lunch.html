@@ -83,7 +83,8 @@
               />
             </a>
           </div>
-          <button class="meatball"></button>
+          <button class="meatball">
+          </button>
           <nav id="spNavMenu" class="sp-nav">
             <div class="sp-nav__inner">
               <div class="sp-nav__upper">
@@ -122,19 +123,31 @@
                       <img src="../images/common/reservation-btn-sp.png" alt="ご予約" />
                   </a>
                 </div>
-                <div class="sp-nav__info">
-                    <div class="info-item">
+                <div class="sp-nav__info" >
+                    <div class="info-item" data-lang="jp">
                         <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">お電話</p>
                         <p class="fs-sp-34 black medium font-zen-kaku line-height-sp-27 letter-spacing-114"><a href="tel:0362645531" class="black">098-851-5360</a></p>
                         <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">定休日：日、月曜日</p>
                     </div>
-                    <div class="info-item">
+                    <div class="info-item hidden"  data-lang="en">
+                      <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">Tel</p>
+                      <p class="fs-sp-34 black medium font-zen-kaku line-height-sp-27 letter-spacing-114"><a href="tel:0362645531" class="black">098-851-5360</a></p>
+                      <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">Closed：Sun,Mon</p>
+                  </div>
+                    <div class="info-item"  data-lang="jp">
                         <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">ランチ<br>
                         11:00-15:00 (火、水、木曜日)<br>
                         12:00-15:00(金、土曜日)</p>
                         <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">ディナー<br>
                             18:30-23:00 予約制</p>
                     </div>
+                    <div class="info-item hidden" data-lang="en">
+                      <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">Lunch<br>
+                      11:00-15:00 (Tue,Wed,Thu)<br>
+                      12:00-15:00(Fri,Sat)</p>
+                      <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">Dinner<br>
+                          18:30-23:00 (Reservations)</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,7 +160,7 @@
                     <img
                       src="../images/common/nav-current.svg"
                       alt="現在、Homeページにいます"
-                      class="primary-nav__item--indicator"
+                      class="primary-nav__item--indicator active-nav"
                     />
                   </div>
                   <a
@@ -175,7 +188,7 @@
                     <img
                       src="../images/common/nav-current.svg"
                       alt="現在、Lunchページにいます"
-                      class="primary-nav__item--indicator active-nav"
+                      class="primary-nav__item--indicator"
                     />
                   </div>
                   <a
@@ -248,8 +261,8 @@
                 <a
                   href="#"
                   class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black"
-                  data-language-selector="eng"
-                  >ENG</a
+                  data-language-selector="en"
+                  >EN</a
                 >
               </div>
             </div>
@@ -257,26 +270,32 @@
           <div class="header__right header__info">
             <div class="header__right-column header__right-column--one">
               <div class="header__info--tel">
-                <p class="tel__text fs-pc-12 font-zen-kaku black">お電話</p>
-                <a
-                  href="tel:0362645531"
-                  class="tel__number fs-pc-20 font-zen-kaku black"
-                >
+                <p class="tel__text fs-pc-12 font-zen-kaku black" data-lang="jp">お電話</p>
+                <p class="tel__text fs-pc-12 font-zen-kaku black hidden" data-lang="en">TEL</p>
+                <a href="tel:0362645531" class="tel__number fs-pc-20 font-zen-kaku black">
                   098-851-5360
                 </a>
               </div>
               <p
-                class="header__info--holiday fs-pc-12 regular black font-zen-kaku"
+                class="header__info--holiday fs-pc-12 regular black font-zen-kaku" data-lang="jp"
               >
                 定休日：日、月曜日
               </p>
+              <p
+              class="header__info--holiday fs-pc-12 regular black font-zen-kaku hidden" data-lang="en"
+            >
+              Closed：Sun,Mon
+            </p>
             </div>
             <div class="header__right-column header__right-column--two">
               <div class="header__info--lunch">
-                <p class="lunch__text font-zen-kaku fs-pc-12 black regular">
+                <p class="lunch__text font-zen-kaku fs-pc-12 black regular" data-lang="jp">
                   ランチ
                 </p>
-                <div class="lunch__time">
+                <p class="lunch__text font-zen-kaku fs-pc-12 black regular hidden" data-lang="en">
+                  Lunch
+                </p>
+                <div class="lunch__time" data-lang="jp">
                   <p
                     class="lunch__time--TWT lunch__time--item font-zen-kaku fs-pc-12 black regular"
                   >
@@ -288,24 +307,37 @@
                     12:00-15:00(金、土曜日)
                   </p>
                 </div>
+                <div class="lunch__time hidden" data-lang="en">
+                  <p
+                    class="lunch__time--TWT lunch__time--item font-zen-kaku fs-pc-12 black regular"
+                  >
+                    11:00-15:00 (Tue,Wed,Thu)
+                  </p>
+                  <p
+                    class="lunch__time--FSS lunch__time--item font-zen-kaku fs-pc-12 black regular"
+                  >
+                    12:00-15:00(Fri,Sat)
+                  </p>
+                </div>
               </div>
               <div class="header__info--dinner">
-                <p class="dinner__text font-zen-kaku fs-pc-12 black regular">
+                <p class="dinner__text font-zen-kaku fs-pc-12 black regular" data-lang="jp">
                   ディナー
                 </p>
-                <p class="dinner__time font-zen-kaku fs-pc-12 black regular">
+                <p class="dinner__text font-zen-kaku fs-pc-12 black regular hidden" data-lang="en">
+                  Dinner
+                </p>
+                <p class="dinner__time font-zen-kaku fs-pc-12 black regular" data-lang="jp">
                   18:30-23:00 予約制
+                </p>
+                <p class="dinner__time font-zen-kaku fs-pc-12 black regular hidden" data-lang="en">
+                  18:30-23:00 (Reservations)
                 </p>
               </div>
             </div>
             <div class="header__right-column header__right-column--three"></div>
           </div>
-          <a
-            href="https://www.hotpepper.jp/strJ001274406/yoyaku/"
-            class="reservation-btn"
-            role="button"
-            target="_blank"
-          >
+          <a href="https://www.hotpepper.jp/strJ001274406/yoyaku/" class="reservation-btn" role="button" target="_blank">
             <img src="../images/common/pc-contact@2x.webp" alt="ご予約" />
           </a>
         </div>
@@ -321,7 +353,7 @@
           <div class="overview-inner">
             <div class="overview-description">
               <p
-                class="fs-pc-16 fs-sp-16 font-zen-kaku medium letter-spacing-154 line-height-pc-49p5"
+                class="fs-pc-16 fs-sp-16 font-zen-kaku medium letter-spacing-154 line-height-pc-49p5" data-lang="jp"
               >
                 島の恵みを堪能できる特別なランチ。<br />旬の食材をふんだんに使用した<br
                   class="sp"
@@ -329,41 +361,74 @@
                   class="sp"
                 />本格的なメインディッシュまで、<br />贅沢なランチタイムをお楽しみください。
               </p>
+              <p
+                class="fs-pc-16 fs-sp-16 font-zen-kaku medium letter-spacing-154 line-height-pc-49p5 hidden" data-lang="en"
+              >
+                A special lunch where you can enjoy the bounty of the island. <br />Enjoy a sumptuous lunchtime experience,<br
+                  class="sp"
+                />from light appetizers made <br
+                  class="sp"
+                />from a variety of seasonal ingredients<br /> to authentic main dishes.
+              </p>
             </div>
             <div class="overview-hours">
               <div class="overview-hours__title">
-                <p class="fs-pc-16 font-zen-kaku medium letter-spacing-154">
+                <p class="fs-pc-16 font-zen-kaku medium letter-spacing-154" data-lang="jp">
                   ランチ営業時間
+                </p>
+                <p class="fs-pc-16 font-zen-kaku medium letter-spacing-154 hidden" data-lang="en">
+                  Lunch Opening Hours
                 </p>
               </div>
               <div
                 class="overview-hours__content fs-pc-20 font-zen-kaku medium letter-spacing-154"
               >
-                <p class="overview-hours__content--line">
+                <p class="overview-hours__content--line" data-lang="jp">
                   <span>火・水・木</span><span>11:00〜15:00　L.O. 14:30</span>
                 </p>
-                <p class="overview-hours__content--line">
+                <p class="overview-hours__content--line" data-lang="jp">
                   <span>金・土</span><span>12:00〜15:00　L.O. 13:30</span>
+                </p>
+                <p class="overview-hours__content--line hidden" data-lang="en">
+                  <span>Tue・Wed・Thu</span><span>11:00〜15:00　L.O. 14:30</span>
+                </p>
+                <p class="overview-hours__content--line hidden" data-lang="en">
+                  <span>Fri・Sat</span><span>12:00〜15:00　L.O. 13:30</span>
                 </p>
               </div>
               <div class="overview-hours__note">
-                <p class="fs-pc-16 font-zen-kaku medium letter-spacing-154">
+                <p class="fs-pc-16 font-zen-kaku medium letter-spacing-154" data-lang="jp">
                   コースは全て予約制となっております。
+                </p>
+                <p class="fs-pc-16 font-zen-kaku medium letter-spacing-154 hidden" data-lang="en">
+                  All courses are by reservation only.
                 </p>
               </div>
             </div>
             <div class="overview-buttons">
               <a
                 id="courseBtn"
-                class="font-zen-kaku fs-pc-20 arrow medium"
+                class="font-zen-kaku fs-pc-20 arrow medium" data-lang="jp"
                 href="#lunchCourse"
                 >コース</a
               >
               <a
+                id="courseBtn"
+                class="font-zen-kaku fs-pc-20 arrow medium hidden" data-lang="en"
+                href="#lunchCourse"
+                >Course</a
+              >
+              <a
                 id="singleBtn"
-                class="font-zen-kaku fs-pc-20 arrow medium"
+                class="font-zen-kaku fs-pc-20 arrow medium" data-lang="jp"
                 href="#lunchSingle"
                 >単品</a
+              >
+              <a
+                id="singleBtn"
+                class="font-zen-kaku fs-pc-20 arrow medium hidden" data-lang="en"
+                href="#lunchSingle"
+                >Single</a
               >
             </div>
           </div>
@@ -371,7 +436,8 @@
       </section>
       <section id="lunchCourse">
         <div class="course-headline lunch-headline">
-          <h2 class="font-zen-old letter-spacing-02 regular">ランチコース</h2>
+          <h2 class="font-zen-old letter-spacing-02 regular" data-lang="jp">ランチコース</h2>
+          <h2 class="font-zen-old letter-spacing-02 regular hidden" data-lang="en">Lunch Course</h2>
           <p class="font-emily">Lunch Course</p>
         </div>
         <div class="lunch-grid">
@@ -379,15 +445,25 @@
             <div class="lunch-content course-content">
               <div class="lunch-item">
                 <div class="lunch-text">
-                  <p class="lunch-text__title fs-pc-40 font-zen-old">
+                  <p class="lunch-text__title fs-pc-40 font-zen-old" data-lang="jp">
                     季節のランチコース<span class="fs-pc-20">全4品</span>
                   </p>
+                  <p class="lunch-text__title fs-pc-40 font-zen-old hidden" data-lang="en">
+                    Seasonal Lunch Course<span class="fs-pc-20">Total 4 items</span>
+                  </p>
                   <p
-                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium"
+                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium" data-lang="jp"
                   >
                     来店日の当日9時までにご予約ください。<br />この内容は仕入れ状況等により<br
                       class="sp"
                     />変更になる場合がございます。<br />予めご了承ください。
+                  </p>
+                  <p
+                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium hidden" data-lang="en"
+                  >
+                    Please make a reservation by 9:00 a.m. on the day of your visit.<br />This menu is subject to change<br
+                      class="sp"
+                    /> due to availability and other factors.<br />Please understand in advance.
                   </p>
                 </div>
                 <p class="lunch-price fs-pc-30 font-zen-old letter-spacing-154">
@@ -428,23 +504,39 @@
                 <div class="lunch-text">
                   <div class="lunch-text__title narrow">
                     <p
-                      class="lunch-text__title--main fs-pc-40 font-zen-old regular"
+                      class="lunch-text__title--main fs-pc-40 font-zen-old regular" data-lang="jp"
                     >
                       季節のランチコース<span class="fs-pc-20">全6品</span>
                     </p>
                     <p
-                      class="lunch-text__title--sub fs-pc-20 font-zen-old regular"
+                      class="lunch-text__title--sub fs-pc-20 font-zen-old regular" data-lang="jp"
                     >
                       （魚料理を含め、メインは今帰仁アグーor県産和牛)
                     </p>
+                    <p
+                      class="lunch-text__title--main fs-pc-40 font-zen-old regular hidden" data-lang="en"
+                    >
+                      Seasonal Lunch Course<span class="fs-pc-20">Total 6 items</span>
+                    </p>
+                    <p
+                      class="lunch-text__title--sub fs-pc-20 font-zen-old regular hidden" data-lang="en"
+                    >
+                      （Main course is Nakijin Agu or prefectural Wagyu beef, including fish dishes)
+                    </p>
                   </div>
-
                   <p
-                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium"
+                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium" data-lang="jp"
                   >
                     来店日の前日18時までにご予約ください。<br />この内容は仕入れ状況等により<br
                       class="sp"
                     />変更になる場合がございます。<br />予めご了承ください。
+                  </p>
+                  <p
+                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium hidden" data-lang="en"
+                  >
+                    Please make a reservation by 6:00 p.m. the day before your visit.<br />This menu is subject to change<br
+                      class="sp"
+                    /> due to availability and other factors.<br />Please understand in advance.
                   </p>
                 </div>
                 <p class="lunch-price fs-pc-30 font-zen-old letter-spacing-154">
@@ -495,15 +587,25 @@
             <div class="lunch-content course-content">
               <div class="lunch-item">
                 <div class="lunch-text">
-                  <p class="lunch-text__title fs-pc-40 font-zen-old">
+                  <p class="lunch-text__title fs-pc-40 font-zen-old" data-lang="jp">
                     アニバーサリーコース<span class="fs-pc-20">全5品</span>
                   </p>
+                  <p class="lunch-text__title fs-pc-40 font-zen-old hidden" data-lang="en">
+                    Anniversary Course<span class="fs-pc-20">Total 5 items</span>
+                  </p>
                   <p
-                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium"
+                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium" data-lang="jp"
                   >
                     来店日の前日18時までにご予約ください。<br />この内容は仕入れ状況等により<br
                       class="sp"
                     />変更になる場合がございます。<br />予めご了承ください。
+                  </p>
+                  <p
+                    class="lunch-text__description font-zen-kaku fs-pc-16 letter-spacing-154 line-height-pc-49p5 medium hidden" data-lang="en"
+                  >
+                    Please make a reservation by 6:00 p.m. the day before your visit.<br />This menu is subject to change<br
+                      class="sp"
+                    />due to availability and other factors.<br />Please understand in advance.
                   </p>
                 </div>
                 <p class="lunch-price fs-pc-30 font-zen-old letter-spacing-154">
@@ -550,7 +652,8 @@
       </section>
       <section id="lunchSingle">
         <div class="single-headline lunch-headline">
-          <h2 class="font-zen-old letter-spacing-02 regular">ランチ単品</h2>
+          <h2 class="font-zen-old letter-spacing-02 regular" data-lang="jp">ランチ単品</h2>
+          <h2 class="font-zen-old letter-spacing-02 regular hidden" data-lang="en">Single Lunch</h2>
           <p class="font-emily">Single Lunch</p>
         </div>
         <div class="lunch-grid">
@@ -558,7 +661,10 @@
             <div class="lunch-content single-content">
               <div class="lunch-item">
                 <div class="lunch-text">
-                  <p class="lunch-text__title fs-pc-40 font-zen-old narrow">
+                  <p class="lunch-text__title fs-pc-40 font-zen-old narrow" data-lang="jp">
+                    プレミアム今帰仁アグー<br />ハンバーグ
+                  </p>
+                  <p class="lunch-text__title fs-pc-40 font-zen-old narrow hidden" data-lang="en">
                     プレミアム今帰仁アグー<br />ハンバーグ
                   </p>
                   <p

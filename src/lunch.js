@@ -19,6 +19,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 import { activateAccessTitleAnimationsDinner } from "./assets/js/animations/activateAccessTitleAnimations";
+import setStorageItem from "./assets/js/otherlogic/setStorage";
+import toggleLanguage from "./assets/js/otherlogic/toggleLanguage";
+import updateLangBtnText from "./assets/js/otherlogic/updateLangBtnText";
+import activateLangBtnEventListener from "./assets/js/eventlisters/langBtnEventlistener";
+import GetStorageItems from "./assets/js/otherlogic/getStorage";
 gsap.registerPlugin(ScrollTrigger);
 
 setLoadingAnimation();
@@ -233,3 +238,16 @@ activateHeaderAnimations();
 
 
 activateAccessTitleAnimationsDinner();
+
+/*-----------------------------------
+  MULTI LANGUAGE SITE RELATED SCRIPTS
+ マルチ言語サイトに関連するスクリプト
+--------------------------------------*/
+
+const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang" ; //the key to the local storage language
+let currentLang = GetStorageItems(LOCAL_STORAGE_LANGUAGE_KEY) || "jp"; //checks whether theres a language preffred by  a user who has visited before. if not it will default to "jp"
+// const langBtns = document.querySelectorAll(".lang-btn-text");
+setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY,currentLang);
+toggleLanguage(currentLang);
+updateLangBtnText(currentLang);
+activateLangBtnEventListener();
