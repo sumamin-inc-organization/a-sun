@@ -413,3 +413,52 @@
         letter-spacing: 0.01rem;
     }
 }
+
+/* en-ver */
+.feature-title h2[data-lang="en"] {
+    font-size: 44px;
+    letter-spacing: 0.2rem;
+}
+
+.slick-text h3[data-lang="en"] {
+    letter-spacing: 0.2rem;
+}
+
+.slick-text p[data-lang="en"] {
+    letter-spacing: 0.04rem;
+    line-height: 2.4;
+}
+
+@media(max-width:1190px){
+    .feature-title h2[data-lang="en"]{
+        font-size: 34px;
+    }
+}
+
+@media(max-width:960px) {
+    .slick-text p[data-lang="en"] {
+        font-size: 15px;
+        line-height: 2.2;
+    }
+}
+
+@media(max-width:935px){
+    .feature-title h2[data-lang="en"]{
+        font-size: 28px;
+        letter-spacing: 0.14rem;
+    }
+}
+
+@media(max-width:600px){
+    .slick-text p[data-lang="en"] {
+        font-size: 14px;
+        line-height: 2.2;
+    }
+}
+
+@media(max-width:500px){
+    .slick-text p[data-lang="en"] {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+}
