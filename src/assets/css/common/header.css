@@ -87,7 +87,7 @@
   display: flex;
 } */
 @media(min-width:768px){
-  .dropdown:hover > .dropdown__content{
+  .dropdown-sp:hover > .dropdown__conten--sp {
     display: flex;
   }
 }
@@ -100,6 +100,17 @@
 color: white;
 background-color: #505050;
 cursor: pointer;
+}
+
+.dropdown.dropdown-sp {
+  height: fit-content;
+}
+
+.dropdown__content.dropdown__content--sp {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  text-align: center;
 }
 
 /*----------------------------
@@ -184,11 +195,28 @@ cursor: pointer;
 
 .dropdown__btn::after{
     content: url(../../images/common/langBtnChevron.svg);
-    width: 7.66px;
-    height: 3.83px;
+    /* width: 7.66px;
+    height: 3.83px; */
     position: absolute;
     top: -2px;
     right: -7px;
+}
+
+.dropdown__btn.dropdown__btn--sp {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -6px;
+}
+
+.dropdown__btn.dropdown__btn--sp::after{
+    content: url(../../images/common/langBtnChevron.svg);
+    /* width: 7.66px;
+    height: 3.83px; */
+    position: relative;
 }
 /*---------------------------------------
    Header Letter Spacing
