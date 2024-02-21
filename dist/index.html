@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>沖縄居酒屋あーすん</title>
+    <!-- <link rel="icon" href="../images/common/icon.ico"> -->
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
     <!-- ogp -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="沖縄居酒屋あーすん">
     <meta property="og:description" content="沖縄県那覇市金城の閑静な住宅街に佇む、一軒家のレストラン。生産者の想い、料理人の技と愛情、そしてお客様の笑顔。全てが調和し、美味しさが生まれる瞬間をお届けしいています。">
     <meta property="og:site_name" content="沖縄居酒屋あーすん">
-    <meta property="og:image" content="assets/img/ogp.jpg">
+    <meta property="og:image" content="assets/img/ogp.png">
     <!-- iOSの数字が青くなるのを防止する -->
     <meta name="format-detection" content="telephone=no" />
     <meta content="date=no" name="format-detection" />
@@ -18,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&family=Zen+Old+Mincho&display=swap" rel="stylesheet"/>
-  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js-node_modules_jquery_dis-0c1656.bd13fcc89b2fe791318b.js"></script><script defer src="index.83678752b7e5b23396fd.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-45994d.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
+  <script defer src="vendors-node_modules_gsap_ScrollTrigger_js-node_modules_gsap_index_js-node_modules_jquery_dis-0c1656.bd13fcc89b2fe791318b.js"></script><script defer src="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-32f890.929b27910857b438e6b9.js"></script><script defer src="index.5a59a964b75f9b00df95.js"></script><link href="src_assets_css_common_header_css-src_assets_css_common_nav_css-src_assets_css_common_reset_cs-32f890.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
   <body class="black">
     <div class="transition-img upper-elem">
       <div class="transition-wrapper">
@@ -51,8 +53,35 @@
               />
             </a>
           </div>
-          <button class="meatball">
-          </button>
+          <div class="meatball">
+            <button class="meatball-btn">
+            </button>
+          </div>
+          <div
+            class="dropdown dropdown-sp"
+            data-language-selector-btn
+            aria-controls="dropdown-content" 
+          >
+            <button
+              class="dropdown__btn dropdown__btn--sp font-zen-kaku fs-pc-16 regular black"
+            >
+              JP
+            </button>
+            <div class="dropdown__content dropdown__content--sp">
+              <a
+                href="#"
+                class="dropdown__link dropdown__link--jp font-zen-kaku fs-pc-16 regular black"
+                data-language-selector="jp"
+                >JP</a
+              >
+              <a
+                href="#"
+                class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black"
+                data-language-selector="en"
+                >EN</a
+              >
+            </div>
+          </div>
           <nav id="spNavMenu" class="sp-nav">
             <div class="sp-nav__inner">
               <div class="sp-nav__upper">
@@ -91,19 +120,31 @@
                       <img src="assets/img/reservation-btn-sp.png" alt="ご予約" />
                   </a>
                 </div>
-                <div class="sp-nav__info">
-                    <div class="info-item">
+                <div class="sp-nav__info" >
+                    <div class="info-item" data-lang="jp">
                         <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">お電話</p>
                         <p class="fs-sp-34 black medium font-zen-kaku line-height-sp-27 letter-spacing-114"><a href="tel:0362645531" class="black">098-851-5360</a></p>
                         <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">定休日：日、月曜日</p>
                     </div>
-                    <div class="info-item">
+                    <div class="info-item hidden"  data-lang="en">
+                      <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">Tel</p>
+                      <p class="fs-sp-34 black medium font-zen-kaku line-height-sp-27 letter-spacing-114"><a href="tel:0362645531" class="black">098-851-5360</a></p>
+                      <p class="fs-sp-16 black regular font-zen-kaku line-height-sp-14 letter-spacing-114">Closed：Sun,Mon</p>
+                  </div>
+                    <div class="info-item"  data-lang="jp">
                         <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">ランチ<br>
                         11:00-15:00 (火、水、木曜日)<br>
                         12:00-15:00(金、土曜日)</p>
                         <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">ディナー<br>
                             18:30-23:00 予約制</p>
                     </div>
+                    <div class="info-item hidden" data-lang="en">
+                      <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">Lunch<br>
+                      11:00-15:00 (Tue,Wed,Thu)<br>
+                      12:00-15:00(Fri,Sat)</p>
+                      <p class="fs-sp-16 black regular font-zen-kaku letter-spacing-114">Dinner<br>
+                          18:30-23:00 (Reservations)</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -217,8 +258,8 @@
                 <a
                   href="#"
                   class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black"
-                  data-language-selector="eng"
-                  >ENG</a
+                  data-language-selector="en"
+                  >EN</a
                 >
               </div>
             </div>
@@ -226,23 +267,32 @@
           <div class="header__right header__info">
             <div class="header__right-column header__right-column--one">
               <div class="header__info--tel">
-                <p class="tel__text fs-pc-12 font-zen-kaku black">お電話</p>
+                <p class="tel__text fs-pc-12 font-zen-kaku black" data-lang="jp">お電話</p>
+                <p class="tel__text fs-pc-12 font-zen-kaku black hidden" data-lang="en">TEL</p>
                 <a href="tel:0362645531" class="tel__number fs-pc-20 font-zen-kaku black">
                   098-851-5360
                 </a>
               </div>
               <p
-                class="header__info--holiday fs-pc-12 regular black font-zen-kaku"
+                class="header__info--holiday fs-pc-12 regular black font-zen-kaku" data-lang="jp"
               >
                 定休日：日、月曜日
               </p>
+              <p
+              class="header__info--holiday fs-pc-12 regular black font-zen-kaku hidden" data-lang="en"
+            >
+              Closed：Sun,Mon
+            </p>
             </div>
             <div class="header__right-column header__right-column--two">
               <div class="header__info--lunch">
-                <p class="lunch__text font-zen-kaku fs-pc-12 black regular">
+                <p class="lunch__text font-zen-kaku fs-pc-12 black regular" data-lang="jp">
                   ランチ
                 </p>
-                <div class="lunch__time">
+                <p class="lunch__text font-zen-kaku fs-pc-12 black regular hidden" data-lang="en">
+                  Lunch
+                </p>
+                <div class="lunch__time" data-lang="jp">
                   <p
                     class="lunch__time--TWT lunch__time--item font-zen-kaku fs-pc-12 black regular"
                   >
@@ -254,13 +304,31 @@
                     12:00-15:00(金、土曜日)
                   </p>
                 </div>
+                <div class="lunch__time hidden" data-lang="en">
+                  <p
+                    class="lunch__time--TWT lunch__time--item font-zen-kaku fs-pc-12 black regular"
+                  >
+                    11:00-15:00 (Tue,Wed,Thu)
+                  </p>
+                  <p
+                    class="lunch__time--FSS lunch__time--item font-zen-kaku fs-pc-12 black regular"
+                  >
+                    12:00-15:00(Fri,Sat)
+                  </p>
+                </div>
               </div>
               <div class="header__info--dinner">
-                <p class="dinner__text font-zen-kaku fs-pc-12 black regular">
+                <p class="dinner__text font-zen-kaku fs-pc-12 black regular" data-lang="jp">
                   ディナー
                 </p>
-                <p class="dinner__time font-zen-kaku fs-pc-12 black regular">
+                <p class="dinner__text font-zen-kaku fs-pc-12 black regular hidden" data-lang="en">
+                  Dinner
+                </p>
+                <p class="dinner__time font-zen-kaku fs-pc-12 black regular" data-lang="jp">
                   18:30-23:00 予約制
+                </p>
+                <p class="dinner__time font-zen-kaku fs-pc-12 black regular hidden" data-lang="en">
+                  18:30-23:00 (Reservations)
                 </p>
               </div>
             </div>
@@ -464,6 +532,7 @@
             <a
               href="#"
               class="font-zen-kaku fs-pc-20 regular black gault-millau_link fs-sp-18 gault-millau_link--pc hover"
+              data-lang="jp"
             >
               <img
                 src="assets/img/link-img.png"
@@ -472,11 +541,30 @@
               />【Gault&Millau ゴ・エ・ミヨ 2023、2024】掲載</a
             >
             <a
+            href="#"
+            class="font-zen-kaku fs-pc-20 regular black gault-millau_link fs-sp-18 gault-millau_link--pc hover hidden"
+            data-lang="en"
+          >
+            <img
+              src="assets/img/link-img.png"
+              alt=""
+              class="link-img-pc pc-only"
+            />Published in【Gault&Millau 2023,2024】</a
+          >
+            <a
               href="#"
               class="font-zen-kaku fs-pc-20 regular black gault-millau_link fs-sp-16 gault-millau_link--sp"
+              data-lang="jp"
               ><p>【Gault&Millau ゴ・エ・ミヨ</p>
               <p>2023、2024】掲載</p>
             </a>
+            <a
+            href="#"
+            class="font-zen-kaku fs-pc-20 regular black gault-millau_link fs-sp-16 gault-millau_link--sp hidden"
+            data-lang="en"
+            ><p>Published in 【Gault&Millau</p>
+            <p>2023,2024】</p>
+          </a>
           </div>
         </div>
         <div id="keyvisual-main">
@@ -513,10 +601,15 @@
             </h3>
             </div>
             <div class="keyvisual-main__text__description">
-              <p class="font-zen-kaku regular fs-pc-18--11p25 black fs-sp-18 no-wrap letter-spacing-154 line-height-sp-46">
+              <p class="font-zen-kaku regular fs-pc-18--11p25 black fs-sp-18 no-wrap letter-spacing-154 line-height-sp-46"  data-lang="jp">
                 「あーすん」、それは沖縄の方言で<br class="sp-only" />『合わせる』。<br />
                 生産者の想い、料理人の技と愛情、<br class="sp-only" />そしてお客様の笑顔。<br />
                 全てが調和し、美味しさが生まれる<br class="sp-only" />瞬間をお届けしています。
+              </p>
+              <p class="font-zen-kaku regular fs-pc-18--11p25 black fs-sp-18 no-wrap letter-spacing-154 line-height-sp-46 hidden"  data-lang="en">
+                “Asun” means “to match” in<br class="sp-only" /> the Okinawan dialect. <br>
+                The producer's passion,<br class="sp-only" />  the chef's skill and love,<br class="sp-only" /> and the customer's smile.<br />
+                We deliver the moment when <br class="sp-only" /> everything is in harmony <br class="sp-only" /> and deliciousness is born.
               </p>
             </div>
           </div>
@@ -626,7 +719,7 @@
                   class="sp-only"
                 />
               </div>
-              <div class="feat-main--right text-align-end feat-main--right-1">
+              <div class="feat-main--right text-align-end feat-main--right-1"  data-lang="jp">
                 <p
                   class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
                 >
@@ -651,9 +744,40 @@
                 </p>
                 <div class="feat-see-more-btn-wrapper">
                   <a
-                    href="#"
+                    href="./feature.html#feature1"
                     class="see-more-right feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r "
                     >もっと見る</a
+                  >
+                </div>
+              </div>
+              <div class="feat-main--right text-align-end feat-main--right-1 hidden"  data-lang="en">
+                <p
+                  class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
+                >
+                  Feature01
+                </p>
+                <p
+                  class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36 no-wrap"
+                >
+                Premium <br class="sp-only"> Ingredients,<br />
+                The breath of<br class="sp-only">  Yanbaru.
+                </p>
+                <p
+                  class="font-zen-kaku fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16"
+                >
+                The selected ingredients come<br/>
+                from the northern Okinawa <br class="sp-only" />(Yanbaru) region. <br />
+                The chef personally visits the area,<br />
+                fostering a dialogue with producers <br />
+                to cultivate these ingredients.<br />
+                Particularly,<br class="sp-only" /> the 'Imadomari Aguu' enhances<br />
+                the culinary stage<br class="sp-only" /> with its precious presence.
+                </p>
+                <div class="feat-see-more-btn-wrapper">
+                  <a
+                    href="./feature.html#feature1"
+                    class="see-more-right feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r "
+                    >See More</a
                   >
                 </div>
               </div>
@@ -687,7 +811,7 @@
                   class="sp-only"
                 />
               </div>
-              <div class="feat-main--right feat-main--right--2">
+              <div class="feat-main--right feat-main--right--2" data-lang="jp">
                 <p
                   class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
                 >
@@ -710,9 +834,38 @@
                 </p>
                 <div class="feat-see-more-btn-wrapper">
                   <a
-                    href="#"
+                    href="./feature.html#feature2"
                     class="feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r"
                     >もっと見る</a
+                  >
+                </div>
+              </div>
+              <div class="feat-main--right feat-main--right--2" data-lang="en">
+                <p
+                  class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
+                >
+                  Feature02
+                </p>
+                <p
+                  class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36 no-wrap"
+                >
+                sommelier's gift,<br />
+                melody of wine.
+                </p>
+                <p
+                  class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16 font-zen-kaku"
+                >
+                Like a perfect pairing with our cuisine,<br />
+                our sommelier has curated<br />
+                a selection of wines awaiting you.<br />
+                The harmonious blend of food and wine<br />
+                promises a truly indulgent experience.
+                </p>
+                <div class="feat-see-more-btn-wrapper">
+                  <a
+                    href="./feature.html#feature2"
+                    class="feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r"
+                    >See More</a
                   >
                 </div>
               </div>
@@ -746,7 +899,7 @@
                   class="sp-only"
                 />
               </div>
-              <div class="feat-main--right text-align-end feat-main--3-txt">
+              <div class="feat-main--right text-align-end feat-main--3-txt" data-lang="jp"> 
                 <p
                   class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
                 >
@@ -769,9 +922,38 @@
                 </p>
                 <div class="feat-see-more-btn-wrapper">
                   <a
-                    href="#"
+                    href="./feature.html#feature3"
                     class="see-more-right feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r"
                     >もっと見る</a
+                  >
+                </div>
+              </div>
+              <div class="feat-main--right text-align-end feat-main--3-txt hidden" data-lang="en"> 
+                <p
+                  class="feat-eng black fs-pc-18 regular letter-spacing-154 font-zen-old"
+                >
+                  Feature03
+                </p>
+                <p
+                  class="feat-jp black font-zen-old regular fs-pc-40 letter-spacing-154 fs-sp-36"
+                >
+                Island pottery,<br />
+                Rich in color.
+                </p>
+                <p
+                  class="feat-description fs-pc-16 black medium letter-spacing-94 line-height-pc-51p5 line-height-sp-42 fs-sp-16 font-zen-kaku"
+                >
+                What accentuates the cuisine <br class="sp-only"> are the<br />
+                beautifully crafted tableware made on the island. <br />
+                Along with an elegant ambiance,<br />
+                please enjoy a special moment<br />
+                while feeling the warmth of the island.
+                </p>
+                <div class="feat-see-more-btn-wrapper">
+                  <a
+                    href="./feature.html#feature3"
+                    class="see-more-right feat-see-more fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more feat-see-more-padding-r"
+                    >See More</a
                   >
                 </div>
               </div>
@@ -796,23 +978,43 @@
         </div>
         <h3
           class="course-subtitle font-zen-old regular fs-pc-40 white fs-sp-36"
+          data-lang="jp"
         >
           優雅なランチと <br />
           ディナーの<br class="sp-only" />贅沢な<br class="pc-only" />舌饗宴
         </h3>
-        <p class="course-paragraph font-zen-kaku fs-pc-16 white">
-          ご家族や大切な方とのランチ、<br
+        <h3
+        class="course-subtitle font-zen-old regular fs-pc-40 white fs-sp-36 hidden"
+        data-lang="en"
+      >
+      A luxurious feast<br />
+      for the palate <br class="sp-only" />with elegant <br class="pc-only" />lunches and dinners.
+      </h3>
+      <p class="course-paragraph font-zen-kaku fs-pc-16 white" data-lang="jp">
+        ご家族や大切な方とのランチ、<br
+          class="sp-only"
+        />特別なディナーデートに。<br class="" />
+        島cuisine あーすんのコースは、<br class="pc-only" />
+        食材への<br class="sp-only" />こだわりとシェフの技が織りなす、<br
+          class=""
+        />
+        本物の味わいをお届けいたします。<br class="" />
+        ランチとディナー、それぞれの時間に<br class="sp-only" />合った<br
+          class="pc-only"
+        />
+        贅沢なひとときをご堪能ください。
+      </p>
+        <p class="course-paragraph font-zen-kaku fs-pc-16 white hidden" data-lang="en">
+          For lunch with family <br
             class="sp-only"
-          />特別なディナーデートに。<br class="" />
-          島cuisine あーすんのコースは、<br class="pc-only" />
-          食材への<br class="sp-only" />こだわりとシェフの技が織りなす、<br
+          />or a special dinner date,<br class="" />
+          Island Cuisine Arsun's courses deliver authentic flavors <br class="pc-only" />woven by the chef's <br class="sp-only" />skill and dedication to ingredients.<br
             class=""
           />
-          本物の味わいをお届けいたします。<br class="" />
-          ランチとディナー、それぞれの時間に<br class="sp-only" />合った<br
-            class="pc-only"
-          />
-          贅沢なひとときをご堪能ください。
+          Enjoy a luxurious moment tailored <br class="sp-only" />to each lunch and dinner, <br
+          class=""
+        />and savor
+          the true essence of our offerings.
         </p>
       </div>
     </section>
@@ -822,14 +1024,28 @@
         <div class="lunch-title-wrapper">
           <p
             class="lunch-subtitle font-zen-old fs-pc-16 regular black letter-spacing-154 fs-sp-16 lunch-subtitle-anime"
+            data-lang="jp"
           >
             自然の息吹を感じるランチタイム
           </p>
+          <p
+          class="lunch-subtitle font-zen-old fs-pc-16 regular black letter-spacing-154 fs-sp-16 lunch-subtitle-anime hidden"
+          data-lang="en"
+        >
+        Lunchtime to Feel the Breath of Nature.
+        </p>
           <h2
             class="lunch-title fs-pc-40 font-zen-old regular black letter-spacing-154 fs-sp-32 lunch-title-anime"
+            data-lang="jp"
           >
             - ランチコース -
           </h2>
+          <h2
+          class="lunch-title fs-pc-40 font-zen-old regular black letter-spacing-154 fs-sp-32 lunch-title-anime hidden"
+          data-lang="en"
+        >
+          - Lunch Course -
+        </h2>
         </div>
         <div class="lunch-image-grid image-grid lunch-img-grid-clip">
           <div
@@ -862,7 +1078,7 @@
             </div>
           </div>
         </div>
-        <div class="lunch-paragraph-wrapper lunch-dinner-paragraph-wrapper">
+        <div class="lunch-paragraph-wrapper lunch-dinner-paragraph-wrapper" data-lang="jp">
           <p
             class="lunch-paragraph lunch-dinner-common_paragraph font-zen-kaku medium fs-pc-16 black line-height-pc-65p5 letter-spacing-94 fs-sp-16 line-height-sp-42 no-wrap"
           >
@@ -875,14 +1091,36 @@
             />贅沢なランチタイムをお楽しみください。
           </p>
         </div>
+        <div class="lunch-paragraph-wrapper lunch-dinner-paragraph-wrapper hidden" data-lang="en">
+          <p
+            class="lunch-paragraph lunch-dinner-common_paragraph font-zen-kaku medium fs-pc-16 black line-height-pc-65p5 letter-spacing-94 fs-sp-16 line-height-sp-42 no-wrap"
+          >
+          Indulge in a special lunch<br />
+          featuring the bounty of the island.<br
+              class="sp-only"
+            />From light appetizers made with <br
+            class="sp-only"
+          /> seasonal ingredients<br />
+            to authentic main dishes,<br
+              class="sp-only"
+            /> savor a luxurious lunchtime experience.
+          </p>
+        </div>
         <div
           class="lunch-see-more-btn-wrapper lunch-dinner-see-more-btn-wrapper_common"
         >
           <a
-            href="#"
-            class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore"
-            >もっと見る</a
+            href="./lunch.html"
+            class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore hidden"
+            data-lang="en"
+            >See More</a
           >
+          <a
+          href="./lunch.html"
+          class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore"
+          data-lang="jp"
+          >もっと見る</a
+        >
         </div>
       </div>
       <div class="dinner-trigger" aria-hidden="true"></div>
@@ -893,14 +1131,28 @@
       <div class="dinner-main">
         <div class="lunch-title-wrapper dinner-title-wrapper">
           <p
-            class="lunch-subtitle font-zen-old fs-pc-16 regular white letter-spacing-154 fs-sp-16 no-wrap dinner-subtitle-anime"
+          class="lunch-subtitle font-zen-old fs-pc-16 regular white letter-spacing-154 fs-sp-16 no-wrap dinner-subtitle-anime"
+          data-lang="jp"
+        >
+          島の美味、夜の調べ
+        </p>
+          <p
+            class="lunch-subtitle font-zen-old fs-pc-16 regular white letter-spacing-154 fs-sp-16 no-wrap dinner-subtitle-anime hidden"
+            data-lang="en"
           >
-            島の美味、夜の調べ
+          Island Delicacies, Night Melodies.
           </p>
           <h2
-            class="lunch-title fs-pc-40 font-zen-old regular white letter-spacing-154 fs-sp-32 no-wrap dinner-title-anime"
+          class="lunch-title fs-pc-40 font-zen-old regular white letter-spacing-154 fs-sp-32 no-wrap dinner-title-anime"
+          data-lang="jp"
+        >
+          - ディナーコース -
+        </h2>
+          <h2
+            class="lunch-title fs-pc-40 font-zen-old regular white letter-spacing-154 fs-sp-32 no-wrap dinner-title-anime hidden"
+            data-lang="en"
           >
-            - ディナーコース -
+            - Dinner Course -
           </h2>
         </div>
         <div class="dinner-gallary-wrapper">
@@ -912,7 +1164,7 @@
             </div>
             <div class="img-gallary-right">
               <div
-                class="lunch-image-grid-image_wrapper lunch-img--right lunch-img image-grid-image_wrapper common-img--right lunch-img--right-top reveal"
+                class="lunch-image-grid-image_wrapper lunch-img--right lunch-img image-grid-image_wrapper common-img--right reveal"
               >
               <img
               src="assets/img/dinner-right-img-pc_top.jpg"
@@ -932,7 +1184,7 @@
             </div>
           </div>
         </div>
-        <div class="lunch-paragraph-wrapper lunch-dinner-paragraph-wrapper">
+        <div class="lunch-paragraph-wrapper lunch-dinner-paragraph-wrapper" data-lang="jp">
           <p
             class="lunch-paragraph lunch-dinner-common_paragraph font-zen-kaku medium fs-pc-16 white line-height-pc-65p5 letter-spacing-94 fs-sp-16 line-height-sp-42 no-wrap"
           >
@@ -943,15 +1195,34 @@
             心地よいひとときをお過ごしください。
           </p>
         </div>
+        <div class="lunch-paragraph-wrapper lunch-dinner-paragraph-wrapper hidden" data-lang="en">
+          <p
+            class="lunch-paragraph lunch-dinner-common_paragraph font-zen-kaku medium fs-pc-16 white line-height-pc-65p5 letter-spacing-94 fs-sp-16 line-height-sp-42 no-wrap"
+          >
+          A luxurious dinner course <br class="sp-only" />that is perfect for the evening <br
+              class="sp-only"
+            />and offers a sumptuous taste of the islands.<br />
+            The chef's attention to detail <br class="sp-only" /> shines through in each dish,<br />
+            Please enjoy a pleasant moment with us.
+          </p>
+        </div>
         <div
-        class="lunch-see-more-btn-wrapper lunch-dinner-see-more-btn-wrapper_common"
+        class="lunch-see-more-btn-wrapper lunch-dinner-see-more-btn-wrapper_common dinner-seemore-trigger"
       >
         <a
-          href="#"
+          href="./dinner.html"
           class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore dinner-seemore"
           id="dinner-seemore"
+          data-lang="jp"
           >もっと見る</a
         >
+        <a
+        href="./dinner.html"
+        class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium white see-more lunch-dinner-common-seemore dinner-seemore hidden"
+        id="dinner-seemore"
+        data-lang="en"
+        >See More</a
+      >
       </div>
       <div class="dinner-bottom">
         <div class="dinner-bottom-wrapper">
@@ -965,7 +1236,6 @@
       </div>
       <div class="dinner-bottom-right-img bottom-img-right__img dinner-bottom-right-img--normal">
         <img src="assets/img/dinner-final-img.jpg" alt="">
-      </div>
       </div>
     </section>
     <section id="message">
@@ -987,10 +1257,18 @@
           </h3>
           <p
             class="message-title--intro fs-pc-40 font-zen-old regular black letter-spacing-154 line-height-pc-65p5 no-wrap fs-sp-36 letter-spacing-sp-100 line-height-sp-55"
+            data-lang="jp"
           >
             大自然が贈る香り、<br />
             島の美味に出逢う<br class="sp-only" />場所へ。
           </p>
+          <p
+          class="message-title--intro fs-pc-40 font-zen-old regular black letter-spacing-154 line-height-pc-65p5 no-wrap fs-sp-36 letter-spacing-sp-100 line-height-sp-55 hidden"
+          data-lang="en"
+        >
+        To where nature's<br />
+        scents,meet island <br class="sp-only" />flavors.
+        </p>
           <img
             src="assets/img/message-title-img-pc.png"
             alt="MESSAGE"
@@ -998,6 +1276,7 @@
           />
           <p
             class="message-main-text font-zen-kaku fs-pc-16 medium line-height-pc-51p5 fs-sp-16 line-height-sp-42 letter-spacing-94 no-wrap"
+            data-lang="jp"
           >
             いらっしゃいませ、島cuisine あーすんへ。<br />
             私たちは、島の恵みとシェフの<br
@@ -1031,6 +1310,42 @@
             />心より願っています。<br />
             あなたとの出逢いを、<br class="sp-only" />心待ちにしております。
           </p>
+          <p
+          class="message-main-text font-zen-kaku fs-pc-16 medium line-height-pc-51p5 fs-sp-16 line-height-sp-42 letter-spacing-94 no-wrap hidden"
+          data-lang="en"
+        >
+        Welcome to Island Cuisine Arsun. <br />
+        We bring you a special space <br
+            class="sp-only"
+          />where the bounty of the island <br
+            class="sp-only"
+          />meets the chef's passion. <br />
+          We aim to share special moments,<br
+            class="sp-only"
+          />combining the spirit of producers,<br />
+          the chef's expertise,<br
+            class="sp-only"
+          />and the smiles of our guests.<br />
+          Here, you'll find the essence <br
+            class="sp-only"
+          /> of the island's natural ingredients <br
+            class="sp-only"
+          />nurtured by caring hands.<br />
+          Enjoy elegant lunches <br
+            class="sp-only"
+          />and evening dinners <br
+            class="sp-only"
+          /> while feeling the island's breath. <br />
+          Seasonally selected ingredients <br
+            class="sp-only"
+          />will surely enrich your heart.<br />
+          We sincerely hope you indulge <br
+            class="sp-only"
+          />in the flavors of the island <br
+            class="sp-only"
+          />and create wonderful memories together.<br />
+          We eagerly <br class="sp-only" />await your visit.
+        </p>
         </div>
       </div>
       <div class="message-grid-wrap">
@@ -1064,9 +1379,16 @@
           <div class="message-bottom-text">
             <p
               class="message-job-title fs-pc-14 font-zen-kaku medium black letter-spacing-94 line-height-pc-40 fs-sp-14 line-height-sp-40 letter-spacing-94"
+              data-lang="jp"
             >
               料理長
             </p>
+            <p
+            class="message-job-title fs-pc-14 font-zen-kaku medium black letter-spacing-94 line-height-pc-40 fs-sp-14 line-height-sp-40 letter-spacing-94 hidden"
+            data-lang="en"
+          >
+            Head Chef
+          </p>
             <h4
               class="message-bottom-name--jp font-zen-old regular fs-pc-30 letter-spacing-154 line-height-pc-40p9 line-height-sp-65p5 fs-sp-30"
             >
@@ -1079,6 +1401,7 @@
             </p>
             <p
               class="message-hero font-zen-kaku fs-pc-14 medium letter-spacing-94 line-height-pc-40 black fs-sp-14 line-height-sp-40 no-wrap"
+              data-lang="jp"
             >
               東京のフランス料理店や会員制日本料理店など <br />
               都内様々なレストランで経験を積み、渡豪。 <br />
@@ -1098,6 +1421,28 @@
               素材に向き合い、活かす技が生み出す
               <br class="sp-only" />繊細かつ新しい世界。
             </p>
+            <p
+            class="message-hero font-zen-kaku fs-pc-14 medium letter-spacing-94 line-height-pc-40 black fs-sp-14 line-height-sp-40 no-wrap hidden"
+            data-lang="en"
+          >
+          After accumulating experience at various<br />
+          restaurants in Tokyo,<br class="sp-only" />including French and <br />
+          exclusive Japanese cuisine establishments, <br class="sp-only" />I moved to Australia. <br>
+          While experiencing the diversity <br class="sp-only" /> of a 
+          multicultural nation, <br>I served as a head chef in Sydney <br class="sp-only" />for a total of six years. <br />
+          During my time in Australia,<br>
+          I was deeply moved by the music of the islands<br />
+          and the language spoken by my grandparents, <br>
+          which drew me to Okinawa.<br/>
+            Upon returning to Japan,<br class="sp-only" />I lived on Hoshinoya Taketomi Island ,<br class="sp-only" />
+            in Okinawa for three and a half years,<br />
+            experiencing the cuisine of Okinawa and <br class="sp-only" />the wonderful charm of the local community.<br />
+            In 2019, I came to Yanbaru. <br />
+            In 2020, I assumed the role of chef at Arsun. <br>
+            Combining my experiences from various <br class="sp-only" />restaurants <br class="pc-only"> 
+            with the blessings of <br class="sp-only" /> Okinawa's islands, I create a delicate <br class="sp-only" /> and innovative world <br class="pc-only">
+             by facing<br class="sp-only" /> the ingredients and utilizing techniques<br class="sp-only" /> to their fullest potential.
+          </p>
           </div>
         </div>
       </div>
@@ -1121,21 +1466,21 @@
           <div class="review-wrapper">
             <div class="google-review-placeholder_wrapper review1">
               <img
-                src="assets/img/placeholder.jpg"
+                src="assets/img/placeholder.png"
                 alt="placeholder"
                 class="review-img"
               />
             </div>
             <div class="google-review-placeholder_wrapper review2">
               <img
-                src="assets/img/placeholder.jpg"
+                src="assets/img/placeholder.png"
                 alt="placeholder"
                 class="review-img"
               />
             </div>
             <div class="google-review-placeholder_wrapper review3">
               <img
-                src="assets/img/placeholder.jpg"
+                src="assets/img/placeholder.png"
                 alt="placeholder"
                 class="review-img"
               />
@@ -1145,10 +1490,18 @@
         <div class="voice-bottom">
           <a
             id="voice-seemore"
-            href="#"
+            href="https://www.google.com/search?q=%E3%81%82%E3%83%BC%E3%81%99%E3%82%93&rlz=1C5CHFA_enJP983JP983&oq=%E3%81%82%E3%83%BC%E3%81%99%E3%82%93&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMgwIARAjGCcYgAQYigUyCQgCEAAYBBiABDIJCAMQABgEGIAEMgkIBBAAGAQYgAQyCQgFEAAYBBiABDIJCAYQABgEGIAEMgcIBxAAGIAEMgcICBAAGIAEMgsICRAAGAQYChiABNIBCTM4MzVqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x34e56940549ee693:0xe40ee1cf73b0e919,1,,,,"
             class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore voice-seemore"
+            data-lang="jp"
             >もっと見る</a
           >
+          <a
+          id="voice-seemore"
+          href="https://www.google.com/search?q=%E3%81%82%E3%83%BC%E3%81%99%E3%82%93&rlz=1C5CHFA_enJP983JP983&oq=%E3%81%82%E3%83%BC%E3%81%99%E3%82%93&gs_lcrp=EgZjaHJvbWUyDggAEEUYJxg5GIAEGIoFMgwIARAjGCcYgAQYigUyCQgCEAAYBBiABDIJCAMQABgEGIAEMgkIBBAAGAQYgAQyCQgFEAAYBBiABDIJCAYQABgEGIAEMgcIBxAAGIAEMgcICBAAGIAEMgsICRAAGAQYChiABNIBCTM4MzVqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x34e56940549ee693:0xe40ee1cf73b0e919,1,,,,"
+          class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore voice-seemore hidden"
+          data-lang="en"
+          >See More</a
+        >
         </div>
       </div>
     </section>
@@ -1165,7 +1518,7 @@
           </div>
           <div class="news-blog">
             <div class="news-container">
-              <a href="#">
+              <a href="./news_details.html">
                 <div
                   class="date fs-pc-14 medium font-zen-kaku line-height-pc-36p5 letter-spacing-40 black fs-sp-14 line-height-sp-36p5"
                 >
@@ -1179,7 +1532,7 @@
               </a>
             </div>
             <div class="news-container">
-              <a href="#">
+              <a href="./news_details.html">
                 <div
                   class="date fs-pc-14 medium font-zen-kaku line-height-pc-36p5 letter-spacing-40 black fs-sp-14 line-height-sp-36p5"
                 >
@@ -1197,10 +1550,18 @@
           <div class="news-bottom">
             <a
               id="news-seemore"
-              href="#"
+              href="./news.html"
               class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore news-seemore"
+              data-lang="jp"
               >もっと見る</a
             >
+            <a
+            id="news-seemore"
+            href="./news.html"
+            class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore news-seemore hidden"
+            data-lang="en"
+            >See More</a
+          >
           </div>
           <div class="news-right news-title-anime">
             <!-- <img src="../images/top/news/news-title.png" alt="お知らせ" class="news-title-img"> -->
@@ -1249,10 +1610,17 @@
         </div>
         <div class="insta-bottom">
           <a
-            href="#"
+            href="https://www.instagram.com/earthen_069/?hl=ja"
             class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore insta-seemore"
+            data-lang="jp"
             >もっと見る</a
           >
+          <a
+          href="https://www.instagram.com/earthen_069/?hl=ja"
+          class="lunch-see-more-btn fs-pc-20 fs-sp-20 font-zen-kaku medium black see-more lunch-dinner-common-seemore insta-seemore"
+          data-lang="en"
+          >See More</a
+        >
         </div>
       </div>
     </section>
@@ -1282,32 +1650,64 @@
           </iframe>
           <p
             class="address fs-pc-18 font-zen-kaku medium white line-height-pc-36p5 letter-spacing-40 line-height-sp-30"
+            data-lang="jp"
           >
             〒901-0155 沖縄県那覇市金城5丁目13-5 <br />
             ゆいレール 小禄駅 徒歩3分／<br class="sp-only" />
             赤嶺駅 徒歩10分
           </p>
+          <p
+          class="address fs-pc-18 font-zen-kaku medium white line-height-pc-36p5 letter-spacing-40 line-height-sp-30 hidden"
+          data-lang="en"
+        >
+          〒901-0155 5-13-5 Kinjo, Naha City, Okinawa<br />
+          3-minute walk from Yui Rail Oroku Station/<br />10-minute walk from Akamine Station
+        </p>
           <div class="access-links_top">
             <a
               href="https://maps.app.goo.gl/cTD8aYzP6R8txwBM6"
               class="footer-link-hover fs-pc-20 fs-sp-20 font-zen-kaku medium white access-link acess-link_top--left google"
               id="access_google-maps"
               target="_blank"
+              data-lang="jp"
               >
               <span>Google Mapで見る</span>
               <img src="assets/img/see-more-black.svg" alt="矢印">
               </a
             >
             <a
+            href="https://maps.app.goo.gl/cTD8aYzP6R8txwBM6"
+            class="footer-link-hover fs-pc-20 fs-sp-20 font-zen-kaku medium white access-link acess-link_top--left google hidden"
+            id="access_google-maps"
+            target="_blank"
+            data-lang="en"
+            >
+            <span>Google Maps</span>
+            <img src="assets/img/see-more-black.svg" alt="矢印">
+            </a
+          >
+            <a
               href="https://www.google.com/maps/dir//%E5%B3%B6cuisine+%E3%81%82%E3%83%BC%E3%81%99%E3%82%93/data=!4m8!4m7!1m0!1m5!1m1!1s0x34e56940549ee693:0xe40ee1cf73b0e919!2m2!1d127.66440159999999!2d26.1956867"
               class="footer-link-hover fs-pc-20 fs-sp-20 font-zen-kaku medium white access-link acess-link_top--left google"
               id="access_route"
               target="_blank"
+              data-lang="jp"
               >
               <span>ルートで検索</span>
               <img src="assets/img/see-more-black.svg" alt="矢印">
                 </a
             >
+            <a
+            href="https://www.google.com/maps/dir//%E5%B3%B6cuisine+%E3%81%82%E3%83%BC%E3%81%99%E3%82%93/data=!4m8!4m7!1m0!1m5!1m1!1s0x34e56940549ee693:0xe40ee1cf73b0e919!2m2!1d127.66440159999999!2d26.1956867"
+            class="footer-link-hover fs-pc-20 fs-sp-20 font-zen-kaku medium white access-link acess-link_top--left google hidden"
+            id="access_route"
+            target="_blank"
+            data-lang="en"
+            >
+            <span>Search for route</span>
+            <img src="assets/img/see-more-black.svg" alt="矢印">
+              </a
+          >
           </div>
           <div class="access-links_bottom">
             <a
@@ -1315,26 +1715,53 @@
               class="footer-link-hover fs-pc-20 fs-sp-20 font-zen-kaku medium white access-link acess-link_top--left google"
               id="access_shop-info"
               target="_blank"
+              data-lang="jp"
               >
               <span>店舗情報</span>
               <img src="assets/img/see-more-black.svg" alt="矢印">
               </a
             >
+            <a
+            href="./information.html"
+            class="footer-link-hover fs-pc-20 fs-sp-20 font-zen-kaku medium white access-link acess-link_top--left google"
+            id="access_shop-info"
+            target="_blank"
+            data-lang="en"
+            >
+            <span>Shop information</span>
+            <img src="assets/img/see-more-black.svg" alt="矢印">
+            </a
+          >
           </div>
         </div>
         <div class="access-right">
           <p
             class="access-right-main font-zen-kaku fs-pc-24 line-height-pc-56 letter-spacing-40 white fs-sp-16 line-height-sp-36p5 no-wrap"
+            data-lang="jp"
           >
             コースは前日までの予約が必要となります。<br />
             お電話にてご予約くださいませ。
           </p>
+          <p
+          class="access-right-main font-zen-kaku fs-pc-24 line-height-pc-56 letter-spacing-40 white fs-sp-16 line-height-sp-36p5 no-wrap hidden"
+          data-lang="en"
+        >
+        Reservations for courses are required <br class="sp-only">by the previous day.<br />
+        Please make your reservation by phone.
+        </p>
           <div class="access-right--bottom">
             <p
               class="access-right--bottom_text fs-pc-18 medium letter-spacing-40 line-height-pc-36p5 white fs-sp-16 line-height-sp-36p5 no-wrap"
+              data-lang="jp"
             >
               お電話でのお問い合わせ
             </p>
+            <p
+            class="access-right--bottom_text fs-pc-18 medium letter-spacing-40 line-height-pc-36p5 white fs-sp-16 line-height-sp-36p5 no-wrap hidden"
+            data-lang="en"
+          >
+          Inquiries by phone
+          </p>
             <a href="tel:0362645531">
               <p
                 class="access-right--bottom_tel fs-pc-40 medium font-zen-kaku letter-spacing-114 fs-sp-40 white"
@@ -1354,10 +1781,18 @@
           </div>
           <p
             class="footer-left_text fs-pc-14 medium font-zen-kaku line-height-pc-27 letter-spacing-40 line-height-sp-27 white"
+            data-lang="jp"
           >
             島cuisine あーすん<br />
             〒901-0155 沖縄県那覇市金城5丁目13-5
           </p>
+          <p
+          class="footer-left_text fs-pc-14 medium font-zen-kaku line-height-pc-27 letter-spacing-40 line-height-sp-27 white"
+          data-lang="en"
+        >
+        Island Cuisine A-sun<br />
+        5-13-5 Kinjo, Naha City, Okinawa 901-0155, Japan
+        </p>
           <p
             class="copyright fs-pc-12 medium letter-spacing-40 line-height-pc-28p5 white no-wrap pc-only font-zen-kaku"
           >
