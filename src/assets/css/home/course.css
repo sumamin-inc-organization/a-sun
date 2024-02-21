@@ -13,6 +13,8 @@
   #course {
     min-height: 100vh;
     margin-top: 100px;
+    padding-top:60px;
+    padding-bottom: 60px;
   }
 }
 
