@@ -21,3 +21,12 @@ filter: grayscale(1) invert(1);
     display: block;
   }
 }
+
+.meatball-btn{
+  background-color: transparent;
+  border: none;
+}
+.meatball-btn:focus{
+  /* background-color: transparent; */
+  border: none;
+}

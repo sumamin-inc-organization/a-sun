@@ -53,8 +53,35 @@
               />
             </a>
           </div>
-          <button class="meatball">
-          </button>
+          <div class="meatball">
+            <button class="meatball-btn">
+            </button>
+            <div
+            class="dropdown"
+            data-language-selector-btn
+            aria-controls="dropdown-content"
+          >
+            <button
+              class="dropdown__btn font-zen-kaku fs-pc-16 regular black"
+            >
+              JP
+            </button>
+            <div class="dropdown__content">
+              <a
+                href="#"
+                class="dropdown__link dropdown__link--jp font-zen-kaku fs-pc-16 regular black"
+                data-language-selector="jp"
+                >JP</a
+              >
+              <a
+                href="#"
+                class="dropdown__link dropdown__eng font-zen-kaku fs-pc-16 regular black"
+                data-language-selector="en"
+                >EN</a
+              >
+            </div>
+          </div>
+          </div>
           <nav id="spNavMenu" class="sp-nav">
             <div class="sp-nav__inner">
               <div class="sp-nav__upper">
@@ -963,7 +990,21 @@
       A luxurious feast<br />
       for the palate <br class="sp-only" />with elegant <br class="pc-only" />lunches and dinners.
       </h3>
-        <p class="course-paragraph font-zen-kaku fs-pc-16 white">
+      <p class="course-paragraph font-zen-kaku fs-pc-16 white" data-lang="jp">
+        ご家族や大切な方とのランチ、<br
+          class="sp-only"
+        />特別なディナーデートに。<br class="" />
+        島cuisine あーすんのコースは、<br class="pc-only" />
+        食材への<br class="sp-only" />こだわりとシェフの技が織りなす、<br
+          class=""
+        />
+        本物の味わいをお届けいたします。<br class="" />
+        ランチとディナー、それぞれの時間に<br class="sp-only" />合った<br
+          class="pc-only"
+        />
+        贅沢なひとときをご堪能ください。
+      </p>
+        <p class="course-paragraph font-zen-kaku fs-pc-16 white hidden" data-lang="en">
           For lunch with family <br
             class="sp-only"
           />or a special dinner date,<br class="" />
