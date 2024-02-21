@@ -159,7 +159,7 @@ feature3
     "-=1.5"
   )
   .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-  .from(".home-btn", { y: 30, opacity: 0, duration: 2 },"<");
+  .from(".home-btn", { y: 30, opacity: 0, duration: 2 },"-=0.5");
 
 
 /*--------------------------------------------
