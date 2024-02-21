@@ -162,3 +162,8 @@
         border-bottom: solid 1px #505050;
     }
 }
+
+/* en */
+#information-bottom .td-left[data-lang="en"] {
+    padding-right: 40px;
+}
