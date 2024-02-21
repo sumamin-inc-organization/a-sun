@@ -158,16 +158,9 @@ feature3
     { y: 30, opacity: 0, duration: 2 },
     "-=1.5"
   )
-  .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
+  .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
+  .from(".home-btn", { y: 30, opacity: 0, duration: 2 },"<");
 
-let home_btn = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".home-btn",
-        start: "-=500px",
-        scrub: false,
-    },
-});
-home_btn.from(".home-btn", { y: 30, opacity: 0, duration: 2 });
 
 /*--------------------------------------------
    Header PC animation / ヘッダーPCアニメーション
