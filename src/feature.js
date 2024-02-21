@@ -124,8 +124,7 @@ feature1
     { y: 30, opacity: 0, duration: 2 },
     "-=1.5"
   )
-  .from(".slick1", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-  .from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+  .from(".slick1", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
 
 let feature2 = gsap.timeline({
   scrollTrigger: {
@@ -141,8 +140,7 @@ feature2
     { y: 30, opacity: 0, duration: 2 },
     "-=1.5"
   )
-  .from(".slick2", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-  .from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+  .from(".slick2", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
 
 let feature3 = gsap.timeline({
   scrollTrigger: {
@@ -158,8 +156,7 @@ feature3
     { y: 30, opacity: 0, duration: 2 },
     "-=1.5"
   )
-  .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-  .from(".kv_img", { y: 20, opacity: 0, duration: 2 }, "-=1.5");
+  .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5");
 
 let home_btn = gsap.timeline({
     scrollTrigger: {
