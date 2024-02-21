@@ -153,7 +153,10 @@
 }
 .feat-main--1 {
   margin-top: -350px;
-  margin-top: -220px;
+  margin-top: -200px;
+}
+.feat-main-left-one{
+  margin-top: 60px;
 }
 .feat-main--2 {
   margin-top: -220px;
@@ -163,8 +166,11 @@
 
 }
 .feat-main--3 {
-  margin-top: -350px;
-  margin-top: -220px;
+  margin-top: -200px;
+  /* margin-top: -220px; */
+}
+.feat-main-left-three{
+  margin-top: 60px;
 }
 .feat-main--3-txt {
   margin-top: 330px;
