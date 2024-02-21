@@ -110,6 +110,9 @@ cursor: pointer;
   top: 68px;
   right: 22px;
   z-index: 9010;
+  mix-blend-mode: difference;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
 }
 
 .dropdown__content.dropdown__content--sp {

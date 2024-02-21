@@ -95,3 +95,15 @@
         top: 58%;
     }
 }
+
+/* スマホの追従メニューが見にくいのでディナーページだけ変更する */
+
+.meatball {
+    filter: invert(100%);
+    mix-blend-mode: exclusion;
+}
+
+.dropdown.dropdown-sp {
+    filter: invert(100%);
+    mix-blend-mode: exclusion;
+}
