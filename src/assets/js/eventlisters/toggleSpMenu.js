@@ -9,7 +9,7 @@ export function toggleSpMenu() {
             }
         });
         
-        $('.meatball').on('click', function() {
+        $('.meatball-btn').on('click', function() {
             if (!$('#spNavMenu').hasClass('open')) {
                 $('#spNavMenu').addClass('open');
             }

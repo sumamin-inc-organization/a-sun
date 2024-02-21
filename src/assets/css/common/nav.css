@@ -16,8 +16,27 @@
 filter: grayscale(1) invert(1);
 }
 
+.dropdown.dropdown-sp {
+  display: none;
+}
+
 @media(max-width:767px){
   .meatball{
     display: block;
   }
+
+  .dropdown.dropdown-sp {
+    display: block;
+  }
+}
+
+.meatball-btn{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.meatball-btn:focus{
+  /* background-color: transparent; */
+  border: none;
 }
