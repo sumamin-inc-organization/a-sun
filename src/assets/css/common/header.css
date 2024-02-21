@@ -84,11 +84,11 @@
   display: none;
   text-align: center;
 }
-/* .dropdown:hover > .dropdown__content{
+.dropdown:hover > .dropdown__content{
   display: flex;
-} */
+}
 @media(min-width:768px){
-  .dropdown-sp:hover > .dropdown__conten--sp {
+  .dropdown-sp:hover > .dropdown__content--sp {
     display: flex;
   }
 }
