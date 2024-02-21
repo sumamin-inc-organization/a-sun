@@ -83,4 +83,8 @@
     line-height: min(10.77vw, 42px);
     text-align: center;
   }
+
+  .course-paragraph[data-lang="en"] {
+    line-height: min(8vw, 36px);
+  }
 }

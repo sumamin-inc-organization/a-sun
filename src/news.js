@@ -21,6 +21,7 @@ import toggleLanguage from "./assets/js/otherlogic/toggleLanguage";
 import updateLangBtnText from "./assets/js/otherlogic/updateLangBtnText";
 import activateLangBtnEventListener from "./assets/js/eventlisters/langBtnEventlistener";
 import GetStorageItems from "./assets/js/otherlogic/getStorage";
+import adjustLangBtnLocation from "./assets/js/otherlogic/adjustLangBtnLocation";
 gsap.registerPlugin(ScrollTrigger);
 
 toggleSpMenu();
@@ -114,3 +115,8 @@ setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY,currentLang);
 toggleLanguage(currentLang);
 updateLangBtnText(currentLang);
 activateLangBtnEventListener();
+
+/*-----------------------------------
+  デバイスごとの調整に関するスクリプト
+--------------------------------------*/
+adjustLangBtnLocation();
