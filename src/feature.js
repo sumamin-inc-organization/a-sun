@@ -146,10 +146,9 @@ feature2
 
 let feature3 = gsap.timeline({
   scrollTrigger: {
-    trigger: "#feature3",
+    trigger: ".feature2-inner",
     start: "-=500px",
     scrub: false,
-    markers:true
   },
 });
 feature3
