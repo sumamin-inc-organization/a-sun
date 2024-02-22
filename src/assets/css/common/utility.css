@@ -29,9 +29,6 @@ body{
 .sp-only {
   display: none;
 }
-.pc-only {
-}
-
 .tab-and-sp {
   display: none;
 }
@@ -172,9 +169,6 @@ body{
 .home-btn{
     padding: 70px 0;
   }
-}
-[data-lang]{
-  /* display: none; */
 }
 .hidden{
   display: none !important;

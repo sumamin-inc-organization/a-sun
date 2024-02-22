@@ -126,7 +126,6 @@
 }
 
 @media (max-width: 767px) {
-  /* was 500 */
   .message-title-wrapper {
     margin-left: 0;
     margin-right: 0;
@@ -143,9 +142,6 @@
     display: flex;
     justify-content: flex-start;
     margin-top: -20px;
-  }
-  .message-title--intro {
-    /* nochanges */
   }
   .message-title--img {
     position: absolute;

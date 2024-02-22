@@ -37,6 +37,5 @@ filter: grayscale(1) invert(1);
   height: 100%;
 }
 .meatball-btn:focus{
-  /* background-color: transparent; */
   border: none;
 }

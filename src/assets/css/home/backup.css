@@ -361,9 +361,6 @@
     justify-content: end;
   }
 }
-.feature-info {
-}
-
 @media (min-width: 1100px) {
   .feature-two {
     padding-bottom: 300px;

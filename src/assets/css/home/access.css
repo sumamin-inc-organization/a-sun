@@ -90,7 +90,6 @@
    =============== */
 
 @media (max-width: 767px) {
-  /* was 500 */
   #access {
     background-color: #505050;
     padding-bottom: 40px;
@@ -165,8 +164,6 @@ footer {
   padding-top: clamp(30px, 2.43vw, 35px);
 }
 
-.footer-nav {
-}
 .footer-nav-list {
   margin-top: 27.7px;
 

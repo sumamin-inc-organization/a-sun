@@ -12,16 +12,6 @@
 .hero-background--sp {
   z-index: 5;
 }
-@media (min-width: 750px) {
-  /* ヘッダーとの重なりを防ぐために */
-  /* #hero{
-    margin-top: 120px;  
-
-  } */
-  /* body{
-    margin-top: 120px;
-  } */
-}
 @media (max-width: 767px) {
   .hero-background--sp {
     background-image: url(../../images/top/hero/herobkg_sp.jpg);
@@ -323,7 +313,6 @@
     Keyvisual Eyecatcher Mobile / キービジュアル アイキャッチャー モバイル
 ------------------------------------------------------------------*/
 @media (max-width: 767px) {
-  /* was 500 */
   .kevvisual-eyecatcher {
     display: flex;
     justify-content: flex-end;
@@ -345,7 +334,6 @@
     Eyecatcher Subtitle Mobile / アイキャッチャーのサブタイトル モバイル
 ----------------------------------------------------------------*/
 @media (max-width: 767px) {
-  /* was 500 */
   .gault-millau {
     display: flex;
     justify-content: flex-end;
@@ -368,7 +356,6 @@
 ----------------------------------------------------------------*/
 
 @media (max-width: 767px) {
-  /* was 500 */
   .keyvisual-main_text {
     display: flex;
     flex-direction: column;
@@ -500,7 +487,6 @@
 }
 
 @media (max-width: 767px) {
-  /* was 500 */
   .kv-hero__img--left {
     left: -35%;
     bottom: 50px;
@@ -512,17 +498,14 @@
   .kv-hero__img--right {
     top: 90%;
     right: -30px;
-    /* changed */
   }
   .kv-hero__img--bottom {
     transform: translateX(-40%);
     bottom: -40%;
-    /* changed */
   }
   .kv-hero__img--left {
     left: -19%;
     bottom: -50px;
-    /* changed */
   }
 
   .kv-hero__img--top-left {
