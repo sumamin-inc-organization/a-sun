@@ -1,3 +1,5 @@
+import changeLangAttribute from "./changeHtmlLanguageAttribute";
+
 const JP = document.querySelectorAll('[data-lang="jp"]');
 const EN = document.querySelectorAll('[data-lang="en"]');
 const ALL = document.querySelectorAll("[data-lang]");
@@ -8,8 +10,11 @@ function removeClasses() {
   });
 }
 
+
+
 export default function toggleLanguage(current) {
   removeClasses();
+  changeLangAttribute(current);
   const ALL = document.querySelectorAll("[data-lang]");
   ALL.forEach((element) => {
     if (current === "jp" && element.dataset.lang === "en") {
