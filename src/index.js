@@ -22,10 +22,7 @@ import $ from "jquery";
 import screenResizeListener from "./assets/js/eventlisters/screensizeChange";
 import isItSp from "./assets/js/otherlogic/isitSP";
 import changeKvSrc from "./assets/js/otherlogic/changeKvSrc";
-import activateCardParallax from "./assets/js/animations/cardParallaxeffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import determineTypeOfAnimation from "./assets/js/otherlogic/determineTypeOfAnimation";
-import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
 import splitText from "./assets/js/otherlogic/splitText";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
@@ -36,14 +33,13 @@ import activateLangBtnEventListener from "./assets/js/eventlisters/langBtnEventl
 import updateLangBtnText from "./assets/js/otherlogic/updateLangBtnText";
 import toggleLanguage from "./assets/js/otherlogic/toggleLanguage";
 import adjustLangBtnLocation from "./assets/js/otherlogic/adjustLangBtnLocation";
+
 gsap.registerPlugin(ScrollTrigger);
 addNavIconEventListener();
 
 activateCrossFadeAnimations();
 
 changeKvSrc();
-
-// determineTypeOfAnimation();
 screenResizeListener();
 
 const screenType = isItSp(); // 画面サイズをチェックします /checks for  screen size
@@ -54,49 +50,6 @@ toggleSpMenu();
     dinner background animations
     ディナーの背景アニメーション
 -------------------------------*/
-
-// const masterCompany = gsap.timeline();
-
-// let dotAnimations = gsap.matchMedia();
-
-// dotAnimations.add("(max-width: 500px)", () => {
-//   function dinnerTopsp() {
-//     let tl = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: ".dinner-trigger", //#dinner
-//         start: "-=500px top",
-//         end: "+=200",
-//         scrub: true,
-//         // pin: true,
-//       },
-//     });
-
-//     tl.from(".company-dot", { scale: 0 });
-
-//     return tl;
-//   }
-
-//   masterCompany.add(dinnerTopsp());
-// });
-// dotAnimations.add("(min-width: 501px)", () => {
-//   function dinnerTop() {
-//     let tl = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: ".dinner-trigger", //#dinner
-//         start: "-=500px top",
-//         end: "+=200",
-//         scrub: true,
-//       },
-//     });
-
-//     tl.fromTo(".company-dot", { scale: 0 }, { scale: 1.7 });
-//     // .to(".company-dot", { scale: 1})
-
-//     return tl;
-//   }
-
-//   masterCompany.add(dinnerTop());
-// });
 
 /*-------------------------------
     feature parallax animations
@@ -321,7 +274,7 @@ let kvMaintl = gsap.timeline({
     trigger: ".eyecatcher_scrollimg--image",
     start: "-=100px",
     scrub: false,
-    toggleActions:'play play play reset',
+    toggleActions: "play play play reset",
   },
 });
 
@@ -342,7 +295,6 @@ kvMaintl
   .from(".kv-main-content_title12", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title13", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main-content_title14", { opacity: 0, duration: 0.5 }, "<10%")
-  // .from(".kv-main-txt-eng-sp", { opacity: 0, duration: 0.5 }, "<")
   .from(".kv-main__text-eng16", { opacity: 0, duration: 0.5 }, 0)
   .from(".kv-main__text-eng17", { opacity: 0, duration: 0.5 }, "<10%")
   .from(".kv-main__text-eng18", { opacity: 0, duration: 0.5 }, "<10%")
@@ -417,7 +369,7 @@ let kvFoodtl = gsap.timeline({
     trigger: ".keyvisual-main_hero",
     start: "-500px",
     scrub: false,
-    toggleActions:'play play play reset',
+    toggleActions: "play play play reset",
   },
 });
 
@@ -442,7 +394,7 @@ featureTitle.add("(min-width: 768px)", () => {
       trigger: "#feature",
       start: "-=600px",
       scrub: false,
-      toggleActions:'play play play reverse',
+      toggleActions: "play play play reverse",
     },
   });
 
@@ -462,7 +414,7 @@ featureTitle.add("(max-width: 767px)", () => {
       trigger: "#feature",
       start: "-=600px",
       scrub: false,
-      toggleActions:'play play play reverse',
+      toggleActions: "play play play reverse",
     },
   });
 
@@ -482,41 +434,26 @@ let featureEyetl = gsap.timeline({
     trigger: ".feat1",
     start: "-=700px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
 featureEyetl
-.from(".feat-1-eyewrapper", { opacity: 0, duration: 1 })
-.from(".feature-title__img", { opacity: 0, duration: 0.5 });
+  .from(".feat-1-eyewrapper", { opacity: 0, duration: 1 })
+  .from(".feature-title__img", { opacity: 0, duration: 0.5 });
 
 let featureOne = gsap.matchMedia();
 
-// featureOne.add("(min-width: 768px)", () => {
-//   let featureOnetl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".feat-1-eyewrapper",
-//       start: "+=170px",
-//       scrub: false,
-//     },
-//   });
-
-//   featureOnetl
-//     // .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
-//     .from(".feat-main--right-1", { opacity: 0,  duration: 3 });
-// });
 let featureOnetl = gsap.timeline({
   scrollTrigger: {
     trigger: ".feat-1-eyewrapper",
     start: "+=170px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
-featureOnetl
-  // .from(".feat-main-left-one", { opacity: 0, x: -100, duration: 1 })
-  .from(".feat-main--right-1", { opacity: 0,  duration: 2 });
+featureOnetl.from(".feat-main--right-1", { opacity: 0, duration: 2 });
 /*-------------------------------
    Feature 2 Animations
    Feature 2 アニメーション
@@ -527,39 +464,22 @@ let featureEyeTwotl = gsap.timeline({
     trigger: ".feat2",
     start: "-=700px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
 featureEyeTwotl.from(".feat-2-eyewrapper", { opacity: 0, duration: 2 });
 
-// let featureTwo = gsap.matchMedia();
-
-// featureTwo.add("(min-width: 768px)", () => {
-//   let featureTwotl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".feat-2-eyewrapper",
-//       start: "+=170px",
-//       scrub: false,
-//     },
-//   });
-
-//   featureTwotl
-//     // .from(".feat-main-left-two", { opacity: 0, x: 100, duration: 1 })
-//     .from(".feat-main--right--2", { opacity: 0,  duration: 1 });
-// });
 let featureTwotl = gsap.timeline({
   scrollTrigger: {
     trigger: ".feat-2-eyewrapper",
     start: "+=170px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
-featureTwotl
-  // .from(".feat-main-left-two", { opacity: 0, x: 100, duration: 1 })
-  .from(".feat-main--right--2", { opacity: 0,  duration: 1 });
+featureTwotl.from(".feat-main--right--2", { opacity: 0, duration: 1 });
 /*-------------------------------
    Feature 3 Animations
    Feature 3 アニメーション
@@ -570,7 +490,7 @@ let featureEyeThreetl = gsap.timeline({
     trigger: ".feat3",
     start: "-=700px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
@@ -578,34 +498,16 @@ featureEyeThreetl.from(".feat-3-eyewrapper", {
   opacity: 0,
   duration: 1,
 });
-
-// let featureThree = gsap.matchMedia();
-
-// featureThree.add("(min-width: 768px)", () => {
-//   let featureThreetl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".feat-3-eyewrapper",
-//       start: "+=170px",
-//       scrub: false,
-//     },
-//   });
-
-//   featureThreetl
-//     .from(".feat-main-left-three", { opacity: 0, x: -100, duration: 1 })
-//     .from(".feat-main--3-txt", { opacity: 0, x: 100, duration: 1 }, "<");
-// });
 let featureThreetl = gsap.timeline({
   scrollTrigger: {
     trigger: ".feat-3-eyewrapper",
     start: "+=170px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
-featureThreetl
-  // .from(".feat-main-left-three", { opacity: 0, x: -100, duration: 1 })
-  .from(".feat-main--3-txt", { opacity: 0, duration: 2 });
+featureThreetl.from(".feat-main--3-txt", { opacity: 0, duration: 2 });
 /*-------------------------------
   Course Animations
    Course アニメーション
@@ -620,7 +522,7 @@ courseTitle.add("(min-width: 768px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
-      toggleActions:'play play play reverse',
+      toggleActions: "play play play reverse",
     },
   });
 
@@ -639,7 +541,7 @@ courseTitle.add("(max-width: 767px)", () => {
       trigger: "#course",
       start: "-=500px",
       scrub: false,
-      toggleActions:'play play play reverse',
+      toggleActions: "play play play reverse",
     },
   });
 
@@ -658,7 +560,7 @@ let LunchImgtl = gsap.timeline({
     trigger: "#lunch",
     start: "-=500px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
@@ -681,49 +583,13 @@ LunchImgtl.fromTo(
    Dinner アニメーション
 -------------------------------*/
 
-// let dinnerImgtl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#dinner",
-//     start: "-=500px",
-//     scrub: false,
-//     // markers:true
-//   },
-// });
-
-// dinnerImgtl
-//   .fromTo(
-//     ".reveal-black",
-//     {
-//       "--width": "100%",
-//       duration: 0.5,
-//     },
-//     {
-//       "--width": "0%",
-//       duration: 0.5,
-//     }
-//   )
-//   .fromTo(
-//     ".reveal-black-right",
-//     {
-//       "--width": "100%",
-//       duration: 0.5,
-//     },
-//     {
-//       "--width": "0%",
-//       duration: 0.5,
-//     },
-//     "<"
-//   )
-//   .from(".dinner-title-anime", { opacity: 0, x: -100, duration: 1 })
-//   .from(".dinner-subtitle-anime", { opacity: 0, x: 100, duration: 1 }, "<");
-
 let dinnerBottomtl = gsap.timeline({
   scrollTrigger: {
     trigger: ".dinner-seemore-trigger",
     start: "-=500px",
     scrub: false,
     // markers:true
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
@@ -746,8 +612,7 @@ dinnerBottomtl
     },
     {
       "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    },
-    
+    }
   );
 
 /*-------------------------------
@@ -764,7 +629,7 @@ messageTitle.add("(min-width: 768px)", () => {
       trigger: "#message",
       start: "-=500px",
       scrub: false,
-      toggleActions:'play play play reverse',
+      toggleActions: "play play play reverse",
     },
   });
 
@@ -784,7 +649,7 @@ messageTitle.add("(max-width: 767px)", () => {
       trigger: "#message",
       start: "-=500px",
       scrub: false,
-      toggleActions:'play play play reverse',
+      toggleActions: "play play play reverse",
     },
   });
 
@@ -799,32 +664,29 @@ let messageImgtl = gsap.timeline({
     trigger: ".message-bottom-wrapper",
     start: "-=500px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
-
-
 messageImgtl
-.fromTo(
-  ".flower-anime",
-  {
-    "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
-  },
-  {
-    "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-  }
-)
-.fromTo(
-  ".chef-anime",
-  {
-    "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
-  },
-  {
-    "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-  },
-  
-);
+  .fromTo(
+    ".flower-anime",
+    {
+      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+    },
+    {
+      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    }
+  )
+  .fromTo(
+    ".chef-anime",
+    {
+      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+    },
+    {
+      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    }
+  );
 
 /*-------------------------------
 Voice Animations
@@ -835,7 +697,7 @@ let voiceTitletl = gsap.timeline({
     trigger: "#voice",
     start: "-=500px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
@@ -854,7 +716,7 @@ let newsTitletl = gsap.timeline({
     trigger: "#news",
     start: "-=500px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
@@ -873,7 +735,7 @@ let instaTitletl = gsap.timeline({
     trigger: "#insta",
     start: "-=500px",
     scrub: false,
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
@@ -887,102 +749,57 @@ instaTitletl.from(".insta-title", {
 acess Animations
  acess アニメーション
 -------------------------------*/
-// let accessTitle = gsap.matchMedia();
-// accessTitle.add("(min-width: 768px)", () => {
-//   splitText("access-eng", "access-eng-letter");
-
-//   let accessTitletl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "#access",
-//       start: "-=500px",
-//       scrub: false,
-//     },
-//   });
-
-//   accessTitletl
-//     .from(".access-eng-letter16", { opacity: 0, duration: 1 }, "")
-//     .from(".access-eng-letter17", { opacity: 0, duration: 1 }, "<10%")
-//     .from(".access-eng-letter18", { opacity: 0, duration: 1 }, "<10%")
-//     .from(".access-eng-letter19", { opacity: 0, duration: 1 }, "<10%")
-//     .from(".access-eng-letter20", { opacity: 0, duration: 1 }, "<10%")
-//     .from(".access-eng-letter21", { opacity: 0, duration: 1 }, "<10%");
-// });
-
-// accessTitle.add("(max-width: 767px)", () => {
-//   let accessTitletl = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: "#access",
-//       start: "-=500px",
-//       scrub: false,
-//     },
-//   });
-
-//   accessTitletl.from(".access-eng", {
-//     opacity: 0,
-//     duration: 1,
-//   });
-// });
-
-
 activateAccessTitleAnimations();
 
 /// 背景/タイトルアニメーショントリガー
-
 
 let dinnerTitletl = gsap.timeline({
   scrollTrigger: {
     trigger: ".dinner-trigger",
     start: "top top", // トリガーの上部がビューポートの上部に到達したとき
     // scrub: true,  // scrubはスクロール時にアニメーションが発生します。（falseの場合、ユーザーがスクロールした距離に関係なく、アニメーションは最初から最後まで進みます）
-    toggleActions:'play play play reverse',
+    toggleActions: "play play play reverse",
   },
 });
 
 // 背景/タイトルアニメーションタイムライン
 dinnerTitletl
-  .to("#dinner", {backgroundColor:"#505050" }, "")
-  .from(".dinner-subtitle-anime", {color:"#505050" ,opacity:0}, "<") // "<" は、前のアニメーションの開始時点に挿入することを意味します
-  .from(".dinner-title-anime", {color:"#505050",opacity:0 }, "<")
-  
+  .to("#dinner", { backgroundColor: "#505050" }, "")
+  .from(".dinner-subtitle-anime", { color: "#505050", opacity: 0 }, "<") // "<" は、前のアニメーションの開始時点に挿入することを意味します
+  .from(".dinner-title-anime", { color: "#505050", opacity: 0 }, "<");
 
+/// ギャラリー画像トリガー
 
-  /// ギャラリー画像トリガー
+let dinnerImgtl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".dinner-gallary-wrapper",
+    start: "-=400px",
+    scrub: false,
+    toggleActions: "play play play reverse",
+  },
+});
 
-  let  dinnerImgtl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".dinner-gallary-wrapper",
-      start: "-=400px",
-      scrub: false,
-      toggleActions:'play play play reverse',
-    },
-  });
-  
-  
-  // ギャラリーアニメーションタイムライン
+// ギャラリーアニメーションタイムライン
 
-  dinnerImgtl
-  .fromTo(
-    ".dinner-anime",
-    {
-      "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
-    },
-    {
-      "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    }
-  )
-
-
+dinnerImgtl.fromTo(
+  ".dinner-anime",
+  {
+    "--path": "polygon(0 0, 0 0, 0 100%, 0 100%)",
+  },
+  {
+    "--path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+  }
+);
 
 /*-----------------------------------
   MULTI LANGUAGE SITE RELATED SCRIPTS
  マルチ言語サイトに関連するスクリプト
 --------------------------------------*/
 
-const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang" ; //the key to the local storage language
+const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang"; //the key to the local storage language
 let currentLang = GetStorageItems(LOCAL_STORAGE_LANGUAGE_KEY) || "jp"; //checks whether theres a language preffred by  a user who has visited before. if not it will default to "jp"
-// const langBtns = document.querySelectorAll(".lang-btn-text");
-setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY,currentLang);
-toggleLanguage(currentLang)
+setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY, currentLang);
+toggleLanguage(currentLang);
 updateLangBtnText(currentLang);
 activateLangBtnEventListener();
 

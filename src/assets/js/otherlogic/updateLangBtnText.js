@@ -1,8 +1,7 @@
-const btns = document.querySelectorAll('.dropdown__btn');
+const btns = document.querySelectorAll(".dropdown__btn");
 
 export default function updateLangBtnText(currentLang) {
-    btns.forEach(btn=>{
-        btn.textContent = currentLang.toUpperCase();
-    })
-    
+  btns.forEach((btn) => {
+    btn.textContent = currentLang.toUpperCase();
+  });
 }

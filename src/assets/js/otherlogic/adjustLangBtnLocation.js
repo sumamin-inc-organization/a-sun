@@ -1,8 +1,7 @@
-
 export default function adjustLangBtnLocation() {
-    // iphoneで見たときの位置を調整する
-    if (navigator.userAgent.indexOf('iPhone') > 0) {
-        let dropdown = document.querySelector(".dropdown-sp");
-        dropdown.style.marginRight= "-8px";
-    }
+  // iphoneで見たときの位置を調整する
+  if (navigator.userAgent.indexOf("iPhone") > 0) {
+    let dropdown = document.querySelector(".dropdown-sp");
+    dropdown.style.marginRight = "-8px";
+  }
 }

@@ -10,11 +10,9 @@ import "./assets/css/feature/feature.css";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
 
 import { gsap } from "gsap";
-setLoadingAnimation();
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
 import activateHeaderAnimations from "./assets/js/animations/activateHeaderAnimations";
-gsap.registerPlugin(ScrollTrigger);
 import $ from "jquery";
 import "slick-carousel";
 import "slick-carousel/slick/slick.css";
@@ -27,8 +25,9 @@ import activateLangBtnEventListener from "./assets/js/eventlisters/langBtnEventl
 import GetStorageItems from "./assets/js/otherlogic/getStorage";
 import adjustLangBtnLocation from "./assets/js/otherlogic/adjustLangBtnLocation";
 
+gsap.registerPlugin(ScrollTrigger);
 toggleSpMenu();
-
+setLoadingAnimation();
 // slick
 $(document).ready(function () {
   $(".slick1").slick({
@@ -132,7 +131,6 @@ let feature2 = gsap.timeline({
     trigger: ".feature1-inner",
     start: "+=500px",
     scrub: false,
-   
   },
 });
 feature2
@@ -159,14 +157,12 @@ feature3
     "-=1.5"
   )
   .from(".slick3", { y: 30, opacity: 0, duration: 2 }, "-=1.5")
-  .from(".home-btn", { y: 30, opacity: 0, duration: 2 },"-=0.5");
-
+  .from(".home-btn", { y: 30, opacity: 0, duration: 2 }, "-=0.5");
 
 /*--------------------------------------------
    Header PC animation / ヘッダーPCアニメーション
 ---------------------------------------------*/
 activateHeaderAnimations();
-
 
 activateAccessTitleAnimationsFeature();
 
@@ -175,10 +171,9 @@ activateAccessTitleAnimationsFeature();
  マルチ言語サイトに関連するスクリプト
 --------------------------------------*/
 
-const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang" ; //the key to the local storage language
+const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang"; //the key to the local storage language
 let currentLang = GetStorageItems(LOCAL_STORAGE_LANGUAGE_KEY) || "jp"; //checks whether theres a language preffred by  a user who has visited before. if not it will default to "jp"
-// const langBtns = document.querySelectorAll(".lang-btn-text");
-setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY,currentLang);
+setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY, currentLang);
 toggleLanguage(currentLang);
 updateLangBtnText(currentLang);
 activateLangBtnEventListener();

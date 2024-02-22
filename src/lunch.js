@@ -8,12 +8,6 @@ import "./assets/css/home/animations.css";
 import "./assets/css/home/access.css";
 import "./assets/css/menu/lunch.css";
 import setLoadingAnimation from "./assets/js/animations/loadingAnimation";
-
-// import $ from "jquery";
-// import "slick-carousel";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { toggleSpMenu } from "./assets/js/eventlisters/toggleSpMenu";
@@ -30,28 +24,15 @@ gsap.registerPlugin(ScrollTrigger);
 setLoadingAnimation();
 toggleSpMenu();
 
-// /* slick animation */
-// var $slide = $(".slick-slide").slick({
-//   fade: true,
-//   speed: 1000,
-//   autoplaySpeed: 2500,
-//   arrows: false,
-//   autoplay: true,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   infinite: true,
-//   dots: true,
-// });
-
 /*  Appearance Animation */
 let kv_title = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".lunch-page",
-        start: "-=500px",
-        scrub: false,
-    },
+  scrollTrigger: {
+    trigger: ".lunch-page",
+    start: "-=500px",
+    scrub: false,
+  },
 });
-kv_title.from(".under-kv", { opacity: 0, duration: 2 , delay: 3});
+kv_title.from(".under-kv", { opacity: 0, duration: 2, delay: 3 });
 
 let mm = gsap.matchMedia();
 /* sp */
@@ -237,7 +218,6 @@ mm.add("(min-width: 768px)", () => {
 ---------------------------------------------*/
 activateHeaderAnimations();
 
-
 activateAccessTitleAnimationsDinner();
 
 /*-----------------------------------
@@ -245,10 +225,9 @@ activateAccessTitleAnimationsDinner();
  マルチ言語サイトに関連するスクリプト
 --------------------------------------*/
 
-const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang" ; //the key to the local storage language
+const LOCAL_STORAGE_LANGUAGE_KEY = "asun.lang"; //the key to the local storage language
 let currentLang = GetStorageItems(LOCAL_STORAGE_LANGUAGE_KEY) || "jp"; //checks whether theres a language preffred by  a user who has visited before. if not it will default to "jp"
-// const langBtns = document.querySelectorAll(".lang-btn-text");
-setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY,currentLang);
+setStorageItem(LOCAL_STORAGE_LANGUAGE_KEY, currentLang);
 toggleLanguage(currentLang);
 updateLangBtnText(currentLang);
 activateLangBtnEventListener();
