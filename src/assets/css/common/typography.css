@@ -44,11 +44,11 @@
   }
   .fs-pc-14 {
     font-size: 14px;
-    font-size: clamp(8.75px,0.97vw, 14px);
+    font-size: clamp(8.75px, 0.97vw, 14px);
   }
   .fs-pc-16 {
     font-size: 16px;
-    font-size: clamp(10px,1.11vw, 16px);
+    font-size: clamp(10px, 1.11vw, 16px);
   }
   .fs-pc-18 {
     /* 1.25vw */
@@ -56,7 +56,7 @@
     font-size: clamp(10px, 1.25vw, 18px);
     font-size: clamp(11.25px, 1.25vw, 18px);
   }
-  .fs-pc-18--11p25{
+  .fs-pc-18--11p25 {
     font-size: clamp(11.25px, 1.25vw, 18px);
   }
 
@@ -93,63 +93,61 @@
   }
 }
 
-
 @media (max-width: 767px) {
   .fs-sp-12 {
     font-size: 12px;
-    font-size: min(12px,3.0769vw);
+    font-size: min(12px, 3.0769vw);
   }
   .fs-sp-14 {
     font-size: 14px;
-    font-size: min(14px,3.59vw);
+    font-size: min(14px, 3.59vw);
   }
   .fs-sp-16 {
     font-size: 16px;
-    font-size: min(16px,4.10vw);
+    font-size: min(16px, 4.1vw);
   }
   .fs-sp-18 {
     font-size: 18px;
-    font-size: min(4.62vw,18px);
+    font-size: min(4.62vw, 18px);
   }
-  .fs-sp-20{
+  .fs-sp-20 {
     font-size: 20px;
-    font-size: min(5.13vw,20px);
+    font-size: min(5.13vw, 20px);
   }
-  .fs-sp-22{
+  .fs-sp-22 {
     font-size: 22px;
-    font-size: min(5.8vw,22px);
+    font-size: min(5.8vw, 22px);
   }
-  .fs-sp-25{
+  .fs-sp-25 {
     font-size: 25px;
-    font-size: min(25px,6.41vw);
+    font-size: min(25px, 6.41vw);
   }
   .fs-sp-30 {
     /* 7.69vw */
     font-size: 30px;
-    font-size: min(30px,7.69vw);
+    font-size: min(30px, 7.69vw);
   }
   .fs-sp-40 {
-    font-size:40px;
-    font-size: min(40px,10.26vw);
+    font-size: 40px;
+    font-size: min(40px, 10.26vw);
   }
-  .fs-sp-32{
+  .fs-sp-32 {
     font-size: 32px;
-  font-size: min(32px,8.21vw);
-  font-size: clamp(20,8.21vw,32);
+    font-size: min(32px, 8.21vw);
+    font-size: clamp(20, 8.21vw, 32);
   }
-  .fs-sp-34{
+  .fs-sp-34 {
     font-size: 34px;
-    font-size: min(34px,8.21vw);
+    font-size: min(34px, 8.21vw);
   }
-  .fs-sp-36{
+  .fs-sp-36 {
     font-size: 36px;
-    font-size: min(36px,9.23vw);
+    font-size: min(36px, 9.23vw);
   }
-  .fs-sp-100{
+  .fs-sp-100 {
     font-size: 100px;
-    font-size:min(25.64vw,100px)
+    font-size: min(25.64vw, 100px);
   }
-
 }
 /*------------------------------
     Font Colors / フォントの色"
@@ -166,93 +164,93 @@
     Line Height /行の高さ
 ------------------------------------*/
 
-@media (min-width:768px){
-  .line-height-pc-65p5{
-    line-height: min(4.55vw,65.5px);
+@media (min-width: 768px) {
+  .line-height-pc-65p5 {
+    line-height: min(4.55vw, 65.5px);
   }
-  .line-height-pc-68p9{
-    line-height: min(4.77vw,68.9px);
+  .line-height-pc-68p9 {
+    line-height: min(4.77vw, 68.9px);
   }
-  .line-height-pc-39p2{
-    line-height: min(2.72vw,39.2px);
+  .line-height-pc-39p2 {
+    line-height: min(2.72vw, 39.2px);
   }
-  .line-height-pc-40{
-    line-height: min(2.78vw,40px);
+  .line-height-pc-40 {
+    line-height: min(2.78vw, 40px);
   }
-  .line-height-pc-49p5{
-    line-height: min(3.44vw,49.5px);
+  .line-height-pc-49p5 {
+    line-height: min(3.44vw, 49.5px);
   }
-  .line-height-pc-51p5{
-    line-height: min(3.57vw,51.5px);
+  .line-height-pc-51p5 {
+    line-height: min(3.57vw, 51.5px);
   }
-  .line-height-pc-40p9{
-    line-height: min(2.84vw,40.9px);
+  .line-height-pc-40p9 {
+    line-height: min(2.84vw, 40.9px);
   }
-  .line-height-pc-59{
-    line-height: min(4.10vw,59px);
+  .line-height-pc-59 {
+    line-height: min(4.1vw, 59px);
   }
-  .line-height-pc-36p5{
-    line-height: min(2.53vw,36.5px);
+  .line-height-pc-36p5 {
+    line-height: min(2.53vw, 36.5px);
   }
-  .line-height-pc-56{
-    line-height: min(3.89vw,56px);
+  .line-height-pc-56 {
+    line-height: min(3.89vw, 56px);
   }
-  .line-height-pc-27{
-    line-height: min(1.88vw,27px);
+  .line-height-pc-27 {
+    line-height: min(1.88vw, 27px);
   }
-  .line-height-pc-28p5{
-    line-height: min(1.98vw,28.5px);
+  .line-height-pc-28p5 {
+    line-height: min(1.98vw, 28.5px);
   }
-  .line-height-pc-43p5{
-    line-height: min(3.02vw,43.5px);
+  .line-height-pc-43p5 {
+    line-height: min(3.02vw, 43.5px);
   }
 }
-@media (max-width:767px){
-  .line-height-sp-42{
+@media (max-width: 767px) {
+  .line-height-sp-42 {
     line-height: 42px;
   }
-  .line-height-sp-68p9{
-    line-height: min(17.66vw,68.9px);
+  .line-height-sp-68p9 {
+    line-height: min(17.66vw, 68.9px);
   }
-  .line-height-sp-49p5{
-    line-height: min(12.69vw,49.5px);
+  .line-height-sp-49p5 {
+    line-height: min(12.69vw, 49.5px);
   }
-  .line-height-sp-55{
-    line-height: min(14.10vw,55px);
+  .line-height-sp-55 {
+    line-height: min(14.1vw, 55px);
   }
-  .line-height-sp-40{
-    line-height: min(10.26vw,40px);
+  .line-height-sp-40 {
+    line-height: min(10.26vw, 40px);
   }
-  .line-height-sp-46{
-    line-height: min(11.7949vw,46px);
+  .line-height-sp-46 {
+    line-height: min(11.7949vw, 46px);
   }
-  .line-height-sp-65p5{
-    line-height: min(16.79vw,65.5px);
+  .line-height-sp-65p5 {
+    line-height: min(16.79vw, 65.5px);
   }
-  .line-height-sp-30{
-    line-height: min(7.69vw,30px);
+  .line-height-sp-30 {
+    line-height: min(7.69vw, 30px);
   }
-  .line-height-sp-36p5{
-    line-height: min(9.36vw,36.5px);
+  .line-height-sp-36p5 {
+    line-height: min(9.36vw, 36.5px);
   }
-  .line-height-sp-140{
-    line-height: min(35.90vw,140px);
+  .line-height-sp-140 {
+    line-height: min(35.9vw, 140px);
   }
-  .line-height-sp-27{
-    line-height: min(6.92vw,27px);
+  .line-height-sp-27 {
+    line-height: min(6.92vw, 27px);
   }
-  .line-height-sp-18{
-    line-height: min(5vw,18px);
+  .line-height-sp-18 {
+    line-height: min(5vw, 18px);
   }
-  .line-height-sp-14{
-    line-height: min(4.2vw,14px);
+  .line-height-sp-14 {
+    line-height: min(4.2vw, 14px);
   }
-  .line-height-sp-28p5{
-    line-height: min(7.31vw,28.5px);
+  .line-height-sp-28p5 {
+    line-height: min(7.31vw, 28.5px);
   }
-  .line-height-sp-43p5{
-    line-height: min(11.15vw,43.5px);
-      }
+  .line-height-sp-43p5 {
+    line-height: min(11.15vw, 43.5px);
+  }
 }
 
 /*----------------------------------
@@ -261,24 +259,24 @@
 .letter-spacing-02 {
   letter-spacing: 0.2rem;
 }
-.letter-spacing-154{
+.letter-spacing-154 {
   letter-spacing: 0.154em;
 }
-.letter-spacing-114{
+.letter-spacing-114 {
   letter-spacing: 0.114em;
 }
 .letter-spacing-01 {
   letter-spacing: 0.1rem;
 }
-.letter-spacing-94{
+.letter-spacing-94 {
   letter-spacing: 0.094em;
 }
-.letter-spacing-74{
+.letter-spacing-74 {
   letter-spacing: 0.074em;
 }
 .letter-spacing-60 {
   letter-spacing: 0.06em;
 }
-.letter-spacing-40{
+.letter-spacing-40 {
   letter-spacing: 0.04em;
 }

@@ -1,4 +1,4 @@
-.meatball{
+.meatball {
   border: none;
   background-color: transparent;
   width: 40px;
@@ -13,15 +13,15 @@
   z-index: 9000;
   display: none;
   -webkit-filter: grayscale(1) invert(1);
-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
 }
 
 .dropdown.dropdown-sp {
   display: none;
 }
 
-@media(max-width:767px){
-  .meatball{
+@media (max-width: 767px) {
+  .meatball {
     display: block;
   }
 
@@ -30,12 +30,12 @@ filter: grayscale(1) invert(1);
   }
 }
 
-.meatball-btn{
+.meatball-btn {
   background-color: transparent;
   border: none;
   width: 100%;
   height: 100%;
 }
-.meatball-btn:focus{
+.meatball-btn:focus {
   border: none;
 }

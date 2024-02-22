@@ -43,7 +43,6 @@
   width: 100vw;
   display: grid;
   place-content: center;
-
 }
 .dinner-img--left {
   background-image: url(../../images/top/dinner/dinner-left-img_pc.jpg);

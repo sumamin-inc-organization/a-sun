@@ -7,15 +7,15 @@
     エレメントの配置
 ----------------------------*/
 
-@media (min-width:768px) {
-  .header{
+@media (min-width: 768px) {
+  .header {
     position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
     background-color: white;
   }
-  #hero{
+  #hero {
     margin-top: 120px;
   }
 
@@ -84,10 +84,10 @@
   display: none;
   text-align: center;
 }
-.dropdown:hover > .dropdown__content{
+.dropdown:hover > .dropdown__content {
   display: flex;
 }
-@media(min-width:768px){
+@media (min-width: 768px) {
   .dropdown-sp:hover > .dropdown__content--sp {
     display: flex;
   }
@@ -97,10 +97,10 @@
   padding-top: 22px;
 }
 
-.dropdown__link:hover{
-color: white;
-background-color: #505050;
-cursor: pointer;
+.dropdown__link:hover {
+  color: white;
+  background-color: #505050;
+  cursor: pointer;
 }
 
 .dropdown.dropdown-sp {
@@ -141,12 +141,11 @@ cursor: pointer;
 }
 
 @media (max-width: 920px) {
-
   .header__left {
     top: 13.6px;
     left: 18px;
   }
-  .reservation-btn--sp{
+  .reservation-btn--sp {
     position: fixed;
     bottom: 40vh;
     right: 0;
@@ -202,11 +201,11 @@ cursor: pointer;
   position: relative;
 }
 
-.dropdown__btn::after{
-    content: url(../../images/common/langBtnChevron.svg);
-    position: absolute;
-    top: -2px;
-    right: -7px;
+.dropdown__btn::after {
+  content: url(../../images/common/langBtnChevron.svg);
+  position: absolute;
+  top: -2px;
+  right: -7px;
 }
 
 .dropdown__btn.dropdown__btn--sp {
@@ -219,51 +218,50 @@ cursor: pointer;
   margin-left: -6px;
 }
 
-.dropdown__btn.dropdown__btn--sp::after{
-    content: url(../../images/common/langBtnChevron.svg);
-    position: relative;
+.dropdown__btn.dropdown__btn--sp::after {
+  content: url(../../images/common/langBtnChevron.svg);
+  position: relative;
 }
 /*---------------------------------------
    Header Letter Spacing
    ヘッダーの文字間隔
 -----------------------------------------*/
-.header__info{
-letter-spacing: 0.114em;
+.header__info {
+  letter-spacing: 0.114em;
 }
 
-.dropdown__btn{
-    letter-spacing:  0.074em;
+.dropdown__btn {
+  letter-spacing: 0.074em;
 }
 
-.primary-nav__link{
-    letter-spacing:  0.074em;
+.primary-nav__link {
+  letter-spacing: 0.074em;
 }
-.reservation-btn--sp{
+.reservation-btn--sp {
   z-index: 1000;
 }
 
-@media (max-width:500px) {
-  .reservation-btn--sp{
+@media (max-width: 500px) {
+  .reservation-btn--sp {
     position: fixed;
     bottom: 40vh;
     right: 0;
   }
-
 }
-.reservation-btn{
+.reservation-btn {
   display: block;
 }
-.reservation-btn--sp{
+.reservation-btn--sp {
   display: none;
 }
-@media (max-width:767px){
+@media (max-width: 767px) {
   .header__center {
     display: none;
   }
-  .reservation-btn--sp{
+  .reservation-btn--sp {
     display: block;
   }
-  .reservation-btn{
+  .reservation-btn {
     display: none;
   }
   .header__left {
@@ -271,33 +269,31 @@ letter-spacing: 0.114em;
   }
 }
 
-.tel__number{
+.tel__number {
   margin-bottom: 9px;
   margin-top: -5px;
 }
 
-
-
-.header__right-column--one{
+.header__right-column--one {
   text-align: center;
   transform: translateY(-9px);
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .header__left {
     width: 65.18vw;
   }
 }
 
-.reservation-btn{
+.reservation-btn {
   width: 70px;
 }
-.reservation-btn--sp{
+.reservation-btn--sp {
   width: 70px;
   opacity: 0.8;
 }
 
-.reservation-btn--sp:hover{
+.reservation-btn--sp:hover {
   opacity: 1;
 }
 /* spハンバーガーメニュー */
@@ -305,13 +301,12 @@ letter-spacing: 0.114em;
   display: none;
   width: 100%;
   height: 100dvh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0;
   z-index: 9001;
   top: 0;
   flex-direction: column;
   align-items: center;
-
 }
 
 .sp-nav.open {

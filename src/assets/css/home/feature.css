@@ -104,7 +104,7 @@
 .feat-main--left {
   margin-top: 200px;
 }
-.feat-main-left-one{
+.feat-main-left-one {
   margin-top: 300px;
 }
 .feat-main-left-three {
@@ -148,7 +148,7 @@
   margin-top: -350px;
   margin-top: -200px;
 }
-.feat-main-left-one{
+.feat-main-left-one {
   margin-top: 220px;
 }
 .feat-main--2 {
@@ -156,25 +156,21 @@
 }
 .feat-main--right--2 {
   margin-top: 170px;
-
 }
 .feat-main--3 {
   margin-top: -200px;
 }
-.feat-main-left-three{
+.feat-main-left-three {
   margin-top: 220px;
 }
 .feat-main--3-txt {
   margin-top: 330px;
   margin-top: 170px;
-
 }
 .feat-main--right-1 {
   margin-top: 350px;
   margin-top: 170px;
 }
-
-
 
 /* ===============
       TAB
@@ -309,7 +305,6 @@
   }
   .feat-main--3-txt {
     margin-top: 46.7px;
-   
   }
 }
 @media (max-width: 400px) {
@@ -322,21 +317,20 @@
     margin-bottom: -120px;
   }
 }
-.feature-bottom-img_wrapper{
+.feature-bottom-img_wrapper {
   position: relative;
 }
 
 @media (max-width: 830px) and (min-width: 767px) {
-  .feat-main--2{
+  .feat-main--2 {
     padding-inline: 20px;
     padding-inline: 40px;
   }
-  .feat-main--1{
+  .feat-main--1 {
     padding-inline: 20px;
     padding-inline: 40px;
   }
- .feat-main--3-txt{
-  width: 259px;
- }
-
+  .feat-main--3-txt {
+    width: 259px;
+  }
 }

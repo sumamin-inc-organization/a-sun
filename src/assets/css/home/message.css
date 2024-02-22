@@ -209,7 +209,7 @@
   }
 }
 
-@media (min-width:1500px) {
+@media (min-width: 1500px) {
   .msg-filler {
     height: 24vw;
   }

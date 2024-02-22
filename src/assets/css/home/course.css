@@ -13,7 +13,7 @@
   #course {
     min-height: 100vh;
     margin-top: 100px;
-    padding-top:60px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -54,7 +54,7 @@
   letter-spacing: 0.154em;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   /* was 500 */
   .course-title {
     margin-bottom: 10px;

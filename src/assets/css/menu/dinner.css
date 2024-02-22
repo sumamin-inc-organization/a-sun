@@ -1,109 +1,109 @@
 .under-kv.dinner {
-    background-image: url(../../images/menu/dinner_kv.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(../../images/menu/dinner_kv.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .under-kv.dinner h1 {
-    color: #EBB000;
+  color: #ebb000;
 }
 
 .under-kv.dinner p {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-#overview.dinner, #lunchSingle.dinner,  #drink.dinner {
-    background-image: none;
-    background-color: #505050;
+#overview.dinner,
+#lunchSingle.dinner,
+#drink.dinner {
+  background-image: none;
+  background-color: #505050;
 }
 
 .overview-hours.dinner {
-    background-image: url(../../images/menu/dinner_date_bg.png);
+  background-image: url(../../images/menu/dinner_date_bg.png);
 }
 
-
 .lunch-grid.dinner {
-    background-color: #404040;
+  background-color: #404040;
 }
 
 .drink-headline.dinner-headline p {
-    top: 70%;
-    letter-spacing: 0.9rem;
+  top: 70%;
+  letter-spacing: 0.9rem;
 }
 
 .dinner-headline p {
-    font-size: clamp(80px, 12vw, 200px);
-    text-align: center;
-    color: #EBB000;
-    position: absolute;
-    width: 100%;
-    min-width: 800px;
-    max-width: 1200px;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    z-index: 0;
-    letter-spacing: 0.92rem;
+  font-size: clamp(80px, 12vw, 200px);
+  text-align: center;
+  color: #ebb000;
+  position: absolute;
+  width: 100%;
+  min-width: 800px;
+  max-width: 1200px;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 0;
+  letter-spacing: 0.92rem;
 }
 
 .dinner-headline img {
-    top: 40%;
+  top: 40%;
 }
 
 .overview-inner.dinner {
-    margin-bottom: 160px;
+  margin-bottom: 160px;
 }
 
 .lunch-item.dinner {
-    background-color: #404040;
+  background-color: #404040;
 }
 
 .drink-grid.dinner {
-    background-color: #404040;
+  background-color: #404040;
 }
 
 .drink-content.dinner {
-    border-bottom: 0.2px solid #FFFFFF;
+  border-bottom: 0.2px solid #ffffff;
 }
-
 
 /* home-back */
 .home-btn.dinner {
-    background-image: none;
-    background-color: #505050;
+  background-image: none;
+  background-color: #505050;
 }
 
 .home-btn.dinner a {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .home-btn.dinner a::after {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 @media (max-width: 767px) {
-    .dinner-headline p {
-        font-size: clamp(20px, 15vw, 100px);
-        letter-spacing: 0.32rem;
-        top: 60%;
-    }
+  .dinner-headline p {
+    font-size: clamp(20px, 15vw, 100px);
+    letter-spacing: 0.32rem;
+    top: 60%;
+  }
 
-    .drink-headline.dinner-headline p {
-        letter-spacing: 0.39rem;
-        top: 58%;
-    }
+  .drink-headline.dinner-headline p {
+    letter-spacing: 0.39rem;
+    top: 58%;
+  }
 }
 
 /* スマホの追従メニューが見にくいのでディナーページだけ変更する */
 
 .meatball {
-    filter: invert(100%);
-    mix-blend-mode: exclusion;
+  filter: invert(100%);
+  mix-blend-mode: exclusion;
 }
 
 .dropdown.dropdown-sp {
-    filter: invert(100%);
-    mix-blend-mode: exclusion;
+  filter: invert(100%);
+  mix-blend-mode: exclusion;
 }
